@@ -1,0 +1,45 @@
+/* ==========================================================================
+    Pills -- Version: 1.9.0.0 - Compiled: timestamp()
+   ========================================================================== */
+label + .pill,
+.pill + label {
+  margin-left: 0.33333em;
+}
+
+.pill,
+.pill-white,
+.pill-error,
+.pill-success {
+  padding-top: 0.125em;
+  padding-right: 0.75em;
+  padding-bottom: 0.125em;
+  padding-left: 0.75em;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #cccccc;
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: "NeueHaasGroteskDisp Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 700;
+  color: inherit;
+}
+.pill-white {
+  background: white;
+  -webkit-box-shadow: inset 0 0 0 1px #454545;
+  -moz-box-shadow: inset 0 0 0 1px #454545;
+  box-shadow: inset 0 0 0 1px #454545;
+}
+.pill-error {
+  background: #ef272d;
+  color: white;
+}
+.pill-success {
+  background: #3eb633;
+  color: white;
+}

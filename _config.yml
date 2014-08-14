@@ -1,0 +1,18 @@
+# Site settings
+title: Max Quattromani
+email: max@maxquattromani.com
+description: "The Resume of Max Quattromani | Front-End Developer"
+baseurl: ""
+url: "http://maxquattromani.com"
+twitter_username: maxquattromani
+github_username:  quattromani
+
+exclude: ['node_modules', 'scss']
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+name: Scaffold
+markdown: redcarpet
+highlighter: true
