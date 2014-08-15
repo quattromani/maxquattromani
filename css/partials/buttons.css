@@ -18,11 +18,8 @@ button,
   padding-right: 1em;
   padding-bottom: 0.375em;
   padding-left: 1em;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   background-clip: padding-box;
   border: 0;
   background: none;
@@ -238,13 +235,11 @@ button.btn-sm,
 
 .cta {
   -webkit-box-shadow: inset 0 0 0 1px #ef272d;
-  -moz-box-shadow: inset 0 0 0 1px #ef272d;
   box-shadow: inset 0 0 0 1px #ef272d;
 }
 .cta:hover {
   background: none;
   -webkit-box-shadow: inset 0 0 0 1px #d31016;
-  -moz-box-shadow: inset 0 0 0 1px #d31016;
   box-shadow: inset 0 0 0 1px #d31016;
 }
 
@@ -259,6 +254,7 @@ button.btn-sm,
 }
 .progress:active i:before, .progress.js-active i:before {
   display: inline-block;
+  -webkit-animation: rotation 1.5s infinite linear;
   animation: rotation 1.5s infinite linear;
 }
 

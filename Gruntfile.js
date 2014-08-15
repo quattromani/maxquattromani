@@ -41,9 +41,8 @@ module.exports = function(grunt) {
       },
 
       autoprefixer: {
-        prefix: {
-          src: 'css/main.css',
-          dest: 'css/main.css'
+        no_dest: {
+          src: 'css/partials/*.css'
         },
       },
 

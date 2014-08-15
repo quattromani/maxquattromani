@@ -29,11 +29,8 @@
   max-width: 90%;
   margin: auto;
   margin-top: -16em;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   background-clip: padding-box;
   background: none repeat scroll 0 0 #fff;
   color: #454545;
@@ -41,7 +38,6 @@
 }
 .modal .modal-container > .modal-content {
   -webkit-box-shadow: 0 0 5px 2px #555555;
-  -moz-box-shadow: 0 0 5px 2px #555555;
   box-shadow: 0 0 5px 2px #555555;
 }
 .modal .modal-close {
@@ -59,11 +55,8 @@
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
-  -webkit-border-radius: 0 0 0 0;
-  -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   background-clip: padding-box;
   background: #f0f2f5;
 }
@@ -89,11 +82,8 @@
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
-  -webkit-border-radius: 0 0 0 0;
-  -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   background-clip: padding-box;
   background: #f0f2f5;
 }

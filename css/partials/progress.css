@@ -71,7 +71,6 @@
   right: 0;
   background: white;
   -webkit-animation: pulsate 1s ease-out infinite;
-  -moz-animation: pulsate 1s ease-out infinite;
   animation: pulsate 1s ease-out infinite;
   opacity: .5;
 }
@@ -83,10 +82,12 @@
 }
 .progress-bar-element .progress-bar-container .badges li {
   will-change: transition;
+  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
 .progress-bar-element .progress-bar-container .badges li.muted img {
   will-change: transition;
+  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   filter: alpha(opacity=50);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -146,17 +147,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 @-webkit-keyframes pulsate {
-  .progress-bar-element 0%  {
-    opacity: .25;
-  }
-  .progress-bar-element 50%  {
-    opacity: .75;
-  }
-  .progress-bar-element 100%  {
-    opacity: .25;
-  }
-}
-@-moz-keyframes pulsate {
   .progress-bar-element 0%  {
     opacity: .25;
   }

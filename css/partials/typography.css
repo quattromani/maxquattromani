@@ -95,6 +95,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   will-change: transition;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 a img {
@@ -310,11 +311,8 @@ pre {
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   background-clip: padding-box;
   background-color: white;
   overflow: auto;

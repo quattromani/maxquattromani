@@ -9,13 +9,25 @@
 }
 
 .message-loading, .message-valid, .message-warning {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   background: white;
   font-weight: 700;
 }
 .message-loading:before, .message-valid:before, .message-warning:before {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   min-width: 3em;
   font-family: "GLGlyphs", Arial, Sans-Serif;
@@ -50,10 +62,12 @@
 
 @-webkit-keyframes rotation {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
