@@ -24,7 +24,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 html {
   height: 100%;
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -513,7 +513,9 @@ hr {
 nav {
   position: relative;
   width: 100%;
+  margin-top: -61px;
   background: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
   z-index: 9; }
   .ie nav {
     background: transparent;
@@ -584,12 +586,12 @@ nav {
     display: block;
     background: #2bb3dd; }
     nav input[type=checkbox]:checked ~ .navigation li {
-      border-top: 1px solid #00a3a4;
+      border-top: 1px solid #83db91;
       background: #00a3a4; }
       nav input[type=checkbox]:checked ~ .navigation li:first-child {
         border: none; }
     nav input[type=checkbox]:checked ~ .navigation li li {
-      background: #008a8a; }
+      background: #6fd57f; }
     nav input[type=checkbox]:checked ~ .navigation > li.js-last {
       margin-bottom: .5em; }
   @media (max-width: 62em) {
@@ -719,10 +721,10 @@ nav {
 
 .color-success,
 .bg-success {
-  background-color: #008a8a; }
+  background-color: #6fd57f; }
 
 .text-success {
-  color: #008a8a; }
+  color: #6fd57f; }
 
 .color-error,
 .bg-error {
@@ -782,10 +784,10 @@ nav {
 
 .color-secondary-green,
 .bg-secondary-green {
-  background-color: #008a8a; }
+  background-color: #6fd57f; }
 
 .text-secondary-green {
-  color: #008a8a; }
+  color: #6fd57f; }
 
 .color-tertiary-green,
 .bg-tertiary-green {
@@ -817,24 +819,24 @@ nav {
 
 .color-primary-orange,
 .bg-primary-orange {
-  background-color: #ff6622; }
+  background-color: #fcb03c; }
 
 .text-primary-orange {
-  color: #ff6622; }
+  color: #fcb03c; }
 
 .color-secondary-orange,
 .bg-secondary-orange {
-  background-color: #ee4900; }
+  background-color: #fb9c0a; }
 
 .text-secondary-orange {
-  color: #ee4900; }
+  color: #fb9c0a; }
 
 .color-tertiary-orange,
 .bg-tertiary-orange {
-  background-color: #fff3ee; }
+  background-color: white; }
 
 .text-tertiary-orange {
-  color: #fff3ee; }
+  color: white; }
 
 .color-primary-yellow,
 .bg-primary-yellow {
@@ -912,37 +914,25 @@ nav {
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
     ========================================================================== */
 @font-face {
-  font-family: 'NeueHaasGroteskDisp Pro Lt';
-  src: url("fonts/NHaasGroteskDSPro-45Lt.eot");
-  src: url("fonts/NHaasGroteskDSPro-45Lt.eot?#iefix") format("embedded-opentype"), url("fonts/NHaasGroteskDSPro-45Lt.woff") format("woff"), url("fonts/NHaasGroteskDSPro-45Lt.ttf") format("truetype"), url("fonts/NHaasGroteskDSPro-45Lt.svg#c13997a2298a59559618b48f712f1222") format("svg");
-  font-style: normal;
-  font-weight: 400; }
+  font-family: 'BebasNeueRegular';
+  src: url("fonts/BebasNeue-webfont.eot");
+  src: url("fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BebasNeue-webfont.woff") format("woff"), url("fonts/BebasNeue-webfont.ttf") format("truetype"), url("fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: 'NeueHaasGroteskDisp Pro';
-  src: url("fonts/NHaasGroteskDSPro-55Rg.eot");
-  src: url("fonts/NHaasGroteskDSPro-55Rg.eot?#iefix") format("embedded-opentype"), url("fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"), url("fonts/NHaasGroteskDSPro-55Rg.ttf") format("truetype"), url("fonts/NHaasGroteskDSPro-55Rg.svg#b6ad3c4b853b178e80a67cafd99e8515") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-@font-face {
-  font-family: 'NeueHaasGroteskDisp Pro 75';
-  src: url("fonts/NHaasGroteskDSPro-75Bd.eot");
-  src: url("fonts/NHaasGroteskDSPro-75Bd.eot?#iefix") format("embedded-opentype"), url("fonts/NHaasGroteskDSPro-75Bd.woff") format("woff"), url("fonts/NHaasGroteskDSPro-75Bd.ttf") format("truetype"), url("fonts/NHaasGroteskDSPro-75Bd.svg#3c83350684bc0527723a7e2b4313fd29") format("svg");
-  font-style: normal;
-  font-weight: 400; }
+  font-family: 'OswaldLight';
+  src: url("fonts/Oswald-Light-webfont.eot");
+  src: url("fonts/Oswald-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Oswald-Light-webfont.woff") format("woff"), url("fonts/Oswald-Light-webfont.ttf") format("truetype"), url("fonts/Oswald-Light-webfont.svg#OswaldLight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: "FontAwesome";
   src: url("fonts/icons/fontawesome-webfont.eot");
   src: url("fonts/icons/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/icons/fontawesome-webfont.svg#svgFontAwesome") format("svg"), url("fonts/icons/fontawesome-webfont.woff") format("woff"), url("fonts/icons/fontawesome-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-@font-face {
-  font-family: "GLGlyphs";
-  src: url("fonts/icons/GLGlyphs.eot?-a4mj0q");
-  src: url("fonts/icons/GLGlyphs.eot?#iefix-a4mj0q") format("embedded-opentype"), url("fonts/icons/GLGlyphs.woff?-a4mj0q") format("woff"), url("fonts/icons/GLGlyphs.ttf?-a4mj0q") format("truetype"), url("fonts/icons/GLGlyphs.svg?-a4mj0q#GLGlyphs") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 .base-font {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .base-font-alt {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -1022,7 +1012,11 @@ header {
   font-size: 1.2rem;
   color: currentColor;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: normal; }
+  @media (max-width: 40em) {
+    .heading {
+      width: 100%; } }
   .heading h2 {
     padding-top: 0.5em;
     padding-right: 1em;
@@ -1034,7 +1028,7 @@ header {
     margin-left: 0; }
   .heading p {
     position: absolute;
-    top: -.75em;
+    top: -.5em;
     right: 0;
     left: 0;
     letter-spacing: 1px; }
@@ -1052,7 +1046,7 @@ header {
 
 h1,
 .h1 {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 42px;
   font-size: 4.2rem;
   font-weight: 200; }
@@ -1069,7 +1063,7 @@ h1,
 
 h2,
 .h2 {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-size: 3.6rem;
   font-weight: 200; }
@@ -1086,7 +1080,7 @@ h2,
 
 h3,
 .h3 {
-  font-family: "NeueHaasGroteskDisp Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-size: 3rem;
   font-weight: 700; }
@@ -1103,21 +1097,21 @@ h3,
 
 h4,
 .h4 {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: 200; }
 
 h5,
 .h5 {
-  font-family: "NeueHaasGroteskDisp Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 700; }
 
 h6,
 .h6 {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 100; }
@@ -1156,7 +1150,7 @@ blockquote {
 
 p,
 .p {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   word-wrap: break-word; }
   p:only-child,
   .p:only-child {
@@ -1254,7 +1248,7 @@ samp {
 
 .logo_slash,
 .division {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   color: #ff675f;
@@ -2442,6 +2436,29 @@ dd {
   margin-left: 1em; }
 
 /* ==========================================================================
+    Banner -- Version: 0.2.1 - Compiled: timestamp()
+    ========================================================================== */
+.banner {
+  background: url("../images/line-pattern.png"), url("../images/banner.png");
+  height: 600px;
+  background-position: center;
+  color: white;
+  text-transform: uppercase; }
+  @media (max-width: 40em) {
+    .banner {
+      height: 300px; } }
+  .banner .resume:hover {
+    color: #ff372c;
+    text-decoration: none; }
+
+/* ==========================================================================
+    Footer -- Version: 0.2.1 - Compiled: timestamp()
+    ========================================================================== */
+footer {
+  background-color: #333;
+  color: white; }
+
+/* ==========================================================================
     Summary -- Version: 0.2.1 - Compiled: timestamp()
     ========================================================================== */
 details {
@@ -2498,17 +2515,18 @@ button,
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  padding-top: 0.375em;
+  padding-top: 0.25em;
   padding-right: 1em;
-  padding-bottom: 0.375em;
+  padding-bottom: 0.25em;
   padding-left: 1em;
   border-radius: 0;
   background-clip: padding-box;
   border: 0;
+  border-bottom: 3px solid transparent;
   background: none;
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-family: "NeueHaasGroteskDisp Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: center;
   color: inherit;
@@ -2517,7 +2535,8 @@ button,
   .button:hover,
   button:hover,
   .cta:hover {
-    background: #e5e5e5; }
+    background: #e5e5e5;
+    color: #454545; }
   .btn:focus,
   .button:focus,
   button:focus,
@@ -2532,6 +2551,7 @@ button,
   button.button-primary,
   .cta.btn-primary,
   .cta.button-primary {
+    border-bottom: 3px solid #ff372c;
     background: #ff675f;
     color: white; }
     .btn.btn-primary:hover, .btn.button-primary:hover,
@@ -2557,7 +2577,7 @@ button,
   .button.btn-success,
   button.btn-success,
   .cta.btn-success {
-    background: #008a8a;
+    background: #6fd57f;
     color: white; }
     .btn.btn-success:hover,
     .button.btn-success:hover,
@@ -2730,7 +2750,7 @@ button,
 
 /* ==========================================================================
     Tables -- Version: 0.4.1- Compiled: timestamp()
-   ========================================================================== */
+    ========================================================================== */
 .summary {
   background-color: #00bdbd;
   color: white; }
@@ -2738,16 +2758,50 @@ button,
     background-color: #00bdbd; }
 
 .skills {
-  background-color: #583c9c;
+  background-color: #f2f2f2;
   color: #454545; }
   .skills .heading span {
-    background-color: #583c9c; }
+    background-color: #f2f2f2; }
 
 .experience {
   background-color: #2bb3dd;
   color: white; }
   .experience .heading span {
     background-color: #2bb3dd; }
+
+.education {
+  background: url(../images/education.png) top right no-repeat;
+  color: #454545;
+  text-align: center; }
+  .education .overlay {
+    background-color: #e6e6e6; }
+
+.portfolio {
+  background-color: #cccccc;
+  color: #454545; }
+  .portfolio .heading span {
+    background-color: #cccccc; }
+
+.code_samples {
+  background-color: #ff675f;
+  color: white;
+  text-align: center; }
+  .code_samples .heading span {
+    background-color: #ff675f; }
+
+.contact {
+  background: url(../images/contact.png) top right no-repeat;
+  color: white;
+  box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868; }
+  .contact .overlay {
+    background: rgba(77, 109, 133, 0.65); }
+    .ie .contact .overlay {
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A64D6D85, endColorstr=#A64D6D85)";
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A64D6D85,endColorstr=#A64D6D85);
+      zoom: 1; }
+  .contact .heading span {
+    background-color: #4d6d85; }
 
 /* ==========================================================================
     Progress -- Version: 0.2.1 - Compiled: timestamp()
@@ -2941,7 +2995,7 @@ label + .pill,
   background: #cccccc;
   font-size: 13px;
   font-size: 1.3rem;
-  font-family: "NeueHaasGroteskDisp Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-weight: 700;
@@ -2974,7 +3028,7 @@ label + .pill,
     display: flex;
     align-items: center;
     min-width: 3em;
-    font-family: "GLGlyphs", Arial, Sans-Serif;
+    font-family: "FontAwesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
     padding: .25em 1em; }
@@ -2986,9 +3040,9 @@ label + .pill,
     content: "\75"; }
 
 .message-valid {
-  color: #008a8a; }
+  color: #6fd57f; }
   .message-valid:before {
-    background: #00f0f0;
+    background: #beecc5;
     content: "\43"; }
 
 .message-warning {
@@ -3016,7 +3070,7 @@ label + .pill,
 .valid-box {
   border-left: .3em solid currentColor;
   background: #8affff;
-  color: #008a8a; }
+  color: #6fd57f; }
 
 /* ==========================================================================
     Modals -- Version: 0.4.0.1 - Updated: 4/28/2014
@@ -3154,13 +3208,23 @@ select {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  border: 1px solid #e6e6e6;
-  outline: none;
+  border: 0;
   border-radius: 0;
   background-clip: padding-box;
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  color: inherit;
   will-change: transition;
   transition: all 0.2s ease-in-out; }
+  .ie input[type]:not([type=range]), .ie
+  textarea, .ie
+  select {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+    zoom: 1; }
   input[type]:not([type=range])[type='search'],
   textarea[type='search'],
   select[type='search'] {
@@ -3221,7 +3285,7 @@ input[type="range"] {
     height: 1em; }
 
 input::-webkit-datetime-edit-fields-wrapper {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 select,
 datalist,
@@ -3342,7 +3406,7 @@ input.radio:empty ~ label:after {
 
 input.switch:checked ~ label:before,
 input.radio:checked ~ label:before {
-  background: #008a8a; }
+  background: #6fd57f; }
 
 input.switch:checked ~ label:after {
   margin-left: 1.375em; }
@@ -3465,6 +3529,21 @@ figcaption {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#59000000, endColorstr=#59000000)";
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#59000000,endColorstr=#59000000);
       zoom: 1; }
+
+/* ==========================================================================
+    Portfolio -- Version: 0.2.1 - Compiled: timestamp()
+    ========================================================================== */
+.portfolio-gallery .cap {
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  background: white; }
+  .ie .portfolio-gallery .cap {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFFFFFFF)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF,endColorstr=#FFFFFFFF);
+    zoom: 1; }
 
 /* ==========================================================================
     Audio -- Version: 0.2.1 - Compiled: timestamp()

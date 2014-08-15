@@ -1,6 +1,6 @@
 /* ==========================================================================
     Tables -- Version: 0.4.1- Compiled: timestamp()
-   ========================================================================== */
+    ========================================================================== */
 .summary {
   background-color: #00bdbd;
   color: white;
@@ -10,11 +10,11 @@
 }
 
 .skills {
-  background-color: #583c9c;
+  background-color: #f2f2f2;
   color: #454545;
 }
 .skills .heading span {
-  background-color: #583c9c;
+  background-color: #f2f2f2;
 }
 
 .experience {
@@ -23,4 +23,49 @@
 }
 .experience .heading span {
   background-color: #2bb3dd;
+}
+
+.education {
+  background: url(../images/education.png) top right no-repeat;
+  color: #454545;
+  text-align: center;
+}
+.education .overlay {
+  background-color: #e6e6e6;
+}
+
+.portfolio {
+  background-color: #cccccc;
+  color: #454545;
+}
+.portfolio .heading span {
+  background-color: #cccccc;
+}
+
+.code_samples {
+  background-color: #ff675f;
+  color: white;
+  text-align: center;
+}
+.code_samples .heading span {
+  background-color: #ff675f;
+}
+
+.contact {
+  background: url(../images/contact.png) top right no-repeat;
+  color: white;
+  -webkit-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+  box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+}
+.contact .overlay {
+  background: rgba(77, 109, 133, 0.65);
+}
+.ie .contact .overlay {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A64D6D85, endColorstr=#A64D6D85)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A64D6D85,endColorstr=#A64D6D85);
+  zoom: 1;
+}
+.contact .heading span {
+  background-color: #4d6d85;
 }

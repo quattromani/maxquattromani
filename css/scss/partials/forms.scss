@@ -20,10 +20,13 @@
       max-width: 100%;
       @include padding(.35em, .5em);
       @include margin;
-      border: 1px solid $color-light-grey;
-      outline: none;
+      border: 0;
       @include border-radius;
+      outline: none;
+      @include rgba($color-black,.2);
+      font-family: $base-font;
       font-weight: 300;
+      color: inherit;
       @include transition(all, .2s, ease-in-out);
 
       &[type='search'] {

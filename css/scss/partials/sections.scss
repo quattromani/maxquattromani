@@ -3,32 +3,74 @@
 
 /* ==========================================================================
     Tables -- Version: 0.4.1- Compiled: #{timestamp()}
-   ========================================================================== */
+    ========================================================================== */
 
-.summary {
-  background-color: $color-primary-green;
-  color: $color-white;
+    .summary {
+      background-color: $color-primary-green;
+      color: $color-white;
 
-  .heading span {
-    background-color: $color-primary-green;
-  }
-}
+      .heading span {
+        background-color: $color-primary-green;
+      }
+    }
 
-.skills {
-  background-color: $color-primary-indigo;
-  color: $text;
+    .skills {
+      background-color: $color-off-white;
+      color: $text;
 
-  .heading span {
-    background-color: $color-primary-indigo;
-  }
-}
+      .heading span {
+        background-color: $color-off-white;
+      }
+    }
 
+    .experience {
+      background-color: $color-primary-blue;
+      color: $color-white;
 
-.experience {
-  background-color: $color-primary-blue;
-  color: $color-white;
+      .heading span {
+        background-color: $color-primary-blue;
+      }
+    }
 
-  .heading span {
-    background-color: $color-primary-blue;
-  }
-}
+    .education {
+      background:url(../images/education.png) top right no-repeat;
+      color: $text;
+      text-align: center;
+
+      .overlay {
+        background-color: $color-light-grey;
+      }
+    }
+
+    .portfolio {
+      background-color: $color-grey;
+      color: $text;
+
+      .heading span {
+        background-color: $color-grey;
+      }
+    }
+
+    .code_samples {
+      background-color: $color-primary-red;
+      color: $color-white;
+      text-align: center;
+
+      .heading span {
+        background-color: $color-primary-red;
+      }
+    }
+
+    .contact {
+      background: url(../images/contact.png) top right no-repeat;
+      color: $color-white;
+      box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+
+      .overlay {
+        @include rgba(#4d6d85,.65);
+      }
+
+      .heading span {
+        background-color: #4d6d85;
+      }
+    }

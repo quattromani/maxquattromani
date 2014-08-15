@@ -17,13 +17,15 @@ $(function() {
   });
 
   // Make the Nav sticky
-  var num = 200; //number of pixels before modifying styles
+  var num = 549; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
       $('nav').addClass('fixed');
+      $('nav').css('margin-top','0');
     } else {
       $('nav').removeClass('fixed');
+      $('nav').css('margin-top','-61px');
     }
   });
 });

@@ -12,11 +12,12 @@ button,
   @include inline-block();
   min-width: 3em;
   @include margin;
-  @include padding(.375em, $padding);
+  @include padding(.25em, $padding);
   @include border-radius;
   border: 0;
+  border-bottom: 3px solid transparent;
   background: none;
-  @include font-size($base-font-size);
+  @include font-size(24);
   font-family: $heading-font-alt;
   font-weight: 700;
   text-align: center;
@@ -25,6 +26,7 @@ button,
 
   &:hover {
     background: darken($color-off-white, 5%);
+    color: $text;
   }
 
   &:focus {
@@ -35,6 +37,7 @@ button,
 
   &.btn-primary,
   &.button-primary {
+    border-bottom: 3px solid $color-button-primary-hover;
     background: $color-button-primary;
     color: $color-white;
 

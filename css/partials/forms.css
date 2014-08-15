@@ -23,15 +23,26 @@ select {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  border: 1px solid #e6e6e6;
-  outline: none;
+  border: 0;
   border-radius: 0;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  color: inherit;
   will-change: transition;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.ie input[type]:not([type=range]), .ie
+textarea, .ie
+select {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+  zoom: 1;
 }
 input[type]:not([type=range])[type='search'],
 textarea[type='search'],
@@ -106,7 +117,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input::-webkit-datetime-edit-fields-wrapper {
-  font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 select,
@@ -253,7 +264,7 @@ input.radio:empty ~ label:after {
 
 input.switch:checked ~ label:before,
 input.radio:checked ~ label:before {
-  background: #008a8a;
+  background: #6fd57f;
 }
 
 input.switch:checked ~ label:after {

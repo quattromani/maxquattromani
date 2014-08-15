@@ -1,0 +1,26 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Banner -- Version: 0.2.1 - Compiled: #{timestamp()}
+    ========================================================================== */
+
+    .banner {
+      background: url('../images/line-pattern.png'),url('../images/banner.png');
+      height: 600px;
+      background-position: center;
+      color: $color-white;
+      text-transform: uppercase;
+
+      @include bp(bp-small) {
+        height: 300px;
+      }
+
+      .resume {
+        &:hover {
+          color: $color-secondary-red;
+          text-decoration: none;
+        }
+      }
+    }
+

@@ -133,11 +133,11 @@
 
 .color-success,
 .bg-success {
-  background-color: #008a8a;
+  background-color: #6fd57f;
 }
 
 .text-success {
-  color: #008a8a;
+  color: #6fd57f;
 }
 
 .color-error,
@@ -214,11 +214,11 @@
 
 .color-secondary-green,
 .bg-secondary-green {
-  background-color: #008a8a;
+  background-color: #6fd57f;
 }
 
 .text-secondary-green {
-  color: #008a8a;
+  color: #6fd57f;
 }
 
 .color-tertiary-green,
@@ -259,29 +259,29 @@
 
 .color-primary-orange,
 .bg-primary-orange {
-  background-color: #ff6622;
+  background-color: #fcb03c;
 }
 
 .text-primary-orange {
-  color: #ff6622;
+  color: #fcb03c;
 }
 
 .color-secondary-orange,
 .bg-secondary-orange {
-  background-color: #ee4900;
+  background-color: #fb9c0a;
 }
 
 .text-secondary-orange {
-  color: #ee4900;
+  color: #fb9c0a;
 }
 
 .color-tertiary-orange,
 .bg-tertiary-orange {
-  background-color: #fff3ee;
+  background-color: white;
 }
 
 .text-tertiary-orange {
-  color: #fff3ee;
+  color: white;
 }
 
 .color-primary-yellow,

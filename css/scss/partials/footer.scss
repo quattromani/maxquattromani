@@ -1,0 +1,12 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Footer -- Version: 0.2.1 - Compiled: #{timestamp()}
+    ========================================================================== */
+
+    footer {
+      background-color: #333;
+      color: $color-white;
+    }
+

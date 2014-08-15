@@ -8,7 +8,9 @@
     nav {
       position: relative;
       width: 100%;
+      margin-top: -61px; // magic number to pull nav up overlay banner
       @include rgba($color-black, .5);
+      text-transform: uppercase;
       z-index: 9;
 
       .container {

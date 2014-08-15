@@ -1,0 +1,14 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Portfolio -- Version: 0.2.1 - Compiled: #{timestamp()}
+    ========================================================================== */
+
+    .portfolio-gallery {
+      .cap {
+        @include padding(.5em, 1em);
+        @include rgba($color-white, 1);
+      }
+    }
+

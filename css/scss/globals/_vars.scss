@@ -36,13 +36,13 @@ $color-light-light-grey: lighten($color-grey, 45%);
 $color-primary-red: #ff675f;
 $color-primary-green: #00bdbd;
 $color-primary-blue: #2bb3dd;
-$color-primary-orange: #f62;
+$color-primary-orange: #fcb03c;
 $color-primary-yellow: #ffda21;
 $color-primary-indigo: #583c9c;
 $color-primary-violet: #8d25bb;
 
 $color-secondary-red: darken($color-primary-red, 10%);
-$color-secondary-green: darken($color-primary-green, 10%);
+$color-secondary-green: #6fd57f;
 $color-secondary-blue: darken($color-primary-blue, 10%);
 $color-secondary-orange: darken($color-primary-orange, 10%);
 $color-secondary-yellow: darken($color-primary-yellow, 10%);
@@ -100,14 +100,13 @@ $font-weight-bold: 900;
 // $google-fonts-url: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro';
 
 // Font Families
-$base-font: 'NeueHaasGroteskDisp Pro Lt', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font: 'OswaldLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $base-font-alt: $arial;
 $arial-bold: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-$heading-font: $base-font;
-$heading-font-alt: 'NeueHaasGroteskDisp Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font: 'BebasNeueRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font-alt: 'BebasNeueRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fontawesome: 'FontAwesome';
-$GLGlyphs: 'GLGlyphs';
 $pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
 
 $heading-list: (

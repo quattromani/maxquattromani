@@ -4,7 +4,9 @@
 nav {
   position: relative;
   width: 100%;
+  margin-top: -61px;
   background: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
   z-index: 9;
 }
 .ie nav {
@@ -97,14 +99,14 @@ nav input[type=checkbox]:checked ~ .navigation {
   background: #2bb3dd;
 }
 nav input[type=checkbox]:checked ~ .navigation li {
-  border-top: 1px solid #00a3a4;
+  border-top: 1px solid #83db91;
   background: #00a3a4;
 }
 nav input[type=checkbox]:checked ~ .navigation li:first-child {
   border: none;
 }
 nav input[type=checkbox]:checked ~ .navigation li li {
-  background: #008a8a;
+  background: #6fd57f;
 }
 nav input[type=checkbox]:checked ~ .navigation > li.js-last {
   margin-bottom: .5em;

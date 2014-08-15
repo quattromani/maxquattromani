@@ -1,41 +1,72 @@
-<div class="contact" id="contact">
-  {% include content.html %}
+<div class="contact-border"></div>
+<section class="contact" id="contact">
+  <div class="overlay">
 
-  <div class="row">
-    <div class="third">
-      <aside>
-        <h4>Contact Information</h4>
-        <address>
-          7637 Nuthatch Cir / Parker / CO 80134<br>
-          <a class="tel" href="tel:+3038757843">303-875-7843</a><br>
-          <a href="mailto:max@maxquattromani.com">max@maxquattromani.com</a>
-        </address>
-      </aside>
+    {% include content.html %}
+
+    <header role="banner">
+      <div class="heading">
+        <h2>Contact Me</h2>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="third">
+        <aside>
+          <h4>Contact Information</h4>
+          <address>
+          <h6>Max Quattromani</h6>
+            7637 Nuthatch Cir / Parker / CO 80134<br><br>
+            <h6>Telephone</h6>
+            <a class="tel" href="tel:+3038757843">303-875-7843</a><br><br>
+            <h6>Email</h6>
+            <a href="mailto:max@maxquattromani.com">max@maxquattromani.com</a>
+          </address>
+        </aside>
+      </div>
+
+      <div class="two-thirds">
+        <h4>Let's Talk</h4>
+
+        <form action="">
+          <fieldset>
+
+            <div class="row">
+              <div class="half">
+                <div class="formitem">
+                  <label for="name" class="visually-hidden">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Name" tabindex="1" required>
+                </div>
+              </div>
+              <div class="half">
+                <div class="formitem">
+                  <label for="email" class="visually-hidden">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Email Address" tabindex="2" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="formitem">
+                <label for="textarea" class="visually-hidden">Send me a message:</label>
+                <textarea id="textarea" placeholder="Message" tabindex="3"></textarea>
+              </div>
+            </div>
+
+          </fieldset>
+          <button class="btn btn-primary" type="submit" name="submit" value="submit">
+            <span>Submit</span>
+          </button>
+
+          <button type="reset" name="reset" value="reset">
+            <span>Clear</span>
+          </button>
+        </form>
+      </div>
     </div>
 
-    <div class="two-thirds">
-      <h4>Let's Talk</h4>
-
-      <form action="">
-        <fieldset>
-          <div class="row">
-            <div class="half">
-              <label for="name" class="visually-hidden">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name" tabindex="1" required>
-            </div>
-            <div class="half">
-              <label for="email" class="visually-hidden">Email</label>
-              <input type="text" id="email" name="email" placeholder="Email Address" tabindex="2" required>
-            </div>
-          </div>
-
-          <label for="textarea" class="visually-hidden">Send me a message:</label>
-          <textarea id="textarea" placeholder="Message" tabindex="3"></textarea>
-        </fieldset>
-      </form>
-    </div>
+    {% include end_content.html %}
   </div>
-
-  {% include end_content.html %}
-</div>
+</section>
+<div class="contact-border"></div>
 <!-- /.contact -->

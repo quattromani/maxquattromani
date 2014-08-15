@@ -1,0 +1,19 @@
+/* ==========================================================================
+    Banner -- Version: 0.2.1 - Compiled: timestamp()
+    ========================================================================== */
+.banner {
+  background: url("../images/line-pattern.png"), url("../images/banner.png");
+  height: 600px;
+  background-position: center;
+  color: white;
+  text-transform: uppercase;
+}
+@media (max-width: 40em) {
+  .banner {
+    height: 300px;
+  }
+}
+.banner .resume:hover {
+  color: #ff372c;
+  text-decoration: none;
+}
