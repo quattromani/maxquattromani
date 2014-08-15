@@ -45,18 +45,18 @@
 }
 
 .message-valid {
-  color: #308e28;
+  color: #008a8a;
 }
 .message-valid:before {
-  background: #59ce4e;
+  background: #00f0f0;
   content: "\43";
 }
 
 .message-warning {
-  color: #ef272d;
+  color: #ff675f;
 }
 .message-warning:before {
-  background: #f68689;
+  background: #ffc8c5;
   content: "\33";
 }
 
@@ -73,18 +73,18 @@
 }
 .info-box {
   border-left: .3em solid currentColor;
-  background: #bae7ff;
-  color: #0078ba;
+  background: #dbf2f9;
+  color: #1d93b8;
 }
 
 .error-box {
   border-left: .3em solid currentColor;
-  background: #fde5e6;
-  color: #d31016;
+  background: white;
+  color: #ff372c;
 }
 
 .valid-box {
   border-left: .3em solid currentColor;
-  background: #c9efc6;
-  color: #308e28;
+  background: #8affff;
+  color: #008a8a;
 }

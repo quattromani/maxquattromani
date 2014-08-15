@@ -1,0 +1,34 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Tables -- Version: 0.4.1- Compiled: #{timestamp()}
+   ========================================================================== */
+
+.summary {
+  background-color: $color-primary-green;
+  color: $color-white;
+
+  .heading span {
+    background-color: $color-primary-green;
+  }
+}
+
+.skills {
+  background-color: $color-primary-indigo;
+  color: $text;
+
+  .heading span {
+    background-color: $color-primary-indigo;
+  }
+}
+
+
+.experience {
+  background-color: $color-primary-blue;
+  color: $color-white;
+
+  .heading span {
+    background-color: $color-primary-blue;
+  }
+}

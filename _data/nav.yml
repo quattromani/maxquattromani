@@ -1,0 +1,27 @@
+- name: "Summary"
+  url: "#summary"
+  active: "summary"
+
+- name: "Skills"
+  url: "#skills"
+  active: "skills"
+
+- name: "Experience"
+  url: "#experience"
+  active: "experience"
+
+- name: "Education"
+  url: "#education"
+  active: "education"
+
+- name: "Portfolio"
+  url: "#portfolio"
+  active: "portfolio"
+
+- name: "Code Samples"
+  url: "#code_samples"
+  active: "code_samples"
+
+- name: "Contact"
+  url: "#contact"
+  active: "contact"

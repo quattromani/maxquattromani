@@ -1,0 +1,29 @@
+<div class="contact" id="contact">
+  {% include content.html %}
+
+  <aside>
+    <h4>Contact Information</h4>
+    <address>
+      7637 Nuthatch Cir / Parker / CO 80134<br>
+      <a class="tel" href="tel:+3038757843">303-875-7843</a><br>
+      <a href="mailto:max@maxquattromani.com">max@maxquattromani.com</a>
+    </address>
+  </aside>
+
+  <h4>Let's Talk</h4>
+  <form action="">
+    <fieldset>
+      <label for="name" class="visually-hidden">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" tabindex="1" required>
+
+      <label for="email" class="visually-hidden">Email</label>
+      <input type="text" id="email" name="email" placeholder="Email Address" tabindex="2" required>
+
+      <label for="textarea" class="visually-hidden">Send me a message:</label>
+      <textarea id="textarea" tabindex="3"></textarea>
+    </fieldset>
+  </form>
+
+  {% include end_content.html %}
+</div>
+<!-- /.contact -->

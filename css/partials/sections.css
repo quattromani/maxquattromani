@@ -1,0 +1,26 @@
+/* ==========================================================================
+    Tables -- Version: 0.4.1- Compiled: timestamp()
+   ========================================================================== */
+.summary {
+  background-color: #00bdbd;
+  color: white;
+}
+.summary .heading span {
+  background-color: #00bdbd;
+}
+
+.skills {
+  background-color: #583c9c;
+  color: #454545;
+}
+.skills .heading span {
+  background-color: #583c9c;
+}
+
+.experience {
+  background-color: #2bb3dd;
+  color: white;
+}
+.experience .heading span {
+  background-color: #2bb3dd;
+}

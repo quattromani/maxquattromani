@@ -115,56 +115,56 @@
 
 .color-link,
 .bg-link {
-  background-color: #ef272d;
+  background-color: inherit;
 }
 
 .text-link {
-  color: #ef272d;
+  color: inherit;
 }
 
 .color-info,
 .bg-info {
-  background-color: #0099ed;
+  background-color: #2bb3dd;
 }
 
 .text-info {
-  color: #0099ed;
+  color: #2bb3dd;
 }
 
 .color-success,
 .bg-success {
-  background-color: #308e28;
+  background-color: #008a8a;
 }
 
 .text-success {
-  color: #308e28;
+  color: #008a8a;
 }
 
 .color-error,
 .bg-error {
-  background-color: #d31016;
+  background-color: #ff372c;
 }
 
 .text-error {
-  color: #d31016;
+  color: #ff372c;
 }
 
 .color-is-error,
 .bg-is-error {
-  background-color: #d31016;
+  background-color: #ff372c;
 }
 
 .text-is-error {
-  color: #d31016;
+  color: #ff372c;
 }
 
 .color-warning,
 .bg-warning {
-  background-color: #d31016;
+  background-color: #ff372c;
 }
 
 .text-warning {
-  color: #d31016;
+  color: #ff372c;
 }
 
 .color-muted,
@@ -178,83 +178,83 @@
 
 .color-primary-red,
 .bg-primary-red {
-  background-color: #ef272d;
+  background-color: #ff675f;
 }
 
 .text-primary-red {
-  color: #ef272d;
+  color: #ff675f;
 }
 
 .color-secondary-red,
 .bg-secondary-red {
-  background-color: #d31016;
+  background-color: #ff372c;
 }
 
 .text-secondary-red {
-  color: #d31016;
+  color: #ff372c;
 }
 
 .color-tertiary-red,
 .bg-tertiary-red {
-  background-color: #fde5e6;
+  background-color: white;
 }
 
 .text-tertiary-red {
-  color: #fde5e6;
+  color: white;
 }
 
 .color-primary-green,
 .bg-primary-green {
-  background-color: #3eb633;
+  background-color: #00bdbd;
 }
 
 .text-primary-green {
-  color: #3eb633;
+  color: #00bdbd;
 }
 
 .color-secondary-green,
 .bg-secondary-green {
-  background-color: #308e28;
+  background-color: #008a8a;
 }
 
 .text-secondary-green {
-  color: #308e28;
+  color: #008a8a;
 }
 
 .color-tertiary-green,
 .bg-tertiary-green {
-  background-color: #c9efc6;
+  background-color: #8affff;
 }
 
 .text-tertiary-green {
-  color: #c9efc6;
+  color: #8affff;
 }
 
 .color-primary-blue,
 .bg-primary-blue {
-  background-color: #0099ed;
+  background-color: #2bb3dd;
 }
 
 .text-primary-blue {
-  color: #0099ed;
+  color: #2bb3dd;
 }
 
 .color-secondary-blue,
 .bg-secondary-blue {
-  background-color: #0078ba;
+  background-color: #1d93b8;
 }
 
 .text-secondary-blue {
-  color: #0078ba;
+  color: #1d93b8;
 }
 
 .color-tertiary-blue,
 .bg-tertiary-blue {
-  background-color: #bae7ff;
+  background-color: #dbf2f9;
 }
 
 .text-tertiary-blue {
-  color: #bae7ff;
+  color: #dbf2f9;
 }
 
 .color-primary-orange,

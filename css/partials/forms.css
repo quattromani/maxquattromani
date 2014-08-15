@@ -223,7 +223,7 @@ input.radio:empty ~ label:after {
   content: ' ';
   width: 2.5em;
   height: 1.5em;
-  background: #ef272d;
+  background: #ff675f;
   border-radius: 100px;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -253,7 +253,7 @@ input.radio:empty ~ label:after {
 
 input.switch:checked ~ label:before,
 input.radio:checked ~ label:before {
-  background: #308e28;
+  background: #008a8a;
 }
 
 input.switch:checked ~ label:after {

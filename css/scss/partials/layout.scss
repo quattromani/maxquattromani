@@ -8,7 +8,7 @@
 .content {
   position: relative;
   overflow: auto;
-  @include padding(($padding), 0);
+  @include padding(($padding * 3), 0);
   z-index: 0;
 }
 

@@ -1,8 +1,8 @@
 // Base Site Settings
-$site-width: 960px;
+$site-width: 1024px;
 
 // Navigation
-$nav-items: 5;
+$nav-items: 7;
 
 // ---------------------------------------------------------------------- //
 
@@ -33,9 +33,9 @@ $color-dark-grey: darken($color-grey, 10%);
 $color-light-grey: lighten($color-grey, 10%);
 $color-light-light-grey: lighten($color-grey, 45%);
 
-$color-primary-red: #ef272d;
-$color-primary-green: #3eb633;
-$color-primary-blue: #0099ed;
+$color-primary-red: #ff675f;
+$color-primary-green: #00bdbd;
+$color-primary-blue: #2bb3dd;
 $color-primary-orange: #f62;
 $color-primary-yellow: #ffda21;
 $color-primary-indigo: #583c9c;
@@ -60,8 +60,8 @@ $color-tertiary-violet: lighten($color-primary-violet, 40%);
 // Typography
 $text: #454545;
 $text-color: $text;
-$link: $color-primary-red;
-$link-hover: $color-secondary-red;
+$link: inherit;
+$link-hover: inherit;
 $text-grey: $color-grey;
 $text-light-grey: $color-light-grey;
 $text-link: $link;

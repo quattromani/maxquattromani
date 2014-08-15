@@ -157,6 +157,25 @@ $(function() {
   // Add classes to first and last of each list
   $('li:first-child').addClass('js-first');
   $('li:last-child').addClass('js-last');
+
+  // Scroll to anchored link in Nav
+  $('nav a').click(function(){
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+  });
+
+  // Make the Nav sticky
+  var num = 200; //number of pixels before modifying styles
+
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+      $('nav').addClass('fixed');
+    } else {
+      $('nav').removeClass('fixed');
+    }
+  });
 });
 
 // Set year
@@ -171,6 +190,7 @@ $(function() {
 }(jQuery));
 
 $('.getYear').getYear();
+
 /* ==========================================================================
     Modal -- Version: 1.9.0.0 - Updated: 4/28/2014
     ========================================================================== */

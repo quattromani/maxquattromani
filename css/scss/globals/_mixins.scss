@@ -122,9 +122,9 @@ $marginless-col-width: $width / $site-column-count;
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
 }
 
 @mixin order($val) {

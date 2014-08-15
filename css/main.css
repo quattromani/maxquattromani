@@ -60,15 +60,15 @@ textarea {
 .content {
   position: relative;
   overflow: auto;
-  padding-top: 1em;
+  padding-top: 3em;
   padding-right: 0;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   padding-left: 0;
   z-index: 0; }
 
 .container {
   display: block;
-  max-width: 960px;
+  max-width: 1024px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -509,16 +509,101 @@ hr {
 /* Modules */
 /* ==========================================================================
     Nav -- Version: 0.4.0 - Compiled: timestamp()
-   ========================================================================== */
-nav .container {
-  display: table;
-  width: 100%; }
-nav ul {
-  display: table-row;
-  width: 100%; }
-  nav ul li {
-    display: table-cell;
-    width: 20%; }
+    ========================================================================== */
+nav {
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9; }
+  .ie nav {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+    zoom: 1; }
+  nav .container {
+    display: table;
+    width: 100%; }
+  nav ul {
+    display: table-row;
+    width: 100%; }
+    nav ul.navigation > li {
+      font-size: 18px;
+      font-size: 1.8rem; }
+    nav ul li {
+      position: relative;
+      display: table-cell;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      font-size: 16px;
+      font-size: 1.6rem; }
+      nav ul li:hover {
+        background: #00bdbd; }
+      nav ul li a {
+        display: block;
+        padding-top: 1em;
+        padding-right: 0.75em;
+        padding-bottom: 1em;
+        padding-left: 0.75em;
+        font-weight: 200;
+        vertical-align: middle;
+        color: white; }
+        nav ul li a:hover {
+          color: white;
+          border: none; }
+      nav ul li.active {
+        background: #00bdbd; }
+      @media (max-width: 62em) {
+        nav ul li {
+          display: block;
+          width: 100%; }
+          nav ul li:hover ul {
+            display: none; }
+          nav ul li ul.hidden {
+            display: block; }
+            nav ul li ul.hidden li {
+              padding-left: 1em; } }
+    @media (max-width: 62em) {
+      nav ul {
+        position: static;
+        display: none; } }
+  nav .show-menu {
+    display: none;
+    padding-top: 0.5em;
+    padding-right: 0;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    color: white; }
+    @media (max-width: 62em) {
+      nav .show-menu {
+        display: block; } }
+  nav input[type=checkbox] {
+    display: none; }
+  nav input[type=checkbox]:checked ~ .navigation {
+    display: block;
+    background: #2bb3dd; }
+    nav input[type=checkbox]:checked ~ .navigation li {
+      border-top: 1px solid #00a3a4;
+      background: #00a3a4; }
+      nav input[type=checkbox]:checked ~ .navigation li:first-child {
+        border: none; }
+    nav input[type=checkbox]:checked ~ .navigation li li {
+      background: #008a8a; }
+    nav input[type=checkbox]:checked ~ .navigation > li.js-last {
+      margin-bottom: .5em; }
+  @media (max-width: 62em) {
+    nav {
+      margin-bottom: -38px; } }
+  @media (max-width: 40em) {
+    .home nav {
+      margin-bottom: -47px; } }
+  .ie8 nav {
+    background-color: #cccccc; }
+
+.fixed {
+  position: fixed;
+  top: 0; }
 
 /* ==========================================================================
     Colors & Gradients -- Version: 0.4.3 - Compiled: timestamp()
@@ -620,45 +705,45 @@ nav ul {
 
 .color-link,
 .bg-link {
-  background-color: #ef272d; }
+  background-color: inherit; }
 
 .text-link {
-  color: #ef272d; }
+  color: inherit; }
 
 .color-info,
 .bg-info {
-  background-color: #0099ed; }
+  background-color: #2bb3dd; }
 
 .text-info {
-  color: #0099ed; }
+  color: #2bb3dd; }
 
 .color-success,
 .bg-success {
-  background-color: #308e28; }
+  background-color: #008a8a; }
 
 .text-success {
-  color: #308e28; }
+  color: #008a8a; }
 
 .color-error,
 .bg-error {
-  background-color: #d31016; }
+  background-color: #ff372c; }
 
 .text-error {
-  color: #d31016; }
+  color: #ff372c; }
 
 .color-is-error,
 .bg-is-error {
-  background-color: #d31016; }
+  background-color: #ff372c; }
 
 .text-is-error {
-  color: #d31016; }
+  color: #ff372c; }
 
 .color-warning,
 .bg-warning {
-  background-color: #d31016; }
+  background-color: #ff372c; }
 
 .text-warning {
-  color: #d31016; }
+  color: #ff372c; }
 
 .color-muted,
 .bg-muted {
@@ -669,66 +754,66 @@ nav ul {
 
 .color-primary-red,
 .bg-primary-red {
-  background-color: #ef272d; }
+  background-color: #ff675f; }
 
 .text-primary-red {
-  color: #ef272d; }
+  color: #ff675f; }
 
 .color-secondary-red,
 .bg-secondary-red {
-  background-color: #d31016; }
+  background-color: #ff372c; }
 
 .text-secondary-red {
-  color: #d31016; }
+  color: #ff372c; }
 
 .color-tertiary-red,
 .bg-tertiary-red {
-  background-color: #fde5e6; }
+  background-color: white; }
 
 .text-tertiary-red {
-  color: #fde5e6; }
+  color: white; }
 
 .color-primary-green,
 .bg-primary-green {
-  background-color: #3eb633; }
+  background-color: #00bdbd; }
 
 .text-primary-green {
-  color: #3eb633; }
+  color: #00bdbd; }
 
 .color-secondary-green,
 .bg-secondary-green {
-  background-color: #308e28; }
+  background-color: #008a8a; }
 
 .text-secondary-green {
-  color: #308e28; }
+  color: #008a8a; }
 
 .color-tertiary-green,
 .bg-tertiary-green {
-  background-color: #c9efc6; }
+  background-color: #8affff; }
 
 .text-tertiary-green {
-  color: #c9efc6; }
+  color: #8affff; }
 
 .color-primary-blue,
 .bg-primary-blue {
-  background-color: #0099ed; }
+  background-color: #2bb3dd; }
 
 .text-primary-blue {
-  color: #0099ed; }
+  color: #2bb3dd; }
 
 .color-secondary-blue,
 .bg-secondary-blue {
-  background-color: #0078ba; }
+  background-color: #1d93b8; }
 
 .text-secondary-blue {
-  color: #0078ba; }
+  color: #1d93b8; }
 
 .color-tertiary-blue,
 .bg-tertiary-blue {
-  background-color: #bae7ff; }
+  background-color: #dbf2f9; }
 
 .text-tertiary-blue {
-  color: #bae7ff; }
+  color: #dbf2f9; }
 
 .color-primary-orange,
 .bg-primary-orange {
@@ -825,7 +910,7 @@ nav ul {
 
 /* ==========================================================================
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
-   ========================================================================== */
+    ========================================================================== */
 @font-face {
   font-family: 'NeueHaasGroteskDisp Pro Lt';
   src: url("fonts/NHaasGroteskDSPro-45Lt.eot");
@@ -903,7 +988,7 @@ a {
   vertical-align: baseline;
   font-family: inherit;
   font-weight: 700;
-  color: #ef272d;
+  color: inherit;
   text-decoration: none;
   cursor: pointer;
   will-change: transition;
@@ -912,13 +997,59 @@ a {
     border: 0 none;
     text-decoration: none; }
   a:hover {
-    color: #d31016; }
+    border-bottom: 1px dotted currentColor; }
   a.muted, .muted a {
     color: #e6e6e6; }
 
 /* ==========================
 	  Headings
    ========================== */
+header {
+  text-align: center; }
+
+.heading {
+  position: relative;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  margin-top: 3em;
+  margin-right: 0;
+  margin-bottom: 3em;
+  margin-left: 0;
+  border: 1px solid currentColor;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: currentColor;
+  text-align: center;
+  text-transform: uppercase; }
+  .heading h2 {
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0; }
+  .heading p {
+    position: absolute;
+    top: -.75em;
+    right: 0;
+    left: 0;
+    letter-spacing: 1px; }
+  .heading span {
+    padding-top: 0;
+    padding-right: 1em;
+    padding-bottom: 0;
+    padding-left: 1em;
+    background: white; }
+    .ie .heading span {
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFFFFFFF)";
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF,endColorstr=#FFFFFFFF);
+      zoom: 1; }
+
 h1,
 .h1 {
   font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1095,11 +1226,11 @@ pre {
 kbd,
 samp {
   font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-  color: #3eb633; }
+  color: #00bdbd; }
 
 .valid,
 .is-valid {
-  color: #3eb633; }
+  color: #00bdbd; }
 
 .code-comment {
   filter: alpha(opacity=50);
@@ -1115,7 +1246,7 @@ samp {
 
 /* ==========================
     Logo
-   ========================== */
+    ========================== */
 .GLG {
   font-family: "NeueHaasGroteskDisp Pro 75", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bolder;
@@ -1126,7 +1257,7 @@ samp {
   font-family: "NeueHaasGroteskDisp Pro Lt", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
-  color: #ef272d;
+  color: #ff675f;
   font-weight: 200; }
 
 .division {
@@ -2380,7 +2511,7 @@ button,
   font-family: "NeueHaasGroteskDisp Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: center;
-  color: #ef272d;
+  color: inherit;
   cursor: pointer; }
   .btn:hover,
   .button:hover,
@@ -2401,7 +2532,7 @@ button,
   button.button-primary,
   .cta.btn-primary,
   .cta.button-primary {
-    background: #ef272d;
+    background: #ff675f;
     color: white; }
     .btn.btn-primary:hover, .btn.button-primary:hover,
     .button.btn-primary:hover,
@@ -2410,40 +2541,40 @@ button,
     button.button-primary:hover,
     .cta.btn-primary:hover,
     .cta.button-primary:hover {
-      background: #d31016; }
+      background: #ff372c; }
   .btn.btn-error,
   .button.btn-error,
   button.btn-error,
   .cta.btn-error {
-    background: #ef272d;
+    background: #ff675f;
     color: white; }
     .btn.btn-error:hover,
     .button.btn-error:hover,
     button.btn-error:hover,
     .cta.btn-error:hover {
-      background: #f89ea0; }
+      background: #ffe0df; }
   .btn.btn-success,
   .button.btn-success,
   button.btn-success,
   .cta.btn-success {
-    background: #308e28;
+    background: #008a8a;
     color: white; }
     .btn.btn-success:hover,
     .button.btn-success:hover,
     button.btn-success:hover,
     .cta.btn-success:hover {
-      background: #3eb633; }
+      background: #00bdbd; }
   .btn.btn-info,
   .button.btn-info,
   button.btn-info,
   .cta.btn-info {
-    background: #0099ed;
+    background: #2bb3dd;
     color: white; }
     .btn.btn-info:hover,
     .button.btn-info:hover,
     button.btn-info:hover,
     .cta.btn-info:hover {
-      background: #54c2ff; }
+      background: #83d3eb; }
   .btn.btn-black,
   .button.btn-black,
   button.btn-black,
@@ -2563,10 +2694,10 @@ button,
         margin-top: 1em; } }
 
 .cta {
-  box-shadow: inset 0 0 0 1px #ef272d; }
+  box-shadow: inset 0 0 0 1px #ff675f; }
   .cta:hover {
     background: none;
-    box-shadow: inset 0 0 0 1px #d31016; }
+    box-shadow: inset 0 0 0 1px #ff372c; }
 
 @-webkit-keyframes rotation {
   from {
@@ -2596,6 +2727,27 @@ button,
 .ie button {
   overflow: visible;
   width: auto; }
+
+/* ==========================================================================
+    Tables -- Version: 0.4.1- Compiled: timestamp()
+   ========================================================================== */
+.summary {
+  background-color: #00bdbd;
+  color: white; }
+  .summary .heading span {
+    background-color: #00bdbd; }
+
+.skills {
+  background-color: #583c9c;
+  color: #454545; }
+  .skills .heading span {
+    background-color: #583c9c; }
+
+.experience {
+  background-color: #2bb3dd;
+  color: white; }
+  .experience .heading span {
+    background-color: #2bb3dd; }
 
 /* ==========================================================================
     Progress -- Version: 0.2.1 - Compiled: timestamp()
@@ -2650,7 +2802,7 @@ button,
     display: block;
     width: attr(value);
     height: .5em;
-    background-color: #ef272d;
+    background-color: #ff675f;
     text-indent: -9999px; }
     .progress-bar-element .progress-bar-container .progress-bar span:after {
       position: absolute;
@@ -2700,7 +2852,7 @@ button,
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
           zoom: 1; }
     .progress-bar-element .progress-bar-container .badges.current {
-      border-right: 3px solid #ef272d;
+      border-right: 3px solid #ff675f;
       background: rgba(0, 0, 0, 0.05); }
       .ie .progress-bar-element .progress-bar-container .badges.current {
         background: transparent;
@@ -2710,7 +2862,7 @@ button,
     .progress-bar-element .progress-bar-container .badges.future {
       border-top: 1px solid rgba(0, 0, 0, 0.1); }
       .progress-bar-element .progress-bar-container .badges.future li:hover a {
-        color: #ef272d; }
+        color: #ff675f; }
       .progress-bar-element .progress-bar-container .badges.future li:hover li {
         color: #454545; }
     .progress-bar-element .progress-bar-container .badges .data {
@@ -2798,10 +2950,10 @@ label + .pill,
     background: white;
     box-shadow: inset 0 0 0 1px #454545; }
   .pill-error {
-    background: #ef272d;
+    background: #ff675f;
     color: white; }
   .pill-success {
-    background: #3eb633;
+    background: #00bdbd;
     color: white; }
 
 /* ==========================================================================
@@ -2834,15 +2986,15 @@ label + .pill,
     content: "\75"; }
 
 .message-valid {
-  color: #308e28; }
+  color: #008a8a; }
   .message-valid:before {
-    background: #59ce4e;
+    background: #00f0f0;
     content: "\43"; }
 
 .message-warning {
-  color: #ef272d; }
+  color: #ff675f; }
   .message-warning:before {
-    background: #f68689;
+    background: #ffc8c5;
     content: "\33"; }
 
 @-webkit-keyframes rotation {
@@ -2853,18 +3005,18 @@ label + .pill,
     transform: rotate(359deg); } }
 .info-box {
   border-left: .3em solid currentColor;
-  background: #bae7ff;
-  color: #0078ba; }
+  background: #dbf2f9;
+  color: #1d93b8; }
 
 .error-box {
   border-left: .3em solid currentColor;
-  background: #fde5e6;
-  color: #d31016; }
+  background: white;
+  color: #ff372c; }
 
 .valid-box {
   border-left: .3em solid currentColor;
-  background: #c9efc6;
-  color: #308e28; }
+  background: #8affff;
+  color: #008a8a; }
 
 /* ==========================================================================
     Modals -- Version: 0.4.0.1 - Updated: 4/28/2014
@@ -3166,7 +3318,7 @@ input.radio:empty ~ label:after {
   content: ' ';
   width: 2.5em;
   height: 1.5em;
-  background: #ef272d;
+  background: #ff675f;
   border-radius: 100px;
   background-clip: padding-box;
   will-change: transition;
@@ -3190,7 +3342,7 @@ input.radio:empty ~ label:after {
 
 input.switch:checked ~ label:before,
 input.radio:checked ~ label:before {
-  background: #308e28; }
+  background: #008a8a; }
 
 input.switch:checked ~ label:after {
   margin-left: 1.375em; }
@@ -3225,7 +3377,7 @@ input.switch:checked ~ label:after {
   padding-right: 0.2em;
   padding-bottom: 0.2em;
   padding-left: 0.2em;
-  background: #ef272d;
+  background: #ff675f;
   color: white; }
 
 /* ==========================================================================
@@ -3237,7 +3389,7 @@ img {
   height: auto;
   border: 0;
   font-style: italics;
-  color: #ef272d; }
+  color: #ff675f; }
   img:after {
     content: " (image)"; }
 
@@ -3458,7 +3610,7 @@ hr {
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
-  color: #0099ed;
+  color: #2bb3dd;
   text-align: center; }
 
 @media (max-width: 40em) {
@@ -3517,8 +3669,8 @@ hr {
 .styleguide .grid {
   border-radius: 0;
   background-clip: padding-box;
-  background: #0078ba; }
+  background: #1d93b8; }
   .styleguide .grid:nth-of-type(even) {
-    background: #54c2ff; }
+    background: #83d3eb; }
 .styleguide .prettyprint {
   display: none; }

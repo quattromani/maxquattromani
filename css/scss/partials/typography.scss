@@ -3,137 +3,170 @@
 
 /* ==========================================================================
     Typography -- Version: 1.9.0.1  - Compiled: #{timestamp()}
-   ========================================================================== */
+    ========================================================================== */
 
-@if variable-exists(google-fonts-url) {
-  @import url($google-fonts-url);
-}
+    @if variable-exists(google-fonts-url) {
+      @import url($google-fonts-url);
+    }
 
-@font-face {
-  font-family: 'NeueHaasGroteskDisp Pro Lt';
-  src: url('fonts/NHaasGroteskDSPro-45Lt.eot');
-  src: url('fonts/NHaasGroteskDSPro-45Lt.eot?#iefix') format('embedded-opentype'),
-       url('fonts/NHaasGroteskDSPro-45Lt.woff') format('woff'),
-       url('fonts/NHaasGroteskDSPro-45Lt.ttf') format('truetype'),
-       url('fonts/NHaasGroteskDSPro-45Lt.svg#c13997a2298a59559618b48f712f1222') format('svg');
-  font-style: normal;
-  font-weight: 400;
-}
+    @font-face {
+      font-family: 'NeueHaasGroteskDisp Pro Lt';
+      src: url('fonts/NHaasGroteskDSPro-45Lt.eot');
+      src: url('fonts/NHaasGroteskDSPro-45Lt.eot?#iefix') format('embedded-opentype'),
+      url('fonts/NHaasGroteskDSPro-45Lt.woff') format('woff'),
+      url('fonts/NHaasGroteskDSPro-45Lt.ttf') format('truetype'),
+      url('fonts/NHaasGroteskDSPro-45Lt.svg#c13997a2298a59559618b48f712f1222') format('svg');
+      font-style: normal;
+      font-weight: 400;
+    }
 
-@font-face {
-  font-family: 'NeueHaasGroteskDisp Pro';
-  src: url('fonts/NHaasGroteskDSPro-55Rg.eot');
-  src: url('fonts/NHaasGroteskDSPro-55Rg.eot?#iefix') format('embedded-opentype'),
-       url('fonts/NHaasGroteskDSPro-55Rg.woff') format('woff'),
-       url('fonts/NHaasGroteskDSPro-55Rg.ttf') format('truetype'),
-       url('fonts/NHaasGroteskDSPro-55Rg.svg#b6ad3c4b853b178e80a67cafd99e8515') format('svg');
-  font-style: normal;
-  font-weight: 400;
-}
+    @font-face {
+      font-family: 'NeueHaasGroteskDisp Pro';
+      src: url('fonts/NHaasGroteskDSPro-55Rg.eot');
+      src: url('fonts/NHaasGroteskDSPro-55Rg.eot?#iefix') format('embedded-opentype'),
+      url('fonts/NHaasGroteskDSPro-55Rg.woff') format('woff'),
+      url('fonts/NHaasGroteskDSPro-55Rg.ttf') format('truetype'),
+      url('fonts/NHaasGroteskDSPro-55Rg.svg#b6ad3c4b853b178e80a67cafd99e8515') format('svg');
+      font-style: normal;
+      font-weight: 400;
+    }
 
-@font-face {
-  font-family: 'NeueHaasGroteskDisp Pro 75';
-  src: url('fonts/NHaasGroteskDSPro-75Bd.eot');
-  src: url('fonts/NHaasGroteskDSPro-75Bd.eot?#iefix') format('embedded-opentype'),
-       url('fonts/NHaasGroteskDSPro-75Bd.woff') format('woff'),
-       url('fonts/NHaasGroteskDSPro-75Bd.ttf') format('truetype'),
-       url('fonts/NHaasGroteskDSPro-75Bd.svg#3c83350684bc0527723a7e2b4313fd29') format('svg');
-  font-style: normal;
-  font-weight: 400;
-}
+    @font-face {
+      font-family: 'NeueHaasGroteskDisp Pro 75';
+      src: url('fonts/NHaasGroteskDSPro-75Bd.eot');
+      src: url('fonts/NHaasGroteskDSPro-75Bd.eot?#iefix') format('embedded-opentype'),
+      url('fonts/NHaasGroteskDSPro-75Bd.woff') format('woff'),
+      url('fonts/NHaasGroteskDSPro-75Bd.ttf') format('truetype'),
+      url('fonts/NHaasGroteskDSPro-75Bd.svg#3c83350684bc0527723a7e2b4313fd29') format('svg');
+      font-style: normal;
+      font-weight: 400;
+    }
 
-@font-face {
-  font-family: $fontawesome;
-  src: url('fonts/icons/fontawesome-webfont.eot');
-  src: url('fonts/icons/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/icons/fontawesome-webfont.svg#svgFontAwesome') format('svg'),
-       url('fonts/icons/fontawesome-webfont.woff') format("woff"),
-       url('fonts/icons/fontawesome-webfont.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+      font-family: $fontawesome;
+      src: url('fonts/icons/fontawesome-webfont.eot');
+      src: url('fonts/icons/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/icons/fontawesome-webfont.svg#svgFontAwesome') format('svg'),
+      url('fonts/icons/fontawesome-webfont.woff') format("woff"),
+      url('fonts/icons/fontawesome-webfont.ttf') format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
 
-@font-face {
-  font-family: $GLGlyphs;
-  src: url('fonts/icons/GLGlyphs.eot?-a4mj0q');
-  src: url('fonts/icons/GLGlyphs.eot?#iefix-a4mj0q') format('embedded-opentype'),
-    url('fonts/icons/GLGlyphs.woff?-a4mj0q') format('woff'),
-    url('fonts/icons/GLGlyphs.ttf?-a4mj0q') format('truetype'),
-    url('fonts/icons/GLGlyphs.svg?-a4mj0q#GLGlyphs') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+      font-family: $GLGlyphs;
+      src: url('fonts/icons/GLGlyphs.eot?-a4mj0q');
+      src: url('fonts/icons/GLGlyphs.eot?#iefix-a4mj0q') format('embedded-opentype'),
+      url('fonts/icons/GLGlyphs.woff?-a4mj0q') format('woff'),
+      url('fonts/icons/GLGlyphs.ttf?-a4mj0q') format('truetype'),
+      url('fonts/icons/GLGlyphs.svg?-a4mj0q#GLGlyphs') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-.base-font {
-  font-family: $base-font;
-}
+    .base-font {
+      font-family: $base-font;
+    }
 
-.base-font-alt {
-  font-family: $base-font-alt;
-}
+    .base-font-alt {
+      font-family: $base-font-alt;
+    }
 
-.arial {
-  font-family: $arial;
-}
+    .arial {
+      font-family: $arial;
+    }
 
-.arialBold {
-  font-family: $arial-bold;
-}
+    .arialBold {
+      font-family: $arial-bold;
+    }
 
 /* ==========================
 	  Body Text
    ========================== */
 
-.lede {
-  @include font-size($lede-text);
-}
+   .lede {
+    @include font-size($lede-text);
+  }
 
-.body-text {
-  @include font-size($body-text);
-}
+  .body-text {
+    @include font-size($body-text);
+  }
 
-.small-body-text {
-  @include font-size($small-body-text);
-}
+  .small-body-text {
+    @include font-size($small-body-text);
+  }
 
-.disclaimer-text {
-  @include font-size($disclaimer-text);
-}
+  .disclaimer-text {
+    @include font-size($disclaimer-text);
+  }
 
 /* ==========================
 	  Links
    ========================== */
 
-a {
-  @include margin;
-  @include padding;
-  background: transparent;
-  vertical-align: baseline;
-  font-family: inherit;
-  font-weight: 700;
-  color: $link;
-  text-decoration: none;
-  cursor: pointer;
-  @include transition;
-
-  img {
-    border: 0 none;
+   a {
+    @include margin;
+    @include padding;
+    background: transparent;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: 700;
+    color: inherit;
     text-decoration: none;
-  }
+    cursor: pointer;
+    @include transition;
 
-  &:hover {
-    color: $link-hover;
-  }
+    img {
+      border: 0 none;
+      text-decoration: none;
+    }
 
-  &.muted,
-  .muted & {
-    color: $color-light-grey;
+    &:hover {
+      border-bottom: 1px dotted currentColor;
+    }
+
+    &.muted,
+    .muted & {
+      color: $color-light-grey;
+    }
   }
-}
 
 /* ==========================
 	  Headings
    ========================== */
+
+   header {
+    text-align: center;
+  }
+
+  .heading {
+    position: relative;
+    @include inline-block;
+    @include margin(($margin * 3), 0);
+    border: 1px solid currentColor;
+    @include font-size(12);
+    color: currentColor;
+    text-align: center;
+    text-transform: uppercase;
+
+    h2 {
+      @include padding($padding / 2, $padding);
+      @include margin;
+    }
+
+    p {
+      position: absolute;
+      top: -.75em;
+      right: 0;
+      left: 0;
+      letter-spacing: 1px;
+    }
+
+    span {
+      @include padding(0, 1em);
+      @include rgba($color-white,1);
+    }
+  }
 
 // Build Headings
 $i: 1;
@@ -242,53 +275,53 @@ mark {
 /* ==========================
 	  Pre
    ========================== */
-pre {
-  @include margin($margin, 0, 0);
-  @include padding($padding);
-  @include border-radius;
-  background-color: $color-light-light-grey;
-  overflow: auto;
-  word-wrap: break-word;
-}
+   pre {
+    @include margin($margin, 0, 0);
+    @include padding($padding);
+    @include border-radius;
+    background-color: $color-light-light-grey;
+    overflow: auto;
+    word-wrap: break-word;
+  }
 
-kbd,
-samp {
-  font-family: $pre;
-  color: $color-primary-green;
-}
+  kbd,
+  samp {
+    font-family: $pre;
+    color: $color-primary-green;
+  }
 
-.valid,
-.is-valid {
-  color: $color-primary-green;
-}
+  .valid,
+  .is-valid {
+    color: $color-primary-green;
+  }
 
-.code-comment {
-  @include opacity(.5);
-}
+  .code-comment {
+    @include opacity(.5);
+  }
 
-.fa {
-  @include font-family($fontawesome);
-}
+  .fa {
+    @include font-family($fontawesome);
+  }
 
 /* ==========================
     Logo
-   ========================== */
+    ========================== */
 
-.GLG {
-  font-family: "NeueHaasGroteskDisp Pro 75", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bolder;
-  letter-spacing: -1px;
-}
+    .GLG {
+      font-family: "NeueHaasGroteskDisp Pro 75", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bolder;
+      letter-spacing: -1px;
+    }
 
-.logo_slash,
-.division {
-  @include font-family($base-font);
-  color: $color-primary-red;
-  font-weight: 200;
-}
+    .logo_slash,
+    .division {
+      @include font-family($base-font);
+      color: $color-primary-red;
+      font-weight: 200;
+    }
 
-.division {
-  position: relative;
-  left: -.1em;
-  color: $color-dark-grey;
-}
+    .division {
+      position: relative;
+      left: -.1em;
+      color: $color-dark-grey;
+    }
