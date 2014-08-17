@@ -160,6 +160,9 @@ $(function() {
 
   // Scroll to anchored link in Nav
   $('nav a').click(function(){
+    // Active Nav links
+    $('nav a').parent('li').removeClass('active');
+    $(this).parent('li').addClass('active');
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);

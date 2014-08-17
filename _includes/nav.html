@@ -7,31 +7,10 @@
 
     <ul class="navigation">
       {% for nav in site.data.nav %}
-      {% if nav.child_links %}
-      {% if nav.name == page.parent %}
-      <li class="active">
-        {% else %}
-        <li>
-          {% endif %}
-          <a href="{{ nav.url }}" class="text-center">{{ nav.name }}</a>
-          <ul class="hidden">
-            {% for child_link in nav.child_links %}
-            <li>
-              <a href="{{ nav.url }}{{ child_link.url }}">{{ child_link.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </li>
-        {% elsif nav.name == page.parent %}
-        <li class="active">
-          <a href="{{ nav.url }}" class="text-center">{{ nav.name }}</a>
-        </li>
-        {% else %}
-        <li>
-          <a href="{{ nav.url }}" class="text-center">{{ nav.name }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+      <li>
+        <a href="{{ nav.url }}" class="text-center">{{ nav.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
