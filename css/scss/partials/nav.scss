@@ -8,7 +8,7 @@
     nav {
       position: relative;
       width: 100%;
-      margin-top: -61px; // magic number to pull nav up overlay banner
+      margin-top: -64px; // magic number to pull nav up overlay banner
       @include rgba($color-black, .5);
       text-transform: uppercase;
       z-index: 9;
@@ -35,7 +35,7 @@
           &:hover,
           &.active {
             a {
-              border-bottom: 3px solid white;
+              border-bottom: 3px solid currentColor;
             }
           }
 

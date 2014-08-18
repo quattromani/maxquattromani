@@ -107,6 +107,18 @@
     .muted & {
       color: $color-light-grey;
     }
+
+    &[href$='.pdf']:after {
+      @include font-family($fontawesome);
+      content: ('\f1c1');
+      margin-left: .5em;
+    }
+
+    &[href*='github.com']:after {
+      @include font-family($fontawesome);
+      content: ('\f113');
+      margin-left: .5em;
+    }
   }
 
 /* ==========================
