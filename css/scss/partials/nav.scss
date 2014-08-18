@@ -32,53 +32,6 @@
           @include padding;
           @include font-size(16);
 
-          &:hover {
-            background: $color-primary-green;
-          }
-
-          @include bp(bp-large) {
-            &:hover ul {
-              position: absolute;
-              display: block;
-              left: 0;
-
-              li {
-                display: block;
-                min-width: 10.5em;
-                @include padding;
-                border-bottom: 1px solid rgba($color-primary-brown, .15);
-
-                &.js-last {
-                  border: none;
-                }
-
-                a {
-                  display: block;
-                  width: 100%;
-                  @include padding(1em, .75em);
-                  background: rgba($color-primary-brown, .65);
-                  color: $color-white;
-
-                  @if $support-legacy {
-                    .ie8 & {
-                      background-color: $color-primary-brown;
-                    }
-                  }
-
-                  &:hover {
-                    background: rgba($color-primary-green, .75);
-
-                    @if $support-legacy {
-                      .ie8 & {
-                        background-color: $color-primary-green;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
           a {
             display: block;
             @include padding(1em, .75em);
@@ -92,24 +45,19 @@
             }
           }
 
-          &.active {
-            background: $color-primary-green;
+          &:hover {
+            @include rgba($color-white, .85);
 
-            @include bp(bp-large) {
-              &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                width: 0;
-                height: 0;
-                margin-left: -.75em;
-                border-color: $color-primary-green transparent transparent transparent;
-                border-style: solid;
-                border-width: .75em;
-                z-index: 99;
-              }
+            a {
+              color: $text;
+            }
+          }
+
+          &.active {
+            @include rgba($color-white, .85);
+
+            a {
+              color: $text;
             }
           }
 
