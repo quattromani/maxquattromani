@@ -73,62 +73,6 @@ $('.fonts').each(function(){
     $(this).prepend(fonts);
 });
 
-/* ==========================================================================
-    Progress Buttons -- Version: 0.2.1 - Updated: 5/14/2014
-   ========================================================================== */
-
-(function($) {
-
-  $.fn.progressButton = function() {
-    $('.progress').click(function() {
-      $(this).attr("disabled", true);
-      $(this).addClass('js-active');
-    });
-  }
-
-}(jQuery));
-
-$('.progress').progressButton();
-
-/* ==========================================================================
-    Slick Carousel -- Version: 0.2.1 - Updated: 5/14/2014
-    ========================================================================== */
-
-$('.carousel').slick({
-  dots: true,
-  infinite: true,
-  speed: 1000,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-  ]
-});
-
 var smallBreakPoint = 640;
 var mediumBreakPoint = 768;
 (function($) {
@@ -164,13 +108,13 @@ $(function() {
     $('nav a').parent('li').removeClass('active');
     $(this).parent('li').addClass('active');
     $('html, body').animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
+      scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
     return false;
   });
 
   // Make the Nav sticky
-  var num = 549; //number of pixels before modifying styles
+  var num = 540; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
@@ -181,6 +125,39 @@ $(function() {
       $('nav').css('margin-top','-61px');
     }
   });
+
+  var aChildren = $('nav li').children(); // find the a children of the list items
+  var aArray = []; // create the empty aArray
+  for (var i=0; i < aChildren.length; i++) {
+    var aChild = aChildren[i];
+    var ahref = $(aChild).attr('href');
+    aArray.push(ahref);
+  } // this for loop fills the aArray with attribute href values
+
+    $(window).scroll(function(){
+      var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+      var windowHeight = $(window).height(); // get the height of the window
+      var docHeight = $(document).height();
+
+      for (var i=0; i < aArray.length; i++) {
+        var theID = aArray[i];
+        var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+        var divHeight = $(theID).height(); // get the height of the div in question
+        if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+          $("a[href='" + theID + "']").parent('li').addClass("active");
+        } else {
+          $("a[href='" + theID + "']").parent('li').removeClass("active");
+        }
+      }
+
+      if(windowPos + windowHeight == docHeight) {
+        if (!$("nav li:last-child").hasClass("active")) {
+          var navActiveCurrent = $(".active").attr("href");
+          $("a[href='" + navActiveCurrent + "']").parent('li').removeClass("active");
+          $("nav li:last-child").parent('li').addClass("active");
+        }
+      }
+    });
 });
 
 // Set year
@@ -276,5 +253,73 @@ $('.getYear').getYear();
 		}
 
 /* ==========================================================================
-    Sandbox -- Version: 0.2.2 - Updated: 7/26/2014
+    Nav -- Version: 0.4.0 - Updated: 8/18/2014
     ========================================================================== */
+
+  $(function() {
+
+    var header = $('header')
+    , header_height = header.outerHeight()
+    , nav = $('nav')
+    , nav_height = nav.outerHeight();
+
+  // Scroll to anchored link in Nav
+  $('nav a').click(function(){
+    // Active Nav links
+    $('nav a').parent('li').removeClass('active');
+    $(this).parent('li').addClass('active');
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top +1
+    }, 500);
+    return false;
+  });
+
+  if ($(window).scrollTop() >= (header_height - nav_height)) {
+    $('nav').addClass('fixed');
+    $('nav').css('margin-top','0');
+  }
+
+  // Make the Nav sticky
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() >= (header_height - nav_height)) {
+      $('nav').addClass('fixed');
+      $('nav').css('margin-top','0');
+    } else {
+      $('nav').removeClass('fixed');
+      $('nav').css('margin-top', '-'+nav_height);
+    }
+  });
+
+  var aChildren = $('nav li').children(); // find the a children of the list items
+  var aArray = []; // create the empty aArray
+  for (var i=0; i < aChildren.length; i++) {
+    var aChild = aChildren[i];
+    var ahref = $(aChild).attr('href');
+    aArray.push(ahref);
+  } // this for loop fills the aArray with attribute href values
+
+  $(window).scroll(function(){
+      var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+      var windowHeight = $(window).height(); // get the height of the window
+      var docHeight = $(document).height();
+
+      for (var i=0; i < aArray.length; i++) {
+        var theID = aArray[i];
+        var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+        var divHeight = $(theID).height(); // get the height of the div in question
+        if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+          $("a[href='" + theID + "']").parent('li').addClass("active");
+        } else {
+          $("a[href='" + theID + "']").parent('li').removeClass("active");
+        }
+      }
+
+      if(windowPos + windowHeight == docHeight) {
+        if (!$("nav li:last-child").hasClass("active")) {
+          var navActiveCurrent = $(".active").attr("href");
+          $("a[href='" + navActiveCurrent + "']").parent('li').removeClass("active");
+          $("nav li:last-child").parent('li').addClass("active");
+        }
+      }
+    });
+});

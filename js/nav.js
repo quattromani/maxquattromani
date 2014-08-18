@@ -1,12 +1,13 @@
 /* ==========================================================================
-    Main -- Version: 0.4.0 - Updated: 2/20/2014
+    Nav -- Version: 0.4.0 - Updated: 8/18/2014
     ========================================================================== */
 
-// Add classes to first and last li's for every instance
-$(function() {
-  // Add classes to first and last of each list
-  $('li:first-child').addClass('js-first');
-  $('li:last-child').addClass('js-last');
+  $(function() {
+
+    var header = $('header')
+    , header_height = header.outerHeight()
+    , nav = $('nav')
+    , nav_height = nav.outerHeight();
 
   // Scroll to anchored link in Nav
   $('nav a').click(function(){
@@ -14,21 +15,24 @@ $(function() {
     $('nav a').parent('li').removeClass('active');
     $(this).parent('li').addClass('active');
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
+      scrollTop: $($.attr(this, 'href')).offset().top +1
     }, 500);
     return false;
   });
 
-  // Make the Nav sticky
-  var num = 540; //number of pixels before modifying styles
+  if ($(window).scrollTop() >= (header_height - nav_height)) {
+    $('nav').addClass('fixed');
+    $('nav').css('margin-top','0');
+  }
 
+  // Make the Nav sticky
   $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
+    if ($(window).scrollTop() >= (header_height - nav_height)) {
       $('nav').addClass('fixed');
       $('nav').css('margin-top','0');
     } else {
       $('nav').removeClass('fixed');
-      $('nav').css('margin-top','-61px');
+      $('nav').css('margin-top', '-'+nav_height);
     }
   });
 
@@ -40,7 +44,7 @@ $(function() {
     aArray.push(ahref);
   } // this for loop fills the aArray with attribute href values
 
-    $(window).scroll(function(){
+  $(window).scroll(function(){
       var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
       var windowHeight = $(window).height(); // get the height of the window
       var docHeight = $(document).height();
@@ -65,16 +69,3 @@ $(function() {
       }
     });
 });
-
-// Set year
-(function($) {
-
-  $.fn.getYear = function() {
-    var d = new Date();
-    var x = document.getElementById("year");
-    x.innerHTML=d.getFullYear();
-  }
-
-}(jQuery));
-
-$('.getYear').getYear();
