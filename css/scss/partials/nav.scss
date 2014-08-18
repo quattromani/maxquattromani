@@ -32,9 +32,17 @@
           @include padding;
           @include font-size(16);
 
+          &:hover,
+          &.active {
+            a {
+              border-bottom: 3px solid white;
+            }
+          }
+
           a {
             display: block;
             @include padding(1em, .75em);
+            border-bottom: 3px solid transparent;
             font-weight: 200;
             vertical-align: middle;
             color: $color-white;
@@ -42,22 +50,6 @@
             &:hover {
               color: $color-white;
               border: none;
-            }
-          }
-
-          &:hover {
-            @include rgba($color-white, .85);
-
-            a {
-              color: $text;
-            }
-          }
-
-          &.active {
-            @include rgba($color-white, .85);
-
-            a {
-              color: $text;
             }
           }
 

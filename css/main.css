@@ -540,36 +540,21 @@ nav {
       padding-left: 0;
       font-size: 16px;
       font-size: 1.6rem; }
+      nav ul li:hover a, nav ul li.active a {
+        border-bottom: 3px solid white; }
       nav ul li a {
         display: block;
         padding-top: 1em;
         padding-right: 0.75em;
         padding-bottom: 1em;
         padding-left: 0.75em;
+        border-bottom: 3px solid transparent;
         font-weight: 200;
         vertical-align: middle;
         color: white; }
         nav ul li a:hover {
           color: white;
           border: none; }
-      nav ul li:hover {
-        background: rgba(255, 255, 255, 0.85); }
-        .ie nav ul li:hover {
-          background: transparent;
-          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9FFFFFF, endColorstr=#D9FFFFFF)";
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9FFFFFF,endColorstr=#D9FFFFFF);
-          zoom: 1; }
-        nav ul li:hover a {
-          color: #454545; }
-      nav ul li.active {
-        background: rgba(255, 255, 255, 0.85); }
-        .ie nav ul li.active {
-          background: transparent;
-          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9FFFFFF, endColorstr=#D9FFFFFF)";
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9FFFFFF,endColorstr=#D9FFFFFF);
-          zoom: 1; }
-        nav ul li.active a {
-          color: #454545; }
       @media (max-width: 62em) {
         nav ul li {
           display: block;
