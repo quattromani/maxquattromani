@@ -528,9 +528,6 @@ nav {
   nav ul {
     display: table-row;
     width: 100%; }
-    nav ul.navigation > li {
-      font-size: 18px;
-      font-size: 1.8rem; }
     nav ul li {
       position: relative;
       display: table-cell;
@@ -539,16 +536,14 @@ nav {
       padding-bottom: 0;
       padding-left: 0;
       font-size: 16px;
-      font-size: 1.6rem; }
-      nav ul li:hover a, nav ul li.active a {
-        border-bottom: 3px solid currentColor; }
+      font-size: 1.6rem;
+      line-height: normal; }
       nav ul li a {
         display: block;
         padding-top: 1em;
         padding-right: 0.75em;
         padding-bottom: 1em;
         padding-left: 0.75em;
-        border-bottom: 3px solid transparent;
         font-weight: 200;
         vertical-align: middle;
         color: white; }

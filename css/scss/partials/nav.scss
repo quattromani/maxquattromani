@@ -22,27 +22,16 @@
         display: table-row;
         width: 100%;
 
-        &.navigation > li {
-          @include font-size(18);
-        }
-
         li {
           position: relative;
           display: table-cell;
           @include padding;
           @include font-size(16);
-
-          &:hover,
-          &.active {
-            a {
-              border-bottom: 3px solid currentColor;
-            }
-          }
+          line-height: normal;
 
           a {
             display: block;
             @include padding(1em, .75em);
-            border-bottom: 3px solid transparent;
             font-weight: 200;
             vertical-align: middle;
             color: $color-white;
