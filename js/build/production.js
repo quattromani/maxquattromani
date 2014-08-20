@@ -229,7 +229,7 @@ $('.getYear').getYear();
       $('nav').css('margin-top','0');
     } else {
       $('nav').removeClass('fixed');
-      $('nav').css('margin-top', '-'+nav_height);
+      $('nav').css('margin-top', '-49px');
     }
   });
 
