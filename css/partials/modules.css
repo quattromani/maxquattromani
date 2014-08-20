@@ -25,4 +25,39 @@ hr {
   margin-left: 0;
   border: 0;
   border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid white;
+}
+hr.below-desktop {
+  display: none;
+}
+@media (max-width: 62em) {
+  hr.below-desktop {
+    display: block;
+    border: none;
+  }
+}
+@media (max-width: 40em) {
+  hr.below-desktop {
+    display: block;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid white;
+  }
+}
+hr.divider {
+  width: 50%;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  border: none;
+  text-align: center;
+}
+hr.divider:after {
+  content: '\f141';
+  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  font-size: 4rem;
+  color: #e6e6e6;
 }

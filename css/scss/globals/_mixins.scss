@@ -140,7 +140,6 @@ $marginless-col-width: $width / $site-column-count;
   filter: alpha(opacity=($opacity * 100));
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})";
   -moz-opacity: $opacity;
-  -khtml-opacity: $opacity;
   opacity: $opacity;
 }
 

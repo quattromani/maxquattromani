@@ -16,8 +16,37 @@
 }
 
 hr {
-  @extend %clearfix !optional;
-  @include margin($margin, 0);
-  border: 0;
-  border-top: 1px solid $text-light-grey;
-}
+      @include margin($margin, 0);
+      border: 0;
+      border-top: 1px solid $text-light-grey;
+      border-bottom: 1px solid $text-white;
+
+      &.below-desktop {
+        display: none;
+
+        @include bp(bp-medium) {
+          display: block;
+          border: none;
+        }
+
+        @include bp(bp-small) {
+          display: block;
+          border-top: 1px solid $text-light-grey;
+          border-bottom: 1px solid $text-white;
+        }
+      }
+
+      &.divider {
+        width: 50%;
+        @include margin($margin, auto);
+        border: none;
+        text-align: center;
+
+        &:after {
+          content: '\f141';
+          @include font-family($fontawesome);
+          @include font-size(40);
+          color: $color-light-grey;
+        }
+      }
+    }
