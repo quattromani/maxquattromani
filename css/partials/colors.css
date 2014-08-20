@@ -370,11 +370,9 @@
 }
 
 .ie9 .gradient {
-  -webkit-filter: none;
   filter: none;
 }
 
 .ie9 [class*="gradient"] {
-  -webkit-filter: none;
   filter: none;
 }

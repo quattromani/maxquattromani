@@ -19,12 +19,10 @@
   padding-bottom: 0.5em;
   padding-left: 1em;
   border-radius: 0;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: rgba(0, 0, 0, 0.1);
   font-weight: 100;
   z-index: 999999;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 .scrolltotop:after,

@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 
       autoprefixer: {
         no_dest: {
-          src: 'css/partials/*.css'
+          src: 'css/main.css'
         },
       },
 
