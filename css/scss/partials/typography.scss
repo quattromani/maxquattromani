@@ -225,7 +225,11 @@ p,
 }
 
 .b {
-  font-weight: 700;
+  font-weight: $font-weight-semibold;
+}
+
+.light {
+  font-weight: $font-weight-light;
 }
 
 .uppercase {

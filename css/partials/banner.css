@@ -2,6 +2,7 @@
     Banner -- Version: 0.2.1 - Compiled: timestamp()
     ========================================================================== */
 .banner {
+  position: relative;
   background: url("../images/line-pattern.png"), url("../images/banner.jpg");
   height: 600px;
   background-position: center;
@@ -12,6 +13,11 @@
   .banner {
     height: 300px;
   }
+}
+.banner .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .banner .resume:hover {
   color: #ff372c;

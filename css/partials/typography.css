@@ -311,6 +311,10 @@ p:only-child,
   font-weight: 700;
 }
 
+.light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: capitalize;
 }

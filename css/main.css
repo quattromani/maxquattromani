@@ -1200,6 +1200,9 @@ p,
 .b {
   font-weight: 700; }
 
+.light {
+  font-weight: 300; }
+
 .uppercase {
   text-transform: capitalize; }
 
@@ -2509,6 +2512,7 @@ dd {
     Banner -- Version: 0.2.1 - Compiled: timestamp()
     ========================================================================== */
 .banner {
+  position: relative;
   background: url("../images/line-pattern.png"), url("../images/banner.jpg");
   height: 600px;
   background-position: center;
@@ -2517,6 +2521,12 @@ dd {
   @media (max-width: 40em) {
     .banner {
       height: 300px; } }
+  .banner .content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
   .banner .resume:hover {
     color: #ff372c;
     text-decoration: none; }
