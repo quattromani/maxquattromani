@@ -81,6 +81,15 @@ nav .show-menu {
   nav .show-menu {
     display: block;
   }
+  nav .show-menu:before {
+    margin-right: .5em;
+    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    font-size: 2rem;
+    content: '\f0c9';
+  }
 }
 nav input[type=checkbox] {
   display: none;

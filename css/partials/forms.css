@@ -186,6 +186,11 @@ input::-webkit-inner-spin-button {
   float: left;
   width: 100%;
 }
+@media (max-width: 40em) {
+  .formitem {
+    margin-bottom: .5em;
+  }
+}
 
 .required:after {
   content: '*';

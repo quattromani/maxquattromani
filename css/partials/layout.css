@@ -4,9 +4,9 @@
 .content {
   position: relative;
   overflow: auto;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-right: 0;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   padding-left: 0;
   z-index: 0;
 }
@@ -577,4 +577,11 @@
 [class*='four_column_'] {
   column-count: 4;
   column-gap: 2em;
+}
+
+@media (max-width: 40em) {
+  [class*='_column_'] {
+    column-count: 1;
+    column-gap: 1em;
+  }
 }

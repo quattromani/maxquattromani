@@ -64,9 +64,9 @@ textarea {
 .content {
   position: relative;
   overflow: auto;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-right: 0;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   padding-left: 0;
   z-index: 0; }
 
@@ -518,6 +518,15 @@ textarea {
   -moz-column-gap: 2em;
   column-gap: 2em; }
 
+@media (max-width: 40em) {
+  [class*='_column_'] {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em; } }
+
 /* Modules */
 /* ==========================================================================
     Nav -- Version: 0.4.0 - Compiled: timestamp()
@@ -585,7 +594,15 @@ nav {
     color: white; }
     @media (max-width: 62em) {
       nav .show-menu {
-        display: block; } }
+        display: block; }
+        nav .show-menu:before {
+          margin-right: .5em;
+          font-family: "FontAwesome", Arial, Sans-Serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          font-size: 2rem;
+          content: '\f0c9'; } }
   nav input[type=checkbox] {
     display: none; }
   nav input[type=checkbox]:checked ~ .navigation {
@@ -2851,6 +2868,8 @@ button,
 
 .contact {
   background: url(../images/contact.jpg) top right no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: white;
   -webkit-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
   box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868; }
@@ -3424,6 +3443,9 @@ input::-webkit-inner-spin-button {
 .formitem {
   float: left;
   width: 100%; }
+  @media (max-width: 40em) {
+    .formitem {
+      margin-bottom: .5em; } }
 
 .required:after {
   content: '*'; }

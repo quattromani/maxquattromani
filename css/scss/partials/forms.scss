@@ -144,6 +144,10 @@
     .formitem {
       float: left;
       width: 100%;
+
+      @include bp(bp-small) {
+        margin-bottom: .5em;
+      }
     }
 
     .required:after {

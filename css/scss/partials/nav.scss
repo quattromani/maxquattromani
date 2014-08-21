@@ -70,8 +70,16 @@
         display: none;
         @include padding($padding / 2, 0);
         color: $color-white;
+
         @include bp(bp-medium) {
           display:block;
+
+          &:before {
+            margin-right: .5em;
+            @include font-family($fontawesome);
+            @include font-size(20);
+            content: '\f0c9';
+          }
         }
       }
 
