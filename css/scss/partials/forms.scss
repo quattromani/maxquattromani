@@ -18,12 +18,13 @@
     select {
       width: 100%;
       max-width: 100%;
-      @include padding(.35em, .5em);
+      @include padding(.35em, .5em, .35em, 0);
       @include margin;
       border: 0;
       @include border-radius;
+      border-bottom: 1px solid currentColor;
       outline: none;
-      @include rgba($color-black,.2);
+      @include rgba($color-black,.0);
       font-family: $base-font;
       font-weight: 300;
       color: inherit;
@@ -47,15 +48,12 @@
         float: left;
         @include margin(.25em, .5em, 1em, .1em);
       }
-
-      &:focus {
-        @include box-shadow(inset .3em 0 0 0 rgba($form-focus, .75));
-      }
     }
 
     textarea {
       overflow: auto;
       vertical-align: top;
+      resize: none;
     }
 
     input {
