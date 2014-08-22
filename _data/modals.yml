@@ -1,0 +1,105 @@
+modals:
+ - section: Web
+   examples:
+    - img: 'twc.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC
+      url: 'http://twc.com'
+    - img: 'terracare.jpg'
+      alt: 'Terracare Associates'
+      title: Terracare
+      url: 'http://myterracare.net'
+    - img: 'coschoolchiefs.jpg'
+      alt: 'Colorado School Chiefs'
+      title: Colorado School Chiefs
+      url: 'http://coschoolchiefs.org'
+    - img: 'eastfield.jpg'
+      alt: 'Eastfield Mall'
+      title: Eastfield Mall
+      url: 'http://eastfieldmall.com/'
+ - section: Email
+   examples:
+    - img: 'chicago.jpg'
+      alt: 'Chicago ASI show email'
+      title: ASI Chicago 2011
+    - img: 'promoEast.jpg'
+      alt: 'Promotions East show email'
+      title: Promotions East
+    - img: 'race.jpg'
+      alt: 'Northwest Promotional Marketing Association show email'
+      title: NWPMA East
+    - img: 'chicago2.jpg'
+      alt: 'Chicago ASI show email'
+      title: ASI Chicago 2012
+ - section: Print
+   examples:
+    - img: 'twc.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC
+    - img: 'myterracare.jpg'
+      alt: 'Terracare Associates'
+      title: Terracare
+ - section: Product Packaging
+   examples:
+    - img: 'twc.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC
+    - img: 'myterracare.jpg'
+      alt: 'Terracare Associates'
+      title: Terracare
+ - section: Art
+   examples:
+    - img: 'twc.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC
+    - img: 'myterracare.jpg'
+      alt: 'Terracare Associates'
+      title: Terracare
+# modals:
+#   - section: Web
+    - img: 'twc.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC
+
+    - img: 'terracare.jpg'
+      alt: 'Terracare Associates'
+      title: Terracare
+
+    - img: 'coschoolchiefs.jpg'
+      alt: 'Colorado School Chiefs'
+      title: Colorado School Chiefs
+
+    - img: 'eastfield.jpg'
+      alt: 'Eastfield Mall'
+      title: Eastfield Mall
+
+#   - section: Email
+#     - img: 'at&t.jpg'
+#       alt: 'AT&amp;T Corporate Complex - Commercial Landscape'
+#       text: Timely performance with technical competence
+
+#   - section: Print
+#     - img: 'at&t.jpg'
+#       alt: 'AT&amp;T Corporate Complex - Commercial Landscape'
+#       text: Timely performance with technical competence
+
+#   - section: Product Packaging
+#     - img: 'scope.jpg'
+#       alt: 'Scope Minibrush - Retail Packaging'
+#       title: Scope Minibrush
+#       text: Timely performance with technical competence
+
+#     - img: 'crest.jpg'
+#       alt: 'Crest Whitestrips - Retail Packaging'
+#       title: Crest Whitestrips
+#       text: Timely performance with technical competence
+
+#     - img: 'crestBox.jpg'
+#       alt: 'Crest Whitestrips - Retail Packaging'
+#       title: Crest Whitestrips Box
+#       text: Timely performance with technical competence
+
+#   - section: Art
+#     - img: 'crest.jpg'
+#       alt: 'Crest Whitestrips - Retail Packaging'
+#       text: Timely performance with technical competence

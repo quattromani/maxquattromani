@@ -1,21 +1,6 @@
 /* ==========================================================================
     Modals -- Version: 0.4.0.1 - Updated: 4/28/2014
-   ========================================================================== */
-.modal .modal-overlay {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  zoom: 1;
-  filter: alpha(opacity=50);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  z-index: 9999;
-}
+    ========================================================================== */
 .modal .modal-container {
   display: none;
   position: fixed;
@@ -24,7 +9,7 @@
   left: 0;
   right: 0;
   height: auto;
-  width: 45em;
+  width: 40em;
   max-width: 90%;
   margin: auto;
   margin-top: -16em;
@@ -40,11 +25,11 @@
 .modal .modal-close {
   position: absolute;
   float: right;
-  top: 1em;
-  right: 1em;
+  top: -.5em;
+  right: -.5em;
   height: 32px;
   width: 32px;
-  background: url("/scaffold/images/modal-close.png") no-repeat;
+  background: url("../images/modal-close.png") no-repeat;
   cursor: pointer;
 }
 .modal .modal-header {
@@ -81,4 +66,24 @@
   border-radius: 0 0 0 0;
   background-clip: padding-box;
   background: #f0f2f5;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  z-index: 9999;
+}
+
+.modal-button {
+  cursor: pointer;
 }

@@ -28,160 +28,54 @@
 
   <hr>
 
-  <h2>Web Design</h2>
+  {% for modal in site.data.modals.modals %}
+
+  <h2>{{ modal.section }}</h2>
 
   <div class="row">
+  {% for example in modal.examples %}
     <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          TWC
+      <span class="modal-button" id="{{ forloop.index }}">
+        <div class="portfolio-gallery">
+          <div class="cap">
+            {{ example.title }}
+          </div>
+          <img src="./images/{{ example.img }}" alt="{{ example.alt }}">
         </div>
-        <img src="./images/twc.jpg" alt="Time Warner Cable">
-      </div>
+      </span>
     </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Terracare
-        </div>
-        <img src="./images/terracare.jpg" alt="Terracare">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Leashables
-        </div>
-        <img src="./images/leashables.jpg" alt="Leashables">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Oralabs
-        </div>
-        <img src="./images/oralabs.jpg" alt="Oralabs">
-      </div>
-    </div>
+    {% endfor %}
   </div>
-
-  <hr>
-
-  <h2>Email Design</h2>
-
-  <div class="row">
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          TWC
-        </div>
-        <img src="./images/twc.jpg" alt="Time Warner Cable">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Terracare
-        </div>
-        <img src="./images/terracare.jpg" alt="Terracare">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Leashables
-        </div>
-        <img src="./images/leashables.jpg" alt="Leashables">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Oralabs
-        </div>
-        <img src="./images/oralabs.jpg" alt="Oralabs">
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <h2>Print Design</h2>
-
-  <div class="row">
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          TWC
-        </div>
-        <img src="./images/twc.jpg" alt="Time Warner Cable">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Terracare
-        </div>
-        <img src="./images/terracare.jpg" alt="Terracare">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Leashables
-        </div>
-        <img src="./images/leashables.jpg" alt="Leashables">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Oralabs
-        </div>
-        <img src="./images/oralabs.jpg" alt="Oralabs">
-      </div>
-    </div>
-  </div>
-
-<hr>
-
-<h2>Product/Packaging Design</h2>
-
-  <div class="row">
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          TWC
-        </div>
-        <img src="./images/twc.jpg" alt="Time Warner Cable">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Terracare
-        </div>
-        <img src="./images/terracare.jpg" alt="Terracare">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Leashables
-        </div>
-        <img src="./images/leashables.jpg" alt="Leashables">
-      </div>
-    </div>
-    <div class="fourth">
-      <div class="portfolio-gallery">
-        <div class="cap">
-          Oralabs
-        </div>
-        <img src="./images/oralabs.jpg" alt="Oralabs">
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 
   {% include end_content.html %}
 </section>
 <!-- /.portfolio -->
+
+<!-- Modal -->
+{% for modal in site.data.modals.modals %}
+<div class="modal">
+  <div id="modal{{ forloop.index }}" class="modal-container">
+    <div class="modal-close"></div>
+    <div id="modal-content">
+
+      <div class="modal-header">
+        <h3>{{ item.alt }}</h3>
+      </div>
+
+      <div class="modal-body">
+        <figure>
+          <img src="./images/{{ item.img }}" alt="{{ item.alt }}">
+          <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
+        </figure>
+      </div>
+
+      <div class="modal-footer">
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endfor %}
+<div class="modal-overlay"></div>
+<!-- ./ Modal -->
