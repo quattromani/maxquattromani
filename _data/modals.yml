@@ -33,73 +33,34 @@ modals:
       title: ASI Chicago 2012
  - section: Print
    examples:
-    - img: 'twc.jpg'
-      alt: 'Time Warner Cable'
-      title: TWC
-    - img: 'myterracare.jpg'
-      alt: 'Terracare Associates'
-      title: Terracare
+    - img: 'buyersGuide.jpg'
+      alt: 'Buyers Guide'
+      title: Buyers Guide
+    - img: 'youCool.jpg'
+      alt: 'You Cool? - Magazine Cover'
+      title: You Cool?
  - section: Product Packaging
    examples:
-    - img: 'twc.jpg'
-      alt: 'Time Warner Cable'
-      title: TWC
-    - img: 'myterracare.jpg'
-      alt: 'Terracare Associates'
-      title: Terracare
+    - img: 'scope.jpg'
+      alt: 'Scope Minibrush - Retail Packaging'
+      title: Scope Minibrush
+    - img: 'crest.jpg'
+      alt: 'Crest Whitestrips - Retail Packaging'
+      title: Crest Whitestrips
+    - img: 'crestBox.jpg'
+      alt: 'Crest Whitestrips - Retail Packaging'
+      title: Crest Whitestrips Box
  - section: Art
    examples:
-    - img: 'twc.jpg'
+    - img: '12.jpg'
       alt: 'Time Warner Cable'
       title: TWC
-    - img: 'myterracare.jpg'
-      alt: 'Terracare Associates'
-      title: Terracare
-# modals:
-#   - section: Web
-    - img: 'twc.jpg'
+    - img: '14.jpg'
       alt: 'Time Warner Cable'
       title: TWC
-
-    - img: 'terracare.jpg'
-      alt: 'Terracare Associates'
-      title: Terracare
-
-    - img: 'coschoolchiefs.jpg'
-      alt: 'Colorado School Chiefs'
-      title: Colorado School Chiefs
-
-    - img: 'eastfield.jpg'
-      alt: 'Eastfield Mall'
-      title: Eastfield Mall
-
-#   - section: Email
-#     - img: 'at&t.jpg'
-#       alt: 'AT&amp;T Corporate Complex - Commercial Landscape'
-#       text: Timely performance with technical competence
-
-#   - section: Print
-#     - img: 'at&t.jpg'
-#       alt: 'AT&amp;T Corporate Complex - Commercial Landscape'
-#       text: Timely performance with technical competence
-
-#   - section: Product Packaging
-#     - img: 'scope.jpg'
-#       alt: 'Scope Minibrush - Retail Packaging'
-#       title: Scope Minibrush
-#       text: Timely performance with technical competence
-
-#     - img: 'crest.jpg'
-#       alt: 'Crest Whitestrips - Retail Packaging'
-#       title: Crest Whitestrips
-#       text: Timely performance with technical competence
-
-#     - img: 'crestBox.jpg'
-#       alt: 'Crest Whitestrips - Retail Packaging'
-#       title: Crest Whitestrips Box
-#       text: Timely performance with technical competence
-
-#   - section: Art
-#     - img: 'crest.jpg'
-#       alt: 'Crest Whitestrips - Retail Packaging'
-#       text: Timely performance with technical competence
+    - img: '19.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC
+    - img: '23.jpg'
+      alt: 'Time Warner Cable'
+      title: TWC

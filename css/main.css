@@ -3356,7 +3356,7 @@ input.switch:checked ~ label:after {
 
 /* ==========================================================================
     Images -- Version: 0.4.1 - Compiled: timestamp()
-   ========================================================================== */
+    ========================================================================== */
 img {
   display: inherit;
   max-width: 100%;
@@ -3392,6 +3392,11 @@ figcaption {
 
 .image-bordered {
   border: 0.5em solid #e6e6e6; }
+
+.portfolio-gallery {
+  width: 100%;
+  height: 154px;
+  overflow: hidden; }
 
 [class*='image-focus-'] {
   min-height: 200px;

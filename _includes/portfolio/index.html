@@ -54,19 +54,21 @@
 
 <!-- Modal -->
 {% for modal in site.data.modals.modals %}
+{% for s in modal.section %}
+{% for e in modal.examples %}
 <div class="modal">
   <div id="modal{{ forloop.index }}" class="modal-container">
     <div class="modal-close"></div>
     <div id="modal-content">
 
       <div class="modal-header">
-        <h3>{{ item.alt }}</h3>
+        <h3>{{ e.alt }}</h3>
       </div>
 
       <div class="modal-body">
         <figure>
-          <img src="./images/{{ item.img }}" alt="{{ item.alt }}">
-          <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
+          <img src="./images/{{ e.img }}" alt="{{ e.alt }}">
+          <figcaption><a href="http://{{ e.url }}">{{ example.alt }}</a></figcaption>
         </figure>
       </div>
 
@@ -76,6 +78,8 @@
     </div>
   </div>
 </div>
+{% endfor %}
+{% endfor %}
 {% endfor %}
 <div class="modal-overlay"></div>
 <!-- ./ Modal -->
