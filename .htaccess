@@ -677,12 +677,15 @@ FileETag None
 
   # Media
     ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
     ExpiresByType video/mp4                             "access plus 1 month"
     ExpiresByType video/ogg                             "access plus 1 month"
     ExpiresByType video/webm                            "access plus 1 month"
+
+  # Images
+    ExpiresByType image/jpg                             "access 1 year"
+    ExpiresByType image/jpeg                            "access 1 year"
+    ExpiresByType image/gif                             "access 1 year"
+    ExpiresByType image/png                             "access 1 year"
 
   # Web feeds
     ExpiresByType application/atom+xml                  "access plus 1 hour"
