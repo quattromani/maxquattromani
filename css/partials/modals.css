@@ -27,10 +27,29 @@
   float: right;
   top: -.5em;
   right: -.5em;
-  height: 32px;
-  width: 32px;
-  background: url("../images/modal-close.png") no-repeat;
+  padding-top: 0.5em;
+  padding-right: 0.75em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  border-radius: 50px;
+  background-clip: padding-box;
+  background: #ff675f;
   cursor: pointer;
+}
+.ie .modal .modal-close {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF675F, endColorstr=#FFFF675F)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF675F,endColorstr=#FFFF675F);
+  zoom: 1;
+}
+.modal .modal-close span {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  font-weight: 700;
 }
 .modal .modal-header {
   padding-top: 1em;

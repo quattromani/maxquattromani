@@ -26,6 +26,10 @@
         }
       }
 
+      a:hover {
+        text-deocration: none;
+      }
+
       .content {
         @include vertical-align;
       }

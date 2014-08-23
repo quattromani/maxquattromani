@@ -94,13 +94,13 @@
     cursor: pointer;
     @include transition;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     img {
       border: 0 none;
       text-decoration: none;
-    }
-
-    &:hover {
-      border-bottom: 1px dotted currentColor;
     }
 
     &.muted,
@@ -125,7 +125,7 @@
 	  Headings
    ========================== */
 
-   header {
+  header {
     text-align: center;
   }
 
@@ -301,26 +301,3 @@ mark {
   .fa {
     @include font-family($fontawesome);
   }
-
-/* ==========================
-    Logo
-    ========================== */
-
-    .GLG {
-      font-family: "NeueHaasGroteskDisp Pro 75", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: bolder;
-      letter-spacing: -1px;
-    }
-
-    .logo_slash,
-    .division {
-      @include font-family($base-font);
-      color: $color-primary-red;
-      font-weight: 200;
-    }
-
-    .division {
-      position: relative;
-      left: -.1em;
-      color: $color-dark-grey;
-    }

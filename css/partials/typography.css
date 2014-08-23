@@ -83,12 +83,12 @@ a {
   will-change: transition;
   transition: all 0.2s ease-in-out;
 }
+a:hover {
+  text-decoration: underline;
+}
 a img {
   border: 0 none;
   text-decoration: none;
-}
-a:hover {
-  border-bottom: 1px dotted currentColor;
 }
 a.muted, .muted a {
   color: #e6e6e6;
@@ -401,28 +401,4 @@ samp {
   font-family: "FontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
-}
-
-/* ==========================
-    Logo
-    ========================== */
-.GLG {
-  font-family: "NeueHaasGroteskDisp Pro 75", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bolder;
-  letter-spacing: -1px;
-}
-
-.logo_slash,
-.division {
-  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  color: #ff675f;
-  font-weight: 200;
-}
-
-.division {
-  position: relative;
-  left: -.1em;
-  color: #b3b3b3;
 }

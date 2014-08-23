@@ -33,10 +33,17 @@
         float: right;
         top: -.5em;
         right: -.5em;
-        height: 32px;
-        width: 32px;
-        background: url('../images/modal-close.png') no-repeat;
+        @include padding(.5em, .75em);
+        @include border-radius(50px);
+        @include rgba($color-primary-red, 1);
         cursor: pointer;
+
+        span {
+          @include font-size(24);
+          @include font-family($fontawesome);
+          color: $color-white;
+          font-weight: 700;
+        }
       }
 
       .modal-header {

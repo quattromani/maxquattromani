@@ -28,6 +28,9 @@
     font-size: 5.5rem;
   }
 }
+.banner a:hover {
+  text-deocration: none;
+}
 .banner .content {
   position: relative;
   top: 50%;

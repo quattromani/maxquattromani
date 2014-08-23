@@ -552,6 +552,8 @@ textarea {
       .banner h1 {
         font-size: 55px;
         font-size: 5.5rem; } }
+  .banner a:hover {
+    text-deocration: none; }
   .banner .content {
     position: relative;
     top: 50%;
@@ -604,7 +606,7 @@ nav {
         color: white; }
         nav ul li a:hover {
           color: white;
-          border: none; }
+          text-decoration: none; }
       @media (max-width: 62em) {
         nav ul li {
           display: block;
@@ -738,11 +740,11 @@ a {
   will-change: transition;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
+  a:hover {
+    text-decoration: underline; }
   a img {
     border: 0 none;
     text-decoration: none; }
-  a:hover {
-    border-bottom: 1px dotted currentColor; }
   a.muted, .muted a {
     color: #e6e6e6; }
   a[href$='.pdf']:after {
@@ -1007,27 +1009,6 @@ samp {
   font-family: "FontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal; }
-
-/* ==========================
-    Logo
-    ========================== */
-.GLG {
-  font-family: "NeueHaasGroteskDisp Pro 75", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bolder;
-  letter-spacing: -1px; }
-
-.logo_slash,
-.division {
-  font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  color: #ff675f;
-  font-weight: 200; }
-
-.division {
-  position: relative;
-  left: -.1em;
-  color: #b3b3b3; }
 
 /* ==========================================================================
     Colors & Gradients -- Version: 0.4.3 - Compiled: timestamp()
@@ -2995,10 +2976,28 @@ label + .pill,
   float: right;
   top: -.5em;
   right: -.5em;
-  height: 32px;
-  width: 32px;
-  background: url("../images/modal-close.png") no-repeat;
+  padding-top: 0.5em;
+  padding-right: 0.75em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  border-radius: 50px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #ff675f;
   cursor: pointer; }
+  .ie .modal .modal-close {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF675F, endColorstr=#FFFF675F)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF675F,endColorstr=#FFFF675F);
+    zoom: 1; }
+  .modal .modal-close span {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-weight: 700; }
 .modal .modal-header {
   padding-top: 1em;
   padding-right: 1em;

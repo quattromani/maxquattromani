@@ -46,7 +46,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: white;
-  border: none;
+  text-decoration: none;
 }
 @media (max-width: 62em) {
   nav ul li {
