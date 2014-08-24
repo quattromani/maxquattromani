@@ -1,5 +1,5 @@
 - name: "Home"
-  url: "/maxquattromani/"
+  url: "/"
 
 - name: "About"
   url: "/about"
