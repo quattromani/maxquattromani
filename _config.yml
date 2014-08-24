@@ -11,7 +11,7 @@ github_username:  quattromani
 markdown: kramdown
 permalink: pretty
 
-exclude: ['node_modules', 'scss']
+exclude: ['node_modules', 'scss', 'DAM']
 
 google_analytics: true
 google_analytics_id: UA-17676310-1
