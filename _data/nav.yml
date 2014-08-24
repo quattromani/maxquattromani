@@ -1,26 +1,20 @@
 - name: "Home"
   url: "/maxquattromani/"
 
-- name: "Summary"
-  url: "#summary"
+- name: "About"
+  url: "/about"
 
-- name: "Skills"
-  url: "#skills"
+- name: "Resume"
+  url: "/resume"
 
-- name: "Experience"
-  url: "#experience"
+- name: "Styleguide"
+  url: "/styleguide"
 
-- name: "Education"
-  url: "#education"
+- name: "Patterns"
+  url: "/patterns"
 
-- name: "Portfolio"
-  url: "#portfolio"
+- name: "SDLC"
+  url: "/sdlc"
 
-- name: "Code Samples"
-  url: "#code_samples"
-
-- name: "Speaking"
-  url: "#speaking"
-
-- name: "Contact"
-  url: "#contact"
+- name: "Blog"
+  url: "/blog"
