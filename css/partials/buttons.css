@@ -1,7 +1,7 @@
 /* ==========================================================================
     Buttons -- Version: 0.4.2 - Compiled: timestamp()
    ========================================================================== */
-.btn,
+.btn, .search-goog input[type='submit'],
 .button,
 button,
 .cta {
@@ -31,14 +31,14 @@ button,
   color: inherit;
   cursor: pointer;
 }
-.btn:hover,
+.btn:hover, .search-goog input[type='submit']:hover,
 .button:hover,
 button:hover,
 .cta:hover {
   background: #e5e5e5;
   color: #454545;
 }
-.btn:focus,
+.btn:focus, .search-goog input[type='submit']:focus,
 .button:focus,
 button:focus,
 .cta:focus {
@@ -46,79 +46,83 @@ button:focus,
   background-image: 0;
   outline: none;
 }
-.btn.btn-primary, .btn.button-primary,
+.btn.btn-primary, .search-goog input[type='submit'], .btn.button-primary, .search-goog input.button-primary[type='submit'],
 .button.btn-primary,
+.search-goog input.button[type='submit'],
 .button.button-primary,
 button.btn-primary,
 button.button-primary,
 .cta.btn-primary,
+.search-goog input.cta[type='submit'],
 .cta.button-primary {
   border-bottom: 3px solid #ff372c;
   background: #ff675f;
   color: white;
 }
-.btn.btn-primary:hover, .btn.button-primary:hover,
+.btn.btn-primary:hover, .search-goog input[type='submit']:hover, .btn.button-primary:hover, .search-goog input.button-primary[type='submit']:hover,
 .button.btn-primary:hover,
+.search-goog input.button[type='submit']:hover,
 .button.button-primary:hover,
 button.btn-primary:hover,
 button.button-primary:hover,
 .cta.btn-primary:hover,
+.search-goog input.cta[type='submit']:hover,
 .cta.button-primary:hover {
   background: #ff372c;
 }
-.btn.btn-error,
+.btn.btn-error, .search-goog input.btn-error[type='submit'],
 .button.btn-error,
 button.btn-error,
 .cta.btn-error {
   background: #ff675f;
   color: white;
 }
-.btn.btn-error:hover,
+.btn.btn-error:hover, .search-goog input.btn-error[type='submit']:hover,
 .button.btn-error:hover,
 button.btn-error:hover,
 .cta.btn-error:hover {
   background: #ffe0df;
 }
-.btn.btn-success,
+.btn.btn-success, .search-goog input.btn-success[type='submit'],
 .button.btn-success,
 button.btn-success,
 .cta.btn-success {
   background: #6fd57f;
   color: white;
 }
-.btn.btn-success:hover,
+.btn.btn-success:hover, .search-goog input.btn-success[type='submit']:hover,
 .button.btn-success:hover,
 button.btn-success:hover,
 .cta.btn-success:hover {
   background: #00bdbd;
 }
-.btn.btn-info,
+.btn.btn-info, .search-goog input.btn-info[type='submit'],
 .button.btn-info,
 button.btn-info,
 .cta.btn-info {
   background: #2bb3dd;
   color: white;
 }
-.btn.btn-info:hover,
+.btn.btn-info:hover, .search-goog input.btn-info[type='submit']:hover,
 .button.btn-info:hover,
 button.btn-info:hover,
 .cta.btn-info:hover {
   background: #83d3eb;
 }
-.btn.btn-black,
+.btn.btn-black, .search-goog input.btn-black[type='submit'],
 .button.btn-black,
 button.btn-black,
 .cta.btn-black {
   background: black;
   color: white;
 }
-.btn.btn-black:hover,
+.btn.btn-black:hover, .search-goog input.btn-black[type='submit']:hover,
 .button.btn-black:hover,
 button.btn-black:hover,
 .cta.btn-black:hover {
   background: #cccccc;
 }
-.btn:disabled, .btn.js-disabled, .btn.disabled,
+.btn:disabled, .search-goog input[type='submit']:disabled, .btn.js-disabled, .search-goog input.js-disabled[type='submit'], .btn.disabled, .search-goog input.disabled[type='submit'],
 .button:disabled,
 .button.js-disabled,
 .button.disabled,
@@ -133,7 +137,7 @@ button.disabled,
   color: #cccccc;
   pointer-events: none;
 }
-.btn:disabled:hover, .btn:disabled:active, .btn.js-disabled:hover, .btn.js-disabled:active, .btn.disabled:hover, .btn.disabled:active,
+.btn:disabled:hover, .search-goog input[type='submit']:disabled:hover, .btn:disabled:active, .search-goog input[type='submit']:disabled:active, .btn.js-disabled:hover, .search-goog input.js-disabled[type='submit']:hover, .btn.js-disabled:active, .search-goog input.js-disabled[type='submit']:active, .btn.disabled:hover, .search-goog input.disabled[type='submit']:hover, .btn.disabled:active, .search-goog input.disabled[type='submit']:active,
 .button:disabled:hover,
 .button:disabled:active,
 .button.js-disabled:hover,
@@ -155,7 +159,7 @@ button.disabled:active,
   background: #e6e6e6;
   color: #cccccc;
 }
-.btn.block,
+.btn.block, .search-goog input.block[type='submit'],
 .button.block,
 button.block,
 .cta.block {
@@ -163,7 +167,7 @@ button.block,
   width: 100%;
   text-align: center;
 }
-.btn.btn-xl,
+.btn.btn-xl, .search-goog input.btn-xl[type='submit'],
 .button.btn-xl,
 button.btn-xl,
 .cta.btn-xl {
@@ -172,7 +176,7 @@ button.btn-xl,
   padding-bottom: 0.75em;
   padding-left: 2em;
 }
-.btn.btn-lg,
+.btn.btn-lg, .search-goog input.btn-lg[type='submit'],
 .button.btn-lg,
 button.btn-lg,
 .cta.btn-lg {
@@ -181,7 +185,7 @@ button.btn-lg,
   padding-bottom: 0.5em;
   padding-left: 1.5em;
 }
-.btn.btn-sm,
+.btn.btn-sm, .search-goog input.btn-sm[type='submit'],
 .button.btn-sm,
 button.btn-sm,
 .cta.btn-sm {
@@ -192,24 +196,28 @@ button.btn-sm,
   padding-left: 0.66667em;
 }
 @media (max-width: 40em) {
-  .btn.mobile-full,
+  .btn.mobile-full, .search-goog input.mobile-full[type='submit'],
   .button.mobile-full,
   button.mobile-full,
   .cta.mobile-full {
     display: block;
     width: 100%;
   }
-  .btn.mobile-full a,
+  .btn.mobile-full a, .search-goog input.mobile-full[type='submit'] a,
   .button.mobile-full a,
   button.mobile-full a,
   .cta.mobile-full a {
     display: block;
     text-align: center;
   }
-  .btn.mobile-full + .btn.mobile-full,
+  .btn.mobile-full + .btn.mobile-full, .search-goog input.mobile-full[type='submit'] + .btn.mobile-full, .search-goog .btn.mobile-full + input.mobile-full[type='submit'], .search-goog input.mobile-full[type='submit'] + input.mobile-full[type='submit'],
   .button.mobile-full + .btn.mobile-full,
+  .search-goog .button.mobile-full + input.mobile-full[type='submit'],
   button.mobile-full + .btn.mobile-full,
-  .cta.mobile-full + .btn.mobile-full, .btn.mobile-full +
+  .search-goog button.mobile-full + input.mobile-full[type='submit'],
+  .cta.mobile-full + .btn.mobile-full,
+  .search-goog .cta.mobile-full + input.mobile-full[type='submit'], .btn.mobile-full +
+  .button.mobile-full, .search-goog input.mobile-full[type='submit'] +
   .button.mobile-full,
   .button.mobile-full +
   .button.mobile-full,
@@ -217,6 +225,7 @@ button.btn-sm,
   .button.mobile-full,
   .cta.mobile-full +
   .button.mobile-full, .btn.mobile-full +
+  button.mobile-full, .search-goog input.mobile-full[type='submit'] +
   button.mobile-full,
   .button.mobile-full +
   button.mobile-full,
@@ -224,6 +233,7 @@ button.btn-sm,
   button.mobile-full,
   .cta.mobile-full +
   button.mobile-full, .btn.mobile-full +
+  .cta.mobile-full, .search-goog input.mobile-full[type='submit'] +
   .cta.mobile-full,
   .button.mobile-full +
   .cta.mobile-full,
@@ -278,4 +288,13 @@ button.btn-sm,
 .ie button {
   overflow: visible;
   width: auto;
+}
+
+.search-goog input[type='text'] {
+  border: 1px solid #e6e6e6 !important;
+  padding: .5em !important;
+  margin-bottom: .5em !important;
+}
+.search-goog input[type='submit']:hover {
+  color: white;
 }

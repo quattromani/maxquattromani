@@ -183,3 +183,21 @@ button,
   overflow: visible;
   width: auto;
 }
+
+// Google search on 404
+.search-goog {
+  input[type='text'] {
+    border: 1px solid $color-light-grey !important;
+    padding: .5em !important;
+    margin-bottom: .5em !important;
+  }
+
+  input[type='submit'] {
+    @extend .btn;
+    @extend .btn-primary;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

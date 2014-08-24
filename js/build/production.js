@@ -1,3 +1,6 @@
+var smallBreakPoint = 640;
+var mediumBreakPoint = 768;
+
 /* ==========================================================================
     Prototype Tools -- Version: 1.9.0.2 - Updated: 1/20/2014
    ========================================================================== */
@@ -73,8 +76,6 @@ $('.fonts').each(function(){
     $(this).prepend(fonts);
 });
 
-var smallBreakPoint = 640;
-var mediumBreakPoint = 768;
 (function($) {
 
 	$.fn.jumpTo = function() {

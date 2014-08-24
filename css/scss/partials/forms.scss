@@ -13,7 +13,7 @@
       vertical-align: baseline;
     }
 
-    input[type]:not([type=range]),
+    input[type]:not([type=range]):not([type=submit]),
     textarea,
     select {
       width: 100%;
@@ -68,6 +68,7 @@
           @include box-shadow(none);
         }
       }
+
       &[type="range"] {
         width: 100%;
         height: .5em;
