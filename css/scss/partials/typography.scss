@@ -222,6 +222,12 @@ p,
   &:only-child {
     @include margin;
   }
+
+  article & {
+    &:last-child:after {
+      content: url(images/end_mark.jpg);
+    }
+  }
 }
 
 .b {
