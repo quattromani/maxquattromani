@@ -1,3 +1,8 @@
+- section: Currently Reading
+  examples:
+  - title: 'The Decision Book - 50 Models for Strategic Thinking'
+    url: 'http://www.barnesandnoble.com/w/decision-book-mikael-krogerus/1103217590?ean=9780393079616'
+
 - section: Books
   examples:
   - title: 'SMACSS'
