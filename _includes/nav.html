@@ -7,7 +7,11 @@
 
     <ul class="navigation">
       {% for nav in site.data.nav %}
+      {% if nav.name == page.parent %}
+      <li class="active">
+      {% else %}
       <li>
+      {% endif %}
         <a href="{{ nav.url }}" class="text-center">{{ nav.name }}</a>
       </li>
       {% endfor %}
