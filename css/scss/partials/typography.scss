@@ -225,8 +225,10 @@ p,
 
   article & {
     &:last-child:after {
+      @include font-family($heading-font);
+      content: 'FIN';
+      color: $color-secondary-red;
       margin-left: .25em;
-      content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOBAMAAADtZjDiAAAAJ1BMVEX/Nyz/Nyz/Nyz/RDn/aWH/dm7/j4j/m5b/tLD/2tf/5uX/8/L///8ZnArQAAAAAnRSTlMwv/ILVdYAAABZSURBVAjXY2BUAgEBBiElZRcjJUUGJeWeMyeMlBiULM+sPjMZSPdsUfI+ocSgfMZJSeWMEYPKaaDyNU4MKqeA9B4nuDhMHVDfrjNTlSDm1CRBzI0KZIDaAwC+/h+jLXN0owAAAABJRU5ErkJggg==);
     }
   }
 }

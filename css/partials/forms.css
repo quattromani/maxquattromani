@@ -199,7 +199,7 @@ input[type="file"]::-webkit-file-upload-button {
 
 input[type="checkbox"].switch:empty,
 input[type="radio"].radio:empty {
-  margin-left: -9999px;
+  margin-left: -9999px !important;
 }
 
 input.switch:empty ~ label,

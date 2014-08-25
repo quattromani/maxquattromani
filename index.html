@@ -5,4 +5,21 @@ class: home
 parent: Home
 ---
 
-{% include intro/index.html %}
+{% include content.html %}
+
+{% for post in site.posts %}
+<h2>
+  <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a>
+</h2>
+<h3>{{ post.sub-title }}</h3>
+<strong>
+  {{ post.date | date_to_string }}
+</strong>
+<div class="blog-content">
+  {{ post.content }}
+</div>
+
+<hr>
+{% endfor %}
+
+{% include end_content.html %}
