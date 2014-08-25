@@ -13,9 +13,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"command_palette":
 	{
@@ -92,18 +89,65 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_layouts/post.html",
+		"/Users/Q/Sites/maxquattromani/_config.yml",
+		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
+		"/Users/Q/Sites/maxquattromani/about/index.html",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
+		"/Users/Q/Sites/maxquattromani/blog/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/head.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/about/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/audio/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/best_practices/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/buttons/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/colors/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/flexbox/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/grid/combinations/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/grid/flexbox/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/grid/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/grid/marginless/combinations/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/grid/marginless/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/message-box/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/modals/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/pagination/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/pills/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/summary/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/tables/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/images/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/progress/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/body_text/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/fonts/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/headings/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/icons/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/inline_text/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/typography/text_alignment/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/video/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/box/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/breadcrumbs/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/carousel/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/forms/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/info-box/index.html",
+		"/Users/Q/Sites/maxquattromani/patterns/lists/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
+		"/Users/Q/Sites/maxquattromani/_includes/summary/index.html",
+		"/Users/Q/Sites/maxquattromani/styleguide/index.html",
+		"/Users/Q/Sites/maxquattromani/resume/index.html",
+		"/Users/Q/Sites/maxquattromani/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/intro/index.html",
+		"/Users/Q/Sites/maxquattromani/_data/nav.yml",
+		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
+		"/Users/Q/Sites/maxquattromani/_layouts/patterns.html",
+		"/Users/Q/Sites/maxquattromani/_layouts/styleguide.html",
+		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
 		"/Users/Q/Sites/maxquattromani/404.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/forms.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/buttons.scss",
 		"/Users/Q/Sites/maxquattromani/css/partials/buttons.css",
-		"/Users/Q/Sites/maxquattromani/_config.yml",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/sections.scss",
 		"/Users/Q/Sites/maxquattromani/js/main.js",
-		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
-		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
-		"/Users/Q/Sites/maxquattromani/_includes/head.html",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
 		"/Users/Q/Sites/maxquattromani/_includes/nav.html",
 		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
 		"/Users/Q/Sites/maxquattromani/js/build/production.js",
@@ -172,64 +216,18 @@
 		"/Users/Q/Sites/scaffold/js/buttons.js",
 		"/Users/Q/Sites/scaffold/js/build/production.js",
 		"/Users/Q/Sites/scaffold/css/partials/progress.css",
-		"/Users/Q/Sites/scaffold/styleguide/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/partials/forms.scss",
-		"/Users/Q/Sites/scaffold/_includes/patterns/forms/index.html",
-		"/Users/Q/Sites/scaffold/js/drop.js",
-		"/Users/Q/Sites/scaffold/_includes/styleguide/drop/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/globals/_helpers.scss",
-		"/Users/Q/Sites/scaffold/css/partials/typography.css",
-		"/Users/Q/Sites/scaffold/_includes/patterns/carousel/index.html",
-		"/Users/Q/Sites/scaffold/js/carousel.js",
-		"/Users/Q/Sites/scaffold/patterns/carousel/index.html",
-		"/Users/Q/Sites/scaffold/styleguide/typography/inline_text/index.html",
-		"/Users/Q/Sites/scaffold/_includes/patterns/summary/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/partials/summary.scss",
-		"/Users/Q/Sites/scaffold/css/partials/summary.css",
-		"/Users/Q/Sites/scaffold/css/scss/partials/print.scss",
-		"/Users/Q/Sites/scaffold/styleguide/drop/index.html",
-		"/Users/Q/Sites/scaffold/patterns/summary/index.html",
-		"/Users/Q/Sites/scaffold/patterns/index.html",
-		"/Users/Q/Sites/scaffold/css/partials/modules.css",
-		"/Users/Q/Sites/scaffold/styleguide/patterns/index.html",
-		"/Users/Q/Sites/scaffold/_includes/styleguide/audio/index.html",
-		"/Users/Q/Sites/scaffold/.htaccess",
-		"/Users/Q/Sites/scaffold/css/partials/images.css",
-		"/Users/Q/Sites/scaffold/css/main.css",
-		"/Users/Q/Sites/scaffold/_includes/patterns/lists/index.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/progress/progress-app.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/responsive-nav/responsive-nav.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/responsive-nav/index.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/responsive-nav/reponsive-nav.css",
-		"/Users/Q/Sites/scaffold/web-components/index.html",
-		"/Users/Q/Sites/scaffold/styleguide/progress/index.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/progress/index.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/skeleton/index.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/skeleton/skeleton-app.html",
-		"/Users/Q/Sites/scaffold/web-components/elements/skeleton/second-skeleton.html",
-		"/Users/Q/Sites/scaffold/css/partials/layout.css",
-		"/Users/Q/Sites/scaffold/css/partials/helpers.css",
-		"/Users/Q/Sites/scaffold/web-components/elements/progress/second-skeleton.html",
-		"/Users/Q/Sites/scaffold/css/scss/theme/_buttons-theme.scss",
-		"/Users/Q/Sites/scaffold/css/scss/theme/_base-theme.scss",
-		"/Users/Q/Sites/scaffold/SDLC/index.html",
-		"/Users/Q/Sites/scaffold/_includes/patterns/info-box/index.html",
-		"/Users/Q/Sites/scaffold/_includes/styleguide/best_practices/index.html",
-		"/Users/Q/Sites/scaffold/index.html",
-		"/Users/Q/Sites/scaffold/_includes/styleguide/buttons/index.html",
-		"/Users/Q/Sites/scaffold/_layouts/default.html",
-		"/Users/Q/Sites/scaffold/css/partials/*.css",
-		"/Users/Q/Sites/scaffold/package.json"
+		"/Users/Q/Sites/scaffold/styleguide/index.html"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Q/Sites/maxquattromani",
 			"<project>",
 			"/Users/Q/Sites/scaffold",
 			"<project>"
@@ -240,6 +238,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"layout: patterns",
+			"layout: styleguide",
 			"fontaw",
 			"*",
 			"head",
@@ -365,9 +365,7 @@
 			"opaci",
 			"inli",
 			"btn-primary",
-			"a",
-			"btn-primary",
-			"margin"
+			"a"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -375,6 +373,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"layout: default",
 			"fa-gears",
 			"@include first;",
 			"first-child",
@@ -392,14 +391,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 28.0
@@ -439,7 +430,6 @@
 	{
 		"height": 122.0
 	},
-	"project": "maxquattromani.sublime-project",
 	"replace":
 	{
 		"height": 52.0
