@@ -7,19 +7,25 @@ parent: Home
 
 {% include content.html %}
 
+{% include intro/index.html %}
+
+<hr>
+
 {% for post in site.posts %}
 <h2>
   <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a>
 </h2>
 <h3>{{ post.sub-title }}</h3>
 <strong>
+  <time>
   {{ post.date | date_to_string }}
+  </time>
 </strong>
 <div class="blog-content">
   {{ post.content }}
 </div>
 
-<hr>
+<hr class="blog">
 {% endfor %}
 
 {% include end_content.html %}

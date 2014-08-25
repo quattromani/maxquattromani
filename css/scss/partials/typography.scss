@@ -171,6 +171,9 @@ $i: 1;
     font-family: nth($value, 4);
     @include font-size(nth($value, 2));
     font-weight: nth($value, 3);
+    clear: inherit;
+    vertical-align: middle;
+    line-height: normal;
 
     @if $i <= 3 {
       @include bp(bp-medium) {
@@ -199,18 +202,12 @@ small {
 }
 
 p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 ul,
 ol,
 dl,
 blockquote {
-  clear: inherit;
   margin-bottom: $margin / 3;
+  clear: inherit;
   vertical-align: middle;
 }
 
@@ -223,14 +220,14 @@ p,
     @include margin;
   }
 
-  article & {
-    &:last-of-type:after {
-      @include font-family($heading-font);
-      content: 'FIN';
-      color: $color-secondary-red;
-      margin-left: .25em;
-    }
-  }
+  // article & {
+  //   &:last-of-type:after {
+  //     @include font-family($heading-font);
+  //     content: 'FIN';
+  //     color: $color-secondary-red;
+  //     margin-left: .25em;
+  //   }
+  // }
 }
 
 .b {
@@ -278,6 +275,11 @@ sub {
 mark {
   @include padding(.25em);
   background: $color-primary-yellow;
+}
+
+time {
+  @include inline-block;
+  margin-bottom: $margin * 2;
 }
 
 /* ==========================

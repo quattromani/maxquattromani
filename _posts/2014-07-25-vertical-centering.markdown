@@ -18,8 +18,6 @@ In the broadest terms; <code>currentColor</code> is the equivalent of <code>inhe
 
 {% highlight html %}
 .parent-element {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
@@ -38,8 +36,6 @@ To make it even more simple, we can write it as a mixin with its vendor prefixes
 @mixin vertical-align {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -54,8 +50,6 @@ Or you can use the Sass placeholder selector to reduce code bloat in the output 
 %vertical-align {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -63,5 +57,7 @@ Or you can use the Sass placeholder selector to reduce code bloat in the output 
   @extend %vertical-align;
 }
 {% endhighlight %}
+
+*check you vendor prefixes - these were left out to simplify the code.
 
 <h5>FIN</h5>

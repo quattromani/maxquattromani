@@ -175,6 +175,9 @@ h1,
   font-size: 42px;
   font-size: 4.2rem;
   font-weight: 200;
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
 }
 @media (max-width: 62em) {
   h1,
@@ -197,6 +200,9 @@ h2,
   font-size: 36px;
   font-size: 3.6rem;
   font-weight: 200;
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
 }
 @media (max-width: 62em) {
   h2,
@@ -219,6 +225,9 @@ h3,
   font-size: 30px;
   font-size: 3rem;
   font-weight: 700;
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
 }
 @media (max-width: 62em) {
   h3,
@@ -241,6 +250,9 @@ h4,
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: 200;
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 h5,
@@ -249,6 +261,9 @@ h5,
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 700;
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 h6,
@@ -257,6 +272,9 @@ h6,
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 100;
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .h1,
@@ -279,18 +297,12 @@ small {
 }
 
 p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 ul,
 ol,
 dl,
 blockquote {
-  clear: inherit;
   margin-bottom: 0.33333em;
+  clear: inherit;
   vertical-align: middle;
 }
 
@@ -305,15 +317,6 @@ p:only-child,
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-}
-article p:last-of-type:after, article
-.p:last-of-type:after {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  content: 'FIN';
-  color: #ff372c;
-  margin-left: .25em;
 }
 
 .b {
@@ -367,6 +370,14 @@ mark {
   padding-bottom: 0.25em;
   padding-left: 0.25em;
   background: #ffda21;
+}
+
+time {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  margin-bottom: 2em;
 }
 
 /* ==========================
