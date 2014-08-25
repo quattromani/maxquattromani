@@ -145,7 +145,7 @@
     }
 
     h2 {
-      @include padding($padding / 2, $padding);
+      @include padding($padding / 4, $padding);
       @include margin;
     }
 
