@@ -15,3 +15,9 @@
 
 - name: "SDLC"
   url: "/SDLC"
+
+- name: "Archive"
+  url: "/archive"
+
+- name: "Reading"
+  url: "/reading"

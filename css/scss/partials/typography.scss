@@ -224,7 +224,7 @@ p,
   }
 
   article & {
-    &:last-child:after {
+    &:last-of-type:after {
       @include font-family($heading-font);
       content: 'FIN';
       color: $color-secondary-red;

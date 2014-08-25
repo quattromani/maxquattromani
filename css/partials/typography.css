@@ -306,8 +306,8 @@ p:only-child,
   margin-bottom: 0;
   margin-left: 0;
 }
-article p:last-child:after, article
-.p:last-child:after {
+article p:last-of-type:after, article
+.p:last-of-type:after {
   font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
