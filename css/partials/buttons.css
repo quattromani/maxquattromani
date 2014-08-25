@@ -28,7 +28,7 @@ button,
   font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: center;
-  color: inherit;
+  color: #2bb3dd;
   cursor: pointer;
 }
 .btn:hover, .search-goog input[type='submit']:hover,
@@ -87,7 +87,7 @@ button.btn-error:hover,
 .button.btn-success,
 button.btn-success,
 .cta.btn-success {
-  background: #6fd57f;
+  background: #008a8a;
   color: white;
 }
 .btn.btn-success:hover, .search-goog input.btn-success[type='submit']:hover,

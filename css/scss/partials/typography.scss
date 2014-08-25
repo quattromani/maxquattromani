@@ -246,9 +246,14 @@ blockquote {
   width: 75%;
   @include margin(0, auto);
   border-left: 3px solid currentColor;
-  color: $text-grey;
+  color: $color-dark-grey;
   font-style: italic;
   padding-left: $padding;
+
+  footer {
+    background: none;
+    color: currentColor;
+  }
 }
 
 q {

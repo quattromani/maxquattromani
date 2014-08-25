@@ -338,9 +338,13 @@ blockquote {
   margin-bottom: 0;
   margin-left: auto;
   border-left: 3px solid currentColor;
-  color: #cccccc;
+  color: #b3b3b3;
   font-style: italic;
   padding-left: 1em;
+}
+blockquote footer {
+  background: none;
+  color: currentColor;
 }
 
 q {

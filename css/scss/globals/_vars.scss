@@ -42,17 +42,17 @@ $color-primary-indigo: #583c9c;
 $color-primary-violet: #8d25bb;
 
 $color-secondary-red: darken($color-primary-red, 10%);
-$color-secondary-green: #6fd57f;
+$color-secondary-green: darken($color-primary-green, 10%);
 $color-secondary-blue: darken($color-primary-blue, 10%);
 $color-secondary-orange: darken($color-primary-orange, 10%);
 $color-secondary-yellow: darken($color-primary-yellow, 10%);
 $color-secondary-indigo: darken($color-primary-indigo, 10%);
 $color-secondary-violet: darken($color-primary-violet, 10%);
 
-$color-tertiary-red: lighten($color-primary-red, 40%);
+$color-tertiary-red: lighten($color-primary-red, 30%);
 $color-tertiary-green: lighten($color-primary-green, 40%);
 $color-tertiary-blue: lighten($color-primary-blue, 40%);
-$color-tertiary-orange: lighten($color-primary-orange, 40%);
+$color-tertiary-orange: lighten($color-primary-orange, 30%);
 $color-tertiary-yellow: lighten($color-primary-yellow, 40%);
 $color-tertiary-indigo: lighten($color-primary-indigo, 40%);
 $color-tertiary-violet: lighten($color-primary-violet, 40%);
@@ -60,14 +60,14 @@ $color-tertiary-violet: lighten($color-primary-violet, 40%);
 // Typography
 $text: #454545;
 $text-color: $text;
-$link: inherit;
+$link: $color-primary-blue;
 $link-hover: inherit;
 $text-grey: $color-grey;
 $text-light-grey: $color-light-grey;
 $text-link: $link;
 $text-white: $color-white;
 $error: $color-secondary-red;
-$success: $color-secondary-green;
+$success: $color-primary-green;
 $info: $color-primary-blue;
 
 // Always declare site background fallback

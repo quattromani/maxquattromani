@@ -249,7 +249,7 @@ input.radio:empty ~ label:after {
 
 input.switch:checked ~ label:before,
 input.radio:checked ~ label:before {
-  background: #6fd57f;
+  background: #008a8a;
 }
 
 input.switch:checked ~ label:after {

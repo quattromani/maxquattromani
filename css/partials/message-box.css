@@ -33,10 +33,10 @@
 }
 
 .message-valid {
-  color: #6fd57f;
+  color: #008a8a;
 }
 .message-valid:before {
-  background: #beecc5;
+  background: #00f0f0;
   content: "\43";
 }
 
@@ -65,12 +65,12 @@
 
 .error-box {
   border-left: .3em solid currentColor;
-  background: white;
+  background: #fff8f8;
   color: #ff372c;
 }
 
 .valid-box {
   border-left: .3em solid currentColor;
   background: #8affff;
-  color: #6fd57f;
+  color: #008a8a;
 }
