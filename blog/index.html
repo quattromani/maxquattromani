@@ -6,31 +6,10 @@ parent: Blog
 class: blog
 ---
 
-<div class="row">
-  <div class="full">
+{% include content.html %}
 
-    {% for post in paginator.posts %}
-    <h4>
-      <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}<br>{{ post.sub-title }}</a>
-    </h4>
-    {% assign author = site.data.authors[post.author] %}
-    {% if author %}
-    <span>
-      Written by <a href="mailto:{{ author.email }}">{{ author.name }}{% if author.title %} - {{ author.title }}{% endif %}</a>
-    </span>
-    {% endif %}
-    <br>
-
-    <strong>
-      {{ post.date | date_to_string }}
-    </strong>
-  </div>
-
-  <div class="blog-content">
-    {{ post.content | truncatewords: 50 }}
-  </div>
-</div>
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
 {% endfor %}
 
-</div>
-</div>
+{% include end_content.html %}
