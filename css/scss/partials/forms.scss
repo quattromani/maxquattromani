@@ -31,11 +31,6 @@
       @include transition(all, .2s, ease-in-out);
 
       &[type='search'] {
-        padding-left: 2em;
-        background: url('/scaffold/images/iconmonstr-magnifier-5-icon-48.png') no-repeat left center;
-        background-size: 1em;
-        background-position: .5em;
-
         &::-webkit-search-decoration,
         &::-webkit-search-cancel-button,
         &::-webkit-datetime-edit-fields-wrapper {
