@@ -929,7 +929,8 @@ p,
     margin-left: 0; }
   article p:last-child:after, article
   .p:last-child:after {
-    content: url(images/end_mark.jpg); }
+    margin-left: .25em;
+    content: url(../images/end_mark.png); }
 
 .b {
   font-weight: 700; }

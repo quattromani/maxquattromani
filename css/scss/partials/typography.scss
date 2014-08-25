@@ -225,7 +225,8 @@ p,
 
   article & {
     &:last-child:after {
-      content: url(images/end_mark.jpg);
+      margin-left: .25em;
+      content: url(../images/end_mark.png);
     }
   }
 }
