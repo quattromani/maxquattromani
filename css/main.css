@@ -538,9 +538,6 @@ textarea {
   background-position: center;
   color: white;
   text-transform: uppercase; }
-  @media (max-width: 40em) {
-    .banner {
-      height: 300px; } }
   .banner h1 {
     font-size: 70px;
     font-size: 7rem; }

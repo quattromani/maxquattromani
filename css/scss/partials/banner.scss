@@ -13,10 +13,6 @@
       color: $color-white;
       text-transform: uppercase;
 
-      @include bp(bp-small) {
-        height: 300px;
-      }
-
       h1 {
         @include font-size(70);
 
