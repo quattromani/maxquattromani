@@ -238,6 +238,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"code",
 			"layout: patterns",
 			"layout: styleguide",
 			"fontaw",
@@ -364,8 +365,7 @@
 			"mailTestMessage",
 			"opaci",
 			"inli",
-			"btn-primary",
-			"a"
+			"btn-primary"
 		],
 		"highlight": true,
 		"in_selection": false,

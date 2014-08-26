@@ -14,7 +14,7 @@
         <aside>
           <h4>Contact Information</h4>
           <address>
-          <h6>Max Quattromani</h6>
+            <h6>Max Quattromani</h6>
             7637 Nuthatch Cir / Parker / CO 80134<br><br>
             <h6>Telephone</h6>
             <a class="tel" href="tel:+3038757843">303-875-7843</a><br><br>
@@ -27,7 +27,8 @@
       <div class="two-thirds">
         <h4>Let's Talk</h4>
 
-        <form action="">
+        <form action="http://getsimpleform.com/messages?form_api_token=47d0155bd92278da5143139b1d1c00ba" method="post"  autocomplete="on">
+          <input type='hidden' name='redirect_to' value='http://maxquattromani.com/thank-you' />
           <fieldset>
 
             <div class="row">
@@ -48,14 +49,12 @@
             <div class="row">
               <div class="formitem">
                 <label for="textarea" class="visually-hidden">Send me a message:</label>
-                <textarea id="textarea" placeholder="Message" tabindex="3"></textarea>
+                <textarea id="textarea" name="message" placeholder="Message" tabindex="3"></textarea>
               </div>
             </div>
 
           </fieldset>
-          <button class="btn btn-primary" type="submit" name="submit" value="submit">
-            <span>Submit</span>
-          </button>
+          <input class="btn btn-primary" type="submit" name="submit" value="Submit">
 
           <button type="reset" name="reset" value="reset">
             <span>Clear</span>
