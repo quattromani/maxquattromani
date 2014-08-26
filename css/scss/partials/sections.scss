@@ -27,6 +27,14 @@
       background-color: $color-primary-blue;
       color: $color-white;
 
+      a {
+        color: $color-white;
+
+        &:hover {
+          color: $color-light-grey;
+        }
+      }
+
       .heading span {
         background-color: $color-primary-blue;
       }

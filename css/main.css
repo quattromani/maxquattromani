@@ -2645,6 +2645,10 @@ button,
 .experience {
   background-color: #2bb3dd;
   color: white; }
+  .experience a {
+    color: white; }
+    .experience a:hover {
+      color: #e6e6e6; }
   .experience .heading span {
     background-color: #2bb3dd; }
 
