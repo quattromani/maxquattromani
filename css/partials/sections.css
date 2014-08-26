@@ -50,6 +50,12 @@
 .code_samples .heading span {
   background-color: #ff675f;
 }
+.code_samples a {
+  color: white;
+}
+.code_samples a:hover {
+  color: #e6e6e6;
+}
 
 .speaking {
   text-align: center;

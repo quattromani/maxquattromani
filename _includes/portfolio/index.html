@@ -28,24 +28,24 @@
 
   <hr>
 
-  {% for modal in site.data.modals.modals %}
 
+  {% for modal in site.data.modals %}
   <h2>{{ modal.section }}</h2>
-
   <div class="row">
-  {% for example in modal.examples %}
+    {% for example in modal.examples %}
     <div class="fourth">
       <span class="modal-button" id="{{ forloop.index }}">
         <div class="portfolio-gallery">
           <div class="cap">
             {{ example.title }}
           </div>
-          <img src="./images/{{ example.img }}" alt="{{ example.alt }}">
+          <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
         </div>
       </span>
     </div>
     {% endfor %}
   </div>
+  <hr>
   {% endfor %}
 
   {% include end_content.html %}
@@ -53,7 +53,7 @@
 <!-- /.portfolio -->
 
 <!-- Modal -->
-{% for modal in site.data.modals.modals %}
+{% for modal in site.data.modals %}
 {% for s in modal.section %}
 {% for e in modal.examples %}
 <div class="modal">
