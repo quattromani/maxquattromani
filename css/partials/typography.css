@@ -171,14 +171,32 @@ header {
 }
 
 h1,
+.h1, h2,
+.h2, h3,
+.h3, h4,
+.h4, h5,
+.h5, h6,
+.h6 {
+  clear: inherit;
+  vertical-align: middle;
+  line-height: normal;
+}
+h1 + p,
+.h1 + p, h2 + p,
+.h2 + p, h3 + p,
+.h3 + p, h4 + p,
+.h4 + p, h5 + p,
+.h5 + p, h6 + p,
+.h6 + p {
+  margin-top: 1em;
+}
+
+h1,
 .h1 {
   font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 42px;
   font-size: 4.2rem;
   font-weight: 200;
-  clear: inherit;
-  vertical-align: middle;
-  line-height: normal;
 }
 @media (max-width: 62em) {
   h1,
@@ -194,10 +212,6 @@ h1,
     font-size: 3.15rem;
   }
 }
-h1 + p,
-.h1 + p {
-  margin-top: 1em;
-}
 
 h2,
 .h2 {
@@ -205,9 +219,6 @@ h2,
   font-size: 36px;
   font-size: 3.6rem;
   font-weight: 200;
-  clear: inherit;
-  vertical-align: middle;
-  line-height: normal;
 }
 @media (max-width: 62em) {
   h2,
@@ -223,10 +234,6 @@ h2,
     font-size: 2.7rem;
   }
 }
-h2 + p,
-.h2 + p {
-  margin-top: 1em;
-}
 
 h3,
 .h3 {
@@ -234,9 +241,6 @@ h3,
   font-size: 30px;
   font-size: 3rem;
   font-weight: 700;
-  clear: inherit;
-  vertical-align: middle;
-  line-height: normal;
 }
 @media (max-width: 62em) {
   h3,
@@ -252,10 +256,6 @@ h3,
     font-size: 2.25rem;
   }
 }
-h3 + p,
-.h3 + p {
-  margin-top: 1em;
-}
 
 h4,
 .h4 {
@@ -263,13 +263,6 @@ h4,
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: 200;
-  clear: inherit;
-  vertical-align: middle;
-  line-height: normal;
-}
-h4 + p,
-.h4 + p {
-  margin-top: 1em;
 }
 
 h5,
@@ -278,13 +271,6 @@ h5,
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 700;
-  clear: inherit;
-  vertical-align: middle;
-  line-height: normal;
-}
-h5 + p,
-.h5 + p {
-  margin-top: 1em;
 }
 
 h6,
@@ -293,13 +279,6 @@ h6,
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 100;
-  clear: inherit;
-  vertical-align: middle;
-  line-height: normal;
-}
-h6 + p,
-.h6 + p {
-  margin-top: 1em;
 }
 
 .h1,
