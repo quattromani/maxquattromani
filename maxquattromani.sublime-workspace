@@ -89,6 +89,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/main.min.css",
 		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
 		"/Users/Q/Sites/maxquattromani/_data/modals.yml",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modals.scss",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/partials/_mistakes.scss",
 		"/Users/Q/Sites/scaffold/_includes/styleguide/progress/index.html",
 		"/Users/Q/Sites/scaffold/css/scss/partials/progress.scss",
-		"/Users/Q/Sites/scaffold/js/progress.js",
-		"/Users/Q/Sites/scaffold/css/scss/partials/colors.scss"
+		"/Users/Q/Sites/scaffold/js/progress.js"
 	],
 	"find":
 	{
@@ -239,6 +239,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"column_",
 			"../",
 			"modal",
 			"a ",
@@ -365,8 +366,7 @@
 			"fa-fw",
 			"workgroups-video",
 			"info",
-			"font",
-			"mailTestMessage"
+			"font"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -410,18 +410,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
