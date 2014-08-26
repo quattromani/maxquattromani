@@ -11,7 +11,7 @@ parent: Home
 
 <hr>
 
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %}
 <h2>
   <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a>
 </h2>

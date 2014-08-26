@@ -62,7 +62,7 @@
 	  Body Text
    ========================== */
 
-   .lede {
+  .lede {
     @include font-size($lede-text);
   }
 
@@ -89,12 +89,13 @@
     vertical-align: baseline;
     font-family: inherit;
     font-weight: 700;
-    color: inherit;
+    color: $link;
     text-decoration: none;
     cursor: pointer;
     @include transition;
 
     &:hover {
+      color: $link-hover;
       text-decoration: underline;
     }
 
@@ -183,6 +184,10 @@ $i: 1;
       @include bp(bp-small) {
         @include font-size(nth($value, 2) * .75)
       }
+    }
+
+    & + p {
+      margin-top: 1em;
     }
   }
   $i: $i + 1 !global;

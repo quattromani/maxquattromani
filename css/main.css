@@ -737,13 +737,14 @@ a {
   vertical-align: baseline;
   font-family: inherit;
   font-weight: 700;
-  color: inherit;
+  color: #2bb3dd;
   text-decoration: none;
   cursor: pointer;
   will-change: transition;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   a:hover {
+    color: #1d93b8;
     text-decoration: underline; }
   a img {
     border: 0 none;
@@ -835,6 +836,9 @@ h1,
     .h1 {
       font-size: 31.5px;
       font-size: 3.15rem; } }
+  h1 + p,
+  .h1 + p {
+    margin-top: 1em; }
 
 h2,
 .h2 {
@@ -855,6 +859,9 @@ h2,
     .h2 {
       font-size: 27px;
       font-size: 2.7rem; } }
+  h2 + p,
+  .h2 + p {
+    margin-top: 1em; }
 
 h3,
 .h3 {
@@ -875,6 +882,9 @@ h3,
     .h3 {
       font-size: 22.5px;
       font-size: 2.25rem; } }
+  h3 + p,
+  .h3 + p {
+    margin-top: 1em; }
 
 h4,
 .h4 {
@@ -885,6 +895,9 @@ h4,
   clear: inherit;
   vertical-align: middle;
   line-height: normal; }
+  h4 + p,
+  .h4 + p {
+    margin-top: 1em; }
 
 h5,
 .h5 {
@@ -895,6 +908,9 @@ h5,
   clear: inherit;
   vertical-align: middle;
   line-height: normal; }
+  h5 + p,
+  .h5 + p {
+    margin-top: 1em; }
 
 h6,
 .h6 {
@@ -905,6 +921,9 @@ h6,
   clear: inherit;
   vertical-align: middle;
   line-height: normal; }
+  h6 + p,
+  .h6 + p {
+    margin-top: 1em; }
 
 .h1,
 .h2,

@@ -2,7 +2,7 @@
 $site-width: 1024px;
 
 // Navigation
-$nav-items: 7;
+$nav-items: 8;
 
 // ---------------------------------------------------------------------- //
 
@@ -61,7 +61,7 @@ $color-tertiary-violet: lighten($color-primary-violet, 40%);
 $text: #454545;
 $text-color: $text;
 $link: $color-primary-blue;
-$link-hover: inherit;
+$link-hover: $color-secondary-blue;
 $text-grey: $color-grey;
 $text-light-grey: $color-light-grey;
 $text-link: $link;
