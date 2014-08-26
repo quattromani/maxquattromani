@@ -19,7 +19,10 @@
 
       h1 {
         @include font-size(70);
-        @include margin;
+
+        & + p {
+          @include margin;
+        }
 
         @include bp(bp-small) {
           @include font-size(55);

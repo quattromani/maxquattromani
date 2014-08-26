@@ -17,6 +17,8 @@
 .banner h1 {
   font-size: 70px;
   font-size: 7rem;
+}
+.banner h1 + p {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;

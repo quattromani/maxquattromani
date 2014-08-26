@@ -32,7 +32,7 @@ but if you run this little gem through less, it outputs:
 
 <img src="../images/posts/hahaha.png" alt="Hahaha, NO">
 
-to get around this we need to tune down less’s aggression with the maths be escaping the percent unit
+to get around this we need to tune down less’s aggression with the maths by escaping the percent unit.
 
 {% highlight html %}
 .half {
