@@ -227,6 +227,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Q/Sites",
 			"/Users/Q/Sites/maxquattromani",
 			"<project>",
 			"/Users/Q/Sites/scaffold",
@@ -238,6 +239,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"../",
+			"modal",
 			"a ",
 			"code",
 			"layout: patterns",
@@ -363,9 +366,7 @@
 			"workgroups-video",
 			"info",
 			"font",
-			"mailTestMessage",
-			"opaci",
-			"inli"
+			"mailTestMessage"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -373,6 +374,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			">\n",
 			"layout: default",
 			"fa-gears",
 			"@include first;",
@@ -408,11 +410,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

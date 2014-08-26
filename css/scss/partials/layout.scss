@@ -19,7 +19,7 @@
   overflow: visible;
 
   @include bp(bp-medium) {
-    @include padding(0, ($padding));
+    @include padding($padding);
   }
 }
 

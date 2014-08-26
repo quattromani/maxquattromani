@@ -80,9 +80,9 @@ textarea {
   overflow: visible; }
   @media (max-width: 62em) {
     .container {
-      padding-top: 0;
+      padding-top: 1em;
       padding-right: 1em;
-      padding-bottom: 0;
+      padding-bottom: 1em;
       padding-left: 1em; } }
 
 .clearfix,
@@ -583,6 +583,19 @@ nav {
   nav .container {
     display: table;
     width: 100%; }
+    @media (max-width: 62em) {
+      nav .container {
+        position: absolute;
+        padding-top: 0;
+        padding-right: 1em;
+        padding-bottom: 0;
+        padding-left: 1em;
+        background: rgba(0, 0, 0, 0.65); }
+        .ie nav .container {
+          background: transparent;
+          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A6000000, endColorstr=#A6000000)";
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A6000000,endColorstr=#A6000000);
+          zoom: 1; } }
   nav ul {
     display: table-row;
     width: 100%; }
@@ -646,20 +659,17 @@ nav {
   nav input[type=checkbox] {
     display: none; }
   nav input[type=checkbox]:checked ~ .navigation {
-    display: block;
-    background: #2bb3dd; }
-    nav input[type=checkbox]:checked ~ .navigation li {
-      border-top: 1px solid #00a3a4;
-      background: #00a3a4; }
-      nav input[type=checkbox]:checked ~ .navigation li:first-child {
-        border: none; }
-    nav input[type=checkbox]:checked ~ .navigation li li {
-      background: #008a8a; }
+    display: block; }
+    nav input[type=checkbox]:checked ~ .navigation li:first-child {
+      border: none; }
     nav input[type=checkbox]:checked ~ .navigation > li.js-last {
       margin-bottom: .5em; }
   @media (max-width: 62em) {
     nav {
       margin-bottom: -38px; } }
+  @media (max-width: 40em) {
+    nav {
+      margin-top: -44px; } }
   @media (max-width: 40em) {
     .home nav {
       margin-bottom: -47px; } }

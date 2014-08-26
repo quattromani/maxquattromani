@@ -16,6 +16,12 @@
       .container {
         display: table;
         width: 100%;
+
+        @include bp(bp-medium) {
+          position: absolute;
+          @include padding(0, $padding);
+          @include rgba($color-black,.65);
+        }
       }
 
       ul {
@@ -94,19 +100,11 @@
 
       input[type=checkbox]:checked ~ .navigation {
         display: block;
-        background: $color-primary-blue;
 
         & li {
-          border-top: 1px solid lighten($color-secondary-green, 5%);
-          background: darken($color-primary-green, 5%);
-
           &:first-child {
             border: none;
           }
-        }
-
-        & li li {
-          background: $color-secondary-green;
         }
 
         & > li.js-last {
@@ -116,6 +114,10 @@
 
       @include bp(bp-medium) {
         margin-bottom: -38px;
+      }
+
+      @include bp(bp-small) {
+        margin-top: -44px;
       }
 
       .home & {
