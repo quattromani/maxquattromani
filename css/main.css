@@ -2998,26 +2998,14 @@ label + .pill,
   .modal .modal-container > .modal-content {
     -webkit-box-shadow: 0 0 5px 2px #555555;
     box-shadow: 0 0 5px 2px #555555; }
-.modal .modal-close {
+.modal .modal-close:after {
   position: absolute;
   float: right;
-  top: -.5em;
-  right: -.5em;
-  padding-top: 0.5em;
-  padding-right: 0.75em;
-  padding-bottom: 0.5em;
-  padding-left: 0.75em;
-  border-radius: 50px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #ff675f;
+  top: .5em;
+  right: .5em;
+  content: url(/images/modal-close.png);
   cursor: pointer; }
-  .ie .modal .modal-close {
-    background: transparent;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF675F, endColorstr=#FFFF675F)";
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF675F,endColorstr=#FFFF675F);
-    zoom: 1; }
-  .modal .modal-close span {
+  .modal .modal-close:after span {
     font-size: 24px;
     font-size: 2.4rem;
     font-family: "FontAwesome", Arial, Sans-Serif;

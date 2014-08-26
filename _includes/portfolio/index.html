@@ -58,7 +58,7 @@
 {% for e in modal.examples %}
 <div class="modal">
   <div id="modal{{ forloop.index }}" class="modal-container">
-    <div class="modal-close"><span class="fa fa-times"></span></div>
+    <div class="modal-close"></div>
     <div id="modal-content">
 
       <div class="modal-header">
@@ -67,7 +67,7 @@
 
       <div class="modal-body">
         <figure>
-          <img src="./images/{{ e.img }}" alt="{{ e.alt }}">
+          <img src="/images/{{ e.img }}" alt="{{ e.alt }}">
           <figcaption><a href="http://{{ e.url }}">{{ example.alt }}</a></figcaption>
         </figure>
       </div>
