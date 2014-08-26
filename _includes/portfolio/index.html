@@ -70,7 +70,9 @@
       <div class="modal-body">
         <figure>
         <img src="../images/{{ example.img }}" alt="{{ example.alt }}">
+          {% if example.url == true %}
           <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
+          {% endif %}
         </figure>
       </div>
       <div class="modal-footer">
