@@ -4,66 +4,83 @@
     alt: 'Time Warner Cable'
     title: TWC
     url: 'http://twc.com'
+    slide: 1
   - img: 'terracare.jpg'
     alt: 'Terracare Associates'
     title: Terracare
     url: 'http://myterracare.net'
+    slide: 2
   - img: 'coschoolchiefs.jpg'
     alt: 'Colorado School Chiefs'
     title: Colorado School Chiefs
     url: 'http://coschoolchiefs.org'
+    slide: 3
   - img: 'eastfield.jpg'
     alt: 'Eastfield Mall'
     title: Eastfield Mall
     url: 'http://eastfieldmall.com/'
+    slide: 4
 
 - section: Email
   examples:
   - img: 'chicago.jpg'
     alt: 'Chicago ASI show email'
     title: ASI Chicago 2011
+    slide: 5
   - img: 'promoEast.jpg'
     alt: 'Promotions East show email'
     title: Promotions East
+    slide: 6
   - img: 'race.jpg'
     alt: 'Northwest Promotional Marketing Association show email'
     title: NWPMA East
+    slide: 7
   - img: 'chicago2.jpg'
     alt: 'Chicago ASI show email'
     title: ASI Chicago 2012
+    slide: 8
 
 - section: Print
   examples:
   - img: 'buyersGuide.jpg'
     alt: 'Buyers Guide'
     title: Buyers Guide
+    slide: 9
   - img: 'youCool.jpg'
     alt: 'You Cool? - Magazine Cover'
     title: You Cool?
+    slide: 10
 
-- section: Product Packaging
+- section: Packaging
   examples:
   - img: 'scope.jpg'
     alt: 'Scope Minibrush - Retail Packaging'
     title: Scope Minibrush
+    slide: 11
   - img: 'crest.jpg'
     alt: 'Crest Whitestrips - Retail Packaging'
     title: Crest Whitestrips
+    slide: 12
   - img: 'crestBox.jpg'
     alt: 'Crest Whitestrips - Retail Packaging'
     title: Crest Whitestrips Box
+    slide: 13
 
 - section: Art
   examples:
-    - img: '12.jpg'
-      alt: 'Time Warner Cable'
-      title: TWC
-    - img: '14.jpg'
-      alt: 'Time Warner Cable'
-      title: TWC
-    - img: '19.jpg'
-      alt: 'Time Warner Cable'
-      title: TWC
-    - img: '23.jpg'
-      alt: 'Time Warner Cable'
-      title: TWC
+  - img: '12.jpg'
+    alt: 'Time Warner Cable'
+    title: TWC
+    slide: 14
+  - img: '14.jpg'
+    alt: 'Time Warner Cable'
+    title: TWC
+    slide: 15
+  - img: '19.jpg'
+    alt: 'Time Warner Cable'
+    title: TWC
+    slide: 16
+  - img: '23.jpg'
+    alt: 'Time Warner Cable'
+    title: TWC
+    slide: 17
