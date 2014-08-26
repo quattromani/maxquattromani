@@ -9,6 +9,11 @@
   color: white;
   text-transform: uppercase;
 }
+@media (max-width: 40em) {
+  .banner {
+    height: auto;
+  }
+}
 .banner h1 {
   font-size: 70px;
   font-size: 7rem;
