@@ -89,6 +89,8 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/_prototype.scss",
+		"/Users/Q/Sites/maxquattromani/js/_prototype.js",
 		"/Users/Q/Sites/maxquattromani/css/main.min.css",
 		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
 		"/Users/Q/Sites/maxquattromani/_data/modals.yml",
@@ -214,9 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/partials/videos.css",
 		"/Users/Q/Sites/scaffold/js/progress-bar-element.js",
 		"/Users/Q/Sites/scaffold/css/scss/partials/_mistakes.scss",
-		"/Users/Q/Sites/scaffold/_includes/styleguide/progress/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/partials/progress.scss",
-		"/Users/Q/Sites/scaffold/js/progress.js"
+		"/Users/Q/Sites/scaffold/_includes/styleguide/progress/index.html"
 	],
 	"find":
 	{
