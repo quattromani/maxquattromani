@@ -110,3 +110,8 @@ dt {
 dd {
   margin-left: $margin;
 }
+
+ul.posts li {
+  @include inline-block;
+  width: 100%;
+}

@@ -2307,6 +2307,13 @@ dt {
 dd {
   margin-left: 1em; }
 
+ul.posts li {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  width: 100%; }
+
 /* ==========================================================================
     Footer -- Version: 0.2.1 - Compiled: timestamp()
     ========================================================================== */
