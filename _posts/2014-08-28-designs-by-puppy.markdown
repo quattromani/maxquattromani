@@ -22,7 +22,7 @@ At the end of the day, the thing I'm building has to do the thing it was designe
 That's it.  
 --  
 
-Everything else is superflous. What <a href="http://www.gregstanforth.com/">my high school art teacher</a> would call "Visual Bullshit."
+Everything else is superfluous. What <a href="http://www.gregstanforth.com/">my high school art teacher</a> would call "Visual Bullshit."
 
 <hr>
 
