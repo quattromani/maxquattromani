@@ -14,13 +14,13 @@ class: blog
   </div>
 </header>
 
-{% for post in site.posts %}
-<ul class="posts">
+<ul class="vertical lined posts">
+  {% for post in site.posts %}
   <li>
     <a class="left" href="{{ post.url }}">{{ post.title }}</a>
     <span class="right">{{ post.date | date_to_string }}</span>
   </li>
+  {% endfor %}
 </ul>
-{% endfor %}
 
 {% include end_content.html %}
