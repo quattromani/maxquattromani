@@ -1,9 +1,15 @@
 <header class="banner">
-{% include content.html %}
+  {% include content.html %}
 
   <h1>Max Quattromani</h1>
   <p class="lede">Front-End Developer/Designer</p>
 
-{% include end_content.html %}
+  {% if page.class == 'resume' %}
+  <div class="text-center">
+    <a href="/resume/Max_Quattromani_resume.pdf" class="cta resume">Download PDF Resume</a>
+  </div>
+  {% endif %}
+
+  {% include end_content.html %}
 </header>
 <!-- /.banner -->
