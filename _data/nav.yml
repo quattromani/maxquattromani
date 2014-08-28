@@ -13,6 +13,9 @@
 - name: "Patterns"
   url: "/patterns"
 
+- name: "Email"
+  url: "/email"
+
 - name: "SDLC"
   url: "/SDLC"
 

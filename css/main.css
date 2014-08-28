@@ -2225,7 +2225,7 @@ ol {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0; }
-  ol li {
+  ol > li {
     list-style: decimal;
     list-style-position: outside; }
   ol ol {

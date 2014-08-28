@@ -10,7 +10,7 @@ ol {
   @include margin(0, 0, 0, ($margin * 1.5));
   @include padding;
 
-  li {
+  > li {
     list-style: decimal;
     list-style-position: outside;
   }
