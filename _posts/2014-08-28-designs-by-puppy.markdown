@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Designs by Puppy"
+title: "Designs by Puppy"
 sub-title: "What my dog has taught me about building for users"
-date:   2014-08-28 10:32:34
+date: 2014-08-28 10:32:34
 categories: design
 ---
 

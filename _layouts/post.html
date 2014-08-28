@@ -3,17 +3,15 @@ layout: default
 ---
 
 {% include content.html %}
-
 <h2>{{ page.title }}</h2>
 <h3>{{ post.sub-title }}</h3>
 <strong>
   <time>
-  {{ post.date | date_to_string }}
+    {{ page.date | date_to_string }}
   </time>
 </strong>
 
 <div class="post">
 {{ content }}
 </div>
-
 {% include end_content.html %}
