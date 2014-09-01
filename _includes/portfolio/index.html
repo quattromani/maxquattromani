@@ -51,36 +51,39 @@
   {% endfor %}
 
   {% include end_content.html %}
-</section>
-<!-- /.portfolio -->
 
-<!-- Modal -->
-{% for item in site.data.modals %}
-{% for example in item.examples %}
-<div class="modal">
 
-  <div id="modal{{ example.slide }}" class="modal-container">
-    <div class="modal-close"></div>
-    <div id="modal-content">
+  <!-- Modal -->
+  {% for item in site.data.modals %}
+  {% for example in item.examples %}
+  <div class="modal">
 
-      <div class="modal-header">
-        <h4>{{ example.alt }}</h4>
+    <div id="modal{{ example.slide }}" class="modal-container">
+      <div class="modal-close"></div>
+      <div id="modal-content">
+
+        <div class="modal-header">
+          <h4>{{ example.alt }}</h4>
+        </div>
+
+        <div class="modal-body">
+          <figure>
+            <img src="../images/{{ example.img }}" alt="{{ example.alt }}">
+            {% if example.url == true %}
+            <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
+            {% endif %}
+          </figure>
+        </div>
+        <div class="modal-footer">
+        </div>
+
       </div>
-
-      <div class="modal-body">
-        <figure>
-        <img src="../images/{{ example.img }}" alt="{{ example.alt }}">
-          {% if example.url == true %}
-          <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
-          {% endif %}
-        </figure>
-      </div>
-      <div class="modal-footer">
-      </div>
-
     </div>
   </div>
-</div>
-{% endfor %}
-{% endfor %}
-<div class="modal-overlay"></div>
+  {% endfor %}
+  {% endfor %}
+  <div class="modal-overlay"></div>
+
+
+</section>
+<!-- /.portfolio -->
