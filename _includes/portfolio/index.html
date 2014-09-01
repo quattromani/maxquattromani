@@ -47,14 +47,6 @@
     </div>
     {% endfor %}
   </div>
-  <hr>
-  {% endfor %}
-
-  {% include end_content.html %}
-
-
-  <!-- Modal -->
-  {% for item in site.data.modals %}
   {% for example in item.examples %}
   <div class="modal">
 
@@ -81,9 +73,10 @@
     </div>
   </div>
   {% endfor %}
+  <hr>
   {% endfor %}
   <div class="modal-overlay"></div>
-
+  {% include end_content.html %}
 
 </section>
 <!-- /.portfolio -->
