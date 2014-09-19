@@ -89,6 +89,9 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
+		"/Users/Q/Sites/maxquattromani/thank-you/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/lists.scss",
 		"/Users/Q/Sites/maxquattromani/archive/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/summary/index.html",
@@ -96,13 +99,10 @@
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/_prototype.scss",
 		"/Users/Q/Sites/maxquattromani/js/_prototype.js",
 		"/Users/Q/Sites/maxquattromani/css/main.min.css",
-		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
 		"/Users/Q/Sites/maxquattromani/_data/modals.yml",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modals.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
-		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/index.html",
-		"/Users/Q/Sites/maxquattromani/thank-you/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/globals/_vars.scss",
 		"/Users/Q/Sites/maxquattromani/reading/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
@@ -220,7 +220,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -239,6 +239,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cache",
 			".block",
 			"block",
 			"column_",
@@ -365,8 +366,7 @@
 			"second",
 			"0.",
 			"<i",
-			"fa-fw",
-			"workgroups-video"
+			"fa-fw"
 		],
 		"highlight": true,
 		"in_selection": false,
