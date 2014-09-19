@@ -3,11 +3,11 @@
    ========================================================================== */
 .color-black,
 .bg-black {
-  background-color: black;
+  background-color: #000;
 }
 
 .text-black {
-  color: black;
+  color: #000;
 }
 
 .color-dark-grey,
@@ -21,11 +21,11 @@
 
 .color-grey,
 .bg-grey {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
 
 .text-grey {
-  color: #cccccc;
+  color: #ccc;
 }
 
 .color-light-grey,
@@ -48,11 +48,11 @@
 
 .color-white,
 .bg-white {
-  background-color: white;
+  background-color: #fff;
 }
 
 .text-white {
-  color: white;
+  color: #fff;
 }
 
 .color-off-white,
@@ -336,3 +336,5 @@
 .ie9 [class*="gradient"] {
   filter: none;
 }
+
+/*# sourceMappingURL=colors.css.map */

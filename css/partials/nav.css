@@ -61,10 +61,10 @@ nav ul li a {
   padding-left: 0.75em;
   font-weight: 200;
   vertical-align: middle;
-  color: white;
+  color: #fff;
 }
 nav ul li a:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 @media (max-width: 62em) {
@@ -94,7 +94,7 @@ nav .show-menu {
   padding-right: 0;
   padding-bottom: 0.5em;
   padding-left: 0;
-  color: white;
+  color: #fff;
 }
 @media (max-width: 62em) {
   nav .show-menu {
@@ -138,10 +138,12 @@ nav input[type=checkbox]:checked ~ .navigation > li.js-last {
   }
 }
 .ie8 nav {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
 
 .fixed {
   position: fixed;
   top: 0;
 }
+
+/*# sourceMappingURL=nav.css.map */

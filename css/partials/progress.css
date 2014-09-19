@@ -69,7 +69,7 @@
   width: .25em;
   height: 100%;
   right: 0;
-  background: white;
+  background: #fff;
   -webkit-animation: pulsate 1s ease-out infinite;
   -moz-animation: pulsate 1s ease-out infinite;
   animation: pulsate 1s ease-out infinite;
@@ -144,35 +144,37 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 @-webkit-keyframes pulsate {
-  .progress-bar-element 0%  {
+  0% {
     opacity: .25;
   }
-  .progress-bar-element 50%  {
+  50% {
     opacity: .75;
   }
-  .progress-bar-element 100%  {
+  100% {
     opacity: .25;
   }
 }
 @-moz-keyframes pulsate {
-  .progress-bar-element 0%  {
+  0% {
     opacity: .25;
   }
-  .progress-bar-element 50%  {
+  50% {
     opacity: .75;
   }
-  .progress-bar-element 100%  {
+  100% {
     opacity: .25;
   }
 }
 @keyframes pulsate {
-  .progress-bar-element 0%  {
+  0% {
     opacity: .25;
   }
-  .progress-bar-element 50%  {
+  50% {
     opacity: .75;
   }
-  .progress-bar-element 100%  {
+  100% {
     opacity: .25;
   }
 }
+
+/*# sourceMappingURL=progress.css.map */

@@ -25,11 +25,11 @@
 }
 
 .message-loading {
-  color: #cccccc;
+  color: #ccc;
 }
 .message-loading:before {
   background: white;
-  content: "\75";
+  content: "u";
 }
 
 .message-valid {
@@ -37,7 +37,7 @@
 }
 .message-valid:before {
   background: #00f0f0;
-  content: "\43";
+  content: "C";
 }
 
 .message-warning {
@@ -45,14 +45,13 @@
 }
 .message-warning:before {
   background: #ffc8c5;
-  content: "\33";
+  content: "3";
 }
 
 @-webkit-keyframes rotation {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(359deg);
   }
@@ -74,3 +73,5 @@
   background: #8affff;
   color: #008a8a;
 }
+
+/*# sourceMappingURL=message-box.css.map */

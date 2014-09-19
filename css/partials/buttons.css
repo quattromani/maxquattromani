@@ -57,7 +57,7 @@ button.button-primary,
 .cta.button-primary {
   border-bottom: 3px solid #ff372c;
   background: #ff675f;
-  color: white;
+  color: #fff;
 }
 .btn.btn-primary:hover, .search-goog input[type='submit']:hover, .btn.button-primary:hover, .search-goog input.button-primary[type='submit']:hover,
 .button.btn-primary:hover,
@@ -75,7 +75,7 @@ button.button-primary:hover,
 button.btn-error,
 .cta.btn-error {
   background: #ff675f;
-  color: white;
+  color: #fff;
 }
 .btn.btn-error:hover, .search-goog input.btn-error[type='submit']:hover,
 .button.btn-error:hover,
@@ -88,7 +88,7 @@ button.btn-error:hover,
 button.btn-success,
 .cta.btn-success {
   background: #008a8a;
-  color: white;
+  color: #fff;
 }
 .btn.btn-success:hover, .search-goog input.btn-success[type='submit']:hover,
 .button.btn-success:hover,
@@ -101,7 +101,7 @@ button.btn-success:hover,
 button.btn-info,
 .cta.btn-info {
   background: #2bb3dd;
-  color: white;
+  color: #fff;
 }
 .btn.btn-info:hover, .search-goog input.btn-info[type='submit']:hover,
 .button.btn-info:hover,
@@ -113,14 +113,14 @@ button.btn-info:hover,
 .button.btn-black,
 button.btn-black,
 .cta.btn-black {
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
 }
 .btn.btn-black:hover, .search-goog input.btn-black[type='submit']:hover,
 .button.btn-black:hover,
 button.btn-black:hover,
 .cta.btn-black:hover {
-  background: #cccccc;
+  background: #ccc;
 }
 .btn:disabled, .search-goog input[type='submit']:disabled, .btn.js-disabled, .search-goog input.js-disabled[type='submit'], .btn.disabled, .search-goog input.disabled[type='submit'],
 .button:disabled,
@@ -134,7 +134,7 @@ button.disabled,
 .cta.disabled {
   cursor: default;
   background: #e6e6e6;
-  color: #cccccc;
+  color: #ccc;
   pointer-events: none;
 }
 .btn:disabled:hover, .search-goog input[type='submit']:disabled:hover, .btn:disabled:active, .search-goog input[type='submit']:disabled:active, .btn.js-disabled:hover, .search-goog input.js-disabled[type='submit']:hover, .btn.js-disabled:active, .search-goog input.js-disabled[type='submit']:active, .btn.disabled:hover, .search-goog input.disabled[type='submit']:hover, .btn.disabled:active, .search-goog input.disabled[type='submit']:active,
@@ -157,7 +157,7 @@ button.disabled:active,
 .cta.disabled:hover,
 .cta.disabled:active {
   background: #e6e6e6;
-  color: #cccccc;
+  color: #ccc;
 }
 .btn.block, .search-goog input.block[type='submit'],
 .button.block,
@@ -246,8 +246,8 @@ button.btn-sm,
 }
 
 .cta {
-  box-shadow: inset 0 0 0 0.125em white;
-  color: white;
+  box-shadow: inset 0 0 0 0.125em #fff;
+  color: #fff;
 }
 .cta:hover {
   background: none;
@@ -259,7 +259,6 @@ button.btn-sm,
   from {
     -webkit-transform: rotate(0deg);
   }
-
   to {
     -webkit-transform: rotate(359deg);
   }
@@ -298,5 +297,7 @@ button.btn-sm,
   margin-bottom: .5em !important;
 }
 .search-goog input[type='submit']:hover {
-  color: white;
+  color: #fff;
 }
+
+/*# sourceMappingURL=buttons.css.map */

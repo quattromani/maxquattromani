@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
     ========================================================================== */
@@ -98,14 +99,14 @@ a[href$='.pdf']:after {
   font-family: "FontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
-  content: "\f1c1";
+  content: "";
   margin-left: .5em;
 }
 a[href*='github.com']:after {
   font-family: "FontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
-  content: "\f113";
+  content: "";
   margin-left: .5em;
 }
 
@@ -430,3 +431,5 @@ samp {
   font-style: normal;
   font-weight: normal;
 }
+
+/*# sourceMappingURL=typography.css.map */

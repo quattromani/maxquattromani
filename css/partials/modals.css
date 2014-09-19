@@ -20,7 +20,7 @@
   z-index: 99999;
 }
 .modal .modal-container > .modal-content {
-  box-shadow: 0 0 5px 2px #555555;
+  box-shadow: 0 0 5px 2px #555;
 }
 .modal .modal-close:after {
   position: absolute;
@@ -36,7 +36,7 @@
   font-family: "FontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
-  color: white;
+  color: #fff;
   font-weight: 700;
 }
 .modal .modal-header {
@@ -94,3 +94,5 @@
 .modal-button {
   cursor: pointer;
 }
+
+/*# sourceMappingURL=modals.css.map */

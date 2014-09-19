@@ -13,7 +13,7 @@
   border: 1px solid #e6e6e6;
   border-radius: 0;
   background-clip: padding-box;
-  background: white;
+  background: #fff;
   overflow: auto;
 }
 
@@ -24,7 +24,7 @@ hr {
   margin-left: 0;
   border: 0;
   border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
 }
 hr.below-desktop {
   display: none;
@@ -39,7 +39,7 @@ hr.below-desktop {
   hr.below-desktop {
     display: block;
     border-top: 1px solid #e6e6e6;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
   }
 }
 hr.divider {
@@ -70,3 +70,5 @@ hr.blog {
 hr.blog:last-of-type {
   border: 0;
 }
+
+/*# sourceMappingURL=modules.css.map */
