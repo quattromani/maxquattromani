@@ -1,81 +1,65 @@
 ---
 layout: post
-title:  "Copying the sender with Brace Forms"
+title:  "Vertical align an element with 3 lines of CSS"
 sub-title: ""
-date:   2014-09-19 9:17:10
-categories: css, jquery, jekyll, brace
+date:   2014-07-25 10:17:10
+categories: css
 ---
 
-tl;dr - [take me to the code](#code)
-<br><br>
---
-<br><br>
-I have fallen in love with Jekyll and hosting projects on Github. This has become my inspiration workflow.  
-<br>
+With just 3 lines of CSS (*excluding vendor prefixes) we can with the help of transform: translateY vertically center whatever we want, even if we don’t know its height.
 
-* Get an idea. 
-* Buy a domain name. 
-* Run my framework build. 
-* Sprinkle in Jekyll. 
-* Change the CNAME file, and BAM!
-<br><br>
+The CSS property transform is usally used for rotating and scaling elements, but with its translateY function we can now vertically align elements. Usually this must be done with absolute positioning or setting line-heights, but these require you to either know the height of the element or only works on single-line text etc.
 
-As I started my **Jekyll Journey** I realized that my typical email.php goto for forms wasn't gonna work (Github doesn't support php). So I went all #lazyweb and sent a tweet out asking for recommendations, along with googling an answer.  
-<br>
-
-There are a number of decent solutions out there, [simpleform](http://getsimpleform.com) and [wufoo](http://wufoo.com) just to name a few. The limitations to those services though are primarily the number of forms you can process in a month. With both of those previusly mentioned - that limit is 100 per month. I need more than that for a few of my builds, so I kept looking.  
-<br>
-
-Behold! [forms.brace.io](http://forms.brace.io) -- this just became my new favorite thing! Super simple integration, up to 1000 submissions per month with their free account and some built in goodies like _replyto, _cc, and _next. So I dove right in - everything was solid.  
-<br>
-
-Shortly after I launched a little web-based office football pool picking site, I had a feature request to copy the submitter with their picks from the form. 
-<br>
-
-I emailed the team at brace.io -- who has been super responsive and helpful in the early on if/when I ran into any issues -- and asked if/how I could use the _cc operative to do such a thing. Unfortunately, they had no baked in solution.
-<br><br>
-
---
-<br><br>
-<a name="code"></a>
-I needed this and I didn't want to start over with a different form solution so I looked at a few different methods involving Jekyll liquid tags; either I'm not smart enough or liquid tags can't capture and output values as they're input into a field.
-<br>
-
-No matter, a much simpler solution was available:  
-<br>
-
-<a name="code"></a>
-First things first -- here's my form field for the user to input an email. I want to capture this!  
+So, to do this we write:
 
 {% highlight html %}
-<input id="email" type="email">
-{% endhighlight %}
-<br>
+.parent-element {
+  transform-style: preserve-3d;
+}
 
-I will need this captured email address to populate the value attribute of this hidden field:
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+{% endhighlight %}
+
+That’s all you need. It is a similar technique to the absolute-position method, but with the upside that we don’t have to set any height on the element or position-property on the parent. It works straight out of the box, even in IE9!
+
+To make it even more simple, we can write it as a mixin with its vendor prefixes:
 
 {% highlight html %}
-<input type="hidden" id="copy" name="_cc" value="">
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.element p {
+  @include vertical-align;
+}
 {% endhighlight %}
 
-*that _name="_cc" is the Brace method for, you guessed it, cc'ing an additional email box
-<br>
+Or you can use the Sass placeholder selector to reduce code bloat in the output CSS:
 
-I WAY overthought this - the solution using jQuery was apparently just too straightforward the first time around:
-<br>
+{% highlight html %}
+%vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-{% highlight jquery %}
-$(function() {
-  $('#email').change(function() {
-    var value = $(this).val();
-    $('#copy') .val(value);
-  });
-});
+.element p {
+  @extend %vertical-align;
+}
 {% endhighlight %}
 
-Now whenever that email input changes, wether typed OR autofilled, the value in my hidden field populates and brace does the rest on the backend.
-<br>
+*check you vendor prefixes - these were left out to simplify the code.
 
-Hope this helps! Happy Jekyll'ing!!
+<hr>
+
+Credit to:
+<h4>Sebastian Ekström</h4>
+<cite><a href="http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/">http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/</a></cite>
 
 <h5>FIN</h5>
