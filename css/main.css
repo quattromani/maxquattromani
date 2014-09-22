@@ -2868,21 +2868,12 @@ label + .pill,
   .modal .modal-container > .modal-content {
     -webkit-box-shadow: 0 0 5px 2px #555;
     box-shadow: 0 0 5px 2px #555; }
-.modal .modal-close:after {
+.modal .modal-close {
   position: absolute;
-  float: right;
-  top: .5em;
-  right: .5em;
-  content: url(/images/modal-close.png);
+  right: 1rem;
+  font-size: 40px;
+  font-size: 4rem;
   cursor: pointer; }
-  .modal .modal-close:after span {
-    font-size: 24px;
-    font-size: 2.4rem;
-    font-family: "FontAwesome", Arial, Sans-Serif;
-    font-style: normal;
-    font-weight: normal;
-    color: #fff;
-    font-weight: 700; }
 .modal .modal-header {
   padding-top: 1em;
   padding-right: 1em;

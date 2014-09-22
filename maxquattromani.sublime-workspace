@@ -89,6 +89,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
 		"/Users/Q/Sites/maxquattromani/thank-you/index.html",
@@ -108,7 +109,6 @@
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/_data/nav.yml",
 		"/Users/Q/Sites/maxquattromani/_includes/intro/index.html",
-		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/sections.scss",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-08-22-calc()-in-less.markdown",
 		"/Users/Q/Sites/maxquattromani/about/index.html",
@@ -239,6 +239,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"close",
 			"cache",
 			".block",
 			"block",
@@ -365,8 +366,7 @@
 			"background-",
 			"second",
 			"0.",
-			"<i",
-			"fa-fw"
+			"<i"
 		],
 		"highlight": true,
 		"in_selection": false,

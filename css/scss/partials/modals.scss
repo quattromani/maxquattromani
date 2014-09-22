@@ -28,20 +28,11 @@
         }
       }
 
-      .modal-close:after {
+      .modal-close {
         position: absolute;
-        float: right;
-        top: .5em;
-        right: .5em;
-        content: url(/images/modal-close.png);
+        right: 1rem;
+        @include font-size(40);
         cursor: pointer;
-
-        span {
-          @include font-size(24);
-          @include font-family($fontawesome);
-          color: $color-white;
-          font-weight: 700;
-        }
       }
 
       .modal-header {
