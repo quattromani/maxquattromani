@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Thank You
+description: "Hey thank for submitting that form!"
 class: thank-you
 parent: Home
 ---
@@ -8,21 +9,28 @@ parent: Home
 <section class="reading">
   {% include content.html %}
 
-  <header role="banner">
-    <div class="heading">
-      <h2>{{ page.title }}</h2>
-    </div>
-  </header>
+  <h3>Thanks! Here are a few things you might be intersted in.</h3>
+
+  <hr>
 
   <div class="row">
     <div class="third">
-
+      <div class="box-column">
+      <h5><a href="/resume">Resume</a></h5>
+        <p>Wanna hire me, but need all the pertinent information first? Look no further! This is your one-stop for all things Max.</p>
+      </div>
     </div>
     <div class="third">
-
+      <div class="box-column">
+        <h5> <a href="/reading">Reading</a></h5>
+        <p>A collection of some of my favorites books related to Technology, Design, and Organization.</p>
+      </div>
     </div>
     <div class="third">
-
+      <div class="box-column">
+        <h5><a href="/styleguide">Styleguide</a></h5>
+        <p>A style guide and code standards document is a way of ensuring brand and code consistency.</p>
+      </div>
     </div>
   </div>
 

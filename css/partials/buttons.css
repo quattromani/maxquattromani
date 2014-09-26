@@ -21,7 +21,6 @@ button,
   border-radius: 0;
   background-clip: padding-box;
   border: 0;
-  border-bottom: 3px solid transparent;
   background: none;
   font-size: 24px;
   font-size: 2.4rem;
@@ -55,7 +54,6 @@ button.button-primary,
 .cta.btn-primary,
 .search-goog input.cta[type='submit'],
 .cta.button-primary {
-  border-bottom: 3px solid #ff372c;
   background: #ff675f;
   color: #fff;
 }

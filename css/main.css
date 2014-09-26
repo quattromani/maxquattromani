@@ -845,7 +845,13 @@ h1,
   .h3 + p, h4 + p,
   .h4 + p, h5 + p,
   .h5 + p, h6 + p,
-  .h6 + p {
+  .h6 + p, h1 + ul,
+  .h1 + ul, h2 + ul,
+  .h2 + ul, h3 + ul,
+  .h3 + ul, h4 + ul,
+  .h4 + ul, h5 + ul,
+  .h5 + ul, h6 + ul,
+  .h6 + ul {
     margin-top: 1em; }
 
 h1,
@@ -2387,7 +2393,6 @@ button,
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 0;
-  border-bottom: 3px solid transparent;
   background: none;
   font-size: 24px;
   font-size: 2.4rem;
@@ -2418,7 +2423,6 @@ button,
   .cta.btn-primary,
   .search-goog input.cta[type='submit'],
   .cta.button-primary {
-    border-bottom: 3px solid #ff372c;
     background: #ff675f;
     color: #fff; }
     .btn.btn-primary:hover, .search-goog input[type='submit']:hover, .btn.button-primary:hover, .search-goog input.button-primary[type='submit']:hover,

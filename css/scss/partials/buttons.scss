@@ -15,7 +15,6 @@ button,
   @include padding(.25em, $padding);
   @include border-radius;
   border: 0;
-  border-bottom: 3px solid transparent;
   background: none;
   @include font-size(24);
   font-family: $heading-font-alt;
@@ -37,7 +36,6 @@ button,
 
   &.btn-primary,
   &.button-primary {
-    border-bottom: 3px solid $color-button-primary-hover;
     background: $color-button-primary;
     color: $color-white;
 

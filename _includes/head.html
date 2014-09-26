@@ -6,13 +6,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.title }}</title>
+
     <meta name="description" content="{{ page.description }}" />
-    <meta name="author" content="Max Quattromani">
+    <meta name="author" content="{{ site.author }}">
     <meta name="rating" content="general">
-    <meta name="keywords" content="{{ page.categories | join: ',' }}" />
 
     <meta name="format-detection" content="telephone=no">
 
@@ -23,14 +22,11 @@
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="{{ site.twitter_username }}">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:url" content="{{ site.url }}/{{ page.class }}">
+    <!-- Prerender Resume page -->
+    <link rel="prerender" href="{{ site.url }}/resume">
 
+    {% include twitter_card.html %}
 </head>
 
 <body class="{{ page.class }}">

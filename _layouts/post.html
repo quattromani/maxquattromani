@@ -4,7 +4,9 @@ layout: default
 
 {% include content.html %}
 <h2>{{ page.title }}</h2>
+{% if post.sub-title != null %}
 <h4>{{ page.sub-title }}</h4>
+{% endif %}
 <strong>
   <time>
     {{ page.date | date_to_string }}
