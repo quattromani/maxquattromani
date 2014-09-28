@@ -89,6 +89,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/robots.txt",
 		"/Users/Q/Sites/maxquattromani/_includes/head.html",
 		"/Users/Q/Sites/maxquattromani/_includes/twitter_card.html",
 		"/Users/Q/Sites/maxquattromani/_layouts/post.html",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/sandbox/cats/index.html",
 		"/Users/Q/Sites/scaffold/sandbox/data-image/index.html",
 		"/Users/Q/Sites/scaffold/sandbox/glass/index.html",
-		"/Users/Q/Sites/scaffold/.gitignore",
-		"/Users/Q/Sites/scaffold/Gruntfile.js"
+		"/Users/Q/Sites/scaffold/.gitignore"
 	],
 	"find":
 	{

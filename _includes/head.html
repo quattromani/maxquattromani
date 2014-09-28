@@ -4,29 +4,29 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="en-us"><!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.title }}</title>
 
-    <meta name="description" content="{{ page.description }}" />
-    <meta name="author" content="{{ site.author }}">
-    <meta name="rating" content="general">
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="author" content="{{ site.author }}">
+  <meta name="rating" content="general">
 
-    <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="telephone=no">
 
-    <meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW" />
+  <meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW" />
 
-    <link rel="stylesheet" href="/css/main.min.css" >
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="/css/main.min.css" >
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <!-- Prerender Resume page -->
-    <link rel="prerender" href="{{ site.url }}/resume">
+  <!-- Prerender Resume page -->
+  <link rel="prerender" href="{{ site.url }}/resume">
 
-    {% include twitter_card.html %}
+  {% include twitter_card.html %}
 </head>
 
 <body class="{{ page.class }}">
