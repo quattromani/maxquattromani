@@ -83,6 +83,12 @@ textarea {
   padding-bottom: 0;
   padding-left: 1em;
   overflow: visible; }
+  @media (max-width: 62em) {
+    .container {
+      padding-top: 1em;
+      padding-right: 1em;
+      padding-bottom: 1em;
+      padding-left: 1em; } }
 
 .clearfix,
 .box-column {
