@@ -19,3 +19,14 @@ exclude: ['node_modules', 'scss', 'DAM']
 google_analytics: true
 google_analytics_id: UA-50387096-2
 jquery_version: 1.9.0
+
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+      - "/atom.xml"
+      - "/feed.xml"
+      - "/feed/index.xml"
+  include_posts:
+      - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
