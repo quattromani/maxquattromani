@@ -106,13 +106,20 @@ textarea {
     Grid
    ========================== */
 .row {
-  clear: both;
+  zoom: 1;
   display: inline-block;
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
   width: 100%;
   margin-bottom: 1em; }
+  .row:before, .row:after {
+    content: ' ';
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row:only-child {
+    margin-bottom: 0; }
   .row:first-child, .row:only-child {
     margin-bottom: 0; }
 
@@ -1049,10 +1056,8 @@ samp {
   color: #00bdbd; }
 
 .code-comment {
-  filter: alpha(opacity=50);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -moz-opacity: 0.5;
-  opacity: 0.5; }
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
 
 .fa {
   font-family: "FontAwesome", Arial, Sans-Serif;
@@ -2923,10 +2928,8 @@ label + .pill,
   width: 100%;
   background: #000;
   zoom: 1;
-  filter: alpha(opacity=50);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -moz-opacity: 0.5;
   opacity: 0.5;
+  filter: alpha(opacity=50);
   z-index: 9999; }
 
 .modal-button {

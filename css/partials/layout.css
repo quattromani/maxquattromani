@@ -48,13 +48,23 @@
     Grid
    ========================== */
 .row {
-  clear: both;
+  zoom: 1;
   display: inline-block;
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
   width: 100%;
   margin-bottom: 1em;
+}
+.row:before, .row:after {
+  content: ' ';
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row:only-child {
+  margin-bottom: 0;
 }
 .row:first-child, .row:only-child {
   margin-bottom: 0;
