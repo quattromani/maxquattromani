@@ -38,6 +38,14 @@
   top: 50%;
   transform: translateY(-50%);
 }
+@media (max-width: 62em) {
+  .banner .content {
+    top: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 .banner .resume:hover {
   color: #ff372c;
   text-decoration: none;
