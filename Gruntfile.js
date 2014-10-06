@@ -41,16 +41,16 @@ module.exports = function(grunt) {
       },
 
       autoprefixer: {
-        no_dest: {
-          src: 'css/main.css'
+        prefix: {
+          src: 'css/main.css',
+          dest: 'css/main.css'
         },
       },
 
       cssmin: {
-        combine: {
-          files: {
-            'css/main.min.css': ['css/main.css']
-          }
+        build: {
+          src: 'css/main.css',
+          dest: 'css/build/main.min.css'
         }
       },
 
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'images/orig_assets',
             src: ['*.{png,jpg,gif}'],
-            dest: 'images/'
+            dest: 'images'
           }]
         }
       },
