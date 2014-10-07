@@ -89,9 +89,14 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/modules.scss",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
+		"/Users/Q/Sites/maxquattromani/_includes/head.html",
+		"/Users/Q/Sites/maxquattromani/Gruntfile.js",
+		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
 		"/Users/Q/Sites/maxquattromani/_config.yml",
 		"/Users/Q/Sites/maxquattromani/robots.txt",
-		"/Users/Q/Sites/maxquattromani/_includes/head.html",
 		"/Users/Q/Sites/maxquattromani/_includes/twitter_card.html",
 		"/Users/Q/Sites/maxquattromani/_layouts/post.html",
 		"/Users/Q/Sites/maxquattromani/_includes/nav.html",
@@ -105,16 +110,13 @@
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/lists.scss",
 		"/Users/Q/Sites/maxquattromani/archive/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/summary/index.html",
-		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/_prototype.scss",
 		"/Users/Q/Sites/maxquattromani/js/_prototype.js",
 		"/Users/Q/Sites/maxquattromani/css/main.min.css",
 		"/Users/Q/Sites/maxquattromani/_data/modals.yml",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modals.scss",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
 		"/Users/Q/Sites/maxquattromani/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/globals/_vars.scss",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/_data/nav.yml",
 		"/Users/Q/Sites/maxquattromani/_includes/intro/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/sections.scss",
@@ -214,9 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/globals/_vars.scss",
 		"/Users/Q/Sites/scaffold/css/partials/base.css",
 		"/Users/Q/Sites/scaffold/sandbox/cats/index.html",
-		"/Users/Q/Sites/scaffold/sandbox/data-image/index.html",
-		"/Users/Q/Sites/scaffold/sandbox/glass/index.html",
-		"/Users/Q/Sites/scaffold/.gitignore"
+		"/Users/Q/Sites/scaffold/sandbox/data-image/index.html"
 	],
 	"find":
 	{
