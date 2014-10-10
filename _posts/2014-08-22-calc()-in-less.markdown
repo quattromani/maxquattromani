@@ -30,7 +30,7 @@ but if you run this little gem through less, it outputs:
 }
 {% endhighlight %}
 
-<img src="/images/posts/hahaha.png" alt="Hahaha, NO">
+<img src="/images/posts/hahaha.jpg" alt="Hahaha, NO">
 
 to get around this we need to tune down less’s aggression with the maths by escaping the percent unit.
 
