@@ -122,21 +122,6 @@ nav input[type=checkbox]:checked ~ .navigation li:first-child {
 nav input[type=checkbox]:checked ~ .navigation > li.js-last {
   margin-bottom: .5em;
 }
-@media (max-width: 62em) {
-  nav {
-    margin-bottom: -38px;
-  }
-}
-@media (max-width: 40em) {
-  nav {
-    margin-top: -44px;
-  }
-}
-@media (max-width: 40em) {
-  .home nav {
-    margin-bottom: -47px;
-  }
-}
 .ie8 nav {
   background-color: #ccc;
 }

@@ -112,20 +112,6 @@
         }
       }
 
-      @include bp(bp-medium) {
-        margin-bottom: -38px;
-      }
-
-      @include bp(bp-small) {
-        margin-top: -44px;
-      }
-
-      .home & {
-        @include bp(bp-small) {
-          margin-bottom: -47px;
-        }
-      }
-
       @if $support-legacy {
         .ie8 & {
           background-color: $color-grey;

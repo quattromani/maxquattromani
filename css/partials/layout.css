@@ -10,6 +10,9 @@
   padding-left: 0;
   z-index: 0;
 }
+.content.main {
+  background-color: #fff;
+}
 
 .container {
   display: block;
