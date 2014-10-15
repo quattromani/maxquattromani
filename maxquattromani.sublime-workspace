@@ -89,13 +89,18 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/layout.scss",
+		"/Users/Q/Sites/maxquattromani/_includes/content.html",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/nav.scss",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/main.scss",
 		"/Users/Q/Sites/maxquattromani/.htaccess",
 		"/Users/Q/Sites/maxquattromani/_includes/head.html",
 		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-08-22-calc()-in-less.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modules.scss",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
 		"/Users/Q/Sites/maxquattromani/Gruntfile.js",
 		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
@@ -104,7 +109,6 @@
 		"/Users/Q/Sites/maxquattromani/_includes/twitter_card.html",
 		"/Users/Q/Sites/maxquattromani/_layouts/post.html",
 		"/Users/Q/Sites/maxquattromani/_includes/nav.html",
-		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/reading/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/email.php",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-09-19-brace-forms-for-jekyll.markdown",
@@ -164,7 +168,6 @@
 		"/Users/Q/Sites/maxquattromani/resume/index.html",
 		"/Users/Q/Sites/maxquattromani/_layouts/patterns.html",
 		"/Users/Q/Sites/maxquattromani/_layouts/styleguide.html",
-		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
 		"/Users/Q/Sites/maxquattromani/404.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/forms.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/buttons.scss",
@@ -174,7 +177,6 @@
 		"/Users/Q/Sites/maxquattromani/js/build/production.js",
 		"/Users/Q/Sites/maxquattromani/js/_global_init.js",
 		"/Users/Q/Sites/maxquattromani/_includes/google_analytics.html",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/nav.scss",
 		"/Users/Q/Sites/maxquattromani/js/nav.js",
 		"/Users/Q/Documents/GLG/compliance/compliance-card/demo.html",
 		"/Users/Q/Desktop/maxquattromani/css/scss/partials/modals.scss",
@@ -214,9 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/partials/images.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/layout.scss",
 		"/Users/Q/Sites/scaffold/css/partials/message-box.css",
-		"/Users/Q/Sites/scaffold/sandbox/cmp-progress-focus/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/globals/_vars.scss",
-		"/Users/Q/Sites/scaffold/css/partials/base.css"
+		"/Users/Q/Sites/scaffold/sandbox/cmp-progress-focus/index.html"
 	],
 	"find":
 	{
