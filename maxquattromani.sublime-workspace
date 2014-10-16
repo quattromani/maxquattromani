@@ -227,6 +227,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Q/Sites/maxquattromani",
 			"/Users/Q/Sites",
 			"/Users/Q/Sites/maxquattromani",
 			"<project>",
@@ -239,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"code_samples",
 			"close",
 			"cache",
 			".block",
@@ -365,8 +367,7 @@
 			"opacity",
 			"background-",
 			"second",
-			"0.",
-			"<i"
+			"0."
 		],
 		"highlight": true,
 		"in_selection": false,
