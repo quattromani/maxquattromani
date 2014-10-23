@@ -89,6 +89,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/scss/globals/_mixins.scss",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/layout.scss",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/partials/helpers.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/images.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/layout.scss",
-		"/Users/Q/Sites/scaffold/css/partials/message-box.css",
-		"/Users/Q/Sites/scaffold/sandbox/cmp-progress-focus/index.html"
+		"/Users/Q/Sites/scaffold/css/partials/message-box.css"
 	],
 	"find":
 	{
@@ -240,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"vertic",
 			"code_samples",
 			"close",
 			"cache",
@@ -366,8 +367,7 @@
 			"rgba",
 			"opacity",
 			"background-",
-			"second",
-			"0."
+			"second"
 		],
 		"highlight": true,
 		"in_selection": false,
