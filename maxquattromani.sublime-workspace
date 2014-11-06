@@ -89,6 +89,8 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
+		"/Users/Q/Sites/maxquattromani/_posts/2014-10-22-personal.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/globals/_mixins.scss",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
@@ -113,7 +115,6 @@
 		"/Users/Q/Sites/maxquattromani/reading/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/email.php",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-09-19-brace-forms-for-jekyll.markdown",
-		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
 		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
 		"/Users/Q/Sites/maxquattromani/thank-you/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/lists.scss",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/globals/_mixins.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/helpers.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/images.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/layout.scss",
-		"/Users/Q/Sites/scaffold/css/partials/message-box.css"
+		"/Users/Q/Sites/scaffold/css/scss/partials/layout.scss"
 	],
 	"find":
 	{
@@ -240,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<br>",
 			"vertic",
 			"code_samples",
 			"close",
@@ -366,8 +367,7 @@
 			"tight",
 			"rgba",
 			"opacity",
-			"background-",
-			"second"
+			"background-"
 		],
 		"highlight": true,
 		"in_selection": false,
