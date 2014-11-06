@@ -16,9 +16,12 @@ We revisited earlier conversations about this, clarifying that Jekyll is a 'stat
 
 ---
 
- A specific request my client had was to be able to update their careers page, basically a listing of states contianing available jobs; just a list, nothing fancy - enter Google Docs, mainly spreadsheets.
+ A specific request my client had was to be able to update their careers page, basically a listing of states containing available jobs; just a list, nothing fancy - enter Google Docs, mainly spreadsheets.
 
- Google Spreadsheets can be output as json data, so a simple list formated correctly replaces what I originally build inside _data/careers.yml, then looping through them using jQuery .getJson() I can give my client access to the spreadsheet. They update it an voila! their page is updated.
+ Google Spreadsheets can be output as json data, so a simple list formated correctly replaces the data I had originally built in _data/careers.yml, then looping through this data using jQuery .getJson(), I get the data output as needed. I give my client access to the spreadsheet, they update it and voila - their page is updated.
+
+Here's the little script I'm using:
+<br>
 
 {% highlight js %}
 $.getJSON('https://spreadsheets.google.com/feeds/list/1IT57mBl8Eu8r-yCRt8srnxYb9nAtp57U1ZpHq5nosY0/od6/public/values?alt=json', function(data) {
@@ -54,7 +57,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1IT57mBl8Eu8r-yCRt8srnxYb9
 
 The end-result looks like this: <a href="http://terracareassociates.com/careers/" target="_blank">http://terracareassociates.com/careers/</a>
 
-In the future, I'll be expanding this to additional protions of the site so they have more control. This keeps them out of the code and build process and gives a simple solution to needed content updates.
+In the future, I'll be expanding this to additional portions of the site so they have more control. This keeps them out of the code and build process and presents as a simple solution to simple, needed content updates.
 
 Next, I'll discuss moving them off of the Jekyll blogging platform and using Bloggers API on a subdomain to give them more control of their articles - again removing that non-WYSIWYG hurdle.
 
