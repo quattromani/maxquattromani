@@ -89,6 +89,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/partials/font-awesome.css",
+		"/Users/Q/Sites/maxquattromani/css/partials/typography.css",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/font-awesome.scss",
+		"/Users/Q/Sites/maxquattromani/_layouts/none.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-10-22-personal.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/globals/_mixins.scss",
@@ -212,15 +216,11 @@
 		"/Users/Q/Sites/scaffold/css/scss/partials/base.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/buttons.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/carousel.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/drop.scss",
-		"/Users/Q/Sites/scaffold/css/scss/globals/_mixins.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/helpers.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/images.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/layout.scss"
+		"/Users/Q/Sites/scaffold/css/scss/partials/drop.scss"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -240,6 +240,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"../fonts/",
+			"fonta",
 			"<br>",
 			"vertic",
 			"code_samples",
@@ -365,9 +367,7 @@
 			"link",
 			"glg",
 			"tight",
-			"rgba",
-			"opacity",
-			"background-"
+			"rgba"
 		],
 		"highlight": true,
 		"in_selection": false,
