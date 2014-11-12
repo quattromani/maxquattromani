@@ -89,6 +89,8 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/experience/index.html",
 		"/Users/Q/Sites/maxquattromani/css/partials/font-awesome.css",
 		"/Users/Q/Sites/maxquattromani/css/partials/typography.css",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/font-awesome.scss",
@@ -96,7 +98,6 @@
 		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-10-22-personal.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/globals/_mixins.scss",
-		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/layout.scss",
 		"/Users/Q/Sites/maxquattromani/_includes/content.html",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/partials/accessibility.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/base.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/buttons.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/carousel.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/drop.scss"
+		"/Users/Q/Sites/scaffold/css/scss/partials/carousel.scss"
 	],
 	"find":
 	{
