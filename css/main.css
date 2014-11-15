@@ -122,7 +122,7 @@ textarea {
     clear: both; }
   .row:only-child {
     margin-bottom: 0; }
-  .row:first-child, .row:only-child {
+  .row:only-child {
     margin-bottom: 0; }
 
 .full {
