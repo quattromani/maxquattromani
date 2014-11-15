@@ -89,8 +89,13 @@
 	},
 	"file_history":
 	[
-		"/Users/Q/Sites/maxquattromani/_includes/styleguide/best_practices/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/about/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/fonts/index.html",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/lists.scss",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/headings/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/best_practices/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/icons/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/buttons/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/patterns/tables/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/experience/index.html",
@@ -125,7 +130,6 @@
 		"/Users/Q/Sites/maxquattromani/_posts/2014-09-19-brace-forms-for-jekyll.markdown",
 		"/Users/Q/Sites/maxquattromani/_includes/portfolio/index.html",
 		"/Users/Q/Sites/maxquattromani/thank-you/index.html",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/lists.scss",
 		"/Users/Q/Sites/maxquattromani/archive/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/summary/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/_prototype.scss",
@@ -212,11 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/main.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/modals.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/modules.scss",
-		"/Users/Q/Sites/scaffold/_includes/patterns/tables/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/partials/message-box.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/pills.scss",
-		"/Users/Q/Sites/scaffold/_includes/patterns/pills/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/partials/accessibility.scss"
+		"/Users/Q/Sites/scaffold/_includes/patterns/tables/index.html"
 	],
 	"find":
 	{
@@ -240,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div class=\"ver",
 			"../fonts/",
 			"fonta",
 			"<br>",
@@ -366,8 +367,7 @@
 			"butt",
 			"link",
 			"glg",
-			"tight",
-			"rgba"
+			"tight"
 		],
 		"highlight": true,
 		"in_selection": false,
