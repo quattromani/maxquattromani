@@ -279,12 +279,10 @@ address {
   font-style: normal;
 }
 
-sup {
-  vertical-align: text-top;
-}
-
-sub {
-  vertical-align: bottom;
+sub, sup {
+  font-size: smaller;
+  line-height: 0;
+  position: relative;
 }
 
 mark {

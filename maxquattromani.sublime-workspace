@@ -240,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"column-count",
 			"div class=\"ver",
 			"../fonts/",
 			"fonta",
@@ -366,8 +367,7 @@
 			"@import \"../globals/allGlobals\";",
 			"butt",
 			"link",
-			"glg",
-			"tight"
+			"glg"
 		],
 		"highlight": true,
 		"in_selection": false,
