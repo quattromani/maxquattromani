@@ -89,8 +89,9 @@
 	},
 	"file_history":
 	[
-		"/Users/Q/Sites/maxquattromani/_includes/patterns/tables/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/best_practices/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/about/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/patterns/tables/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/contact/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/experience/index.html",
 		"/Users/Q/Sites/maxquattromani/css/partials/font-awesome.css",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/css/scss/partials/message-box.scss",
 		"/Users/Q/Sites/scaffold/css/scss/partials/pills.scss",
 		"/Users/Q/Sites/scaffold/_includes/patterns/pills/index.html",
-		"/Users/Q/Sites/scaffold/css/scss/partials/accessibility.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/base.scss"
+		"/Users/Q/Sites/scaffold/css/scss/partials/accessibility.scss"
 	],
 	"find":
 	{
