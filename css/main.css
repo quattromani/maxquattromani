@@ -3984,7 +3984,7 @@ ul {
   padding-left: 0; }
 .vertical.lined > li {
   overflow: auto;
-  border-bottom: 1px dotted currentColor; }
+  border-bottom: 1px dotted #e6e6e6; }
   .vertical.lined > li.js-last {
     border-bottom: 0; }
 

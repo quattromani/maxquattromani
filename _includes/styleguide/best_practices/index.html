@@ -14,72 +14,71 @@
   <h2>HTML</h2>
   <hr>
 
-  <div class="vertical lined">
-    <ul>
-      <li>
-        <h5>Human Readable</h5>
+  <ul class="vertical lined">
+    <li>
+      <h5>Human Readable</h5>
 
-        <p class="lede">Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
-      </li>
-      <li>
-        <h5>HTML5 doctype</h5>
+      <p class="lede">Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
+    </li>
+    <li>
+      <h5>HTML5 doctype</h5>
 
-        <p class="lede">Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+      <p class="lede">Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
 {% highlight html %}
 <!DOCTYPE html>
 {% endhighlight %}
-      </li>
-      <li>
-        <div class="bulleted">
-          <h5>Syntax</h5>
-          <ul>
-            <li>Use soft-tabs with two spaces</li>
-            <li>Nested elements should be indented once (2 spaces)</li>
-            <li>Don't include a trailing slash in self-closing elements</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <div class="bulleted">
-          <h5>Attributes</h5>
-          <ul>
-            <li>
-              Attributes should be lowercase.
-            </li>
-            <li>
-              Always use double quotes ("), never single quotes.
-            </li>
-            <li>
-              Boolean attributes should be used without quoted values to avoid redundancy.
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <h5>Attribute order</h5>
-        <p>HTML attributes should come in this particular order for easier reading of code.</p>
-        <div class="vertical bulleted">
-          <ul>
-            <li><code>id</code></li>
-            <li><code>class</code></li>
-            <li><code>data-*</code></li>
-            <li><code>for</code> | <code>type</code> | <code>href</code> | <code>src</code></li>
-          </ul>
-        </div>
-      </li>
-      <li>
+    </li>
+    <li>
+      <div class="bulleted">
+        <h5>Syntax</h5>
+        <ul>
+          <li>Use soft-tabs with two spaces</li>
+          <li>Nested elements should be indented once (2 spaces)</li>
+          <li>Don't include a trailing slash in self-closing elements</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="bulleted">
+        <h5>Attributes</h5>
+        <ul>
+          <li>
+            Attributes should be lowercase.
+          </li>
+          <li>
+            Always use double quotes ("), never single quotes.
+          </li>
+          <li>
+            Boolean attributes should be used without quoted values to avoid redundancy.
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <h5>Attribute order</h5>
+      <p>HTML attributes should come in this particular order for easier reading of code.</p>
+      <div class="vertical bulleted">
+        <ul>
+          <li><code>id</code></li>
+          <li><code>class</code></li>
+          <li><code>data-*</code></li>
+          <li><code>for</code> | <code>type</code> | <code>href</code> | <code>src</code></li>
+        </ul>
+      </div>
+    </li>
+    <li>
 
-        <h5>HTML Comments</h5>
-        <div class="bulleted">
-          <ul>
-            <li>
-              Section comments are separated from the previous block by two lines, and should have one following line of space.
-            </li>
-            <li>
-              Prepend section headings with an equal sign (=), to make a Find operation easier.
-            </li>
-          </ul>
-        </div>
+      <h5>HTML Comments</h5>
+      <div class="bulleted">
+        <ul>
+          <li>
+            Section comments are separated from the previous block by two lines, and should have one following line of space.
+          </li>
+          <li>
+            Prepend section headings with an equal sign (=), to make a Find operation easier.
+          </li>
+        </ul>
+      </div>
 
 {% highlight html %}
 <!-- Component Name -->
@@ -89,42 +88,41 @@
 <!-- ./Component Name -->
 {% endhighlight %}
 
-      </li>
-    </ul>
-  </div>
+    </li>
+  </ul>
   <hr>
-  <h2>CSS</h2>
-  <hr>
+<h2>CSS</h2>
+<hr>
 
-  <div class="vertical lined">
-    <ul>
-      <li>
-        <ul class="bulleted">
-          <li>Use soft-tabs with two spaces</li>
-          <li>When grouping selectors, keep individual selectors to a single line</li>
-          <li>Include one space before the opening brace of declaration blocks</li>
-          <li>Place closing braces of declaration blocks on a new line</li>
-          <li>Include one space after <code>:</code> in each property</li>
-          <li>Each declaration should appear on its own line</li>
-          <li>End all declarations with a semi-colon</li>
-          <li>Comma-separated values should include a space after each comma</li>
-          <li>Don't include spaces after commas in RGB or RGBa colors</li>
-          <li>Do not specify units for zero values, e.g., margin: 0; instead of margin: 0px;</li>
-          <li>Lowercase all hex values, e.g., #fff instead of #FFF</li>
-          <li>Use shorthand hex values where available, e.g., #fff instead of #ffffff</li>
-          <li>Quote attribute values in selectors, e.g., input[type="text"]</li>
-        </ul>
-      </li>
-      <li>
-        <h5>Declaration Organization</h5>
+<div class="vertical lined">
+  <ul>
+    <li>
+      <ul class="bulleted">
+        <li>Use soft-tabs with two spaces</li>
+        <li>When grouping selectors, keep individual selectors to a single line</li>
+        <li>Include one space before the opening brace of declaration blocks</li>
+        <li>Place closing braces of declaration blocks on a new line</li>
+        <li>Include one space after <code>:</code> in each property</li>
+        <li>Each declaration should appear on its own line</li>
+        <li>End all declarations with a semi-colon</li>
+        <li>Comma-separated values should include a space after each comma</li>
+        <li>Don't include spaces after commas in RGB or RGBa colors</li>
+        <li>Do not specify units for zero values, e.g., margin: 0; instead of margin: 0px;</li>
+        <li>Lowercase all hex values, e.g., #fff instead of #FFF</li>
+        <li>Use shorthand hex values where available, e.g., #fff instead of #ffffff</li>
+        <li>Quote attribute values in selectors, e.g., input[type="text"]</li>
+      </ul>
+    </li>
+    <li>
+      <h5>Declaration Organization</h5>
 
-        <ol>
-          <li>Box (Display, Float, Position, Left, Top, Width, Height, Margin, Padding, etc.)</li>
-          <li>Border</li>
-          <li>Background</li>
-          <li>Text</li>
-          <li>Other</li>
-        </ol>
+      <ol>
+        <li>Box (Display, Float, Position, Left, Top, Width, Height, Margin, Padding, etc.)</li>
+        <li>Border</li>
+        <li>Background</li>
+        <li>Text</li>
+        <li>Other</li>
+      </ol>
 
 {% highlight css %}
 .someDiv { color: #222; }
@@ -136,11 +134,11 @@
 }
 {% endhighlight %}
 
-    </li>
-    <li>
-      <h5>General Formatting</h5>
+  </li>
+  <li>
+    <h5>General Formatting</h5>
 
-      <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
+    <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
 
 {% highlight css %}
 .print {
@@ -155,9 +153,9 @@
 .print:hover { background: #265a83; }
 {% endhighlight %}
 
-  </li>
-  <li>
-    <p>Avoid Qualifying ID and class names with type selectors</p>
+</li>
+<li>
+  <p>Avoid Qualifying ID and class names with type selectors</p>
 
 {% highlight css %}
 // this is bad
@@ -171,12 +169,12 @@ div.error { color: red; }
 .error { color: green; }
 {% endhighlight %}
 
-    <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
-  </li>
-  <li>
-    <h5>Hexadecimal Notation</h5>
+  <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
+</li>
+<li>
+  <h5>Hexadecimal Notation</h5>
 
-    <p>For color values that permit, 3 character hexadecimal is preferred</p>
+  <p>For color values that permit, 3 character hexadecimal is preferred</p>
 
 {% highlight css %}
 /* not recommended */
@@ -187,27 +185,27 @@ color: #00ff00;
 color: #0f0;
 {% endhighlight %}
 
-  </li>
-  <li>
-    <div class="row">
-      <div class="error-box">
-        <span class="message">
-          <span class="h4">!important</span>
-        </span>
-      </div>
+</li>
+<li>
+  <div class="row">
+    <div class="error-box">
+      <span class="message">
+        <span class="h4">!important</span>
+      </span>
     </div>
+  </div>
 
-    <h5>Just don't do it.</h5>
-    <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife</p>
-  </li>
-  <li>
-    <h5>Use the SMACSS Approach</h5>
+  <h5>Just don't do it.</h5>
+  <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife</p>
+</li>
+<li>
+  <h5>Use the SMACSS Approach</h5>
 
 {% highlight css %}
 .componentName {
 
   Base {
-  ...
+    ...
   }
 
   Layout {
@@ -237,8 +235,8 @@ color: #0f0;
 // File headers are commented thusly:
 
 /* ==========================================================================
-    Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
-   ========================================================================== */
+Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
+========================================================================== */
 {% endhighlight %}
 
 {% highlight html %}
@@ -467,25 +465,25 @@ sass/
 <header role="banner" class="header"></header>
 {% endhighlight %}
 
-<p>navigation - any navigation list, typically the nav element</p>
+      <p>navigation - any navigation list, typically the nav element</p>
 
 {% highlight html %}
 <nav role="navigation" class="nav"></nav>
 {% endhighlight %}
 
-<p>main - the main content area</p>
+      <p>main - the main content area</p>
 
 {% highlight html %}
 <section role="main" class="main"></main>
 {% endhighlight %}
 
-  <p>complimentary - information that is tangentially related to the main content</p>
+        <p>complimentary - information that is tangentially related to the main content</p>
 
 {% highlight html %}
 <aside role="complimentary" class="aside"></aside>
 {% endhighlight %}
 
-  <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
+        <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
 
 {% highlight html %}
 <footer role="contentinfo" class="footer"></footer>
@@ -515,14 +513,14 @@ sass/
 
 {% highlight html %}
 /*----------------------------------------------------------
-  Inspiration and credits for much of this code base belong to:
+Inspiration and credits for much of this code base belong to:
 
-  HTML5 Boilerplate :: http://html5boilerplate.com
-  HTML5 Reset       :: http://html5reset.org
-  Twitter Bootstrap :: http://twitter.github.com/bootstrap/
-  SMACSS            :: http://smacss.com/
-  CSSWizardry       :: http://csswizardry.com/
-  Codeguide         :: http://codeguide.co/
+HTML5 Boilerplate :: http://html5boilerplate.com
+HTML5 Reset       :: http://html5reset.org
+Twitter Bootstrap :: http://twitter.github.com/bootstrap/
+SMACSS            :: http://smacss.com/
+CSSWizardry       :: http://csswizardry.com/
+Codeguide         :: http://codeguide.co/
 
 ------------------------------------------------------------*/
 {% endhighlight %}
