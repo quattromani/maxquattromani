@@ -17,20 +17,66 @@ parent: Patterns
 <p>Version: 0.2.1 -- Updated: {{ site.time }}</p>
 <hr>
 
-<!-- Loop through and include all patterns sections -->
-{% include patterns/about/index.html %}
-{% include patterns/box/index.html %}
-{% include patterns/breadcrumbs/index.html %}
-{% include patterns/forms/index.html %}
-{% include patterns/lists/index.html %}
-{% include patterns/summary/index.html %}
-{% include patterns/modals/index.html %}
-{% include patterns/pagination/index.html %}
-{% include patterns/pills/index.html %}
-{% include patterns/message-box/index.html %}
-{% include patterns/info-box/index.html %}
-{% include patterns/tables/index.html %}
+<div class="row">
+  <div class="fifth menu">
+    <h2>Menu</h2>
+    <div class="box-column">
+      <ul class="vertical lined">
+        <li>
+          <a href="#about-anchor">About</a>
+        </li>
+        <li>
+        <a href="#box-anchor">Box</a>
+        </li>
+        <li>
+          <a href="#breadcrumbs-anchor">Breadcrumbs</a>
+        </li>
+        <li>
+          <a href="#forms-anchor">Forms</a>
+        </li>
+        <li>
+          <a href="#lists-anchor">Lists</a>
+        </li>
+        <li>
+          <a href="#summary-anchor">Summary</a>
+        </li>
+        <li>
+          <a href="#modals-anchor">Modals</a>
+        </li>
+        <li>
+          <a href="#pagination-anchor">Pagination</a>
+        </li>
+        <li>
+          <a href="#pills-anchor">Pills</a>
+        </li>
+        <li>
+          <a href="#message-anchor">Message Box</a>
+        </li>
+        <li>
+          <a href="#infobox-anchor">Info Box</a>
+        </li>
+        <li>
+          <a href="#table-anchor">Tables</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="four-fifths">
+    <!-- Loop through and include all patterns sections -->
+    {% include patterns/about/index.html %}
+    {% include patterns/box/index.html %}
+    {% include patterns/breadcrumbs/index.html %}
+    {% include patterns/forms/index.html %}
+    {% include patterns/lists/index.html %}
+    {% include patterns/summary/index.html %}
+    {% include patterns/modals/index.html %}
+    {% include patterns/pagination/index.html %}
+    {% include patterns/pills/index.html %}
+    {% include patterns/message-box/index.html %}
+    {% include patterns/info-box/index.html %}
+    {% include patterns/tables/index.html %}
 
-<h2>FIN.</h2>
-
+    <h2>FIN.</h2>
+  </div>
+</div>
 {% include end_content.html %}
