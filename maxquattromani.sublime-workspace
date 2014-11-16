@@ -89,11 +89,14 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/text_alignment/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/headings/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/inline_text/index.html",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
+		"/Users/Q/Sites/maxquattromani/_includes/styleguide/best_practices/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/about/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/fonts/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/lists.scss",
-		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/headings/index.html",
-		"/Users/Q/Sites/maxquattromani/_includes/styleguide/best_practices/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/icons/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/buttons/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/patterns/tables/index.html",
@@ -117,7 +120,6 @@
 		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-08-22-calc()-in-less.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modules.scss",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
 		"/Users/Q/Sites/maxquattromani/Gruntfile.js",
 		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
 		"/Users/Q/Sites/maxquattromani/_config.yml",
@@ -214,9 +216,7 @@
 		"/Users/Q/Sites/scaffold/_includes/styleguide/typography/inline_text/index.html",
 		"/Users/Q/Sites/scaffold/css/scss/partials/audio.scss",
 		"/Users/Q/Sites/scaffold/css/scss/main.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/modals.scss",
-		"/Users/Q/Sites/scaffold/css/scss/partials/modules.scss",
-		"/Users/Q/Sites/scaffold/_includes/patterns/tables/index.html"
+		"/Users/Q/Sites/scaffold/css/scss/partials/modals.scss"
 	],
 	"find":
 	{

@@ -232,7 +232,7 @@ textarea {
       float: left;
       width: 32%;
       margin-left: 2%; }
-      .sixth:nth-child(3n) {
+      .sixth:nth-child(3n+1) {
         margin-left: 0; } }
 
 .seventh {
@@ -250,7 +250,7 @@ textarea {
       float: left;
       width: 32%;
       margin-left: 2%; }
-      .seventh:nth-child(3n) {
+      .seventh:nth-child(3n + 1) {
         margin-left: 0; } }
 
 .eighth {
@@ -275,7 +275,9 @@ textarea {
       float: left;
       width: 49%;
       margin-left: 2%; }
-      .eighth:nth-child(2n) {
+      .eighth:nth-child(4n) {
+        margin-left: 2%; }
+      .eighth:nth-child(2n+1) {
         margin-left: 0; } }
 
 .ninth {
@@ -293,7 +295,7 @@ textarea {
       float: left;
       width: 32%;
       margin-left: 2%; }
-      .ninth:nth-child(3n) {
+      .ninth:nth-child(3n+1) {
         margin-left: 0; } }
 
 .tenth {
@@ -318,7 +320,9 @@ textarea {
       float: left;
       width: 49%;
       margin-left: 2%; }
-      .tenth:nth-child(2n) {
+      .tenth:nth-child(4n) {
+        margin-left: 2%; }
+      .tenth:nth-child(2n + 1) {
         margin-left: 0; } }
 
 .eleventh {
@@ -343,7 +347,9 @@ textarea {
       float: left;
       width: 49%;
       margin-left: 2%; }
-      .eleventh:nth-child(2n) {
+      .eleventh:nth-child(4n) {
+        margin-left: 2%; }
+      .eleventh:nth-child(2n + 1) {
         margin-left: 0; } }
 
 .twelfth {
@@ -368,7 +374,9 @@ textarea {
       float: left;
       width: 32%;
       margin-left: 2%; }
-      .twelfth:nth-child(3n) {
+      .twelfth:nth-child(6n) {
+        margin-left: 2%; }
+      .twelfth:nth-child(3n+1) {
         margin-left: 0; } }
 
 .golden-long {
@@ -5126,7 +5134,7 @@ hr {
     outline: 1px solid white; }
   @media (max-width: 62em) {
     .styleguide .colors, .styleguide .grid {
-      margin-bottom: 1em; } }
+      margin-bottom: 0.5em; } }
 .styleguide .swatch {
   margin-top: 0;
   margin-right: 0;
@@ -5144,6 +5152,12 @@ hr {
   .styleguide .swatch-color.color-white {
     border: 1px solid #e6e6e6;
     border-bottom: none; }
+  @media (max-width: 40em) {
+    .styleguide .swatch-color {
+      padding-top: 1em;
+      padding-right: 1em;
+      padding-bottom: 1em;
+      padding-left: 1em; } }
 .styleguide .swatch-info {
   padding-top: 0.5em;
   padding-right: 0.5em;
