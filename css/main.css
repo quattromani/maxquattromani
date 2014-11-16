@@ -1039,8 +1039,7 @@ time {
   display: inline-block;
   *zoom: 1;
   *display: inline;
-  *vertical-align: auto;
-  margin-bottom: 2em; }
+  *vertical-align: auto; }
 
 /* ==========================
 	  Pre
