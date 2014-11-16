@@ -6,7 +6,7 @@ class: email
 parent: Email
 ---
 
-<section class="sdlc" id="sdlc">
+<section class="email" id="email">
   {% include content.html %}
 
   <header role="banner">
@@ -35,39 +35,39 @@ parent: Email
   <hr>
 
   <ul class="vertical bulleted">
-    <li>All emails MUST be from a real person. We do not send email from a no-reply or system account</li>
+    <li>All emails MUST be from a real person. We do not send email from a no-reply or system account.</li>
 
-    <li>Remember that you're not designing a printable piece of paper, but an actionable email</li>
+    <li>Remember that you're not designing a printable piece of paper, but an actionable email.</li>
 
-    <li>Make sure there is one clear action in the email. Don't add confusion with multiple actions</li>
+    <li>Make sure there is one clear action in the email. Don't add confusion with multiple actions.</li>
 
-    <li>Have a clear title, lead with "{{ site.title }}" if possible</li>
+    <li>Have a clear title, lead with "{{ site.title }}" if possible.</li>
 
-    <li>Make sure it has a clear preview, or "toast" that the reader can easily see in thier email queue, be it Mobile, Outlook, or gmail. If they can't tell what its about without clicking into it, they may never read it</li>
+    <li>Make sure it has a clear preview, or "toast" that the reader can easily see in thier email queue, be it Mobile, Outlook, or gmail. If they can't tell what its about without clicking into it, they may never read it.</li>
 
-    <li>Test on mobile. Don't assume it looks good just because it looks good on your Hi-Res Mac. Make it work well on mobile first, and then on Outlook. Hold your phone at arms length to make sure its still legible</li>
+    <li>Test on mobile. Don't assume it looks good just because it looks good on your Hi-Res Mac. Make it work well on mobile first, and then on Outlook. Hold your phone at arms length to make sure its still legible.</li>
 
     <li>Font Sizes &amp; Colors:
       <ul>
-        <li>The magic number is 4. Use at most 4 font sizes and 4 colors</li>
+        <li>The magic number is 4. Use at most 4 font sizes and 4 colors.</li>
 
-        <li>Text should 18px if you want people to read it</li>
+        <li>Text should 18px if you want people to read it.</li>
 
-        <li>Legal text or other boilerplate that's less important can be 12px to 14px</li>
+        <li>Legal text or other boilerplate that's less important can be 12px to 14px.</li>
 
-        <li>Bold counts as a font size and color</li>
+        <li>Bold counts as a font size and color.</li>
 
-        <li>Generally, use the primary brand color as a highlight color and grey for smaller less important text like boilerplate/legal</li>
+        <li>Generally, use the primary brand color as a highlight color and grey for smaller less important text like boilerplate/legal.</li>
 
         <li>Yes, white is a color too!</li>
       </ul>
     </li>
 
-    <li>Remember, the emails are FOR the readers. The number one priority needs to be making them usable, not adding cool design elements</li>
+    <li>Remember, the emails are FOR the readers. The number one priority needs to be making them usable, not adding cool design elements.</li>
 
-    <li>Watch out for using jargon in the emails, don't waste space with things people outside the company or industry might not understand</li>
+    <li>Watch out for using jargon in the emails, don't waste space with things people outside the company or industry might not understand.</li>
 
-    <li>While testing, send emails to people directly through the email client app (ConstantContact, Mailchimp, etc.) Forwarding an email destroys the formatting</li>
+    <li>While testing, send emails to people directly through the email client app (ConstantContact, Mailchimp, etc.) Forwarding an email destroys the formatting.</li>
   </ul>
 
   <hr>
@@ -76,7 +76,7 @@ parent: Email
 
   <ol>
     <li>Mind your <code>HEAD</code>
-    <ul class="vertical bulleted">
+      <ul class="vertical bulleted">
         <li>
           <strong>You can't avoid a <code>DOCTYPE</code>.</strong> Many email clients strip your <code>DOCTYPE</code> and either impose their own or leave it out entirely. This means you need to test both with and without a <code>DOCTYPE</code> to ensure your syntax renders how it should.
         </li>
@@ -154,7 +154,9 @@ parent: Email
             </li>
           </ul>
         </li>
-      </ol>
+      </ul>
+    </li>
+  </ol>
 
-      {% include end_content.html %}
-    </section>
+  {% include end_content.html %}
+</section>
