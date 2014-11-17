@@ -33,10 +33,21 @@
     overflow: auto;
   }
   .swatch-color {
+    position: relative;
     @include padding(3.5em, $padding);
     &.color-white {
       border: 1px solid $color-light-grey;
       border-bottom: none;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      height: 100%;
+      padding: 1em;
+      background-color: hsla(0, 0, 100%, .15);
     }
 
     @include bp(bp-small) {

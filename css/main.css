@@ -5138,6 +5138,7 @@ hr {
   background-clip: padding-box;
   overflow: auto; }
 .styleguide .swatch-color {
+  position: relative;
   padding-top: 3.5em;
   padding-right: 1em;
   padding-bottom: 3.5em;
@@ -5145,6 +5146,14 @@ hr {
   .styleguide .swatch-color.color-white {
     border: 1px solid #e6e6e6;
     border-bottom: none; }
+  .styleguide .swatch-color:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.15); }
   @media (max-width: 40em) {
     .styleguide .swatch-color {
       padding-top: 1em;
