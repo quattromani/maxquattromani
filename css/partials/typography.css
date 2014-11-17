@@ -102,13 +102,6 @@ a[href$='.pdf']:after {
   content: "";
   margin-left: .5em;
 }
-a[href*='github.com']:after {
-  font-family: "FontAwesome", Arial, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  content: "";
-  margin-left: .5em;
-}
 
 /* ==========================
 	  Headings

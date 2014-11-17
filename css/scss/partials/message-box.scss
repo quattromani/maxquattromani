@@ -24,15 +24,15 @@
     align-items: center;
     min-width: 3em;
     @include font-family($fontawesome, 36);
-    padding: .25em 1em;
+    padding: 1em;
   }
 }
 
 // List of Message Types
 $message-types: (
-  (loading, $color-grey, '\75'),
-  (valid, $color-secondary-green, '\43'),
-  (warning, $color-primary-red, '\33'),
+  (loading, $color-grey, '\f10c'),
+  (valid, $color-secondary-green, '\f00c'),
+  (warning, $color-primary-red, '\f071'),
 ) !default;
 
 // Message Type @mixin

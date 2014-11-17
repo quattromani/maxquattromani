@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
     Message Boxes -- Version: 0.2.1 - Compiled: timestamp()
    ========================================================================== */
@@ -21,7 +22,7 @@
   font-family: "FontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
-  padding: .25em 1em;
+  padding: 1em;
 }
 
 .message-loading {
@@ -29,7 +30,7 @@
 }
 .message-loading:before {
   background: white;
-  content: "u";
+  content: "";
 }
 
 .message-valid {
@@ -37,7 +38,7 @@
 }
 .message-valid:before {
   background: #00f0f0;
-  content: "C";
+  content: "";
 }
 
 .message-warning {
@@ -45,7 +46,7 @@
 }
 .message-warning:before {
   background: #ffc8c5;
-  content: "3";
+  content: "";
 }
 
 @-webkit-keyframes rotation {

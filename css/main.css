@@ -796,12 +796,6 @@ a {
     font-weight: normal;
     content: "";
     margin-left: .5em; }
-  a[href*='github.com']:after {
-    font-family: "FontAwesome", Arial, Sans-Serif;
-    font-style: normal;
-    font-weight: normal;
-    content: "";
-    margin-left: .5em; }
 
 /* ==========================
 	  Headings
@@ -4496,25 +4490,25 @@ label + .pill,
     font-family: "FontAwesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
-    padding: .25em 1em; }
+    padding: 1em; }
 
 .message-loading {
   color: #ccc; }
   .message-loading:before {
     background: white;
-    content: "u"; }
+    content: ""; }
 
 .message-valid {
   color: #008a8a; }
   .message-valid:before {
     background: #00f0f0;
-    content: "C"; }
+    content: ""; }
 
 .message-warning {
   color: #ff675f; }
   .message-warning:before {
     background: #ffc8c5;
-    content: "3"; }
+    content: ""; }
 
 @-webkit-keyframes rotation {
   from {
