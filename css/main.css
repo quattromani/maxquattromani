@@ -5153,7 +5153,7 @@ hr {
     right: 0;
     height: 100%;
     padding: 1em;
-    background-color: rgba(255, 255, 255, 0.15); }
+    background-color: rgba(0, 0, 0, 0.1); }
   @media (max-width: 40em) {
     .styleguide .swatch-color {
       padding-top: 1em;
@@ -5170,6 +5170,8 @@ hr {
   background: #fff;
   color: #454545;
   text-align: center; }
+  .styleguide .swatch-info p:first-of-type {
+    font-weight: bold; }
 .styleguide .grid {
   border-radius: 0;
   -webkit-background-clip: padding-box;
