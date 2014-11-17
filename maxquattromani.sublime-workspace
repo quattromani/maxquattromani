@@ -240,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"></",
 			"twe",
 			".grid",
 			"grid",
@@ -366,8 +367,7 @@
 			"bp",
 			"transition",
 			"%",
-			"fontaw",
-			"progrsss"
+			"fontaw"
 		],
 		"highlight": true,
 		"in_selection": false,
