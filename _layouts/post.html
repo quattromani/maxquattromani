@@ -14,8 +14,13 @@ comments: true
   </time>
 </strong>
 
-<div class="post">
-{{ content }}
+<div class="row">
+  <div class="three-fifths">
+    <div class="post">
+      {{ content }}
+    </div>
+  </div>
+  <div class="two-fifths"></div>
 </div>
 
 {% if page.comments %}
@@ -27,9 +32,9 @@ comments: true
   var disqus_identifier = '{{ post.url }}';
 
   (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
