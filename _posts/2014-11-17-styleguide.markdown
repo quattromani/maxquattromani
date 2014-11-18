@@ -14,7 +14,7 @@ I paused, collected my thoughts, and began talking about style guides and patter
 
 As we wrapped up, I got asked to come to Austin to meet the team and do a round-table type interview, the catch was that I had to bring a project, code and all, to share with them. Nothing I had done for money, but what I did for ME!
 
-For about a year or so previously, I had been collecting a number of different compartmentalized snippets, best practices, and modular components. I decided to use this opportunity to create a collective style guide. This interview project became <a href="http://quattromani.github.io/scaffold/">Scaffold</a>, my boilerplate, starter kit.
+For about a year or so previously, I had been collecting a number of different compartmentalized snippets, best practices, and modular components. I decided to use this opportunity to create a collective style guide. This interview project became <a href="http://quattromani.github.io/scaffold/">Scaffold</a>, my boilerplate/starter kit.
 
 ---
 
