@@ -4382,7 +4382,6 @@ label + .pill,
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     background-color: #2bb3dd;
-    color: #fff;
     text-align: center;
     vertical-align: middle;
     cursor: pointer; }

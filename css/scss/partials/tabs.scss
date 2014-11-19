@@ -29,7 +29,6 @@
           @include padding(1em);
           @include border-radius($border-radius $border-radius 0 0);
           background-color: $color-primary-blue;
-          color: $text-white;
           text-align: center;
           vertical-align: middle;
           cursor: pointer;
