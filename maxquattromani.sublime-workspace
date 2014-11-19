@@ -89,6 +89,8 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/scss/main.scss",
+		"/Users/Q/Sites/maxquattromani/patterns/tabs/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/posts.scss",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/about/index.html",
 		"/Users/Q/Sites/maxquattromani/styleguide/typography/body_text/index.html",
@@ -126,7 +128,6 @@
 		"/Users/Q/Sites/maxquattromani/_includes/content.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/nav.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
-		"/Users/Q/Sites/maxquattromani/css/scss/main.scss",
 		"/Users/Q/Sites/maxquattromani/.htaccess",
 		"/Users/Q/Sites/maxquattromani/_includes/head.html",
 		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
@@ -215,8 +216,7 @@
 		"/Users/Q/Sites/scaffold/humans.txt",
 		"/Users/Q/Sites/scaffold/_config.yml",
 		"/Users/Q/Sites/scaffold/_includes/google_analytics.html",
-		"/Users/Q/Sites/scaffold/js/sandbox.js",
-		"/Users/Q/Sites/scaffold/sandbox/compliance/index.html"
+		"/Users/Q/Sites/scaffold/js/sandbox.js"
 	],
 	"find":
 	{

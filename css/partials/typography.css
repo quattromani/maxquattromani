@@ -66,14 +66,8 @@
 	  Links
    ========================== */
 a {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
   background: transparent;
   vertical-align: baseline;
   font-family: inherit;
@@ -116,10 +110,7 @@ header {
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  margin-top: 3em;
-  margin-right: 0;
-  margin-bottom: 3em;
-  margin-left: 0;
+  margin: 3em 0;
   border: 2px solid currentColor;
   font-size: 12px;
   font-size: 1.2rem;
@@ -134,14 +125,8 @@ header {
   }
 }
 .heading h2 {
-  padding-top: 0.25em;
-  padding-right: 1em;
-  padding-bottom: 0.25em;
-  padding-left: 1em;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  padding: 0.25em 1em;
+  margin: 0;
 }
 .heading p {
   position: absolute;
@@ -151,10 +136,7 @@ header {
   letter-spacing: 1px;
 }
 .heading span {
-  padding-top: 0;
-  padding-right: 1em;
-  padding-bottom: 0;
-  padding-left: 1em;
+  padding: 0 1em;
   background: white;
 }
 .ie .heading span {
@@ -317,10 +299,7 @@ p,
 }
 p:only-child,
 .p:only-child {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
 }
 
 .b {
@@ -337,10 +316,7 @@ p:only-child,
 
 blockquote {
   width: 75%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
+  margin: 0 auto;
   border-left: 3px solid currentColor;
   color: #b3b3b3;
   font-style: italic;
@@ -371,10 +347,7 @@ sub, sup {
 }
 
 mark {
-  padding-top: 0.25em;
-  padding-right: 0.25em;
-  padding-bottom: 0.25em;
-  padding-left: 0.25em;
+  padding: 0.25em;
   background: #ffda21;
 }
 
@@ -389,14 +362,8 @@ time {
 	  Pre
    ========================== */
 pre {
-  margin-top: 1em;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  margin: 1em 0 0;
+  padding: 1em;
   border-radius: 0;
   background-clip: padding-box;
   background-color: white;

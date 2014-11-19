@@ -53,6 +53,27 @@ $('.fonts').each(function(){
     $(this).prepend(fonts);
 });
 
+/* ==========================================================================
+    Accordion -- Version: 1.9.0.0 - Updated: 12/31/2013
+   ========================================================================== */
+
+$('.accordion ul li').each(function() {
+	if ($(this).has('ul').length) {
+		$(this).addClass('js-expandable');
+	} else {
+		$(this).addClass('js-notexpandable');
+	}
+});
+
+$('.accordion h6').click(function() {
+	var categoryText = $(this).text();
+	$(this).parent().addClass('js-active').find('ul').slideToggle(function() {
+		if ($(this).is(':hidden')) {
+			$(this).parent().removeClass('js-active');
+		}
+	});
+});
+
 (function($) {
 
 	$.fn.jumpTo = function() {
@@ -202,6 +223,24 @@ $('a[href^="http://"], a[href^="https://"]').attr('target','_blank');
   });
 });
 
+/* ==========================================================================
+    Select with Link -- Version: 1.9.0.2 - Updated: 3/24/2014
+   ========================================================================== */
+
+(function($) {
+
+  $.fn.selectLink = function() {
+  	$('.selectLink').change(function(){
+  		// Ignore null value -- shown at top of dropdown
+  		if ($(this).val() != 'null'){
+  			window.location.href = $(this).val();
+  		}
+  	});
+  }
+
+}(jQuery));
+
+$('.selectLink').selectLink();
 /* ==========================================================================
     Tabs to Accordion -- Version: 1.9.0.2 - Updated: 1/7/2013
    ========================================================================== */

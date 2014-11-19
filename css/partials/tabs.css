@@ -2,10 +2,7 @@
     Tabs -- Version: 1.9.0.4 - Updated: 11/17/2014
     ========================================================================== */
 .tab-component .tab-content-container {
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  padding: 1em;
   border-radius: 0 0 0 0;
   background-clip: padding-box;
   background: #fff;
@@ -24,10 +21,7 @@
 .tab-component .tabs li {
   display: table-cell;
   position: relative;
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  padding: 1em;
   border-radius: 0 0 0 0;
   background-clip: padding-box;
   border-left: 1px solid #ccc;
@@ -116,10 +110,7 @@
     display: none;
   }
   .tab-component .tab-content {
-    padding-top: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
+    padding: 1em;
     background: #fff;
     filter: none;
   }
