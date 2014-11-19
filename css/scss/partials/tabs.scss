@@ -28,21 +28,26 @@
           position: relative;
           @include padding(1em);
           @include border-radius($border-radius $border-radius 0 0);
-          border-left: 1px solid $color-grey;
-          @include background-gradient($color-off-white, $color-light-grey);
-          color: $text;
+          background-color: $color-primary-blue;
+          color: $text-white;
           text-align: center;
           vertical-align: middle;
           cursor: pointer;
 
           &.js-first {
             border-left: none;
+            border-radius: $border-radius 0 0 0;
+          }
+
+          &.js-last {
+            border-radius: 0 $border-radius 0 0;
           }
 
           a {
             @include inline-block;
             position: relative;
             @include font-family($heading-font);
+            color: $text-white;
             font-weight: normal;
             text-decoration: none;
           }

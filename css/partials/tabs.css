@@ -24,22 +24,18 @@
   padding: 1em;
   border-radius: 0 0 0 0;
   background-clip: padding-box;
-  border-left: 1px solid #ccc;
-  background-color: #f2f2f2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -ms-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#f2f2f2', EndColorStr='#e6e6e6')"; */
-  color: #454545;
+  background-color: #2bb3dd;
+  color: #fff;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
 }
 .tab-component .tabs li.js-first {
   border-left: none;
+  border-radius: 0 0 0 0;
+}
+.tab-component .tabs li.js-last {
+  border-radius: 0 0 0 0;
 }
 .tab-component .tabs li a {
   display: inline-block;
@@ -50,6 +46,7 @@
   font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
+  color: #fff;
   font-weight: normal;
   text-decoration: none;
 }
