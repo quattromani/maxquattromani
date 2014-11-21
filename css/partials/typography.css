@@ -3,25 +3,25 @@
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
     ========================================================================== */
 @font-face {
-  font-family: 'BebasNeueRegular';
+  font-family: "BebasNeue";
   src: url("../fonts/BebasNeue-webfont.eot");
-  src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/BebasNeue-webfont.eot?") format("eot"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: "normal";
 }
 @font-face {
-  font-family: 'OswaldLight';
+  font-family: "OswaldLight";
   src: url("../fonts/Oswald-Light-webfont.eot");
-  src: url("../fonts/Oswald-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Light-webfont.woff") format("woff"), url("../fonts/Oswald-Light-webfont.ttf") format("truetype"), url("../fonts/Oswald-Light-webfont.svg#OswaldLight") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/Oswald-Light-webfont.eot?") format("eot"), url("../fonts/Oswald-Light-webfont.woff") format("woff"), url("../fonts/Oswald-Light-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: "normal";
 }
 @font-face {
-  font-family: "FontAwesome";
+  font-family: "fontawesome";
   src: url("../fonts/icons/fontawesome-webfont.eot");
-  src: url("../fonts/icons/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/icons/fontawesome-webfont.svg#svgFontAwesome") format("svg"), url("../fonts/icons/fontawesome-webfont.woff") format("woff"), url("../fonts/icons/fontawesome-webfont.ttf") format("truetype");
+  src: url("../fonts/icons/fontawesome-webfont.eot?") format("eot"), url("../fonts/icons/fontawesome-webfont.woff") format("woff"), url("../fonts/icons/fontawesome-webfont.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
+  font-style: "normal";
 }
 .base-font {
   font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -175,7 +175,7 @@ h1 + p,
 
 h1,
 .h1 {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 42px;
   font-size: 4.2rem;
   font-weight: 200;
@@ -197,7 +197,7 @@ h1,
 
 h2,
 .h2 {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-size: 3.6rem;
   font-weight: 200;
@@ -219,7 +219,7 @@ h2,
 
 h3,
 .h3 {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-size: 3rem;
   font-weight: 700;
@@ -241,7 +241,7 @@ h3,
 
 h4,
 .h4 {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: 200;
@@ -249,7 +249,7 @@ h4,
 
 h5,
 .h5 {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 700;
@@ -257,7 +257,7 @@ h5,
 
 h6,
 .h6 {
-  font-family: "BebasNeueRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 100;

@@ -99,13 +99,21 @@ $font-weight-bold: 900;
 // Google Fonts
 // $google-fonts-url: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro';
 
+// Font Families List
+$font-faces: (
+  'BebasNeue': ('BebasNeue-webfont', 400),
+  'OswaldLight': ('Oswald-Light-webfont', 400),
+  'fontawesome': ('icons/fontawesome-webfont', normal)
+);
+$font-path: '../fonts/';
+
 // Font Families
 $base-font: 'OswaldLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $base-font-alt: $arial;
 $arial-bold: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-$heading-font: 'BebasNeueRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$heading-font-alt: 'BebasNeueRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font: 'BebasNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font-alt: 'BebasNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fontawesome: 'FontAwesome';
 $pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
 
