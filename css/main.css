@@ -769,7 +769,7 @@ header {
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  margin: 3em 0;
+  margin: 0 0 3em;
   border: 2px solid currentColor;
   font-size: 12px;
   font-size: 1.2rem;
@@ -780,7 +780,7 @@ header {
   @media (max-width: 40em) {
     .heading {
       width: 100%;
-      margin: 1em 0; } }
+      margin: 0 0 1em; } }
   .heading h2 {
     padding: 0.25em 1em;
     margin: 0; }

@@ -128,7 +128,7 @@
   .heading {
     position: relative;
     @include inline-block;
-    @include margin(($margin * 3), 0);
+    @include margin(0, 0, ($margin * 3));
     border: 2px solid currentColor;
     @include font-size(12);
     color: currentColor;
@@ -138,7 +138,7 @@
 
     @include bp(bp-small) {
       width: 100%;
-      @include margin($margin, 0);
+      @include margin(0,0, $margin);
     }
 
     h2 {
