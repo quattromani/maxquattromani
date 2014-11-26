@@ -138,6 +138,7 @@
 
     @include bp(bp-small) {
       width: 100%;
+      @include margin($margin, 0);
     }
 
     h2 {
