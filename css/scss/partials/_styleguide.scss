@@ -40,13 +40,19 @@
       border-bottom: none;
     }
 
-    &:after {
+    &:before,
+    &:after  {
       position: absolute;
       content: '';
       top: 0;
-      right: 0;
+      right: 2em;
       height: 100%;
       padding: 1em;
+      background-color: hsla(100, 100, 100, .1);
+    }
+
+    &:after {
+      right: 0;
       background-color: hsla(0, 0, 0, .1);
     }
 

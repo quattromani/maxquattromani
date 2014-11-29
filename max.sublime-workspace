@@ -5,9 +5,6 @@
 		[
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"command_palette":
 	{
@@ -50,12 +47,9 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/Q/Sites/maxquattromani"
-	],
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
 		"/Users/Q/Sites/officefootball/js/main.js",
 		"/Users/Q/Sites/officefootball/json/leaderboard.json",
 		"/Users/Q/Sites/MGF/_includes/head.html",
@@ -68,13 +62,14 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -82,6 +77,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".heading",
+			",heading"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -90,23 +87,15 @@
 		"replace_history":
 		[
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -143,7 +132,6 @@
 	{
 		"height": 0.0
 	},
-	"project": "max.sublime-project",
 	"replace":
 	{
 		"height": 46.0
@@ -173,7 +161,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
