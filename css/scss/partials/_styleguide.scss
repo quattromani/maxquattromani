@@ -9,6 +9,17 @@
 
 .styleguide {
 
+  header {
+    .follow-me {
+      background-color: $color-primary-blue;
+      border: 2px solid $color-primary-blue;
+
+      a {
+        color: $color-white;
+      }
+    }
+  }
+
   a.logo {
     color: inherit;
     &:hover {

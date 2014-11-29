@@ -5051,6 +5051,11 @@ hr {
 /* ==========================================================================
     Styleguide -- Version: 0.4.2  - Compiled: timestamp()
    ========================================================================== */
+.styleguide header .follow-me {
+  background-color: #2bb3dd;
+  border: 2px solid #2bb3dd; }
+  .styleguide header .follow-me a {
+    color: #fff; }
 .styleguide a.logo {
   color: inherit; }
   .styleguide a.logo:hover {
