@@ -12,40 +12,40 @@ One of my favorite things to do as a front-end developer is to sandbox new compo
 
 I was thinking this morning while making breakfast about a new kind of layout and as I was plotting a little Sunday development; I realized that I have a very distinct process for jumping into these projects, but I've never layed it out step-by-step.
 
-Previously I have laid-out my <a href="/SDLC">Software Development Life Cycle</a> and as a theory I still refer to it when working with teams looking for an overall process. This is a different process, one with physical steps more clearly defined. One that pays criticial attention to the UI, Web Standards, and Accessibility. Additionally; protoyping components using this method, or a similar one, lends itself perfectly to the agile development environments that so many of us work in now. Okay, here goes:
+Previously I have laid-out my <a href="/SDLC">Software Development Life Cycle</a> and as a theory I still refer to it when working with teams looking for an overall process. This is a different process, one with physical steps more clearly defined. One that pays criticial attention to the <strong>UI, Web Standards,</strong> and <strong>Accessibility</strong>. Additionally; protoyping components using this method, or a similar one, lends itself perfectly to the <strong>Agile Development</strong> environments that so many of us work in now. Okay, here goes:
 
 <ol class="vertical">
 <li>
-    Always a visual; perhaps as simple as a sketch - maybe a fully developed comp.
+    Always a visual; as simple as a sketch or complete as a fully developed comp.
 </li>
 <li>
-    Mobile-First; HTML first - the key to production-ready code written in the prototype phase is to be purely semantic. The path to purely semantic HTML is to establish it before any style or function code decisions are made.
+    <strong>Mobile-First; HTML first</strong> - the key to production-ready code written in the prototype phase is to be purely semantic. The path to purely semantic HTML is to establish it before any style or function code decisions are made.
 
-    My compenents tend to follow this architecture (just an example):
+    My compenents tend to follow this architecture (as an example):
 
 {% highlight html %}
 <div class="widget">
-    <h3>Heading</h3>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <label for="">Input Field</label>
-    <input type="text">
+  <h3>Heading</h3>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <label for="">Input Field</label>
+  <input type="text">
 </div>
 {% endhighlight %}
 
 This sets me up for really clean CSS, with no crazy nesting requirements. It also let's me maintain global styles for elements like headings, lists, and forms - with the power to customize on an as-needed basis.
 </li>
 <li>
-    It's CSS time! Creating reusable, modular, and DRY components that don't bleed and can therefore be used on any page of a site, and along with any other component, makes front-end to back-end hand-offs a breeze.
+    It's CSS time! Creating <strong>reusable, modular, and DRY components</strong> that don't bleed into the DOM and can therefore be used on any page of a site, and along with any other component, makes front-end to back-end hand-offs a breeze.
     <ul class="vertical bulleted">
         <li>
-            CSS is written in Sass/Less
+            CSS is written in Sass/Less.
         </li>
         <li>
-            Grunt/Gulp takes care of compiling, concatenating, and minifying as I work - this keeps my code performant and end-product testable in this early stage. A big win! There's nothing worse than trying to improve performance once a project has reached QA or UAT.
+            Taskrunners: <a href="http://gruntjs.com/">Grunt</a> or <a href="http://gulpjs.com/">Gulp</a> take care of compiling, concatenating, and minifying as I work - this keeps code performant and end-product-testable in the early stage. A big win! There's nothing worse than trying to improve performance once a project has reached QA or UAT.
         </li>
         <li>
             I have some <a href="/styleguide#bestPractices-anchor">CSS/Sass best practices</a> already established. Adhering to these consistently prevents a lot of headache.
@@ -54,17 +54,17 @@ This sets me up for really clean CSS, with no crazy nesting requirements. It als
 
 {% highlight css %}
 .widget {
-    h3 {
-        ...
-    }
+  h3 {
+    ...
+  }
 
-    ul {
-        ...
+  ul {
+    ...
 
-        li {
-            ...
-        }
+    li {
+      ...
     }
+  }
 }
 {% endhighlight %} 
 </li>
@@ -97,11 +97,11 @@ This sets me up for really clean CSS, with no crazy nesting requirements. It als
     </ul>
 </li>
 <li>
-    The last piece to get added is functionality; Javascript. I lean towards UI functionality written in jQuery, more than vanilla javascript. I have some specific, past-exprience reasons for this:
+    The last piece to get added is functionality; Javascript. I lean towards UI functionality written in jQuery more than vanilla javascript. I have some specific, past-experience reasons for this:
 
     <ul class="vertical bulleted">
         <li>
-            Typical front-end functionality revolve around reveals; hide/show, slide-up, slide-down, close, etc. These are quickly, and reliably achieved using jQuery.
+            Typical front-end functionalities revolve around reveals; hide/show, slide-up, slide-down, close, etc. These are quickly, and reliably achieved using jQuery.
         </li>
         <li>
             I like to write my FED functions as self-instantiating plugins. This allows me to reuse utilities that can be chained along with already existing ones. The idea for this came from  a terrific article on <a href="http://learn.jquery.com/plugins/basic-plugin-creation/">Creating a Basic Plugin.</a> I structure any new plugin following this format:
