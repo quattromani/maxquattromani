@@ -51,6 +51,8 @@
 
 - section: Online &amp; Bookmarks
   examples:
+  - title: 'Style Guide Resources'
+    url: 'http://styleguides.io'
   - title: 'Web Field Manual'
     url: 'http://webfieldmanual.com/'
   - title: 'Single Responsibility'
