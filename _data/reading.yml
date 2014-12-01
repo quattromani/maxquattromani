@@ -37,6 +37,8 @@
     url: 'http://www.abookapart.com/products/sass-for-web-designers'
   - title: 'Node.js the Right Way'
     url: 'http://pragprog.com/book/jwnode/node-js-the-right-way'
+  - title: 'Responsible Responsive Design'
+    url: 'http://www.abookapart.com/products/responsible-responsive-design'
 
 - section: Magazines
   examples:
