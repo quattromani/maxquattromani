@@ -75,3 +75,7 @@
     url: 'http://dopelists.com/'
   - title: 'Must Watch CSS Videos'
     url: 'https://github.com/AllThingsSmitty/must-watch-css'
+  - title: 'MDN'
+    url: 'https://developer.mozilla.org/en-US/'
+  - title: 'Web Design Repo'
+    url: 'http://www.webdesignrepo.com/'
