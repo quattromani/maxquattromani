@@ -68,7 +68,7 @@ I will need this captured email address to populate the value attribute of this 
 I WAY overthought this - the solution using jQuery was apparently just too straightforward the first time around:
 <br>
 
-{% highlight jquery %}
+{% highlight js %}
 $(function() {
   $('#email').change(function() {
     var value = $(this).val();
