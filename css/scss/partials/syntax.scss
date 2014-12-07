@@ -1,4 +1,7 @@
-.highlight { background-color: #002b36; color: #93a1a1 }
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+.highlight { background-color: #002b36; color: #93a1a1; margin-bottom: $margin; }
 .highlight .c { color: #586e75 } /* Comment */
 .highlight .err { color: #93a1a1 } /* Error */
 .highlight .g { color: #93a1a1 } /* Generic */
