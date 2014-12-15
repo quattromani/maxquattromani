@@ -4751,19 +4751,19 @@ input::-webkit-inner-spin-button {
       border: none;
       -moz-appearance: window; } }
 ::-webkit-input-placeholder {
-  color: #e6e6e6;
+  color: #ccc;
   font-weight: 100; }
 
 :-moz-placeholder {
-  color: #e6e6e6;
+  color: #ccc;
   font-weight: 100; }
 
 ::-moz-placeholder {
-  color: #e6e6e6;
+  color: #ccc;
   font-weight: 100; }
 
 :-ms-input-placeholder {
-  color: #e6e6e6;
+  color: #ccc;
   font-weight: 100; }
 
 .formitem {
@@ -5046,6 +5046,24 @@ hr {
     border: 4px solid #e6e6e6; }
     hr.blog:last-of-type {
       border: 0; }
+
+.audit-box {
+  margin: 0 0 1em;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
+  .audit-box header {
+    padding: 1em;
+    border-radius: 3px 3px 0 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #2bb3dd;
+    color: #fff; }
+  .audit-box ul {
+    padding: 1em; }
+  .audit-box input[type]:not([type=range]):not([type=submit])[type=checkbox], .audit-box input[type]:not([type=range]):not([type=submit])[type=radio], .audit-box select[type=checkbox], .audit-box select[type=radio], .audit-box textarea[type=checkbox], .audit-box textarea[type=radio] {
+    margin: 0; }
 
 /* ==========================================================================
     Styleguide -- Version: 0.4.2  - Compiled: timestamp()

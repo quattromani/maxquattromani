@@ -1,0 +1,227 @@
+---
+layout: default
+title: Website Audit
+description: "Let's perform an audit of the way sites are being built, paying close attention to best-practices"
+class: audit
+---
+
+<section class="audit">
+  {% include content.html %}
+
+  <header role="banner">
+    <div class="heading">
+      <h2>{{ page.title }}</h2>
+    </div>
+  </header>
+
+  <p class="lede">Every site we create should pass a series of checkpoints and validations. By creating and adhering to best-practices and standards; we deliver performant, clean sites to the engineering team and ultimately the client. Our personal gain is a portfolio of sites that we would love to show off from the code side.</p>
+
+  <div class="box">
+    <div class="row">
+      <div class="third">
+        <section class="audit-box">
+          <header>
+            <h5>Template</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="metadata" name="metadata">
+              <label for="metadata">Metadata - Right after doctype</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="js" name="js">
+              <label for="js">JS - All at the bottom</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="sitemap" name="sitemap">
+              <label for="sitemap">Sitemap is not being detected</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="twitter-card" name="twitter-card">
+              <label for="twitter-card">Twitter Cards</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="humans" name="humans">
+              <label for="humans">Humans.txt</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="audit-box">
+          <header>
+            <h5>Markup</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="outline" name="outline">
+              <label for="outline">HTML5 Outline</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="inline" name="inline">
+              <label for="inline">No Inline CSS/JS</label>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="third">
+        <section class="audit-box">
+          <header>
+            <h5>CSS/Sass</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="google-fonts" name="google-fonts">
+              <label for="google-fonts">Google Fonts - use Sass @import <a href="#1"><sup>1</sup></a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="concat" name="concat">
+              <label for="concat">Concat <a href="#2"><sup>2</sup></a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="font-awesome" name="font-awesome">
+              <label for="font-awesome">Fontawesome - import into Sass <a href="#3"><sup>3</sup></a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="ids" name="ids">
+              <label for="twitter-card">#ID's - see <a href="/styleguide/#bestPractices-anchor">Best Practices</a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="important" name="important">
+              <label for="important">!important - see <a href="/styleguide/#bestPractices-anchor">Best Practices</a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="rems" name="rems">
+              <label for="rems">REM's - root em's</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="audit-box">
+          <header>
+            <h5>JS/jQuery</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="js-cdn" name="js-cdn">
+              <label for="js-cdn">Use CDN for jQuery and jQuery-UI <a href="#4"><sup>4</sup></a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="js-concat" name="js-concat">
+              <label for="js-cdn">Concat &amp; Minify all js</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="js-defer" name="js-defer">
+              <label for="js-defer">Defer JS load</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="js-init" name="js-init">
+              <label for="js-init">Utilize global js-init <a href="#5"><sup>5</sup></a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="plugins" name="plugins">
+              <label for="plugins">Create self-instantiating plugins <a href="#6"><sup>6</sup></a></label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="external" name="external">
+              <label for="external">External link plugin</label>
+            </li>
+          </ul>
+        </section>
+
+
+      </div>
+      <div class="third">
+        <section class="audit-box">
+          <header>
+            <h5>Images</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="base64" name="base64">
+              <label for="base64">Base64 banner/bg images</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="compress" name="compress">
+              <label for="compress">Compress &amp; G-Zip</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="fur" name="fur">
+              <label for="fur">fur-bg.jpg - 1.4MB</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="caching" name="caching">
+              <label for="caching">Leverage browser-caching</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="audit-box">
+          <header>
+            <h5>ARAI &amp; Accessibility</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="aria-roles" name="aria-roles">
+              <label for="aria-roles">See <a href="/styleguide/#bestPractices-anchor">ARIA roles</a></label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="audit-box">
+          <header>
+            <h5>Browsers</h5>
+          </header>
+          <ul class="vertical lined">
+            <li>
+              <input type="checkbox" class="switch" id="browser-testing" name="browser-testing">
+              <label for="browser-testing">Cross-browser testing</label>
+            </li>
+            <li>
+              <input type="checkbox" class="switch" id="browser-support" name="browser-support">
+              <label for="browser-support">Non-modern browsers alert</label>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+  <section>
+    <h5>Footnotes:</h5>
+    <ol class="vertical">
+      <li>
+        <span id="1">'Pompiere' is currently being requested twice</span>
+      </li>
+      <li>
+        <span id="2">Currently, there are 15 unminified css files being called</span>
+      </li>
+      <li>
+        <span id="3">Fontawesome is an individual call, and should instead be imported into Sass, then concatenated and minified.</span>
+      </li>
+      <li>
+        <span id="4">Fallback to server if CDN fails</span>
+      </li>
+      <li>
+        <span id="5">All JS function calls in one file, plus global inits</span>
+      </li>
+      <li>
+        <span id="6">see <a href="/css/ui/2014/11/30/prototyping/">example</a></span>
+      </li>
+      <li>
+        <span id="7"><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.shopatcoloniecenter.com%2F">Google Page Speed test</a></span>
+      </li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <h5>Notes:</h5>
+</header>
+<ul>
+  <li>Why/how is device-detection being used?</li>
+  <li>Are we supporting IE7? IE8?</li>
+</ul>
+
+{% include end_content.html %}
+</section>

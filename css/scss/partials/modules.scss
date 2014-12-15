@@ -63,3 +63,26 @@
         }
       }
     }
+
+    .audit-box {
+      $audit-box-radius: 3px;
+
+      @include margin(0 0 $margin);
+      border: 1px solid $color-light-grey;
+      @include border-radius($audit-box-radius);
+
+      header {
+        @include padding($padding);
+        @include border-radius($audit-box-radius $audit-box-radius 0 0);
+        background-color: $color-primary-blue;
+        color: $color-white;
+      }
+
+      ul {
+        @include padding($padding);
+      }
+
+      input[type]:not([type=range]):not([type=submit])[type=checkbox], input[type]:not([type=range]):not([type=submit])[type=radio], select[type=checkbox], select[type=radio], textarea[type=checkbox], textarea[type=radio] {
+        @include margin;
+      }
+    }
