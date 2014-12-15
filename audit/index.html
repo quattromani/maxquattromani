@@ -81,6 +81,10 @@ class: audit
             <h5>CSS/Sass</h5>
           </header>
           <ul class="vertical lined">
+          <li>
+              <input type="checkbox" class="switch" id="sass-flags" name="sass-flags">
+              <label for="sass-flags">Establish Sass flagging system</label>
+            </li>
             <li>
               <input type="checkbox" class="switch" id="google-fonts" name="google-fonts">
               <label for="google-fonts">Google Fonts - use Sass @import <a href="#1"><sup>1</sup></a></label>
@@ -213,7 +217,7 @@ class: audit
         <span id="2">Currently, there are 15 unminified css files being called</span>
       </li>
       <li>
-        <span id="3">Fontawesome is an individual call, and should instead be imported into Sass, then concatenated and minified.</span>
+        <span id="3">Fontawesome is an enormous individual call, and should instead be imported into Sass, then concatenated and minified.</span>
       </li>
       <li>
         <span id="4">Fallback to server if CDN fails</span>
