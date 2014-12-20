@@ -244,6 +244,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fontaw",
+			"</a></",
+			"></",
+			"\"vertical\"",
+			"</h5>",
+			"</ul>\n          </header>",
 			".highlight",
 			"jquery",
 			"fillit",
@@ -365,13 +371,7 @@
 			"transf",
 			"yellow",
 			"holder",
-			"disab",
-			"transf",
-			"label",
-			"footer.c",
-			"font-s",
-			"progress",
-			"@include font-family"
+			"disab"
 		],
 		"highlight": true,
 		"in_selection": false,
