@@ -67,7 +67,12 @@ module.exports = function(grunt) {
 
       watch: {
         options: {
-          livereload: true
+          livereload: {
+						port: 4000,
+						key: grunt.file.read('/Users/Q/Sites/livereload.key'),
+						cert: grunt.file.read('/Users/Q/Sites/livereload.crt'),
+						files: ['_site/**/*'],
+      		}
         },
         scripts: {
           files: ['js/*.js'],
