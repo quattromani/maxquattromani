@@ -93,13 +93,16 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/css/scss/globals/_vars.scss",
+		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Q/Sites/maxquattromani/sandbox/image-overlay/index.html",
+		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/syntax.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/colors.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/typography.scss",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-09-19-brace-forms-for-jekyll.markdown",
 		"/Users/Q/Sites/maxquattromani/_config.yml",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-11-30-prototyping.markdown",
-		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Q/Desktop/bookmarks_11_17_14.html",
 		"/Users/Q/Sites/maxquattromani/_data/reading.yml",
 		"/Users/Q/Sites/maxquattromani/css/fonts/Oswald-Light-webfont-55301.eot",
@@ -152,7 +155,6 @@
 		"/Users/Q/Sites/maxquattromani/_posts/2014-08-22-calc()-in-less.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modules.scss",
 		"/Users/Q/Sites/maxquattromani/Gruntfile.js",
-		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
 		"/Users/Q/Sites/maxquattromani/robots.txt",
 		"/Users/Q/Sites/maxquattromani/_includes/twitter_card.html",
 		"/Users/Q/Sites/maxquattromani/_layouts/post.html",
@@ -169,7 +171,6 @@
 		"/Users/Q/Sites/maxquattromani/_data/modals.yml",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modals.scss",
 		"/Users/Q/Sites/maxquattromani/index.html",
-		"/Users/Q/Sites/maxquattromani/css/scss/globals/_vars.scss",
 		"/Users/Q/Sites/maxquattromani/_data/nav.yml",
 		"/Users/Q/Sites/maxquattromani/_includes/intro/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/sections.scss",
@@ -219,8 +220,7 @@
 		"/Users/Q/Documents/GLG/compliance/compliance-card/demo.html",
 		"/Users/Q/Desktop/maxquattromani/css/scss/partials/modals.scss",
 		"/Users/Q/Desktop/maxquattromani/_includes/head.html",
-		"/Users/Q/Desktop/maxquattromani/_includes/portfolio/index.html",
-		"/Users/Q/Desktop/maxquattromani/_includes/foot.html"
+		"/Users/Q/Desktop/maxquattromani/_includes/portfolio/index.html"
 	],
 	"find":
 	{
@@ -244,6 +244,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"    url: '",
+			"'",
+			"url: '",
 			"fontaw",
 			"</a></",
 			"></",
@@ -367,11 +371,7 @@
 			"00",
 			"330",
 			"300",
-			"select",
-			"transf",
-			"yellow",
-			"holder",
-			"disab"
+			"select"
 		],
 		"highlight": true,
 		"in_selection": false,

@@ -1,0 +1,33 @@
+---
+layout: default
+title: Image  Overlay
+description: ""
+class: sandbox
+parent: sandbox
+---
+
+<style>
+  section.image-overlay {
+    padding: 1em;
+  }
+  section.image-overlay:before {
+    content: "";
+    height: 300px;
+    width: 500px;
+    background: url('attr(data-image)') no-repeat 0 0;
+  }
+  .image-overlay img {
+    width: 50vw;
+    height: 50vh;
+    margin: 1em auto;
+  }
+  .image-overlay h4 {
+    font-size: 34px;
+    color: white;
+    text-align: center;
+  }
+</style>
+
+<section class="image-overlay" data-image="images/53.jpg">
+  <h4>This is a cool big headline</h4>
+</section>
