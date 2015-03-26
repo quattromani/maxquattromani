@@ -4,6 +4,7 @@
 .reveal-wrapper {
   margin-bottom: 525px;
   overflow: hidden;
+  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.15);
 }
 
 .footer-reveal {
