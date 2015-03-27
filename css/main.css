@@ -554,7 +554,8 @@ body {
     background-color: transparent; }
   @media (max-width: 40em) {
     .banner {
-      height: auto; } }
+      height: auto;
+      min-height: 400px; } }
   .banner h1 {
     font-size: 70px;
     font-size: 7rem; }
@@ -3896,18 +3897,6 @@ ul.posts li {
 /* ==========================================================================
     Footer -- Version: 0.2.1 - Compiled: timestamp()
     ========================================================================== */
-.reveal-wrapper {
-  margin-bottom: 525px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.15); }
-
-.footer-reveal {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: -1; }
-
 footer {
   background-color: #333;
   color: #fff; }

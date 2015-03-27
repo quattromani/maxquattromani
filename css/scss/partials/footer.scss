@@ -5,18 +5,26 @@
     Footer -- Version: 0.2.1 - Compiled: #{timestamp()}
     ========================================================================== */
 
-		.reveal-wrapper {
-    	margin-bottom: 525px;
-    	overflow: hidden;
-    	box-shadow: 0 1em 2em 0 rgba(0,0,0,.15);
-    }
+		// .reveal-wrapper {
+  //   	margin-bottom: 415px;
+  //   	overflow: hidden;
+  //   	box-shadow: 0 1em 2em 0 rgba(0,0,0,.15);
 
-		.footer-reveal {
-			position: fixed;
-    	bottom: 0;
-    	width: 100%;
-    	z-index: -1;
-		}
+  //   	@include bp(bp-medium) {
+  //   		margin: 0;
+  //   	}
+  //   }
+
+		// .footer-reveal {
+		// 	position: fixed;
+  //   	bottom: 0;
+  //   	width: 100%;
+  //   	z-index: -1;
+
+  //   	@include bp(bp-medium) {
+  //   		position: relative;
+  //   	}
+		// }
 
     footer {
       background-color: #333;

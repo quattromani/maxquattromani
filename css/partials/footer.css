@@ -1,19 +1,6 @@
 /* ==========================================================================
     Footer -- Version: 0.2.1 - Compiled: timestamp()
     ========================================================================== */
-.reveal-wrapper {
-  margin-bottom: 525px;
-  overflow: hidden;
-  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.15);
-}
-
-.footer-reveal {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-}
-
 footer {
   background-color: #333;
   color: #fff;

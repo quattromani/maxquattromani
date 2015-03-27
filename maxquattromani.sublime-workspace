@@ -18,9 +18,14 @@
 		]
 	},
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 289.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -97,6 +102,11 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/about/index.html",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
+		"/Users/Q/Sites/maxquattromani/css/scss/partials/footer.scss",
+		"/Users/Q/Sites/maxquattromani/_layouts/default.html",
+		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
 		"/Users/Q/Sites/maxquattromani/.htaccess",
 		"/Users/Q/Sites/maxquattromani/js/vendor/jquery-1.11.2.min.js",
 		"/Users/Q/Sites/maxquattromani/_config.yml",
@@ -151,10 +161,8 @@
 		"/Users/Q/Sites/maxquattromani/_layouts/none.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-07-25-vertical-centering.markdown",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-10-22-personal.markdown",
-		"/Users/Q/Sites/maxquattromani/_includes/footer.html",
 		"/Users/Q/Sites/maxquattromani/_includes/content.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/nav.scss",
-		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/_includes/head.html",
 		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-08-22-calc()-in-less.markdown",
@@ -179,7 +187,6 @@
 		"/Users/Q/Sites/maxquattromani/_data/nav.yml",
 		"/Users/Q/Sites/maxquattromani/_includes/intro/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/sections.scss",
-		"/Users/Q/Sites/maxquattromani/about/index.html",
 		"/Users/Q/Sites/maxquattromani/blog/index.html",
 		"/Users/Q/Sites/maxquattromani/styleguide/about/index.html",
 		"/Users/Q/Sites/maxquattromani/styleguide/audio/index.html",
@@ -222,9 +229,7 @@
 		"/Users/Q/Sites/maxquattromani/js/_global_init.js",
 		"/Users/Q/Sites/maxquattromani/_includes/google_analytics.html",
 		"/Users/Q/Sites/maxquattromani/js/nav.js",
-		"/Users/Q/Documents/GLG/compliance/compliance-card/demo.html",
-		"/Users/Q/Desktop/maxquattromani/css/scss/partials/modals.scss",
-		"/Users/Q/Desktop/maxquattromani/_includes/head.html"
+		"/Users/Q/Documents/GLG/compliance/compliance-card/demo.html"
 	],
 	"find":
 	{
@@ -441,6 +446,7 @@
 	{
 		"height": 122.0
 	},
+	"pinned_build_system": "",
 	"replace":
 	{
 		"height": 52.0
@@ -449,6 +455,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -457,6 +464,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -465,6 +473,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],

@@ -20,6 +20,7 @@ body {
 @media (max-width: 40em) {
   .banner {
     height: auto;
+    min-height: 400px;
   }
 }
 .banner h1 {
