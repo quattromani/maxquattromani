@@ -22,15 +22,8 @@
   }
 
   // generate all font faces using their appropriate weights & styles
-  @font-face {
-    font-family: $font-face-name;
-    src: url('#{$font-path}#{nth($font-face, 1)}.eot');
-    src: url('#{$font-path}#{nth($font-face, 1)}.eot?') format('eot'),
-    url('#{$font-path}#{nth($font-face, 1)}.woff') format('woff'),
-    url('#{$font-path}#{nth($font-face, 1)}.ttf')  format('truetype');
-    font-weight: $font-weight;
-    font-style: $font-style;
-  }
+f
+
 
   // generate placeholders so we can extend when we need to use a font
   %#{$font-face-name} {
@@ -212,7 +205,7 @@ ul,
 ol,
 dl,
 blockquote {
-  margin-bottom: $margin / 2;
+  margin-bottom: $padding;
   clear: inherit;
   vertical-align: middle;
 }

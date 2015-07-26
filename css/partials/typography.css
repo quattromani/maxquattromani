@@ -3,27 +3,6 @@
 /* ==========================================================================
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
     ========================================================================== */
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-webfont.eot");
-  src: url("../fonts/BebasNeue-webfont.eot?") format("eot"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: "normal";
-}
-@font-face {
-  font-family: "OswaldLight";
-  src: url("../fonts/Oswald-Light-webfont.eot");
-  src: url("../fonts/Oswald-Light-webfont.eot?") format("eot"), url("../fonts/Oswald-Light-webfont.woff") format("woff"), url("../fonts/Oswald-Light-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: "normal";
-}
-@font-face {
-  font-family: "fontawesome";
-  src: url("../fonts/icons/fontawesome-webfont.eot");
-  src: url("../fonts/icons/fontawesome-webfont.eot?") format("eot"), url("../fonts/icons/fontawesome-webfont.woff") format("woff"), url("../fonts/icons/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: "normal";
-}
 .base-font {
   font-family: "OswaldLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -288,7 +267,7 @@ ul,
 ol,
 dl,
 blockquote {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   clear: inherit;
   vertical-align: middle;
 }

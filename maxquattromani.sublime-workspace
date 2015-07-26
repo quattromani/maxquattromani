@@ -24,16 +24,16 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 289.0,
-		"last_filter": "",
+		"height": 373.0,
+		"last_filter": "inst",
 		"selected_items":
 		[
 			[
-				"Package Control: ins",
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
-				"inst",
+				"Package Control: ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -102,6 +102,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Q/Desktop/new_site/src/templates/partials/contact.hbs",
 		"/Users/Q/Desktop/new_site/src/templates/partials/styleguide/grid/marginless/combinations/index.hbs",
 		"/Users/Q/Sites/maxquattromani/about/index.html",
@@ -113,7 +114,6 @@
 		"/Users/Q/Sites/maxquattromani/js/vendor/jquery-1.11.2.min.js",
 		"/Users/Q/Sites/maxquattromani/_config.yml",
 		"/Users/Q/Sites/maxquattromani/css/scss/globals/_vars.scss",
-		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Q/Sites/maxquattromani/sandbox/image-overlay/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/banner.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/syntax.scss",
@@ -233,7 +233,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 76.0
 	},
 	"find_in_files":
 	{
