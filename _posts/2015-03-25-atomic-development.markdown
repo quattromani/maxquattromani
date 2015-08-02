@@ -108,10 +108,10 @@ Let's say we've been tasked with building a widget that is an information card o
 ---
 
 ##### Our Close State
-![alt text](https://raw.githubusercontent.com/quattromani/placewise/gh-pages/sandbox/card/images/show.png =500x "Sample Component")
+![alt text](https://raw.githubusercontent.com/quattromani/placewise/gh-pages/sandbox/card/images/show.png "Sample Component")
 
 ##### Our Reveal State
-![alt text](https://raw.githubusercontent.com/quattromani/placewise/gh-pages/sandbox/card/images/hide.png =500x "Sample Component")
+![alt text](https://raw.githubusercontent.com/quattromani/placewise/gh-pages/sandbox/card/images/hide.png "Sample Component")
 
 ---
 
