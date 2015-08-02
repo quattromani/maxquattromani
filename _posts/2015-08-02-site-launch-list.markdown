@@ -12,7 +12,7 @@ categories: development
 - [ ] Twitter Cards
 - [ ] OG tags
 - [ ] print.css
-- [ ] ARAI - accessibility
+- [ ] WAI-ARIA
 - [ ] Images - alt tags
 - [ ] Page titles
 - [ ] Terms of Use
@@ -24,6 +24,6 @@ categories: development
 - [ ] sitemap.xml  
 - [ ] Google Analytics  
   
-  
+
 
 <h5>FIN</h5>
