@@ -102,10 +102,13 @@
 	},
 	"file_history":
 	[
+		"/Users/Q/Sites/maxquattromani/_posts/2015-03-25-atomic-development.markdown",
+		"/Users/Q/Sites/maxquattromani/SDLC/index.html",
+		"/Users/Q/Sites/maxquattromani/_posts/2015-08-02-site-launch-list.markdown",
+		"/Users/Q/Sites/maxquattromani/about/index.html",
 		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Q/Desktop/new_site/src/templates/partials/contact.hbs",
 		"/Users/Q/Desktop/new_site/src/templates/partials/styleguide/grid/marginless/combinations/index.hbs",
-		"/Users/Q/Sites/maxquattromani/about/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/banner.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/footer.scss",
 		"/Users/Q/Sites/maxquattromani/_layouts/default.html",
@@ -140,7 +143,6 @@
 		"/Users/Q/Sites/maxquattromani/styleguide/typography/icons/index.html",
 		"/Users/Q/Sites/maxquattromani/styleguide/typography/inline_text/index.html",
 		"/Users/Q/Sites/maxquattromani/_includes/styleguide/typography/inline_text/index.html",
-		"/Users/Q/Sites/maxquattromani/SDLC/index.html",
 		"/Users/Q/Sites/maxquattromani/email/index.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/layout.scss",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/_styleguide.scss",
@@ -227,9 +229,7 @@
 		"/Users/Q/Sites/maxquattromani/css/partials/buttons.css",
 		"/Users/Q/Sites/maxquattromani/js/main.js",
 		"/Users/Q/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
-		"/Users/Q/Sites/maxquattromani/js/build/production.js",
-		"/Users/Q/Sites/maxquattromani/js/_global_init.js",
-		"/Users/Q/Sites/maxquattromani/_includes/google_analytics.html"
+		"/Users/Q/Sites/maxquattromani/js/build/production.js"
 	],
 	"find":
 	{
@@ -253,6 +253,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"checkbox\">",
+			"></",
 			"visually-hidden",
 			".heading",
 			"linear",
@@ -378,9 +380,7 @@
 			"250/",
 			" image-focus-3",
 			"panel panel",
-			"/290",
-			"Who We Are",
-			"280"
+			"/290"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -441,6 +441,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 152.0
 	},
 	"output.sftp":
 	{

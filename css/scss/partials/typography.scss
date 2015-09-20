@@ -22,12 +22,20 @@
   }
 
   // generate all font faces using their appropriate weights & styles
-f
-
+  @font-face {
+    font-family: $font-face-name;
+    src: url('#{$font-path}#{nth($font-face, 1)}.eot');
+    src: url('webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-path}#{nth($font-face, 1)}.woff') format('woff'),
+         url('#{$font-path}#{nth($font-face, 1)}.ttf') format('truetype'),
+         url('webfont.svg#svgFontName') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
 
   // generate placeholders so we can extend when we need to use a font
   %#{$font-face-name} {
-    @include font($font-face-name, $font-style, $font-weight);
+    @include font-family($font-face-name, $font-style, $font-weight);
   }
 }
 
