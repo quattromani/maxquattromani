@@ -233,7 +233,7 @@
 	],
 	"find":
 	{
-		"height": 76.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -253,6 +253,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bebas",
 			"checkbox\">",
 			"></",
 			"visually-hidden",
@@ -379,8 +380,7 @@
 			"textarea",
 			"250/",
 			" image-focus-3",
-			"panel panel",
-			"/290"
+			"panel panel"
 		],
 		"highlight": true,
 		"in_selection": false,
