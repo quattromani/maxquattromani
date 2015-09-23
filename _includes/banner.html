@@ -1,22 +1,17 @@
-<div itemscope itemtype="http://schema.org/Person">
-  <header class="banner" role="banner">
-    {% include content.html %}
+<header class="banner" role="banner">
+  {% include content.html %}
 
-    <a itemprop="url" href="http://maxquattromani.com/">
-      <div itemprop="name">
-        <h1>Max Quattromani</h1>
-      </div>
-    </a>
-    <p class="lede" itemprop="jobtitle">Front-End Developer/Designer</p>
-    <hr>
-    <em itemprop="description">"...the desire to create amazing new things, the need to improve existing ones, and the will to do both"</em>
+  <h1>Max Quattromani</h1>
+  <p class="lede">Front-End Developer/Designer</p>
+  <hr>
+  <em>"...the desire to create amazing new things, the need to improve existing ones, and the will to do both"</em>
 
-    {% if page.class == 'resume' %}
-    <div class="text-center">
-      <a href="/resume/Max_Quattromani_resume.pdf" class="cta resume">Download PDF Resume</a>
-    </div>
-    {% endif %}
+  {% if page.class == 'resume' %}
+  <div class="text-center">
+    <a href="/resume/Max_Quattromani_resume.pdf" class="cta resume">Download PDF Resume</a>
+  </div>
+  {% endif %}
 
-    {% include end_content.html %}
-  </header>
-  <!-- /.banner -->
+  {% include end_content.html %}
+</header>
+<!-- /.banner -->

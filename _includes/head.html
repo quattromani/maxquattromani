@@ -23,17 +23,42 @@
 
   <link rel="stylesheet" href="/css/build/main.min.css" >
   <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-  <!-- Prerender Resume page -->
-  <link rel="prerender" href="{{ site.url }}/resume">
-  <meta name="p:domain_verify" content="ee162166d3bd9f5e84c44cc12aeba34b"/>
+    <!-- Prerender Resume page -->
+    <link rel="prerender" href="{{ site.url }}/resume">
+    <meta name="p:domain_verify" content="ee162166d3bd9f5e84c44cc12aeba34b"/>
 
-  {% include twitter_card.html %}
-</head>
+    {% include twitter_card.html %}
 
-<body class="{{ page.class }}">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Max Quattromani",
+        "jobTitle": "FRONT-END DEVELOPER/DESIGNER",
+        "url": "http://maxquattromani.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7637 Nuthatch Circle",
+          "addressLocality": "Parker",
+          "addressRegion": "Colorado",
+          "postalCode": "80134",
+        },
+        "sameAs" : [
+        "https://github.com/quattromani",
+        "https://linkedin.com/in/maxquattromani/",
+        "https://twitter.com/maxquattromani",
+        "https://plus.google.com/116744747067970112925/posts",
+        "https://dribbble.com/maxquattromani",
+        "http://codepen.io/quattromani/"
+        ]
+      }
+    </script>
+    </head>
+
+    <body class="{{ page.class }}">
     <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+        <![endif]-->
