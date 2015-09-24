@@ -103,6 +103,7 @@
 	"file_history":
 	[
 		"/Users/Q/Sites/maxquattromani/_includes/head.html",
+		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2015-03-25-atomic-development.markdown",
 		"/Users/Q/Sites/maxquattromani/SDLC/index.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2015-08-02-site-launch-list.markdown",
@@ -168,7 +169,6 @@
 		"/Users/Q/Sites/maxquattromani/_posts/2014-10-22-personal.markdown",
 		"/Users/Q/Sites/maxquattromani/_includes/content.html",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/nav.scss",
-		"/Users/Q/Sites/maxquattromani/_includes/foot.html",
 		"/Users/Q/Sites/maxquattromani/_posts/2014-08-22-calc()-in-less.markdown",
 		"/Users/Q/Sites/maxquattromani/css/scss/partials/modules.scss",
 		"/Users/Q/Sites/maxquattromani/Gruntfile.js",
