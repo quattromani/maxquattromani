@@ -30,6 +30,10 @@
     <link rel="prerender" href="{{ site.url }}/resume">
     <meta name="p:domain_verify" content="ee162166d3bd9f5e84c44cc12aeba34b"/>
 
+    {% if site.google_analytics %}
+    {% include google_analytics.html %}
+    {% endif %}
+
     {% include twitter_card.html %}
 
     <script type="application/ld+json">
