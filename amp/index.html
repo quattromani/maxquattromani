@@ -23,14 +23,47 @@
     body {
       background-color: white;
     }
+
+    main {
+      zoom: 1;
+      padding: 0 calc(50% - (1000 / 2);
+    }
     amp-img {
-      background-color: gray;
+      display: inherit;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+      font-style: italics;
+      color: #ff675f;
+    }
+    amp-img:after {
+      content: " (image)";
+    }
+
+    figure {
+      position: relative;
+      width: 100%;
+    }
+    figure amp-img {
+      margin: 0 auto 1em;
+    }
+
+    figcaption {
+      margin-bottom: 0.5em;
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-weight: 700;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to the mobile web</h1>
-  <amp-img src="education.jpg" alt="Welcome" height="727" width="1920"></amp-img>
+
+  <main>
+   <h1>Welcome to the mobile web</h1>
+   <figure>
+    <amp-img src="education.jpg" alt="Welcome" height="727" width="1920"></amp-img>
+    <figcaption>Hipster Notebook!</figcaption>
+  </figure>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus sed nobis dolore iusto consectetur atque, reiciendis consequuntur sit minus nulla saepe ullam, quod aperiam assumenda quasi velit dicta libero optio vel voluptas distinctio laborum. Iusto accusamus a, nihil aliquid dolores non pariatur quos sint recusandae hic alias doloremque animi porro culpa mollitia. Amet vero neque optio alias in maxime mollitia possimus, nihil perferendis unde veritatis fuga ipsa quidem incidunt itaque repellat rem blanditiis odit, pariatur voluptates expedita! Quam optio explicabo illo commodi quas saepe ab adipisci, neque fuga vel iusto mollitia, nobis incidunt. Iusto et aliquam praesentium, nesciunt voluptatem enim, eos eligendi minus hic dolorum accusantium voluptatum quae voluptatibus quia vel sequi? Facilis, dolorem blanditiis optio. Officiis nulla facere provident ut in. Laborum nam quia officia.</p>
 
@@ -43,6 +76,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus sed nobis dolore iusto consectetur atque, reiciendis consequuntur sit minus nulla saepe ullam, quod aperiam assumenda quasi velit dicta libero optio vel voluptas distinctio laborum. Iusto accusamus a, nihil aliquid dolores non pariatur quos sint recusandae hic alias doloremque animi porro culpa mollitia. Amet vero neque optio alias in maxime mollitia possimus, nihil perferendis unde veritatis fuga ipsa quidem incidunt itaque repellat rem blanditiis odit, pariatur voluptates expedita! Quam optio explicabo illo commodi quas saepe ab adipisci, neque fuga vel iusto mollitia, nobis incidunt. Iusto et aliquam praesentium, nesciunt voluptatem enim, eos eligendi minus hic dolorum accusantium voluptatum quae voluptatibus quia vel sequi? Facilis, dolorem blanditiis optio. Officiis nulla facere provident ut in. Laborum nam quia officia.</p>
   <h3>Lorem Ipsum</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus sed nobis dolore iusto consectetur atque, reiciendis consequuntur sit minus nulla saepe ullam, quod aperiam assumenda quasi velit dicta libero optio vel voluptas distinctio laborum. Iusto accusamus a, nihil aliquid dolores non pariatur quos sint recusandae hic alias doloremque animi porro culpa mollitia. Amet vero neque optio alias in maxime mollitia possimus, nihil perferendis unde veritatis fuga ipsa quidem incidunt itaque repellat rem blanditiis odit, pariatur voluptates expedita! Quam optio explicabo illo commodi quas saepe ab adipisci, neque fuga vel iusto mollitia, nobis incidunt. Iusto et aliquam praesentium, nesciunt voluptatem enim, eos eligendi minus hic dolorum accusantium voluptatum quae voluptatibus quia vel sequi? Facilis, dolorem blanditiis optio. Officiis nulla facere provident ut in. Laborum nam quia officia.</p>
+</main>
 
 </body>
 </html>
