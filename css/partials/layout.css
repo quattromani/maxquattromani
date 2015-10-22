@@ -43,7 +43,7 @@
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 49px;
+  top: 50px;
 }
 
 .sticky:before,
