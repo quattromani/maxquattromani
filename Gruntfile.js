@@ -1,7 +1,10 @@
+'use strict';
+
 module.exports = function(grunt) {
 
-// load all grunt tasks matching the `grunt-*` pattern
-require('load-grunt-tasks')(grunt);
+  require('time-grunt')(grunt);
+  require('load-grunt-tasks')(grunt);
+
 
 grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
@@ -16,10 +19,10 @@ grunt.initConfig({
   },
 
   uglify: {
-  	build: {
-  		src: 'js/build/production.js',
-  		dest: 'js/build/production.min.js'
-  	}
+    build: {
+      src: 'js/build/production.js',
+      dest: 'js/build/production.min.js'
+    }
   },
 
   sass: {
@@ -40,19 +43,22 @@ grunt.initConfig({
     }
   },
 
-  autoprefixer: {
-    prefix: {
-      src: 'css/main.css',
-      dest: 'css/main.css'
-    },
-  },
+  postcss: {
+      options: {
+        map: true,
 
-  cssmin: {
-    build: {
-      src: 'css/main.css',
-      dest: 'css/build/main.min.css'
-    }
-  },
+        processors: [
+          require('pixrem')(),
+          require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('cssnano')()
+        ]
+      },
+      dist: {
+        files: {
+          'css/main.css': ['css/main.css']
+        }
+      }
+    },
 
   imagemin: {
     dynamic: {
@@ -68,11 +74,11 @@ grunt.initConfig({
   watch: {
     options: {
       livereload: {
-				port: 4000,
-				key: grunt.file.read('/Users/Q/Sites/livereload.key'),
-				cert: grunt.file.read('/Users/Q/Sites/livereload.crt'),
-				files: ['_site/**/*'],
-  		}
+        port: 4000,
+        key: grunt.file.read('/Users/Q/Sites/livereload.key'),
+        cert: grunt.file.read('/Users/Q/Sites/livereload.crt'),
+        files: ['_site/**/*'],
+      }
     },
     scripts: {
       files: ['js/*.js'],
@@ -80,7 +86,7 @@ grunt.initConfig({
     },
     css: {
       files: ['css/scss/globals/*.scss','css/scss/partials/*.scss','css/scss/theme/*.scss'],
-      tasks: ['sass', 'cssmin', 'autoprefixer'],
+      tasks: ['sass', 'postcss'],
     }
   }
 
@@ -88,10 +94,5 @@ grunt.initConfig({
 
 grunt.loadNpmTasks('grunt-contrib');
 
-grunt.registerTask('build', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'imagemin', 'watch']);
-grunt.registerTask('dev', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'watch']);
-grunt.registerTask('js', ['concat', 'uglify', 'watch']);
-grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin', 'watch']);
-grunt.registerTask('default', ['watch']);
-
+grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss', 'imagemin', 'watch']);
 };
