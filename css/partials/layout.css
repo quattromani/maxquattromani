@@ -40,6 +40,18 @@
   clear: both;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 52px;
+}
+
+.sticky:before,
+.sticky:after {
+  content: '';
+  display: table;
+}
+
 /* ==========================
     Grid
    ========================== */
