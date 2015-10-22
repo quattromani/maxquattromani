@@ -30,11 +30,3 @@ sitemap:
       - "/index.html"
   change_frequency_name: "change_frequency"
   priority_name: "priority"
-
-# Minify HTML
-gems:
-  - octopress-minify-html
-
-env: production
-
-minify_html: true
