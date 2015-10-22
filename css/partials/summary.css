@@ -28,7 +28,7 @@ details summary:before {
   height: 1em;
   margin-right: .5em;
   content: "\f078";
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
 }

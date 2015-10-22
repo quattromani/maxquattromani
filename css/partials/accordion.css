@@ -10,7 +10,7 @@
 }
 .accordion li.js-notexpandable h6:after {
   float: right;
-  font-family: "FontAwesome";
+  font-family: "fontAwesome";
   content: '\f105';
   color: inherit;
 }
@@ -19,7 +19,7 @@
 }
 .accordion li.js-expandable h6:after {
   float: right;
-  font-family: "FontAwesome";
+  font-family: "fontAwesome";
   content: '\f107';
   color: inherit;
 }

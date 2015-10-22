@@ -90,7 +90,7 @@ nav .show-menu {
   }
   nav .show-menu:before {
     margin-right: .5em;
-    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-family: "fontAwesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

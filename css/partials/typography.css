@@ -90,7 +90,7 @@ a.muted, .muted a {
   color: #e6e6e6;
 }
 a[href$='.pdf']:after {
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   content: "";
@@ -388,7 +388,7 @@ samp {
 }
 
 .fa {
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
 }

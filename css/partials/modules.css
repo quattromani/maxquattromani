@@ -46,7 +46,7 @@ hr.divider {
 }
 hr.divider:after {
   content: '\f141';
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontAwesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;

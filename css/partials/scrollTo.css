@@ -22,7 +22,7 @@
 .scrolltotop:after,
 .scrolltotop-modal:after {
   padding-left: 0.5em;
-  font-family: "FontAwesome";
+  font-family: "fontAwesome";
   font-size: inherit;
   font-weight: inherit;
   content: '\f093';
