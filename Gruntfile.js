@@ -60,6 +60,17 @@ grunt.initConfig({
       }
     },
 
+    criticalcss: {
+      custom: {
+        options: {
+          url: "http://localhost:4000",
+          outputfile: "_includes/critical.css",
+          filename: "css/main.css",
+          buffer: 800*1024
+        }
+      }
+    },
+
   imagemin: {
     dynamic: {
       files: [{
@@ -94,5 +105,5 @@ grunt.initConfig({
 
 grunt.loadNpmTasks('grunt-contrib');
 
-grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss', 'imagemin', 'watch']);
+grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss', 'criticalcss', 'imagemin', 'watch']);
 };
