@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Copying the sender with Brace Forms"
+permalink: copying-the-sender-with-brace-forms
 sub-title: ""
 date:   2014-09-19 9:17:10
 categories: 
@@ -81,5 +82,3 @@ Now whenever that email input changes, wether typed OR autofilled, the value in 
 <br>
 
 Hope this helps! Happy Jekyll'ing!!
-
-<h5>FIN</h5>

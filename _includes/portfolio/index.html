@@ -1,82 +1,75 @@
-<section class="portfolio" id="portfolio">
-  {% include content.html %}
+<article class="portfolio" id="portfolio" role="article">
+  <section>
 
-  <header role="banner">
-    <div class="heading">
-      <p>
-        <span>Samples of My Work</span>
-      </p>
+    <header>
+      <span>Samples of My Work</span>
       <h2>Portfolio</h2>
-    </div>
-  </header>
+    </header>
 
-  <p class="lede">
-    UX/UI is all about appealing to the users basal need to feel connected - the same principle that drives ergonomics can be used in the crafting of interactions that make the user feel at home, feel like they've been there before, and instinctually make sense.
-  </p>
-  <p>
-    Whether hand-crafted with a paper and pencil or designed right in the browser; User Experience that engages a users tactile senses along with their hierarchy of needs takes the senses to the next level.
-  </p>
-  <p>
-    The foundation of good design is not what it is designed to do, but what it can do.
-  </p>
-  <p>
-    Minimalist or Flat Design can eliminate distractions to guide a user along a linear path -- this is especially vital in the world of eCommerce. Depending on the product being sold, eliminating flourish can be appealing to your visitor, on the other hand, some products require a rich, enhanced climate. Nordstroms, for example, would not be the experience it is if it had the decor and design sense of Costco.
-  </p>
-  <p>
-    The right design has nothing left to add, but more importantly, nothing left to remove.
-  </p>
+    <p class="lede">
+      UX/UI is all about appealing to the users basal need to feel connected - the same principle that drives ergonomics can be used in the crafting of interactions that make the user feel at home, feel like they've been there before, and instinctually make sense.
+    </p>
+    <p>
+      Whether hand-crafted with a paper and pencil or designed right in the browser; User Experience that engages a users tactile senses along with their hierarchy of needs takes the senses to the next level.
+    </p>
+    <p>
+      The foundation of good design is not what it is designed to do, but what it can do.
+    </p>
+    <p>
+      Minimalist or Flat Design can eliminate distractions to guide a user along a linear path -- this is especially vital in the world of eCommerce. Depending on the product being sold, eliminating flourish can be appealing to your visitor, on the other hand, some products require a rich, enhanced climate. Nordstroms, for example, would not be the experience it is if it had the decor and design sense of Costco.
+    </p>
+    <p>
+      The right design has nothing left to add, but more importantly, nothing left to remove.
+    </p>
 
-  <hr>
+    <hr>
 
-
-
-
-  {% for item in site.data.modals %}
-  <h3>{{ item.section }}</h3>
-  <div class="row">
-    {% for example in item.examples %}
-    <div class="fourth">
-      <span class="modal-button" id="{{ example.slide }}">
-        <div class="portfolio-gallery">
-          <div class="cap">
-            {{ example.title }}
+    {% for item in site.data.modals %}
+    <h3>{{ item.section }}</h3>
+    <div class="row">
+      {% for example in item.examples %}
+      <div class="fourth">
+        <span class="modal-button" id="{{ example.slide }}">
+          <div class="portfolio-gallery">
+            <div class="cap">
+              {{ example.title }}
+            </div>
+            <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
           </div>
-          <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
-        </div>
-      </span>
+        </span>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-  {% for example in item.examples %}
-  <div class="modal">
+    {% for example in item.examples %}
+    <div class="modal">
 
-    <div id="modal{{ example.slide }}" class="modal-container">
-      <div class="modal-close">&times;</div>
-      <div id="modal-content">
+      <div id="modal{{ example.slide }}" class="modal-container">
+        <div class="modal-close">&times;</div>
+        <div id="modal-content">
 
-        <div class="modal-header">
-          <h4>{{ example.alt }}</h4>
+          <div class="modal-header">
+            <h4>{{ example.alt }}</h4>
+          </div>
+
+          <div class="modal-body">
+            <figure>
+              <img src="../images/{{ example.img }}" alt="{{ example.alt }}">
+              {% if example.url == true %}
+              <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
+              {% endif %}
+            </figure>
+          </div>
+          <div class="modal-footer">
+          </div>
+
         </div>
-
-        <div class="modal-body">
-          <figure>
-            <img src="../images/{{ example.img }}" alt="{{ example.alt }}">
-            {% if example.url == true %}
-            <figcaption><a href="http://{{ example.url }}">{{ example.alt }}</a></figcaption>
-            {% endif %}
-          </figure>
-        </div>
-        <div class="modal-footer">
-        </div>
-
       </div>
     </div>
-  </div>
-  {% endfor %}
-  <hr>
-  {% endfor %}
-  <div class="modal-overlay"></div>
-  {% include end_content.html %}
+    {% endfor %}
+    <hr>
+    {% endfor %}
+    <div class="modal-overlay"></div>
 
-</section>
+  </section>
+</article>
 <!-- /.portfolio -->

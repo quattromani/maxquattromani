@@ -6,14 +6,9 @@ class: reading
 parent: Reading
 ---
 
-<section class="reading">
-  {% include content.html %}
+<h1>{{ page.title }}</h1>
 
-  <header role="banner">
-    <div class="heading">
-      <h2>{{ page.title }}</h2>
-    </div>
-  </header>
+<article role="article">
 
   <blockquote>
     <p>I don't know how to put this but I'm kind of a big deal. People know me. I have many leather-bound books and my office smells of rich mahogany.</p>
@@ -26,15 +21,15 @@ parent: Reading
 
   {% for read in site.data.reading %}
   <h2>{{ read.section }}</h2>
-  <ul class="bulleted">
+  <ul>
     {% for titles in read.examples %}
     <li><a href="{{ titles.url }}">{{ titles.title }}</a></li>
     {% endfor %}
   </ul>
+
   <hr>
   {% endfor %}
 
   <p>This is a partial list. I will try to keep it updated as I add, and occassionally add some old stuff from the bookshelf to it. I bookmark a lot on <a href="https://twitter.com/maxquattromani/favorites">Twitter</a>.</p>
 
-  {% include end_content.html %}
 </section>

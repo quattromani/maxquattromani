@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+footer {
+  @include container;
+  padding-top: $base-spacing / 2;
+  padding-bottom: $base-spacing / 2;
+  background-color: $color-brand-secondary;
+  color: $color-white;
+  text-align: center;
+
+  .social {
+    display: block;
+    // a {
+    //   text-align: center;
+    //   vertical-align: middle;
+    //   line-height: inherit;
+    // }
+
+    // i {
+    //   @include inline-block;
+    //   @include size(35px);
+    //   @include border-radius(100%);
+    //   position: relative;
+    //   border: 2px solid currentColor;
+    //   padding: $base-spacing/4;
+
+    //   &:before {
+    //     @include centerer;
+    //   }
+    // }
+
+    ul {
+      @include horizontal-list(inline-block, spaced);
+      margin-bottom: 0;
+    }
+  }
+
+  .twitter {
+    @include icon-before($fa-var-twitter, 0, 24px, $color: $twitter);
+  }
+
+  .github {
+    @include icon-before($fa-var-github, 0, 24px, $color: $github);
+  }
+
+  .codepen {
+    @include icon-before($fa-var-codepen, 0, 24px, $color: $codepen);
+  }
+
+  .dribbble {
+    @include icon-before($fa-var-dribbble, 0, 24px, $color: $dribbble);
+  }
+
+  .linkedin {
+    @include icon-before($fa-var-linkedin, 0, 24px, $color: $linkedin);
+  }
+
+  .sitemap {
+    @include icon-before($fa-var-sitemap, 0, 24px, $color: $base-link-color);
+  }
+}

@@ -1,0 +1,31 @@
+// TODO: Wrap the following mixin in a smarter way.
+//
+// Parameter: old_nth is the value passed to your previous call to omega( NTH ).
+// Parameter: new_container_span is a nasty hack to solve a problem with flex-gutter().
+//    without an argument flex-gutter recalculates the gutters as though the parent container's column span is 12.
+//    we need flex-gutter to understand what we expect out column span to be on the next media query which wont always be 12.
+//    for now we have to pass that value in which is clunky.
+
+// Usage:
+//
+// .child-item {
+//    @include span-columns(4);
+//    @include omega(3n);
+//
+//    @include media($mobile) {
+//
+//      reset the 3n elements declared above, tell the reset that the parent will span 6 columns
+//      @include omega-reset(3n, 6);
+//
+//      set the column width for (children of parent)
+//      @include span-columns(3 of 6);
+//
+//      since the parent spans 6 and the child spans 3, 2 children exist on each row, you want to call omega on 2n of the child
+//      @include omega(2n)
+//    }
+// }
+
+@mixin omega-reset($old_nth, $new_container_span) {
+  &:nth-child(#{$old_nth}) { margin-right: flex-gutter($new_container_span); }
+  &:nth-child(#{$old_nth}+1) { clear: none }
+}

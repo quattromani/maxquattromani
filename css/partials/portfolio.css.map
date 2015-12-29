@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;AAQM,uBAAK;ECmBT,OAAO,EAAE,SAAyB;EA8LlC,UAAU,EAFH,KAAoB;;AAG3B,2BAAM;EACJ,UAAU,EAAE,WAAW;EACvB,UAAU,EAAE,4FAAsG;EAClH,MAAM,EAAC,yFAAmG;EAC1G,IAAI,EAAE,CAAC",
-"sources": ["../scss/partials/portfolio.scss","../scss/globals/_mixins.scss"],
-"names": [],
-"file": "portfolio.css"
-}

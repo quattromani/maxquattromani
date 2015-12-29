@@ -1,0 +1,30 @@
+@mixin article-header {
+	@include font-size(32);
+  @include margin(0 0 $base-spacing);
+	padding-bottom: $base-spacing/2;
+	border-bottom: 1px solid $article-header-border-color;
+  color: $article-header-color;
+  text-transform: uppercase;
+  font-weight: $article-header-font-weight;
+
+	@include media($mobile) {
+    @include font-size(16);
+		@include padding($base-spacing/2 $base-spacing);
+		width: calc(100% +  #{$base-spacing*2});
+    margin-top: 0;
+		margin-left: -$base-spacing;
+    border-bottom: none;
+		background-color: $article-header-color;
+		color: $color-white;
+
+    &.stick {
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+	}
+}
+
+.article-header {
+  @include article-header;
+}

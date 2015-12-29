@@ -1,0 +1,12 @@
+$base-spacing: 2rem !default;
+$pad: $base-spacing;
+
+// =Grid settings
+$gutter: $base-spacing;
+$grid-columns: 12;
+$max-width: 720px;
+
+// =Breakpoints
+$desktop: new-breakpoint(min-width 1026px 12);
+$tablet: new-breakpoint(max-width 1025px 8);
+$mobile: new-breakpoint(max-width 750px 4);

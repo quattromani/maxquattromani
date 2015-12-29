@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Designs by Puppy"
+permalink: designs-by-puppy
 sub-title: "What my dog has taught me about building for users"
 date: 2014-08-28 10:32:34
-categories: design
+categories: 
+    - design
 ---
 
 Just a quick thought I had this morning: my puppy, Pixel, is the perfect user-testing subject. Pixel has pretty basic needs: feed me, shelter me, scratch my belly, be kind to me. 
@@ -27,5 +29,3 @@ Everything else is superfluous. What <a href="http://www.gregstanforth.com/">my 
 <hr>
 
 My designs tend to lean to the simplistic already, but when I tell people that I am usaully referring to the visual aesthetic. Pixel would agree that I need to be more simplistic when tackling the functionality as well.
-
-<h5>FIN</h5>

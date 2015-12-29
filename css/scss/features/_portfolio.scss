@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.portfolio-gallery {
+  .cap {
+    @include padding(($base-spacing / 4) ($base-spacing / 4));
+    @include rgba($color-white, 1);
+  }
+}

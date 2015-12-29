@@ -1,219 +1,218 @@
-<span id="bestPractices-anchor" class="h2 jumpTo-anchor">Best Practices</span>
+<section id="bestPractices-anchor">
 
-<!-- <div class="right">
-  <a class="btn btn-primary" href="best_practices">Isolate</a>
-</div> -->
-<div class="box-column clear">
+  <h1>Best Practices</h1>
 
-  <!-- Best Practices Component -->
-  <h3>The Golden Rule</h3>
-  <p class="lede">All code in any part of the code base should look like a single person typed it, no matter how many people contributed.</p>
+  <article>
+    <section>
+      <h2>The Golden Rule</h2>
+      <p class="lede">All code in any part of the code base should look like a single person typed it, no matter how many people contributed.</p>
+    </section>
 
-  <hr>
+    <section>
+      <h3>HTML</h3>
 
-  <h2>HTML</h2>
-  <hr>
-
-  <ul class="vertical lined">
-    <li>
-      <h5>Human Readable</h5>
-
-      <p class="lede">Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
-    </li>
-    <li>
-      <h5>HTML5 doctype</h5>
-
-      <p class="lede">Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
-{% highlight html %}
-<!DOCTYPE html>
-{% endhighlight %}
-    </li>
-    <li>
-      <h5>Syntax</h5>
-      <ul class="bulleted">
-        <li>Use soft-tabs with two spaces</li>
-        <li>Nested elements should be indented once (2 spaces)</li>
-        <li>Don't include a trailing slash in self-closing elements</li>
-      </ul>
-    </li>
-    <li>
-      <h5>Attributes</h5>
-      <ul class="bulleted">
+      <ul>
         <li>
-          Attributes should be lowercase.
+          <h5>Human Readable</h5>
+
+          <p class="lede">Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
         </li>
         <li>
-          Always use double quotes ("), never single quotes.
+          <h5>HTML5 doctype</h5>
+
+          <p class="lede">Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+          {% highlight html %}
+          <!DOCTYPE html>
+          {% endhighlight %}
         </li>
         <li>
-          Boolean attributes should be used without quoted values to avoid redundancy.
-        </li>
-      </ul>
-    </li>
-    <li>
-      <h5>Attribute order</h5>
-      <p>HTML attributes should come in this particular order for easier reading of code.</p>
-      <ul class="vertical bulleted">
-        <li><code>id</code></li>
-        <li><code>class</code></li>
-        <li><code>data-*</code></li>
-        <li><code>for</code> | <code>type</code> | <code>href</code> | <code>src</code></li>
-      </ul>
-    </li>
-    <li>
-
-      <h5>HTML Comments</h5>
-      <ul class="bulleted">
-        <li>
-          Section comments are separated from the previous block by two lines, and should have one following line of space.
+          <h5>Syntax</h5>
+          <ul class="bulleted">
+            <li>Use soft-tabs with two spaces</li>
+            <li>Nested elements should be indented once (2 spaces)</li>
+            <li>Don't include a trailing slash in self-closing elements</li>
+          </ul>
         </li>
         <li>
-          Prepend section headings with an equal sign (=), to make a Find operation easier.
+          <h5>Attributes</h5>
+          <ul class="bulleted">
+            <li>
+              Attributes should be lowercase.
+            </li>
+            <li>
+              Always use double quotes ("), never single quotes.
+            </li>
+            <li>
+              Boolean attributes should be used without quoted values to avoid redundancy.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5>Attribute order</h5>
+          <p>HTML attributes should come in this particular order for easier reading of code.</p>
+          <ul class="vertical bulleted">
+            <li><code>id</code></li>
+            <li><code>class</code></li>
+            <li><code>data-*</code></li>
+            <li><code>for</code> | <code>type</code> | <code>href</code> | <code>src</code></li>
+          </ul>
+        </li>
+        <li>
+          <h5>HTML Comments</h5>
+          <ul class="bulleted">
+            <li>
+              Section comments are separated from the previous block by two lines, and should have one following line of space.
+            </li>
+            <li>
+              Prepend section headings with an equal sign (=), to make a Find operation easier.
+            </li>
+          </ul>
+
+          {% highlight html %}
+          <!-- Component Name -->
+          <div class="componentName">
+            ...
+          </div>
+          <!-- ./Component Name -->
+          {% endhighlight %}
+
         </li>
       </ul>
+    </section>
 
-{% highlight html %}
-<!-- Component Name -->
-<div class="componentName">
-  ...
-</div>
-<!-- ./Component Name -->
-{% endhighlight %}
+    <section>
+
+      <h2>CSS</h2>
+      <hr>
+
+      <ul class="vertical lined">
+        <li>
+          <ul class="bulleted">
+            <li>Use soft-tabs with two spaces</li>
+            <li>When grouping selectors, keep individual selectors to a single line</li>
+            <li>Include one space before the opening brace of declaration blocks</li>
+            <li>Place closing braces of declaration blocks on a new line</li>
+            <li>Include one space after <code>:</code> in each property</li>
+            <li>Each declaration should appear on its own line</li>
+            <li>End all declarations with a semi-colon</li>
+            <li>Comma-separated values should include a space after each comma</li>
+            <li>Don't include spaces after commas in RGB or RGBa colors</li>
+            <li>Do not specify units for zero values, e.g., margin: 0; instead of margin: 0px;</li>
+            <li>Lowercase all hex values, e.g., #fff instead of #FFF</li>
+            <li>Use shorthand hex values where available, e.g., #fff instead of #ffffff</li>
+            <li>Quote attribute values in selectors, e.g., input[type="text"]</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Declaration Organization</h5>
+
+          <ol>
+            <li>Box (Display, Float, Position, Left, Top, Width, Height, Margin, Padding, etc.)</li>
+            <li>Border</li>
+            <li>Background</li>
+            <li>Text</li>
+            <li>Other</li>
+          </ol>
+
+          {% highlight css %}
+          .someDiv { color: #222; }
+
+          .someOtherDiv,
+          .someAdditional Div {
+          margin: 0 auto;
+          color: #222;
+        }
+        {% endhighlight %}
+
+      </li>
+      <li>
+        <h5>General Formatting</h5>
+
+        <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
+
+        {% highlight css %}
+        .print {
+        display: block;
+        margin: 0;
+        padding: 0 7px;
+        height: 30px;
+        background: #4f799f;
+        line-height: 30px;
+      }
+
+      .print:hover { background: #265a83; }
+      {% endhighlight %}
 
     </li>
-  </ul>
-  <hr>
-<h2>CSS</h2>
-<hr>
-
-  <ul class="vertical lined">
     <li>
-      <ul class="bulleted">
-        <li>Use soft-tabs with two spaces</li>
-        <li>When grouping selectors, keep individual selectors to a single line</li>
-        <li>Include one space before the opening brace of declaration blocks</li>
-        <li>Place closing braces of declaration blocks on a new line</li>
-        <li>Include one space after <code>:</code> in each property</li>
-        <li>Each declaration should appear on its own line</li>
-        <li>End all declarations with a semi-colon</li>
-        <li>Comma-separated values should include a space after each comma</li>
-        <li>Don't include spaces after commas in RGB or RGBa colors</li>
-        <li>Do not specify units for zero values, e.g., margin: 0; instead of margin: 0px;</li>
-        <li>Lowercase all hex values, e.g., #fff instead of #FFF</li>
-        <li>Use shorthand hex values where available, e.g., #fff instead of #ffffff</li>
-        <li>Quote attribute values in selectors, e.g., input[type="text"]</li>
-      </ul>
+      <p>Avoid Qualifying ID and class names with type selectors</p>
+
+      {% highlight css %}
+      // this is bad
+      ul#example { color: #ff0; }
+      div.error { color: red; }
+      {% endhighlight %}
+
+      {% highlight css %}
+      // this is good
+      .example { color: #0f0; }
+      .error { color: green; }
+      {% endhighlight %}
+
+      <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
     </li>
     <li>
-      <h5>Declaration Organization</h5>
+      <h5>Hexadecimal Notation</h5>
 
-      <ol>
-        <li>Box (Display, Float, Position, Left, Top, Width, Height, Margin, Padding, etc.)</li>
-        <li>Border</li>
-        <li>Background</li>
-        <li>Text</li>
-        <li>Other</li>
-      </ol>
+      <p>For color values that permit, 3 character hexadecimal is preferred</p>
 
-{% highlight css %}
-.someDiv { color: #222; }
+      {% highlight css %}
+      /* not recommended */
+      color: #00ff00;
+      {% endhighlight %}
+      {% highlight css %}
+      /* recommended */
+      color: #0f0;
+      {% endhighlight %}
 
-.someOtherDiv,
-.someAdditional Div {
-  margin: 0 auto;
-  color: #222;
-}
-{% endhighlight %}
+    </li>
+    <li>
+      <div class="row">
+        <div class="error-box">
+          <span class="message">
+            <span class="h4">!important</span>
+          </span>
+        </div>
+      </div>
 
-  </li>
-  <li>
-    <h5>General Formatting</h5>
+      <h5>Just don't do it.</h5>
+      <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife</p>
+    </li>
+    <li>
+      <h5>Use the SMACSS Approach</h5>
 
-    <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
+      {% highlight css %}
+      .componentName {
 
-{% highlight css %}
-.print {
-  display: block;
-  margin: 0;
-  padding: 0 7px;
-  height: 30px;
-  background: #4f799f;
-  line-height: 30px;
-}
+      Base {
+      ...
+    }
 
-.print:hover { background: #265a83; }
-{% endhighlight %}
-
-</li>
-<li>
-  <p>Avoid Qualifying ID and class names with type selectors</p>
-
-{% highlight css %}
-// this is bad
-ul#example { color: #ff0; }
-div.error { color: red; }
-{% endhighlight %}
-
-{% highlight css %}
-// this is good
-.example { color: #0f0; }
-.error { color: green; }
-{% endhighlight %}
-
-  <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
-</li>
-<li>
-  <h5>Hexadecimal Notation</h5>
-
-  <p>For color values that permit, 3 character hexadecimal is preferred</p>
-
-{% highlight css %}
-/* not recommended */
-color: #00ff00;
-{% endhighlight %}
-{% highlight css %}
-/* recommended */
-color: #0f0;
-{% endhighlight %}
-
-</li>
-<li>
-  <div class="row">
-    <div class="error-box">
-      <span class="message">
-        <span class="h4">!important</span>
-      </span>
-    </div>
-  </div>
-
-  <h5>Just don't do it.</h5>
-  <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife</p>
-</li>
-<li>
-  <h5>Use the SMACSS Approach</h5>
-
-{% highlight css %}
-.componentName {
-
-  Base {
+    Layout {
     ...
-  }
-
-  Layout {
-  ...
   }
 
   Module {
   ...
-  }
+}
 
-  State {
-  ...
-  }
+State {
+...
+}
 
-  Theme {
-  ...
-  }
+Theme {
+...
+}
 
 }
 {% endhighlight %}
@@ -222,27 +221,27 @@ color: #0f0;
 <li>
   <h5>Commenting</h5>
 
-{% highlight html %}
-// File headers are commented thusly:
+  {% highlight html %}
+  // File headers are commented thusly:
 
-/* ==========================================================================
-Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
-========================================================================== */
-{% endhighlight %}
+  /* ==========================================================================
+  Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
+  ========================================================================== */
+  {% endhighlight %}
 
-{% highlight html %}
-// Section chunks get styled as such:
-/*
-* Chunk of long
-* text gets commented
-* like this
-*/
-{% endhighlight %}
+  {% highlight html %}
+  // Section chunks get styled as such:
+  /*
+  * Chunk of long
+  * text gets commented
+  * like this
+  */
+  {% endhighlight %}
 
-{% highlight html %}
-// Hints get styled like this:
-/* Hint */
-{% endhighlight %}
+  {% highlight html %}
+  // Hints get styled like this:
+  /* Hint */
+  {% endhighlight %}
 
 </li>
 </ul>
@@ -266,22 +265,22 @@ Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
       </li>
     </ul>
 
-{% highlight html %}
-sass/
-├── main.scss
-├── globals/
-|   ├── _mixins.scss
-|   ├── _var.scss
-├── partials/
-|   ├── _btn.scss
-|   ├── _list.scss
-|   ├── _nav.scss
-|   ├── _etc...
-├── theme/
-|   ├── _btn-theme.scss
-└── vendor/
-└── _jquery.ui.core.scss
-{% endhighlight %}
+    {% highlight html %}
+    sass/
+    ├── main.scss
+    ├── globals/
+    |   ├── _mixins.scss
+    |   ├── _var.scss
+    ├── partials/
+    |   ├── _btn.scss
+    |   ├── _list.scss
+    |   ├── _nav.scss
+    |   ├── _etc...
+    ├── theme/
+    |   ├── _btn-theme.scss
+    └── vendor/
+    └── _jquery.ui.core.scss
+    {% endhighlight %}
 
   </li>
   <li>
@@ -290,49 +289,49 @@ sass/
     <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
     <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
 
-{% highlight scss %}
-/* Mixins and Variables */
-// All globals are combined in allModules.scss to reduce the nuber of updates necessary to add new files
-@import "global/allModules";
+    {% highlight scss %}
+    /* Mixins and Variables */
+    // All globals are combined in allModules.scss to reduce the nuber of updates necessary to add new files
+    @import "global/allModules";
 
-/* Base */
-@import "partials/base";
+    /* Base */
+    @import "partials/base";
 
-/* Layout */
-@import "partials/layout";
+    /* Layout */
+    @import "partials/layout";
 
-/* Modules */
+    /* Modules */
 
-@import "partials/colors";
+    @import "partials/colors";
 
-@import "partials/typography";
+    @import "partials/typography";
 
-@import "partials/helpers";
+    @import "partials/helpers";
 
-@import "partials/lists";
+    @import "partials/lists";
 
-@import "partials/buttons";
+    @import "partials/buttons";
 
-@import "partials/pagination";
+    @import "partials/pagination";
 
-@import "partials/accessibility";
+    @import "partials/accessibility";
 
-@import "partials/forms";
+    @import "partials/forms";
 
-@import "partials/images";
+    @import "partials/images";
 
-@import "partials/videos";
+    @import "partials/videos";
 
-@import "partials/modules";
+    @import "partials/modules";
 
-@import "partials/jumpTo";
+    @import "partials/jumpTo";
 
-@import "partials/_prototype";
+    @import "partials/_prototype";
 
-@import "partials/_styleguide";
+    @import "partials/_styleguide";
 
-/* Components */
-{% endhighlight %}
+    /* Components */
+    {% endhighlight %}
 
   </li>
   <li>
@@ -395,7 +394,7 @@ sass/
     <p>Try to stick with standard CSS comments, but you can use the Sass style (//) comments for trivial comments or quickly debugging.</p>
   </li>
 </ul>
-
+</section>
 <hr>
 <h2>JS</h2>
 <hr>
@@ -425,7 +424,10 @@ sass/
 
 <h5>How Much Will A Reader Read?</h5>
 
-<p>"A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts."</p>
+<blockquote>
+  A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts.
+  <cite>William Strunk, Jr.</cite>
+</blockquote>
 
 <hr>
 <h2>ARIA &amp; Accessibility</h2>
@@ -440,33 +442,33 @@ sass/
 
     <p>banner - typically the "header" of the page</p>
 
-{% highlight html %}
-<header role="banner" class="header"></header>
-{% endhighlight %}
+    {% highlight html %}
+    <header role="banner" class="header"></header>
+    {% endhighlight %}
 
     <p>navigation - any navigation list, typically the nav element</p>
 
-{% highlight html %}
-<nav role="navigation" class="nav"></nav>
-{% endhighlight %}
+    {% highlight html %}
+    <nav role="navigation" class="nav"></nav>
+    {% endhighlight %}
 
     <p>main - the main content area</p>
 
-{% highlight html %}
-<section role="main" class="main"></main>
-{% endhighlight %}
+    {% highlight html %}
+    <section role="main" class="main"></main>
+      {% endhighlight %}
 
       <p>complimentary - information that is tangentially related to the main content</p>
 
-{% highlight html %}
-<aside role="complimentary" class="aside"></aside>
-{% endhighlight %}
+      {% highlight html %}
+      <aside role="complimentary" class="aside"></aside>
+      {% endhighlight %}
 
       <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
 
-{% highlight html %}
-<footer role="contentinfo" class="footer"></footer>
-{% endhighlight %}
+      {% highlight html %}
+      <footer role="contentinfo" class="footer"></footer>
+      {% endhighlight %}
 
     </li>
     <li>
@@ -487,7 +489,9 @@ sass/
   </ul>
   <!-- .Best Practices Component -->
 
-</div>
+</article>
+
+</section>
 
 {% highlight html %}
 /*----------------------------------------------------------

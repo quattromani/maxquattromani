@@ -1,20 +1,20 @@
 {% assign current = page.url | split: '/' %}
-<nav class="nav-primary" role="navigation">
-  <div class="container">
+<a href="#" class="open-panel" aria-label="navigation menu"><span></span></a>
 
-    <label for="show-menu" class="show-menu">Menu</label>
-    <input type="checkbox" id="show-menu" role="button">
+<nav role="navigation">
 
-    <ul class="navigation">
-      {% for nav in site.data.nav %}
-      {% if nav.name == page.parent %}
-      <li class="active">
-      {% else %}
-      <li>
-      {% endif %}
-        <a href="{{ nav.url }}" class="text-center">{{ nav.name }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</nav>
+    <div class="menu" role="menubar">
+      <ul role="menu">
+        {% for nav in site.data.nav %}
+        {% if nav.name == page.parent %}
+        <li class="active" role="menuitem">
+          {% else %}
+          <li role="menuitem">
+            {% endif %}
+            <a href="{{ nav.url }}">{{ nav.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+  </nav>

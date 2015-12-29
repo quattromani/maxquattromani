@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.cta {
+  @extend .btn;
+  background: none;
+  box-shadow: inset 0 0 0 1px $color-brand-primary;
+  color: $color-brand-primary;
+
+  &:hover {
+    background: none;
+    box-shadow: inset 0 0 0 1px shade($color-brand-primary, 10%);
+    color: shade($color-brand-primary, 10%);
+  }
+}
+
+.cta {
+  @include box-shadow(inset 0 0 0 .125em $color-white);
+  color: $color-white;
+
+  &:hover {
+    @include box-shadow(inset 0 0 0 .125em $color-light-grey);
+    background: none;
+    color: $color-light-grey;
+  }
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+details {
+	@include margin(($base-spacing / 2) 0);
+	background-color: lighten($color-light-grey, 5%);
+
+	p {
+		@include padding($base-spacing / 2);
+	}
+
+	summary {
+		@include inline-block;
+    @include padding($base-spacing / 4);
+    // @include icon-before($fa-var-chevron-down);
+    @include font-family($base-font-family-alt);
+		width: 100%;
+		background: $color-grey;
+		outline: none;
+    font-weight: 400;
+		color: $color-white;
+
+    // Hide the Default Marker
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &[open] summary{
+    // @include icon-before($fa-var-chevron-up);
+  }
+}

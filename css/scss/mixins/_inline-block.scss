@@ -1,0 +1,7 @@
+// Inline-Block IE
+@mixin inline-block {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  *vertical-align:auto;
+}

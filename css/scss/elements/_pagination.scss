@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.pagination {
+  ol {
+    @include margin;
+    @include padding;
+  }
+
+  li {
+    display: inline;
+    position: relative;
+
+    a {
+      border: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include media($mobile) {
+    @include inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

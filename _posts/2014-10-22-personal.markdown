@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "The Last Conversation I had with my Mom"
+permalink: the-last-conversation-i-had-with-my-mom
 sub-title: ""
 date:   2014-10-22 20:49:10
-categories: personal
+categories: 
+    - personal
 ---
 
 A year ago today, it was a Tuesday, was the last time I had a conversation with my mom.
@@ -53,5 +55,3 @@ Mom hung on until just into Monday morning.
 
 I miss her every day. We still talk every day. Well, I talk, and I know she's listening.
 <br><br>
-
-<h5>FIN</h5>

@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Website Launch List"
+permalink: website-launch-list
 sub-title: ""
 date:   2015-08-02 15:47:10
-categories: development
+categories: 
+    - development
 ---
 
 - [ ] meta tags
@@ -24,6 +26,3 @@ categories: development
 - [ ] sitemap.xml  
 - [ ] Google Analytics  
   
-
-
-<h5>FIN</h5>

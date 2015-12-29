@@ -5,15 +5,11 @@ description: "Let's perform an audit of the way sites are being built, paying cl
 class: audit
 ---
 
-<section class="audit">
-  {% include content.html %}
+<h1>{{ page.title }}</h1>
 
-  <header role="banner">
-    <div class="heading">
-      <p><span>Colonie Shopping Ctr</span></p>
-      <h2>{{ page.title }}</h2>
-    </div>
-  </header>
+<article role="article">
+
+  <h2>Colonie Shopping Ctr</h2>
 
   <p class="lede">Every site we create should pass a series of checkpoints and validations. By creating and adhering to best-practices and standards; we deliver performant, clean sites to the engineering team and ultimately the client. Our personal gain is a portfolio of sites that we would love to show off from the code side.</p>
 
@@ -21,10 +17,8 @@ class: audit
     <div class="row">
       <div class="third">
         <section class="audit-box">
-          <header>
-            <h5>Template</h5>
-          </header>
-          <ul class="vertical lined">
+          <h5>Template</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="metadata" name="metadata">
               <label for="metadata">Metadata - Right after doctype</label>
@@ -48,11 +42,9 @@ class: audit
           </ul>
         </section>
 
-        <section class="audit-box">
-          <header>
-            <h5>Markup</h5>
-          </header>
-          <ul class="vertical lined">
+        <section>
+          <h5>Markup</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="styleguide" name="styleguide">
               <label for="styleguide">Style Guide as an API</label>
@@ -77,11 +69,9 @@ class: audit
         </section>
       </div>
       <div class="third">
-        <section class="audit-box">
-          <header>
-            <h5>CSS/Sass</h5>
-          </header>
-          <ul class="vertical lined">
+        <section>
+          <h5>CSS/Sass</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="sass-flags" name="sass-flags">
               <label for="sass-flags">Dependency Mngmnt flags</label>
@@ -113,11 +103,9 @@ class: audit
           </ul>
         </section>
 
-        <section class="audit-box">
-          <header>
-            <h5>JS/jQuery</h5>
-          </header>
-          <ul class="vertical lined">
+        <section>
+          <h5>JS/jQuery</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="js-cdn" name="js-cdn">
               <label for="js-cdn">Use CDN for jQuery and jQuery-UI <a href="#4"><sup>4</sup></a></label>
@@ -145,14 +133,12 @@ class: audit
           </ul>
         </section>
 
-
       </div>
+
       <div class="third">
         <section class="audit-box">
-          <header>
-            <h5>Media</h5>
-          </header>
-          <ul class="vertical lined">
+          <h5>Media</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="base64" name="base64">
               <label for="base64">Base64 banner/bg images</label>
@@ -176,11 +162,9 @@ class: audit
           </ul>
         </section>
 
-        <section class="audit-box">
-          <header>
-            <h5>ARAI &amp; Accessibility</h5>
-          </header>
-          <ul class="vertical lined">
+        <section>
+          <h5>ARAI &amp; Accessibility</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="aria-roles" name="aria-roles">
               <label for="aria-roles">See <a href="/styleguide/#bestPractices-anchor">ARIA roles</a></label>
@@ -188,11 +172,9 @@ class: audit
           </ul>
         </section>
 
-        <section class="audit-box">
-          <header>
-            <h5>Browsers</h5>
-          </header>
-          <ul class="vertical lined">
+        <section>
+          <h5>Browsers</h5>
+          <ul>
             <li>
               <input type="checkbox" class="switch" id="browser-testing" name="browser-testing">
               <label for="browser-testing">Cross-browser testing</label>
@@ -210,7 +192,7 @@ class: audit
 
   <section>
     <h5>Footnotes:</h5>
-    <ol class="vertical">
+    <ol>
       <li>
         <span id="1">'Pompiere' is currently being requested twice</span>
       </li>
@@ -238,12 +220,11 @@ class: audit
   <hr>
 
   <h5>Notes:</h5>
-</header>
-<ul>
-  <li>Why/how is device-detection being used?</li>
-  <li>Are we supporting IE7? IE8?</li>
-  <li>Site is currently 3.9MB, with a 6.11 second load time.</li>
-</ul>
 
-{% include end_content.html %}
-</section>
+  <ul>
+    <li>Why/how is device-detection being used?</li>
+    <li>Are we supporting IE7? IE8?</li>
+    <li>Site is currently 3.9MB, with a 6.11 second load time.</li>
+  </ul>
+
+</article>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.modal {
+	.modal-container {
+    @include border-radius;
+		display: none;
+		position: fixed;
+		overflow: visible;
+		top: 50%;
+		left: 0;
+		right: 0;
+		height: auto;
+		width: 40em;
+		max-width: 90%;
+		margin: auto;
+		margin-top: -16em;
+		background: none repeat scroll 0 0 $color-white;
+		color: $base-font-color;
+		z-index: 99999;
+
+		> .modal-content {
+			@include box-shadow(0 0 5px 2px #555);
+		}
+	}
+
+	.modal-close {
+    @include font-size(40);
+		position: absolute;
+		right: $base-spacing / 2;
+		cursor: pointer;
+	}
+
+	.modal-header {
+		@include padding($base-spacing / 2);
+		@include border-radius($base-border-radius $base-border-radius 0 0);
+		background: $color-off-white;
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+      text-align: center;
+		}
+	}
+
+	.modal-body {
+    @include padding($base-spacing / 2);
+		overflow: auto;
+		max-height: 25em;
+
+		@include media($mobile) {
+			max-height: 15.625em;
+		}
+	}
+
+	.modal-footer {
+    @include padding($base-spacing / 2);
+    @include border-radius(0 0 $base-border-radius $base-border-radius);
+		overflow: auto;
+		background: $color-off-white;
+	}
+}
+
+.modal-overlay {
+  @include size(100%);
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	background-color: rgba($color-black, $site-alpha);
+	zoom: 1;
+	z-index: 9999;
+}

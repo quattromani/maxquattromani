@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Vertical align an element with 3 lines of CSS"
+permalink: "/:title"
 sub-title: ""
 date:   2014-07-25 10:17:10
-categories: css
+categories: 
+    - css
 ---
 
 With just 3 lines of CSS (*excluding vendor prefixes) we can with the help of transform: translateY vertically center whatever we want, even if we don’t know its height.
@@ -61,5 +63,3 @@ Or you can use the Sass placeholder selector to reduce code bloat in the output 
 Credit to:
 <h4>Sebastian Ekström</h4>
 <cite><a href="http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/">http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/</a></cite>
-
-<h5>FIN</h5>

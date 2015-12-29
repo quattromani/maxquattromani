@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;AAOA,MAAO;EACL,SAAS,EAAE,KAAK",
-"sources": ["../scss/partials/posts.scss"],
-"names": [],
-"file": "posts.css"
-}

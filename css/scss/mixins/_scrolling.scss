@@ -1,0 +1,10 @@
+@mixin scrolling {
+  @include inline-block;
+  overflow: auto;
+  background: linear-gradient(transparent 15px, hsla(0,0%,100%,0)) 100% 50px,
+  radial-gradient(at top, rgba(0,0,0,.2), transparent 70%) 0 0 / 100% 15px,
+  linear-gradient(to top, transparent 15px, hsla(0,0%,100%,0)) bottom / 100% 50px,
+  radial-gradient(at bottom, rgba(0,0,0,.2), transparent 70%) bottom / 100% 15px;
+  background-repeat: no-repeat;
+  background-attachment: local, scroll, local, scroll;
+}

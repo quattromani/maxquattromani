@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Start using currentColor in your CSS"
+permalink: start-using-currentColor-in-your-css
 sub-title: ""
 date:   2014-08-12 12:07:13
-categories: css
+categories: 
+    - css
 ---
 
 <code>currentColor</code> is a CSS variable-like feature that's been avaialble to developers for quite some time, but it goes unused and unknown - forced to live a life of obscurity.
@@ -38,4 +40,3 @@ No matter how much I want it to, this just won't work. But with <code>currentCol
 
 
 Go ahead and give it a try - make something awesome with it! 
-<h5>FIN</h5>

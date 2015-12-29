@@ -1,0 +1,9 @@
+// Column Count
+@mixin columns($count, $gap: $base-spacing) {
+  column-count: $count;
+  column-gap: $gap;
+
+  li {
+    @include inline-block;
+  }
+}

@@ -12,64 +12,54 @@ grunt.initConfig({
   concat: {
     dist: {
       src: [
-      'js/*.js'
+      'js/scripts/*.js'
       ],
-      dest: 'js/build/production.js',
+      dest: 'js/production.js',
     }
   },
 
   uglify: {
     build: {
-      src: 'js/build/production.js',
-      dest: 'js/build/production.min.js'
+      src: 'js/production.js',
+      dest: 'js/production.min.js'
     }
   },
 
   sass: {
     dist: {
-      options: {
-        style: 'expanded'
-      },
-      files: [{
-        expand: true,
-        cwd: 'css/scss/partials',
-        src: ['*.scss'],
-        dest: 'css/partials',
-        ext: '.css'
-      }], 'main.css': 'main.scss',
-    },
-    dev: {
-      files: [{'css/main.css': 'css/scss/main.scss'}]
+      files: {
+        'css/main.css' : 'css/scss/main.scss'
+      }
     }
   },
 
   postcss: {
+    options: {
+      map: true,
+
+      processors: [
+        require('pixrem')(),
+        require('autoprefixer')({browsers: 'last 2 versions'}),
+        require('cssnano')()
+      ]
+    },
+    dist: {
+      files: {
+        'css/main.css': ['css/main.css']
+      }
+    }
+  },
+
+  criticalcss: {
+    custom: {
       options: {
-        map: true,
-
-        processors: [
-          require('pixrem')(),
-          require('autoprefixer')({browsers: 'last 2 versions'}),
-          require('cssnano')()
-        ]
-      },
-      dist: {
-        files: {
-          'css/main.css': ['css/main.css']
-        }
+        url: "http://localhost:4000",
+        outputfile: "_includes/critical.css",
+        filename: "css/main.css",
+        buffer: 800*1024
       }
-    },
-
-    criticalcss: {
-      custom: {
-        options: {
-          url: "http://localhost:4000",
-          outputfile: "_includes/critical.css",
-          filename: "css/main.css",
-          buffer: 800*1024
-        }
-      }
-    },
+    }
+  },
 
   imagemin: {
     dynamic: {
@@ -96,7 +86,7 @@ grunt.initConfig({
       tasks: ['concat', 'uglify'],
     },
     css: {
-      files: ['css/scss/globals/*.scss','css/scss/partials/*.scss','css/scss/theme/*.scss'],
+      files: ['css/scss/**/*.scss'],
       tasks: ['sass', 'postcss'],
     }
   }
@@ -105,5 +95,8 @@ grunt.initConfig({
 
 grunt.loadNpmTasks('grunt-contrib');
 
-grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss', 'criticalcss', 'imagemin', 'watch']);
+grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss', 'imagemin', 'watch']);
+
+grunt.registerTask('prod', ['concat', 'uglify', 'sass', 'postcss', 'criticalcss', 'imagemin', 'watch']);
+
 };

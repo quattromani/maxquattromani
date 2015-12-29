@@ -6,56 +6,70 @@ class: sdlc
 parent: SDLC
 ---
 
-<section class="sdlc" id="sdlc">
-  {% include content.html %}
+<h1>{{ page.title }}</h1>
 
-  <header role="banner">
-    <div class="heading">
-      <h2>{{ page.title }}</h2>
-    </div>
-  </header>
+<article role="article">
 
-  <p class="lede">The systems development life cycle (SDLC), also referred to as the application development life-cycle, is a term used in systems engineering, information systems and software engineering to describe a process for planning, creating, testing, and deploying an information system. The systems development life-cycle concept applies to a range of hardware and software configurations, as a system can be composed of hardware only, software only, or a combination of both.</p>
+  <section>
+    <p class="lede">The systems development life cycle (SDLC), also referred to as the application development life-cycle, is a term used in systems engineering, information systems and software engineering to describe a process for planning, creating, testing, and deploying an information system. The systems development life-cycle concept applies to a range of hardware and software configurations, as a system can be composed of hardware only, software only, or a combination of both.</p>
 
-  <cite>"Systems Development Life Cycle." Wikipedia. Wikimedia Foundation</cite>
+    <cite>"Systems Development Life Cycle" Wikipedia. Wikimedia Foundation</cite>
 
-  <hr>
+    <sup class="reference">
+      <a href="#cite-1">
+        <span>[</span>1<span>]</span>
+      </a>
+    </sup>
+  </section>
 
-  <p class="lede">"Clearly defined and distinct work phases which are used to plan for, design, build, test, and deliver information systems."</p>
-
-  <div class="box">
-    <ul class="vertical lined">
+  <section>
+    <ul>
       <li>
-        <h3><i class="fa fa-search fa-lg"></i> Discover</h3>
+        <h3>Discover</h3>
         <p>Research and determine the project's current situation and needs.</p>
       </li>
       <li>
-        <h3><i class="fa fa-comments fa-lg"></i> Define</h3>
+        <h3>Define</h3>
         <p>Establish the scope of the project, planning, and project methodologies.</p>
       </li>
       <li>
-        <h3><i class="fa fa-pencil fa-lg"></i> Design</h3>
+        <h3>Design</h3>
         <p>Design using the <a href="http://quattromani.github.io/scaffold/styleguide/">Style Guide</a> and other approved brand identity assets. Technical and functional design decisions are made in this stage.</p>
       </li>
       <li>
-        <h3><i class="fa fa-code fa-lg"></i> Develop</h3>
+        <h3>Develop</h3>
         <p>Coding. Test it and repeat until development sins can be forgiven. Write Documentation.</p>
       </li>
       <li>
-        <h3><i class="fa fa-upload fa-lg"></i> Deploy</h3>
+        <h3>Deploy</h3>
         <p>Deployment runs concurrently with Development.</p>
       </li>
       <li>
-        <h3><i class="fa fa-refresh fa-lg"></i> Repeat - Iterate - Improve</h3>
+        <h3>Repeat - Iterate - Improve</h3>
       </li>
     </ul>
-  </div>
+  </section>
 
-  <h5>Notes:</h5>
-  <ol>
-    <li>A refactor, or scrubbing, should occur at the end of each phase to ensure that the final product delivery is not a bloated beast of obfuscated code and unused <b>'best practices'</b>.</li>
-    <li>Never sacrifice making something excellent for the sake of <a href="http://en.wikipedia.org/wiki/Minimum_viable_product">MVP</a>.</li>
-  </ol>
+</article>
 
-  {% include end_content.html %}
-</section>
+<aside>
+  <div>
+
+    <h5>Notes:</h5>
+    <ol>
+      <li>A refactor, or scrubbing, should occur at the end of each phase to ensure that the final product delivery is not a bloated beast of obfuscated code and unused <b>'best practices'</b>.</li>
+      <li>Never sacrifice making something excellent for the sake of <a href="http://en.wikipedia.org/wiki/Minimum_viable_product">MVP</a>.</li>
+    </ol>
+
+    <h5>References</h5>
+    <ol>
+      <li id="cite-1">
+        Systems Development Life Cycle. (n.d.). In Wikipedia. Retrieved October 14, 2014, from
+        <a href="https://en.wikipedia.org/wiki/Systems_development_life_cycle">
+         https://en.wikipedia.org/wiki/Systems_development_life_cycle
+       </a>
+     </li>
+   </ol>
+
+ </div>
+</aside>

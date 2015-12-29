@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+main {
+  @include container;
+  position: relative;
+  min-height: 50vh;
+  padding-top: $base-spacing;
+  background-color: $color-white;
+
+  @include media($tablet) {
+    @include padding($base-spacing);
+  }
+}
+
+article {
+  @include outer-container;
+  padding-bottom: $base-spacing *2;
+}
+
+aside {
+  @include full-width;
+  background-color: $color-off-white;
+
+  div {
+    @include full-width;
+  }
+}
+
+// section {
+//   @include span-columns(8);
+//   min-height: $base-spacing;
+
+//   @include media($tablet) {
+//     @include span-columns(8);
+//   }
+
+//   @include media($mobile) {
+//     @include span-columns(4);
+//   }
+// }
+
+// aside {
+//   @include span-columns(4);
+
+//   @include media($tablet) {
+//     @include span-columns(4);
+//   }
+
+//   @include media($mobile) {
+//     @include span-columns(4);
+//   }
+// }

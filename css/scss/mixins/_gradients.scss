@@ -1,0 +1,14 @@
+// Background Gradients
+@mixin linear-gradient($startColor: #3C3C3C, $endColor: #999999) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background-image: linear-gradient(top, $startColor, $endColor);
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', EndColorStr='#{$endColor}')"; */
+}
+
+@mixin horizontal-gradient($startColor, $to, $endColor: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $startColor), color-stop($endColor, $to));
+  background: linear-gradient(to right, $startColor 0%, $to $endColor);
+}

@@ -1,0 +1,9 @@
+.home {
+  section {
+    border-bottom: 1px solid $color-light-grey;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}

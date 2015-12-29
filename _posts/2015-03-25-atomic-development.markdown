@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Atomic Design & Development"
+permalink: atomic-design-and-development
 sub-title: ""
-date:   2015-03-25 22:17:10
-categories: css, html
+date: 2015-03-25 22:17:10
+categories: 
+    - css 
+    - html
 ---
 
 >WE’RE NOT DESIGNING PAGES, WE’RE DESIGNING SYSTEMS OF COMPONENTS
@@ -12,7 +15,7 @@ categories: css, html
 
 Atomic design is a system for web development that focuses on the smallest, most common elements with clarity and precision first and then works it's way up and out to build more complex components.
 
-## Commonalities
+### Commonalities
 
 All websites at their core are composed of the same tags.     
 
@@ -101,7 +104,7 @@ This organization style is know as [SMACSS (Scalable, Modular Architecture for C
 
 ---
 
-## Example Time!
+### Example Time!
 
 Let's say we've been tasked with building a widget that is an information card of Senior Leadership Members. Our widget will have a close state and a reveal state.
 
@@ -302,15 +305,13 @@ Now that we've built our component, we can pass data into it.
        'info' : '30 years senior management of public and private corporations in tech, energy, media, advertising and food industries.'
      }
 
-## In Conclusion
+### In Conclusion
 
 Atomic design & development is about making decisons early-on that provide both compliance and conformity to the site design - always with the ability to make changes in the most efficient way. Everything that we are building now uses this approach. With each new component and/or site we gain efficiencies and a library of scalable, reuseable, and independent components that we can quickly change from client to client.
 
-#####FIN
-
 --
 
-### Resources
+#### Resources
 [1] [SMACSS (Scalable, Modular Architecture for CSS)](https://smacss.com/)   
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)  
 [http://bradfrost.com/blog/post/atomic-web-design/](http://bradfrost.com/blog/post/atomic-web-design/)    

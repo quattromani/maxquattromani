@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+input,
+textarea,
+label,
+select {
+  @include font-size(16);
+  vertical-align: baseline;
+}
+
+label {
+  @include visually-hidden;
+}
+
+input[type]:not([type=range]):not([type=submit]),
+textarea,
+select {
+  @include padding(.35em, .5em, .35em, 0);
+  @include margin(0 0 $base-spacing);
+  @include border-radius;
+  @include rgba($color-black,.0);
+  @include transition(all, .2s, ease-in-out);
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  outline: none;
+  font-family: $base-font-family-alt;
+  font-weight: 300;
+  color: inherit;
+
+  &[type='search'] {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-datetime-edit-fields-wrapper {
+      -webkit-appearance: none;
+    }
+  }
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    @include margin(.25em, .5em, 1em, .1em);
+    float: left;
+  }
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    @include padding;
+    width: auto;
+    border: 0;
+
+    &:focus {
+      @include box-shadow(none);
+      outline: none;
+    }
+  }
+
+  &[type="range"] {
+    width: 100%;
+    height: .5em;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background-color: $color-light-grey;
+
+    &::-webkit-slider-thumb {
+      @include border-radius(100%);
+      -webkit-appearance: none;
+      background-color: $color-grey;
+      width: 1em;
+      height: 1em;
+    }
+  }
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+  font-family: $base-font-family-alt;
+}
+
+select,
+datalist,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select {
+  position: relative;
+  display: block;
+
+  &::after {
+   @include padding;
+   @include font-family($fontawesome);
+   position: absolute;
+   top: 50%;
+   right: .5em;
+   margin-top: -.7em;
+   background: none;
+   color: $form-focus;
+   content: "\f078";
+   pointer-events: none;
+   z-index: 1;
+ }
+
+ select {
+  background: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+@-moz-document url-prefix() {
+  border: 1px solid $color-light-grey;
+
+  select {
+    @include padding(.5em);
+    border: none;
+    -moz-appearance: window;
+  }
+}
+}
+
+@include placeholder {
+  color: $color-grey;
+  font-weight: 100;
+}
+
+.formitem {
+  float: left;
+  width: 100%;
+
+  @include media($mobile) {
+    margin-bottom: .5em;
+  }
+}
+
+.required:after {
+  content: '*';
+}
+
+// Honeypot
+.fillit {
+  display: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  opacity: 0;
+}
+
+// ie (.ie)
+.ie input[type="radio"] {
+  border: 0 !important;
+}
+
+// Groovy styled checkboxes
+input[type="checkbox"].switch:empty,
+input[type="radio"].radio:empty {
+  margin-left: -9999px !important;
+}
+
+input.switch:empty ~ label,
+input.radio:empty ~ label {
+  position: relative;
+  float: left;
+  text-indent: 3em;
+  cursor: pointer;
+}
+
+input.switch:empty ~ label:before,
+input.switch:empty ~ label:after,
+input.radio:empty ~ label:before,
+input.radio:empty ~ label:after {
+  @include border-radius(100px);
+  @include transition(all, 100ms, ease-in);
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  width: 2.5em;
+  height: 1.5em;
+  background: $color-brand-primary;
+}
+
+input.radio:empty ~ label:before,
+input.radio:empty ~ label:after {
+  @include size(1.5em);
+  background: $color-light-grey;
+}
+
+input.switch:empty ~ label:after,
+input.radio:empty ~ label:after {
+  @include size(.75em);
+  @include border-radius(100px);
+  top: .375em;
+  margin-left: .375em;
+  background: $color-white;
+
+}
+
+input.switch:checked ~ label:before,
+input.radio:checked ~ label:before {
+  background: $color-brand-quinary;
+}
+
+input.switch:checked ~ label:after {
+  margin-left: 1.375em;
+}

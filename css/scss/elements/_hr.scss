@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+hr {
+	@include margin($base-spacing 0);
+	border: 0;
+	border-top: 1px solid $hr-color-top;
+	border-bottom: 1px solid $color-white;
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+table {
+  width: 100%;
+  max-width: 100%;
+}
+
+th {
+  background: transparent;
+}
+
+tr:nth-of-type(even) {
+  background: $color-off-white;
+}
+
+th,
+td {
+  @include padding(1em);
+}
+

@@ -1,0 +1,6 @@
+// Mixin for words that are too long for container
+@mixin hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}

@@ -1,69 +1,29 @@
-// Mixins and Variables
-// All globals are combined in allGlobals.scss to reduce the nuber of updates necessary to add new files
-@import "globals/allGlobals";
+@charset "UTF-8";
 
-/* Base */
-@import "partials/base";
+@import "vendor";
 
-/* Layout */
-@import "partials/layout";
+@import "theme/theme";
 
-/* Modules */
+@import "mixins/mixins";
+@import "functions/functions";
 
-@import "partials/banner";
+// Helpers
+@import "helpers/helpers";
 
-@import "partials/nav";
+// Base
+@import "base/base";
 
-@import "partials/typography";
+// Modules
+@import "globals/globals";
 
-@import "partials/font-awesome";
+// Components
+@import "components/components";
 
-@import "partials/colors";
+// Elements
+@import "elements/elements";
 
-@import "partials/helpers";
+// Features
+@import "features/features";
 
-@import "partials/lists";
-
-@import "partials/footer";
-
-@import "partials/summary";
-
-@import "partials/buttons";
-
-@import "partials/sections";
-
-@import "partials/pagination";
-
-@import "partials/pills";
-
-@import "partials/accordion";
-
-@import "partials/tabs";
-
-@import "partials/message-box";
-
-@import "partials/modals";
-
-@import "partials/carousel";
-
-@import "partials/accessibility";
-
-@import "partials/forms";
-
-@import "partials/images";
-
-@import "partials/image-content-panel";
-
-@import "partials/portfolio";
-
-@import "partials/audio";
-
-@import "partials/videos";
-
-@import "partials/tables";
-
-@import "partials/modules";
-
-@import "partials/styleguide";
-
-@import "partials/syntax";
+// Pages
+@import "pages/pages";

@@ -1,0 +1,13 @@
+// Flexbox
+@mixin flexbox() {
+  display: flex;
+}
+
+@mixin flex($values) {
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  order: $val;
+}

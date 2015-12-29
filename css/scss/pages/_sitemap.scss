@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.sitemap {
+  article {
+    ul {
+      @include vertical-list(lined);
+    }
+  }
+}

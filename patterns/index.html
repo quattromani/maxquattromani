@@ -6,96 +6,92 @@ class: patterns
 parent: Patterns
 ---
 
-{% include content.html %}
+<h1>{{ page.title }}</h1>
 
-<header role="banner">
-  <div class="heading">
-    <h2>{{ page.title }}</h2>
-  </div>
+<article role="article">
 
   <div class="heading">
     <h2><a href="https://twitter.com/maxquattromani">Follow Me <i class="fa fa-twitter"></i></a></h2>
   </div>
-</header>
 
-<p>Version: 0.2.1 -- Updated: {{ site.time }}</p>
-<hr>
+  <p>Version: 0.2.1 -- Updated: {{ site.time }}</p>
+  <hr>
 
-<div class="row">
-  <div class="fifth">
-    <div class="menu">
+  <div class="row">
+    <div class="fifth">
+      <div class="menu">
 
 
-      <h2>Menu</h2>
-      <div class="box-column">
-        <ul class="vertical lined">
-          <li>
-            <a href="#about-anchor">About</a>
-          </li>
-          <li>
-            <a href="#box-anchor">Box</a>
-          </li>
-          <li>
-            <a href="#breadcrumbs-anchor">Breadcrumbs</a>
-          </li>
-          <li>
-            <a href="#forms-anchor">Forms</a>
-          </li>
-          <li>
-            <a href="#lists-anchor">Lists</a>
-          </li>
-          <li>
-            <a href="#summary-anchor">Summary</a>
-          </li>
-          <li>
-            <a href="#modals-anchor">Modals</a>
-          </li>
-          <li>
-            <a href="#pagination-anchor">Pagination</a>
-          </li>
-          <li>
-            <a href="#pills-anchor">Pills</a>
-          </li>
-          <li>
-            <a href="#accordion-anchor">Accordion</a>
-          </li>
-          <li>
-            <a href="#tabs-anchor">Tabs</a>
-          </li>
-          <li>
-            <a href="#message-anchor">Message Box</a>
-          </li>
-          <li>
-            <a href="#infobox-anchor">Info Box</a>
-          </li>
-          <li>
-            <a href="#table-anchor">Tables</a>
-          </li>
-        </ul>
-      </div>
-      <div class="box-column">
-        <a href="/styleguide">Style Guide <span class="fa fa-angle-right"></span></a>
+        <h2>Menu</h2>
+        <div class="box-column">
+          <ul class="vertical lined">
+            <li>
+              <a href="#about-anchor">About</a>
+            </li>
+            <li>
+              <a href="#box-anchor">Box</a>
+            </li>
+            <li>
+              <a href="#breadcrumbs-anchor">Breadcrumbs</a>
+            </li>
+            <li>
+              <a href="#forms-anchor">Forms</a>
+            </li>
+            <li>
+              <a href="#lists-anchor">Lists</a>
+            </li>
+            <li>
+              <a href="#summary-anchor">Summary</a>
+            </li>
+            <li>
+              <a href="#modals-anchor">Modals</a>
+            </li>
+            <li>
+              <a href="#pagination-anchor">Pagination</a>
+            </li>
+            <li>
+              <a href="#pills-anchor">Pills</a>
+            </li>
+            <li>
+              <a href="#accordion-anchor">Accordion</a>
+            </li>
+            <li>
+              <a href="#tabs-anchor">Tabs</a>
+            </li>
+            <li>
+              <a href="#message-anchor">Message Box</a>
+            </li>
+            <li>
+              <a href="#infobox-anchor">Info Box</a>
+            </li>
+            <li>
+              <a href="#table-anchor">Tables</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-column">
+          <a href="/styleguide">Style Guide <span class="fa fa-angle-right"></span></a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="four-fifths">
-    <!-- Loop through and include all patterns sections -->
-    {% include patterns/about/index.html %}
-    {% include patterns/box/index.html %}
-    {% include patterns/breadcrumbs/index.html %}
-    {% include patterns/forms/index.html %}
-    {% include patterns/lists/index.html %}
-    {% include patterns/summary/index.html %}
-    {% include patterns/modals/index.html %}
-    {% include patterns/pagination/index.html %}
-    {% include patterns/pills/index.html %}
-    {% include patterns/accordion/index.html %}
-    {% include patterns/tabs/index.html %}
-    {% include patterns/message-box/index.html %}
-    {% include patterns/info-box/index.html %}
-    {% include patterns/tables/index.html %}
+    <div class="four-fifths">
+      <!-- Loop through and include all patterns sections -->
+      {% include patterns/about/index.html %}
+      {% include patterns/box/index.html %}
+      {% include patterns/breadcrumbs/index.html %}
+      {% include patterns/forms/index.html %}
+      {% include patterns/lists/index.html %}
+      {% include patterns/summary/index.html %}
+      {% include patterns/modals/index.html %}
+      {% include patterns/pagination/index.html %}
+      {% include patterns/pills/index.html %}
+      {% include patterns/accordion/index.html %}
+      {% include patterns/message-box/index.html %}
+      {% include patterns/info-box/index.html %}
+      {% include patterns/tables/index.html %}
 
-    <h2>FIN.</h2>
+      <strong>FIN.</strong>
+    </div>
   </div>
-</div>
-{% include end_content.html %}
+
+</article>

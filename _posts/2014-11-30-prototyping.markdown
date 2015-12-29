@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Protoyping"
+permalink: prototyping
 sub-title: "Coding in the sandbox"
 date:   2014-11-30 14:35:10
 categories: 
@@ -131,10 +132,8 @@ $('.widgetFunction').widgetFunction();
 
 <hr>
 
-<h5>Create a process and stick to it.</h5>
+### Create a process and stick to it
 
 This process works for me. It is based on the roles that I have had the opportunity to hold. Your experience and/or role on a team may be different, but having a process, however it looks, will increase your productivity, improve your code quality, and make you the hero of your back-end team.
 
 Now get in the sandbox and start playing!
-
-<h5>FIN</h5>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+// Ordered List
+ol {
+  @include margin(0 0 0 ($base-spacing * 1.5));
+  @include padding;
+
+  li {
+    list-style: decimal;
+    list-style-position: outside;
+  }
+
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  @include margin;
+  @include padding;
+  list-style: none outside none;
+
+  ul {
+    @include margin;
+  }
+}
+
+// Striped List Items
+.striped {
+  li:nth-child(odd) {
+    background-color: rgba($color-light-grey, .1);
+  }
+}
+
+// Definition List
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $base-spacing;
+}

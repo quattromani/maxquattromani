@@ -1,0 +1,22 @@
+// =Links
+$base-link-bg: null;
+$base-link-color: $color-brand-quaternary;
+$base-link-color-hover: mix($color-brand-quaternary, black, 70%);
+$base-link-weight: 400;
+$base-link-text-decoration: none !default;
+$base-link-color-alt: $color-brand-primary;
+$base-link-color-alt-hover: mix($color-brand-primary, black, 10%);
+
+// =External Links
+$link-external-color: $base-link-color;
+$link-external-color-hover: $base-link-color-hover;
+
+// =Email Links
+$email-link-color: $base-link-color;
+$email-link-color-hover: mix($base-link-color, black, 10%);
+$email-text-decoration: $base-font-color;
+
+// =Phone Links
+$phone-link-color: $color-brand-quinary;
+$phone-link-color-hover: mix($base-link-color, black, 10%);
+$phone-text-decoration: none;

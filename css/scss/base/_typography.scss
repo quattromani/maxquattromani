@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+p,
+ul,
+ol,
+dl,
+blockquote {
+  clear: inherit;
+  margin-bottom: $base-spacing / 3;
+  vertical-align: middle;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+i {
+  font-style: normal;
+}
+
+blockquote {
+  width: 75%;
+  padding-left: $base-spacing;
+  border-left: 3px solid currentColor;
+  font-style: italic;
+  color: tint($base-font-color, 20%);
+
+  &:before {
+    margin-left: -.75em;
+    content: "\201C";
+  }
+}
+
+cite {
+  &:before {
+    content: '-';
+  }
+}
+
+q {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+abbr {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+mark {
+  background: $info-bg;
+  color: $info-color;
+}
+
+pre {
+  @include margin(0 auto);
+  @include padding($base-spacing);
+  @include border-radius;
+  max-width: $max-width;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+kbd,
+samp {
+  font-family: $pre;
+  color: #0f0;
+}

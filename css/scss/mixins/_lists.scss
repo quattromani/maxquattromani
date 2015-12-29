@@ -1,0 +1,107 @@
+@mixin bulleted {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: outside disc;
+    margin-left: 1.25em;
+    border-bottom: 0;
+  }
+}
+
+.bulleted {
+  @include bulleted;
+}
+
+// Vertical List Items
+@mixin vertical-list($arg: null, $padding: $base-spacing / 2) {
+  > li {
+    // @include inline-block;
+    @include padding($padding 0);
+    width: 100%;
+  }
+
+  @if $arg == lined {
+    & > li {
+      border-bottom: 1px solid lighten($color-dark-grey, 40%);
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  li {
+    @if $arg == clear {
+      @include padding($base-spacing / 2);
+      margin-left: 0;
+
+      &:after {
+        content: '';
+        @include padding(0);
+      }
+    }
+  }
+
+  li {
+    @if arg == bulleted {
+      ul {
+        @include bulleted;
+      }
+    }
+  }
+}
+
+@mixin horizontal-list($display: inline, $arg: null) {
+  li {
+    display: $display;
+
+    @if $arg == piped {
+      @include padding(0);
+
+      &:after {
+        content: '|';
+        @include padding(0 ($base-spacing / 2));
+      }
+
+      &.js-last:after {
+        content: '';
+      }
+    }
+
+    @if $arg == slashed {
+      @include padding(0);
+
+      &:after {
+        content: '/';
+        @include padding(0 ($base-spacing / 2));
+      }
+
+      &.js-last:after {
+        content: '';
+      }
+    }
+
+    @if $arg == spaced {
+      margin-left: $base-spacing/2;
+
+      &.js-first {
+        margin-left: 0;
+      }
+    }
+
+    @if $arg == clear {
+      margin-left: 0;
+
+      &:after {
+        content: '';
+        @include padding(0);
+      }
+    }
+  }
+}
+
+@mixin reset-list {
+  display: inline;
+}

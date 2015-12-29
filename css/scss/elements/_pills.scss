@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.pill {
+  @include padding(.125em, .75em);
+  @include border-radius(50px);
+  @include font-size(13);
+  @include font-family($heading-font-family);
+  background-color: $color-grey;
+  font-weight: 700;
+  color: inherit;
+
+  &-white {
+    @include box-shadow(inset 0 0 0 1px $color-brand-secondary);
+    background-color: $color-white;
+  }
+
+  &-error {
+    background-color: $color-brand-primary;
+    color: $color-white;
+  }
+
+  &-success {
+    background-color: $color-brand-quinary;
+    color: $color-white;
+  }
+}
+
+label + .pill,
+.pill + label {
+  margin-left: ($base-spacing / 3);
+}

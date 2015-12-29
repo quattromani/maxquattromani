@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+img {
+  display: inherit;
+  height: auto;
+  border: 0;
+  // style the alt text
+  font-style: italics;
+  color: $color-brand-primary;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+}
+
+figcaption {
+  @include font-size(14);
+  margin-bottom: ($base-spacing / 2);
+  font-weight: bold;
+}

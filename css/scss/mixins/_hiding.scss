@@ -1,0 +1,11 @@
+@mixin mobile-hidden {
+	@include media($mobile){
+		display: none;
+	}
+}
+
+@mixin tablet-hidden {
+	@include media($tablet){
+		display: none;
+	}
+}

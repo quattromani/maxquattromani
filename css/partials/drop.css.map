@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;AAOI,OAAQ;EACN,MAAM,EAAE,kBAA4B;EACpC,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,KAAK;ECYrB,MAAM,EAAE,QAAyB;;ADT7B,aAAQ;EACN,MAAM,EAAE,gBAAgB;;AAG1B,WAAI;EACF,OAAO,EAAE,KAAK;ECIpB,MAAM,EAAE,QAAyB;;ADA7B,SAAE;ECAN,MAAM,EAAE,GAAyB;;;ADKjC,KAAM;ECAN,OAAO,EAAE,KAAyB;EDEhC,UAAU,EE+CS,OAAkB;EF9CrC,KAAK,EE2CS,IAAY",
-"sources": ["../scss/partials/drop.scss","../scss/globals/_mixins.scss","../scss/globals/_vars.scss"],
-"names": [],
-"file": "drop.css"
-}

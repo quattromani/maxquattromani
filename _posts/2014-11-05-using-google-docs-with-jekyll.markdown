@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Using Google Docs with Jekyll"
+permalink: using-google-docs-with-jekyll
 sub-title: ""
 date:   2014-11-05 10:35:10
 categories: 
@@ -55,10 +56,8 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1IT57mBl8Eu8r-yCRt8srnxYb9
 
 ---
 
-The end-result looks like this: <a href="http://terracareassociates.com/careers/" target="_blank">http://terracareassociates.com/careers/</a>
+The end-result looks like this: <a href="http://terracareassociates.com/careers/">http://terracareassociates.com/careers/</a>
 
 In the future, I'll be expanding this to additional portions of the site so they have more control. This keeps them out of the code and build process and presents as a simple solution to simple, needed content updates.
 
 Next, I'll discuss moving them off of the Jekyll blogging platform and using Bloggers API on a subdomain to give them more control of their articles - again removing that non-WYSIWYG hurdle.
-
-<h5>FIN</h5>

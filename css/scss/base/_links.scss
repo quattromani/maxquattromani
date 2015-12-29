@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+a {
+  @include margin(0);
+  @include padding(0);
+  @include transition;
+  background-color: transparent;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: $base-link-weight;
+  color: $base-link-color;
+  text-decoration: $base-link-text-decoration;
+  cursor: pointer;
+
+  &:hover {
+    color: $base-link-color-hover;
+  }
+
+  img {
+    border: 0 none;
+    text-decoration: none;
+  }
+}

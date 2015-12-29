@@ -1,0 +1,6 @@
+// RGBa Colors w/Fallback
+@mixin rgba($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background: $rgba;
+}

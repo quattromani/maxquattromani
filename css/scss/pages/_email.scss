@@ -1,0 +1,19 @@
+.email {
+  article {
+    margin-bottom: $base-spacing;
+    padding-bottom: $base-spacing;
+    border-bottom: 1px solid $color-light-grey;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    ol {
+      @include vertical-list;
+    }
+
+    ul {
+      @include bulleted;
+    }
+  }
+}

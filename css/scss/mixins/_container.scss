@@ -1,0 +1,4 @@
+// Site Container
+@mixin container {
+  padding: 0 (calc(50% - #{$max-width / 2}));
+}

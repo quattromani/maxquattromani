@@ -1,17 +1,8 @@
 - name: "Home"
   url: "/"
 
-- name: "About"
-  url: "/about"
-
-- name: "Resume"
-  url: "/resume"
-
-- name: "Styleguide"
+- name: "Style Guide"
   url: "/styleguide"
-
-- name: "Patterns"
-  url: "/patterns"
 
 - name: "Email"
   url: "/email"
@@ -19,8 +10,11 @@
 - name: "SDLC"
   url: "/SDLC"
 
-- name: "Reading"
-  url: "/reading"
+- name: "Writing"
+  url: "/writing"
 
-- name: "Archive"
-  url: "/archive"
+- name: "Contact"
+  url: "/contact"
+
+- name: "Resume"
+  url: "/resume"

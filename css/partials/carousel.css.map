@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;AASM,mCAA0B;ECuE5B,SAAS,EAAE,IAAY;EAEzB,SAAS,EAAE,MAAc",
-"sources": ["../scss/partials/carousel.scss","../scss/globals/_mixins.scss"],
-"names": [],
-"file": "carousel.css"
-}

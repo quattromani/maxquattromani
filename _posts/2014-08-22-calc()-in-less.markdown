@@ -2,8 +2,10 @@
 layout: post
 title:  "Using calc() in less"
 sub-title: "Let's do some maths"
+permalink: using-calc-in-less
 date:   2014-08-22 14:07:13
-categories: css
+categories: 
+    - css
 ---
 
 Not sure if anyone else has run into this problem, but to celebrate a victory pulled from the jaws of defeat, I thought I’d share this tip.
@@ -47,5 +49,3 @@ and huzzah! we get the expected output:
   float: left;
   width: calc(50% - .5em);
 }
-
-<h5>FIN</h5>

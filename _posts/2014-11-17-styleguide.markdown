@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Creating the Style Guide"
+permalink: creating-the-style-guide
 sub-title: ""
 date:   2014-11-17 17:35:10
 categories: 
@@ -35,5 +36,3 @@ Fortunately for me, Anna included the ability for the community to contribute. I
 Since she published the site I have had the chance to read all of the other resources and be inspired by the other examples. This newfound collective intelligence is probably gonna prompt me to improve mine even more. Stay tuned.
 
 ...and buy Anna's book <a href="http://maban.co.uk/projects/front-end-style-guides/">Front-End Style Guides</a>.
-
-<h5>FIN</h5>

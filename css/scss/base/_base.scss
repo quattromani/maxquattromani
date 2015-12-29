@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+// Base
+@import "reset";
+
+/* ==========================
+    Base
+   ========================== */
+
+html {
+	box-sizing: border-box;
+  overflow: auto;
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-reset;
+  color: $base-font-color;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  overflow-x:hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-brand-secondary;
+  background-image: url('/images/banner.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  @include font-size($base-font-size);
+  line-height: $base-line-height;
+}
+
+[hidden], template {
+  display: none; }
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+// Base
+@import "headings",
+
+        "links",
+
+        "lists",
+
+        "typography",
+
+        "print";

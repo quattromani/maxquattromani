@@ -1,0 +1,26 @@
+@mixin icon($icon) {
+  @include font-family($fontawesome);
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: $icon;
+}
+
+@mixin icon-before($icon, $padding: $base-spacing/4, $font-size: inherit, $color: inherit) {
+  &::before {
+    @include icon($icon);
+    padding: 0 $padding;
+    font-size: $font-size;
+    color: $color;
+  }
+}
+
+@mixin icon-after($icon, $padding: $base-spacing/4, $font-size: inherit, $color: inherit) {
+  &::after {
+    @include icon($icon);
+    padding: 0 $padding;
+    font-size: $font-size;
+    color: $color;
+  }
+}

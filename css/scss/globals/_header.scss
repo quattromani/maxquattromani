@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+header[role=banner] {
+  @include container;
+  @include padding(($base-spacing * 2) 0);
+  position: relative;
+  color: $color-white;
+  text-transform: uppercase;
+
+  h2 {
+    @include font-size(50);
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 100;
+  }
+}

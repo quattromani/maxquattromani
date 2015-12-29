@@ -1,0 +1,29 @@
+// =Typography Basics
+$base-font-reset: 10px !default;
+$base-font-size: 16 !default;
+$base-line-height: 1.618;
+$lede-font-size: $base-font-size * 1.125;
+$body-text: $base-font-size;
+$small-body-text: $base-font-size * .875;
+$disclaimer-text: $base-font-size * .75;
+$legal-text: $small-body-text;
+
+// =Modular Scale
+$modular-scale-ratio: 1.61803398875;
+
+// =Font Families List
+// $font-faces: (
+//   'fontawesome': ('fontawesome/fontawesome-webfont', normal)
+// );
+// $font-path: '/fonts/';
+
+// =Font Families
+$base-font-family: 'Merriweather', 'Times New Roman', Times, Baskerville, Georgia, serif;
+$base-font-family-alt: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontawesome: 'fontawesome';
+$pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
+
+// =Inline Text Elements
+$em-color: $base-font-color;
+$mark-bg: $info-color;
+$mark-color: $base-font-color !default;
