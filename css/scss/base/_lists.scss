@@ -3,7 +3,7 @@
 // Ordered List
 ol {
   @include margin(0 0 0 ($base-spacing * 1.5));
-  @include padding;
+  @include padding(0);
 
   li {
     list-style: decimal;
@@ -16,27 +16,74 @@ ol {
 }
 
 ul {
-  @include margin;
-  @include padding;
+  @include margin(0);
+  @include padding(0);
   list-style: none outside none;
 
   ul {
-    @include margin;
+    @include margin(0);
+  }
+}
+
+.bulleted {
+  @include bulleted;
+}
+
+// Horizontal List Items
+.horizontal {
+  li {
+    display: inline;
+  }
+
+  &.slashes li {
+    @include padding(0);
+
+    &:after {
+      content: '/';
+      @include padding(0 ($base-spacing / 2));
+    }
+
+    &:last-child:after {
+      content: '';
+    }
+  }
+
+  &.pipes li {
+    @include padding(0);
+
+    &:after {
+      content: '|';
+      @include padding(0 .25em 0 .5em);
+    }
+
+    &:last-childt:after {
+      content: '';
+    }
+  }
+}
+
+// Vertical List Items
+.vertical {
+  li {
+    display: block !important;  }
+
+  > li {
+    @include padding(($base-spacing / 2) 0);
+  }
+
+  &.lined > li {
+    overflow: auto;
+    border-bottom: 1px dotted $color-grey;
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 }
 
 // Striped List Items
 .striped {
   li:nth-child(odd) {
-    background-color: rgba($color-light-grey, .1);
+    background-color: rgba($color-light-grey, .5);
   }
-}
-
-// Definition List
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: $base-spacing;
 }

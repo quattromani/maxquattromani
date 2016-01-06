@@ -18,13 +18,13 @@ var mediumBreakPoint = 768;
 
 // Create Hex color code from color return
 function hexc(colorval) {
-	var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-	delete(parts[0]);
-	for (var i = 1; i <= 3; ++i) {
-		parts[i] = parseInt(parts[i]).toString(16);
-		if (parts[i].length == 1) parts[i] = '0' + parts[i];
-	}
-	color = '#' + parts.join('');
+  var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+  delete(parts[0]);
+  for (var i = 1; i <= 3; ++i) {
+    parts[i] = parseInt(parts[i]).toString(16);
+    if (parts[i].length == 1) parts[i] = '0' + parts[i];
+  }
+  color = '#' + parts.join('');
 }
 
 // Get color value of swatch and print to div
@@ -115,12 +115,12 @@ $('.jumpTo').jumpTo();
 
     		if (i != total) {
     			next = i + 2;
-    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary right mobile-full modal-next' rel='" + next + "'>Next</a>");
+    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary right modal-next' rel='" + next + "'>Next</a>");
     		}
 
     		if (i != 0) {
     			prev = i;
-    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary left mobile-full modal-prev' rel='" + prev + "'>Previous</a>");
+    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary left modal-prev' rel='" + prev + "'>Previous</a>");
     		}
     	});
 
@@ -181,6 +181,29 @@ $('.jumpTo').jumpTo();
 			$('.modal-overlay').fadeOut('normal');
 		}
 
+// Make room for the fixed header
+headerHeight = $('header[role=banner]').outerHeight();
+navHeight = $('nav[role=navigation]').outerHeight();
+
+$(function() {
+  $(".open-panel").click(function(){
+    if($('html').hasClass('open-nav')) {
+      $('html').removeClass('open-nav');
+    } else {
+      $('html').addClass('open-nav');
+      $('.wrap').css('margin-top', 0);
+    }
+    $(this).toggleClass('active');
+  });
+});
+
+$(window).on("resize", function () {
+  if ($(window).width() > mediumBreakPoint) {
+    $('.banner').css('margin-top', headerHeight);
+  } else {
+    $('.banner').css('margin-top', headerHeight);
+  }
+}).resize();
 
 
 // Make room for the fixed header

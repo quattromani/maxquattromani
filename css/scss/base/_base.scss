@@ -37,6 +37,10 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: contain;
+
+  @include media($mobile) {
+    background-size: initial;
+  }
 }
 
 body,
@@ -70,7 +74,9 @@ video {
 }
 
 // Base
-@import "headings",
+@import "colors",
+
+        "headings",
 
         "links",
 

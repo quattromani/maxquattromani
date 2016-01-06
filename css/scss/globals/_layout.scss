@@ -24,7 +24,161 @@ aside {
   div {
     @include full-width;
   }
+
+  section {
+    @include outer-container;
+  }
 }
+
+.row {
+  @include outer-container;
+  margin-bottom: $base-spacing;
+
+  .half {
+    @include span-columns(6);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .third {
+    @include span-columns(4);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .fourth {
+    @include span-columns(3);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .fifth {
+    @include span-columns(2.4);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .sixth {
+    @include span-columns(2);
+
+    @include media($mobile) {
+      @include span-columns(2);
+    }
+  }
+
+  .seventh {
+    @include span-columns(1.7142857143);
+
+    @include media($mobile) {
+      @include span-columns(2);
+    }
+  }
+
+  .eighth {
+    @include span-columns(1.5);
+
+    @include media($mobile) {
+      @include span-columns(1);
+    }
+  }
+
+  .ninth {
+    @include span-columns(1.3333333333);
+
+    @include media($mobile) {
+      @include span-columns(1);
+    }
+  }
+
+  .tenth {
+    @include span-columns(1.2);
+
+    @include media($mobile) {
+      @include span-columns(1);
+    }
+  }
+
+  .golden-long {
+    @include span-columns(12 / 1.618);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .golden-short {
+    @include span-columns(12 - (12 / 1.618));
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .two-thirds {
+    @include span-columns(8);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .three-fourths {
+    @include span-columns(9);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .two-fifths {
+    @include span-columns(4.8);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .three-fifths {
+    @include span-columns(7.2);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .four-fifths {
+    @include span-columns(9.6);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  .three-eighths {
+    @include span-columns(4.5);
+
+    @include media($mobile) {
+      @include span-columns(2);
+    }
+  }
+
+  .five-eighths {
+    @include span-columns(7.5);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+}
+
 
 // section {
 //   @include span-columns(8);

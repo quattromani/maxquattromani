@@ -1,11 +1,28 @@
 // For Styleguide Demo ONLY!! Don't ever ingest this file...EVER!
 
-.styleguide {
-
+.styleguide,
+.patterns {
   main {
     header {
       @include heading-box;
 
+    }
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    @include media($mobile) {
+      position: initial;
+      top: initial;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: table;
     }
   }
 

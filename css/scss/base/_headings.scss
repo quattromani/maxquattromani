@@ -10,7 +10,7 @@ $i: 1;
 	#{nth($value, 1)},
 	.#{nth($value, 1)} {
     @include font-size(nth($value, 2));
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: .5em;
 		font-family: nth($value, 4);
 		font-weight: nth($value, 3);

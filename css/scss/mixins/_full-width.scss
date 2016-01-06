@@ -3,4 +3,8 @@
   max-width: none;
   margin-left: calc(-50vw + 50%);
   padding: $base-spacing (calc(50% - #{$max-width / 2}));
+
+  @include media($mobile) {
+    padding: $base-spacing;
+  }
 }

@@ -49,6 +49,10 @@
 		@include media($mobile) {
 			max-height: 15.625em;
 		}
+
+    img {
+      margin: 0 auto;
+    }
 	}
 
 	.modal-footer {

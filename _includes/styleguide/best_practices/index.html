@@ -114,15 +114,15 @@
             <li>Other</li>
           </ol>
 
-          {% highlight css %}
-          .someDiv { color: #222; }
+{% highlight css %}
+.someDiv { color: #222; }
 
-          .someOtherDiv,
-          .someAdditional Div {
-          margin: 0 auto;
-          color: #222;
-        }
-        {% endhighlight %}
+.someOtherDiv,
+.someAdditional Div {
+  margin: 0 auto;
+  color: #222;
+}
+{% endhighlight %}
 
       </li>
       <li>
@@ -130,34 +130,34 @@
 
         <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
 
-        {% highlight css %}
-        .print {
-        display: block;
-        margin: 0;
-        padding: 0 7px;
-        height: 30px;
-        background: #4f799f;
-        line-height: 30px;
-      }
+{% highlight css %}
+.print {
+  display: block;
+  margin: 0;
+  padding: 0 7px;
+  height: 30px;
+  background: #4f799f;
+  line-height: 30px;
+}
 
-      .print:hover { background: #265a83; }
-      {% endhighlight %}
+.print:hover { background: #265a83; }
+{% endhighlight %}
 
     </li>
     <li>
       <p>Avoid Qualifying ID and class names with type selectors</p>
 
-      {% highlight css %}
-      // this is bad
-      ul#example { color: #ff0; }
-      div.error { color: red; }
-      {% endhighlight %}
+{% highlight css %}
+// this is bad
+ul#example { color: #ff0; }
+div.error { color: red; }
+{% endhighlight %}
 
-      {% highlight css %}
-      // this is good
-      .example { color: #0f0; }
-      .error { color: green; }
-      {% endhighlight %}
+{% highlight css %}
+// this is good
+.example { color: #0f0; }
+.error { color: green; }
+{% endhighlight %}
 
       <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
     </li>
@@ -166,14 +166,14 @@
 
       <p>For color values that permit, 3 character hexadecimal is preferred</p>
 
-      {% highlight css %}
-      /* not recommended */
-      color: #00ff00;
-      {% endhighlight %}
-      {% highlight css %}
-      /* recommended */
-      color: #0f0;
-      {% endhighlight %}
+{% highlight css %}
+/* not recommended */
+color: #00ff00;
+{% endhighlight %}
+{% highlight css %}
+/* recommended */
+color: #0f0;
+{% endhighlight %}
 
     </li>
     <li>
@@ -191,29 +191,27 @@
     <li>
       <h5>Use the SMACSS Approach</h5>
 
-      {% highlight css %}
-      .componentName {
+{% highlight css %}
+.componentName {
+  Base {
+    ...
+  }
 
-      Base {
-      ...
-    }
-
-    Layout {
+  Layout {
     ...
   }
 
   Module {
-  ...
-}
+    ...
+  }
 
-State {
-...
-}
+  State {
+    ...
+  }
 
-Theme {
-...
-}
-
+  Theme {
+    ...
+  }
 }
 {% endhighlight %}
 
@@ -222,26 +220,26 @@ Theme {
   <h5>Commenting</h5>
 
   {% highlight html %}
-  // File headers are commented thusly:
+// File headers are commented thusly:
 
-  /* ==========================================================================
-  Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
-  ========================================================================== */
-  {% endhighlight %}
+/* ==========================================================================
+Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
+========================================================================== */
+{% endhighlight %}
 
-  {% highlight html %}
-  // Section chunks get styled as such:
-  /*
-  * Chunk of long
-  * text gets commented
-  * like this
-  */
-  {% endhighlight %}
+{% highlight html %}
+// Section chunks get styled as such:
+/*
+* Chunk of long
+* text gets commented
+* like this
+*/
+{% endhighlight %}
 
-  {% highlight html %}
-  // Hints get styled like this:
-  /* Hint */
-  {% endhighlight %}
+{% highlight html %}
+// Hints get styled like this:
+/* Hint */
+{% endhighlight %}
 
 </li>
 </ul>
@@ -265,22 +263,22 @@ Theme {
       </li>
     </ul>
 
-    {% highlight html %}
-    sass/
-    ├── main.scss
-    ├── globals/
-    |   ├── _mixins.scss
-    |   ├── _var.scss
-    ├── partials/
-    |   ├── _btn.scss
-    |   ├── _list.scss
-    |   ├── _nav.scss
-    |   ├── _etc...
-    ├── theme/
-    |   ├── _btn-theme.scss
-    └── vendor/
-    └── _jquery.ui.core.scss
-    {% endhighlight %}
+{% highlight html %}
+sass/
+├── main.scss
+├── globals/
+|   ├── _mixins.scss
+|   ├── _var.scss
+├── partials/
+|   ├── _btn.scss
+|   ├── _list.scss
+|   ├── _nav.scss
+|   ├── _etc...
+├── theme/
+|   ├── _btn-theme.scss
+└── vendor/
+└── _jquery.ui.core.scss
+{% endhighlight %}
 
   </li>
   <li>
@@ -289,49 +287,49 @@ Theme {
     <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
     <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
 
-    {% highlight scss %}
-    /* Mixins and Variables */
-    // All globals are combined in allModules.scss to reduce the nuber of updates necessary to add new files
-    @import "global/allModules";
+{% highlight scss %}
+/* Mixins and Variables */
+// All globals are combined in allModules.scss to reduce the nuber of updates necessary to add new files
+@import "global/allModules";
 
-    /* Base */
-    @import "partials/base";
+/* Base */
+@import "partials/base";
 
-    /* Layout */
-    @import "partials/layout";
+/* Layout */
+@import "partials/layout";
 
-    /* Modules */
+/* Modules */
 
-    @import "partials/colors";
+@import "partials/colors";
 
-    @import "partials/typography";
+@import "partials/typography";
 
-    @import "partials/helpers";
+@import "partials/helpers";
 
-    @import "partials/lists";
+@import "partials/lists";
 
-    @import "partials/buttons";
+@import "partials/buttons";
 
-    @import "partials/pagination";
+@import "partials/pagination";
 
-    @import "partials/accessibility";
+@import "partials/accessibility";
 
-    @import "partials/forms";
+@import "partials/forms";
 
-    @import "partials/images";
+@import "partials/images";
 
-    @import "partials/videos";
+@import "partials/videos";
 
-    @import "partials/modules";
+@import "partials/modules";
 
-    @import "partials/jumpTo";
+@import "partials/jumpTo";
 
-    @import "partials/_prototype";
+@import "partials/_prototype";
 
-    @import "partials/_styleguide";
+@import "partials/_styleguide";
 
-    /* Components */
-    {% endhighlight %}
+/* Components */
+{% endhighlight %}
 
   </li>
   <li>

@@ -1,5 +1,5 @@
 // Responsive images mixin
-@mixin responsive-image($position: top center, $w: 1800, $h: 100%, $radius: 0) {
+@mixin responsive-image($position: top center, $w: 1800px, $h: 100%, $radius: 0) {
   width: $w;
   height: $h;
   border-radius: $radius;

@@ -30,7 +30,7 @@ footer {
     // }
 
     ul {
-      @include horizontal-list(inline-block, spaced);
+      @include horizontal-list(spaced);
       margin-bottom: 0;
     }
   }

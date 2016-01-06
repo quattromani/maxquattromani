@@ -11,12 +11,12 @@
 
     		if (i != total) {
     			next = i + 2;
-    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary right mobile-full modal-next' rel='" + next + "'>Next</a>");
+    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary right modal-next' rel='" + next + "'>Next</a>");
     		}
 
     		if (i != 0) {
     			prev = i;
-    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary left mobile-full modal-prev' rel='" + prev + "'>Previous</a>");
+    			$(this).find('.modal-footer').append("<a href='#' class='btn btn-primary left modal-prev' rel='" + prev + "'>Previous</a>");
     		}
     	});
 
