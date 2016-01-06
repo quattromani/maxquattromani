@@ -3,7 +3,7 @@
   column-count: $count;
   column-gap: $gap;
 
-  li {
-    @include inline-block;
+  @include media($mobile) {
+    column-count: 1;
   }
 }

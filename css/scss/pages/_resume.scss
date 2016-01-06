@@ -27,6 +27,7 @@
 
     ul {
       @include columns(3);
+      text-align: center;
     }
   }
 
@@ -52,6 +53,7 @@
 
     ul {
       @include columns(3);
+      text-align: center;
     }
   }
 
