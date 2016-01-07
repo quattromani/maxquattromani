@@ -121,15 +121,17 @@ Let's say we've been tasked with building a widget that is an information card o
 _What elements will we need to pull together to make this happen?_  
 All common elements that do exactly what we need them to do.
 
-`<div>`  
-`<section>`  
-`<header>`  
-`<footer>`   
-`<h5>`   
-`<p>`  
-`<a>`  
-`<img>`       
-`<button>`   
+{% highlight html %}
+<div>  
+<section>  
+<header>  
+<footer>   
+<h5>   
+<p>  
+<a>  
+<img>       
+<button>   
+{% endhighlight %}
 
 ### Setup
 
@@ -139,38 +141,39 @@ This method enables us to reuse existing styles and write new code for unique co
 
 Note that we hardly passed any additional classes to elements inside the new component. Because we've already established our base styles for images and buttons and we want to write as little code as possible, we'll use those existing classes to craft our component. We've avoided being duplicative _AND_ if we decide to change how the buttons on this site look in the future, VOILA!, this component will automatically get that update.
  
+{% highlight html %}
+<div class="card-component">
+  <header>
+    Information Card - {{ title }}
+  </header>
 
-    <div class="card-component">
-      <header>
-        Information Card - {{ title }}
-      </header>
+  <section>
+    <img class="left image-circular" src="images/{{ image }}.jpg">
+      <address>
+        <h5>{{ name }}</h5>
+        {{ address }}<br>
+        {{ city }}, {{ state }} {{ zip }}<br>
+        <a class="tel" href="tel:+{{ phone }}">{{ phone }}</a><br>
+        <a href="mailto:{{ email }}">{{ email }}</a>
+       
+       <hr>
+       
+       <p>{{ info }}</p>
+    </address>
+  </section>
 
-      <section>
-        <img class="left image-circular" src="images/{{ image }}.jpg">
-          <address>
-            <h5>{{ name }}</h5>
-            {{ address }}<br>
-            {{ city }}, {{ state }} {{ zip }}<br>
-            <a class="tel" href="tel:+{{ phone }}">{{ phone }}</a><br>
-            <a href="mailto:{{ email }}">{{ email }}</a>
-           
-           <hr>
-           
-           <p>{{ info }}</p>
-        </address>
-      </section>
-
-      <footer>
-        <button class="btn btn-primary">
-          Show Details
-        </button>
-      </footer>]
-    </div>
-
+  <footer>
+    <button class="btn btn-primary">
+      Show Details
+    </button>
+  </footer>
+</div>
+{% endhighlight %}
 
 With these **Atoms** already defined for the site that will use this component as such:  
 * Sass mixins and variables have been utilized; See Noel's article "Why We Sass"
 
+{% highlight css %}
     a {
       @include margin;
       @include padding;
@@ -233,77 +236,83 @@ With these **Atoms** already defined for the site that will use this component a
         margin-left: $base-spacing / 2;
       }
     }
+{% endhighlight %}
 
 And the use of a few helpers:
-        
-    .image-circular,
-    %image-circular {
-      @include border-radius(50%);
-    }
-    
-    .left {
-      float: left;
-      left: 0;
-    }
+ 
+{% highlight css %}        
+.image-circular,
+%image-circular {
+  @include border-radius(50%);
+}
+
+.left {
+  float: left;
+  left: 0;
+}
+{% endhighlight %}
 
 We'll write some Sass for our new card component: 
 
-    .card-component {
-      position: relative;
-      @include inline-block;
-      width: 100%;
-      border-radius: $base-border-radius;
-    
-      header {
-        @include padding($base-spacing);
-        border: 1px solid $color-primary-orange;
-        border-radius: $base-border-radius $base-border-radius 0 0;
-        background-color: $color-primary-orange;
-        color: $color-white;
-        text-align: center;
-      }
-    
-      section {
-        display: none;
-        @include margin;
-        @include padding($base-spacing);
-        border-left: 1px solid $color-light-grey;
-        border-right: 1px solid $color-light-grey;
-        background-color: $color-white;
-    
-        img {
-          @include size(120px);
-        }
-    
-        p {
-          text-align: center;
-        }
-      }
+{% highlight css %}
+.card-component {
+  position: relative;
+  @include inline-block;
+  width: 100%;
+  border-radius: $base-border-radius;
 
-      footer {
-        @include padding($base-spacing);
-        border: 1px solid $color-light-grey;
-        border-radius: 0 0 $base-border-radius $base-border-radius;
-        background-color: $color-light-grey;
-        text-align: center;
-      }
+  header {
+    @include padding($base-spacing);
+    border: 1px solid $color-primary-orange;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    background-color: $color-primary-orange;
+    color: $color-white;
+    text-align: center;
+  }
+
+  section {
+    display: none;
+    @include margin;
+    @include padding($base-spacing);
+    border-left: 1px solid $color-light-grey;
+    border-right: 1px solid $color-light-grey;
+    background-color: $color-white;
+
+    img {
+      @include size(120px);
     }
-    
+
+    p {
+      text-align: center;
+    }
+  }
+
+  footer {
+    @include padding($base-spacing);
+    border: 1px solid $color-light-grey;
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+    background-color: $color-light-grey;
+    text-align: center;
+  }
+}
+{% endhighlight %}    
 
 Now that we've built our component, we can pass data into it.
 
-    {
-      'title' : 'President',
-      'image' : 'mortaaronson'
-       'name' : 'Mort Aaronson',
-    'address' : '1390 Lawrence St.',
-       'city' : 'Denver',
-      'state' : 'CO',
-        'zip' : '80204',
-      'phone' : '(303) 296-2413',
-      'email' : 'mort@placewise.com',
-       'info' : '30 years senior management of public and private corporations in tech, energy, media, advertising and food industries.'
-     }
+{% highlight json %}
+{
+  'title' : 'President',
+  'image' : 'mortaaronson'
+   'name' : 'Mort Aaronson',
+'address' : '1390 Lawrence St.',
+   'city' : 'Denver',
+  'state' : 'CO',
+    'zip' : '80204',
+  'phone' : '(303) 296-2413',
+  'email' : 'mort@placewise.com',
+   'info' : '30 years senior management of public and private corporations in tech, energy, media, advertising and food industries.'
+}
+{% endhighlight %}
 
 ### In Conclusion
 

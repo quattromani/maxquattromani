@@ -10,14 +10,12 @@ comments: true
   <h3>{{ page.sub-title }}</h3>
   {% endif %}
   <strong>
-  <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+    <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
   </strong>
 
   <div class="row">
-    <div class="three-fifths">
-      <div class="post">
-        {{ content }}
-      </div>
+    <div class="post">
+      {{ content }}
     </div>
     <div class="two-fifths"></div>
   </div>
