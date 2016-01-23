@@ -226,3 +226,9 @@
 		display: block;
 	}
 }
+
+.deg {
+  &:after {
+    content: '\00B0';
+  }
+}

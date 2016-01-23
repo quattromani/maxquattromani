@@ -1,0 +1,6 @@
+// Select Range of Items
+@mixin select-range($start: null, $end: $start) {
+  &:nth-child(n+#{$start}):nth-child(-n+#{$end}) {
+    color: red;
+  }
+}
