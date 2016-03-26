@@ -9,9 +9,9 @@
 
 	@include media($mobile) {
     @include font-size(16);
+    @include margin(0 0 ($base-spacing / 2));
 		@include padding($base-spacing/2 $base-spacing);
 		width: calc(100% +  #{$base-spacing*2});
-    margin-top: -$base-spacing;
 		margin-left: -$base-spacing;
     border-bottom: none;
 		background-color: $article-header-color;

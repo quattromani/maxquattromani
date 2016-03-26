@@ -8,7 +8,7 @@ main {
   background-color: $color-white;
 
   @include media($tablet) {
-    @include padding($base-spacing);
+    @include padding(0 $base-spacing);
   }
 }
 
