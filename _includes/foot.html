@@ -1,33 +1,5 @@
-  </div>
-</div>
+      </div>
+    </div>
 
-<!--     <script>
-      var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = '/css/main.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-    </script> -->
-
-    <!-- scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{ site.jquery_version }}/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-{{ site.jquery_version }}.min.js"><\/script>')</script>
-
-    <script src="{{ site.baseurl }}/js/production.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/stickyfill.js"></script>
-
-    <script>
-      $( document ).ready(function() {
-        $('.sticky').Stickyfill();
-      });
-    </script>
-
-    {% if site.google_analytics %}
-    {% include google_analytics.html %}
-    {% endif %}
   </body>
 </html>
