@@ -1,10 +1,18 @@
 - section: Currently Reading
   examples:
-  - title: 'The Decision Book - 50 Models for Strategic Thinking'
-    url: 'http://www.barnesandnoble.com/w/decision-book-mikael-krogerus/1103217590?ean=9780393079616'
+  - title: 'Frontend Architecture for Design Systems'
+    url: 'http://www.amazon.com/Frontend-Architecture-Design-Systems-Sustainable/dp/1491926783/ref=sr_1_1?s=books&ie=UTF8&qid=1459021710&sr=1-1&keywords=front+end+architecture'
 
 - section: Books
   examples:
+  - title: 'Full Stack Javascript Development with MEAN'
+    url: 'http://www.amazon.com/Full-Stack-JavaScript-Development-With/dp/0992461251'
+  - title: 'CSS Secrets'
+    url: 'http://www.amazon.com/CSS-Secrets-Solutions-Everyday-Problems/dp/1449372635/ref=sr_1_1?s=books&ie=UTF8&qid=1459021453&sr=1-1&keywords=css+secrets'
+  - title: 'Above the Fold'
+    url: 'http://www.amazon.com/Above-Revised-Edition-Brian-Miller/dp/1440336660'
+  - title: 'Pragmatic Guide to JavaScript'
+    url: 'http://www.amazon.com/Pragmatic-Guide-JavaScript-Programmers/dp/1934356670/ref=sr_1_1?s=books&ie=UTF8&qid=1459021679&sr=1-1&keywords=pragmatic+guide+to+javascript'
   - title: 'SMACSS'
     url: 'http://shop.smacss.com/'
   - title: 'Pragmatic Guide to Sass'
@@ -39,6 +47,8 @@
     url: 'http://pragprog.com/book/jwnode/node-js-the-right-way'
   - title: 'Responsible Responsive Design'
     url: 'http://www.abookapart.com/products/responsible-responsive-design'
+  - title: 'The Decision Book - 50 Models for Strategic Thinking'
+    url: 'http://www.barnesandnoble.com/w/decision-book-mikael-krogerus/1103217590?ean=9780393079616'
 
 - section: Magazines
   examples:
