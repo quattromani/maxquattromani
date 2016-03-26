@@ -18,7 +18,6 @@ kramdown:
 highlighter: rouge
 
 permalink: pretty
-highlighter: pygments
 
 exclude: ['node_modules', 'scss', 'DAM']
 
