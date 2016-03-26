@@ -1,0 +1,497 @@
+- section: Personal Sites
+  examples:
+  - title: 'Max Quattromani'
+    url: 'http://maxquattromani.com'
+    status: true
+  - title: 'Patti Quattromani'
+    url: 'http://pattiquattromani.com'
+    status: true
+
+- section: Corporate Sites
+  examples:
+  - title: 'Time Warner Cable'
+    url: 'http://twc.com'
+    status: true
+  - title: 'Time Warner Cable - Business Class Developer Toolkit'
+    url: 'http://quattromani.github.io/devtoolkit/devtoolkit.html'
+    status: true
+  - title: 'OppenheimerFunds'
+    url: 'http://oppenheimerfunds.com'
+    status: true
+  - title: 'GLG'
+    url: 'https://glg.it/'
+    status: true
+  - title: 'Autoist'
+    url: 'http://autoist.com'
+    status: true
+  - title: 'Terracare Associates'
+    url: 'http://http://terracareassociates.com'
+    status: true
+  - title: 'My Statebridge'
+    url: 'http://mystatebridge.com'
+    status: true
+  - title: 'Oralabs'
+    url: 'http://www.oralabs.com/'
+    status: true
+  - title: 'Leashables'
+    url: 'http://www.leashables.com/'
+    status: true
+
+- section: Smaller Company Projects
+  examples:
+  - title: 'Clinical Advisory Solutions'
+    url: 'http://clinicaladvisorysolutions.com'
+    status: true
+  - title: 'Colorado School Superintendents'
+    url: 'http://coschoolchiefs.com'
+    status: true
+
+- section: Personal Projects
+  examples:
+  - title: 'Scaffold'
+    url: 'http://quattromani.github.io/scaffold/'
+    status: true
+  - title: 'Office Football Club'
+    url: 'http://officefootball.club'
+    status: true
+  - title: 'Qoppa'
+    url: 'http://qoppa.co'
+    status: true
+  - title: '1966 Mustang'
+    url: 'http://1966mustang.us'
+    status: true
+
+- section: Mall Sites
+  examples:
+  - title: 'New South Bay Galleria'
+    url: 'http://new.southbaygalleria.com'
+    status: true
+  - title: 'Boulevard Mall'
+    url: 'http://www.boulevard-mall.com'
+    status: true
+  - title: 'South Bay Galleria'
+    url: 'http://www.southbaygalleria.com'
+    status: true
+  - title: 'Galleria at Sunset'
+    url: 'http://www.galleriaatsunset.com'
+    status: true
+  - title: 'Promenade Temecula'
+    url: 'http://www.promenadetemecula.com'
+    status: true
+  - title: 'Victoria Gardens'
+    url: 'http://www.victoriagardensie.com'
+    status: true
+  - title: 'Short Pump Town Center'
+    url: 'http://www.shortpumpmall.com/'
+    status: true
+  - title: 'The Shops at Wiregrass'
+    url: 'http://www.theshopsatwiregrass.com/'
+    status: true
+  - title: 'Ridge Hill'
+    url: 'http://www.ridgehill.com/'
+    status: true
+  - title: 'Antelope Valley Mall'
+    url: 'http://www.av-mall.com/'
+    status: true
+  - title: 'Charleston Town Center'
+    url: 'http://www.charlestontowncenter.com/'
+    status: true
+  - title: 'The Shops at Tanforan'
+    url: 'http://www.theshopsattanforan.com/'
+    status: true
+  - title: 'Tower City Center'
+    url: 'http://www.towercitycenter.com/'
+    status: true
+  - title: 'Northfield Stapleton'
+    url: 'http://www.northfieldstapleton.com/'
+    status: true
+  - title: 'Ballston Common Mall'
+    url: 'http://www.ballston-common.com/'
+    status: true
+  - title: 'The Mall at Robinson'
+    url: 'http://www.shoprobinsonmall.com/'
+    status: true
+  - title: 'Broadway Mall'
+    url: 'http://www.broadwaymall.com'
+    status: true
+  - title: 'Yorktown Center'
+    url: 'http://www.yorktowncenter.com'
+    status: true
+  - title: 'Gateway Mall'
+    url: 'http://www.gatewayatl.com'
+    status: true
+  - title: 'Gulf Coast Town Center'
+    url: 'http://www.gulfcoasttowncenter.com'
+    status: true
+  - title: 'Indian River Mall'
+    url: 'http://indianrivermall.com'
+    status: true
+  - title: 'Shoppes at Knollwood'
+    url: 'http://www.shoppesatknollwood.com'
+    status: true
+  - title: 'Paseo Colorado'
+    url: 'http://www.paseocolorado.com'
+    status: true
+  - title: 'Lloyd Center'
+    url: 'http://www.lloydcenter.com'
+    status: true
+  - title: 'Rock Hill Galleria'
+    url: 'http://www.rockhillgalleria.com'
+    status: true
+  - title: 'Bassett Place'
+    url: 'http://www.shopbassettplace.com'
+    status: true
+  - title: 'Glendale Marketplace'
+    url: 'http://www.glendalemarketplace.com'
+    status: true
+  - title: 'Brookwood Village'
+    url: 'http://www.shopbrookwoodvillage.com'
+    status: true
+  - title: 'Spanish Fort Town Center'
+    url: 'http://www.spanishforttowncenter.com'
+    status: true
+  - title: 'Eden Prairie Center'
+    url: 'http://www.edenprairiecenter.com'
+    status: true
+  - title: 'University Mall (VT)'
+    url: 'http://www.umallvt.com'
+    status: true
+  - title: 'Plaza Paseo'
+    url: 'http://plazapaseomall.com'
+    status: true
+  - title: 'The Village at Nellie Gail'
+    url: 'http://www.thevillageatnelliegailranch.com'
+    status: true
+  - title: 'Wenatchee Valley Mall'
+    url: 'http://www.wenatcheevalleymall.com'
+    status: true
+  - title: 'Heritage Mall'
+    url: 'http://www.heritagemall.com'
+    status: true
+  - title: 'The Mall at Whitney Field'
+    url: 'http://www.themallatwhitneyfield.com'
+    status: true
+  - title: 'Southbay Pavillion'
+    url: 'http://www.southbaypavilion.com'
+    status: true
+  - title: 'South Lake Mall'
+    url: 'http://www.southlakemall.com'
+    status: true
+  - title: 'Inlet Square Mall'
+    url: 'http://inletsquaremall.com'
+    status: true
+  - title: 'PlazAmericas Mall'
+    url: 'http://plazamericas.com/'
+    status: true
+  - title: 'Oviedo Mall'
+    url: 'http://www.myoviedomall.com/'
+    status: true
+  - title: 'Mall at Stonecrest'
+    url: 'http://www.mallatstonecrest.com/'
+    status: true
+  - title: 'The Gallery At South DeKalb'
+    url: 'http://galleryatsouthdekalb.placewise.com/'
+    status: true
+  - title: 'Oakland Plaza'
+    url: 'http://www.shopoaklandplaza.com/'
+    status: true
+  - title: 'Rice Village District'
+    url: 'http://www.ricevillagedistrict.com/'
+    status: true
+  - title: 'Waterside'
+    url: 'http://www.watersidefw.com/'
+    status: true
+  - title: 'Burr Ridge Village Center'
+    url: 'http://www.shopburrridge.com/'
+    status: true
+  - title: 'Hillside Village'
+    url: 'http://www.shophillsidevillage.com/'
+    status: true
+  - title: 'WestBend'
+    url: 'http://www.westbendfw.com/'
+    status: true
+  - title: 'Watters Creek'
+    url: 'http://www.watterscreek.com/'
+    status: true
+  - title: 'Market Street Flowood'
+    url: 'http://www.marketstreet-flowood.com/'
+    status: true
+  - title: 'The Shops at Highland Village'
+    url: 'http://www.theshopsathighlandvillage.com/'
+    status: true
+  - title: 'Saddle Creek'
+    url: 'http://www.shopsofsaddlecreek.com/'
+    status: true
+  - title: 'La Palmera'
+    url: 'http://www.lapalmera.com/'
+    status: true
+  - title: 'First Street Napa'
+    url: 'http://www.firststreetnapa.com/'
+    status: true
+  - title: 'Glades Plaza'
+    url: 'http://gladesplaza.com/'
+    status: true
+  - title: 'Midway Mall'
+    url: 'http://midwaymallshopping.com/'
+    status: true
+  - title: 'Columbia Gorge Outlets'
+    url: 'http://shopcolumbiagorgeoutlets.com/'
+    status: true
+  - title: 'Louisiana Boardwalk Outlets'
+    url: 'http://www.louisianaboardwalk.com/'
+    status: true
+  - title: 'Park West'
+    url: 'http://www.shopparkwest.com/'
+    status: true
+  - title: 'Lakeforest Mall'
+    url: 'http://www.shoplakeforest.com/'
+    status: true
+  - title: 'The Commons at Federal Way'
+    url: 'http://www.shopthecommonsmall.com/'
+    status: true
+  - title: 'Everett Mall'
+    url: 'http://www.shopeverettmall.com/'
+    status: true
+  - title: 'Crossroads Mall (IA)'
+    url: 'http://www.shopcrossroadscenter.com/'
+    status: true
+  - title: 'Towson Square'
+    url: 'http://www.towson-square.com/'
+    status: true
+  - title: 'The Promenade Shops at Orchard Valley'
+    url: 'http://www.thepromenadeshopsatorchardvalley.com/'
+    status: true
+  - title: 'The Promenade Shops at Briargate'
+    url: 'http://www.thepromenadeshopsatbriargate.com/'
+    status: true
+  - title: 'The Promenade Shops at Evergreen Walk'
+    url: 'http://www.thepromenadeshopsatevergreenwalk.com/'
+    status: true
+  - title: 'Carriage Crossing'
+    url: 'http://www.shopcarriagecrossing.com/'
+    status: true
+  - title: 'Meadow Glen Mall'
+    url: 'http://www.meadowglen.com/'
+    status: true
+  - title: 'One Westside'
+    url: 'http://onewestside.placewise.com/'
+    status: true
+  - title: 'Greenbrier MarketCenter'
+    url: 'http://greenbriermc.placewise.com/'
+    status: true
+  - title: 'Los Altos MarketCenter'
+    url: 'http://losaltosmc.placewise.com/'
+    status: true
+  - title: 'CambridgeSide Galleria'
+    url: 'http://www.cambridgesidegalleria.com/?design=castle@NewEnglandDev'
+    status: true
+  - title: 'Outlets of Little Rock'
+    url: 'http://www.outletsoflittlerock.com/?design=castle@NewEnglandDev'
+    status: true
+  - title: 'Asheville Outlets'
+    url: 'http://www.shopashevilleoutlets.com/?design=castle@NewEnglandDev'
+    status: true
+  - title: 'Chestnut Hill Square'
+    url: 'http://www.chestnuthillsquare.com/?design=castle@NewEnglandDev'
+    status: true
+  - title: 'Shop Newburyport'
+    url: 'http://www.newburyportshops.com/?design=castle@NewEnglandDev'
+    status: true
+  - title: 'Palm Beach Outlets'
+    url: 'http://www.palmbeachoutlets.com/?design=castle@NewEnglandDev'
+    status: true
+  - title: 'Westgate Mall (MA)'
+    url: 'http://www.shopatwestgatemall.com/?design=castle@NewEnglandDev'
+    status: true
+
+- section: Outlet Centers
+  examples:
+  - title: 'Outlets at Anthem'
+    url: 'http://www.outletsanthem.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Silverthorne'
+    url: 'http://www.outletsatsilverthorne.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Hillsboro'
+    url: 'http://www.outletsathillsboro.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Loveland'
+    url: 'http://www.outletsatloveland.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Conroe'
+    url: 'http://www.outletsatconroe.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Cabazon Outlets'
+    url: 'http://www.cabazonoutlets.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Vicksburg'
+    url: 'http://www.outletsatvicksburg.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Traverse Mountain'
+    url: 'http://www.outletsattraversemountain.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Citadel Outlets'
+    url: 'http://www.citadeloutlets.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Castle Rock'
+    url: 'http://www.outletsatcastlerock.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at The Dells'
+    url: 'http://www.outletsatthedells.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlets at Barstow'
+    url: 'http://www.theoutletsatbarstow.com/?design=sunshine@Craig'
+    status: false
+  - title: 'Outlet Shoppes at Atlanta'
+    url: 'http://outletshoppesatatlanta.placewise.com'
+    status: false
+  - title: 'The Outlet Shoppes at Gettysburg'
+    url: 'http://outletshoppesgettysburg.placewise.com/'
+    status: false
+  - title: 'The Outlet Shoppes at El Paso'
+    url: 'http://outletshoppeselpaso.placewise.com/'
+    status: false
+  - title: 'The Outlet Shoppes at Oklahoma City'
+    url: 'http://outletshoppesoklahomacity.placewise.com/'
+    status: false
+  - title: 'The Outlet Shoppes of the Bluegrass'
+    url: 'http://outletshoppesbluegrass.placewise.com/'
+    status: false
+  - title: 'The Outlet Shoppes at Oshkosh'
+    url: 'http://outletshoppesoshkosh.placewise.com/'
+    status: false
+  - title: 'The Outlet Shoppes at Fremont'
+    url: 'http://outletshoppesfreemont.placewise.com/'
+    status: false
+
+- section: Power Centers
+  examples:
+  - title: 'Mayfair Shopping Center'
+    url: 'http://shopmayfairshoppingcenter.com/'
+    status: true
+  - title: 'Blue Star Shopping Center'
+    url: 'http://bluestarshoppingcenter.com/'
+    status: true
+  - title: 'Somerset Shopping Center'
+    url: 'http://shopsomersetshoppingcenter.com/'
+    status: true
+  - title: 'Post Road Plaza'
+    url: 'http://shoppostroadplaza.com/'
+    status: true
+  - title: 'Western Lights Shopping Center'
+    url: 'http://westernlightsshoppingcenter.com'
+    status: true
+  - title: 'Airport Plaza'
+    url: 'http://airportplaza.placewise.com/'
+    status: false
+  - title: 'Edgewater Commons'
+    url: 'http://edgewatercommons.placewise.com/'
+    status: false
+  - title: 'Renaissance Centre'
+    url: 'http://renaissancecentre.placewise.com/'
+    status: false
+
+- section: WiFi Sites
+  examples:
+  - title: 'WiFi Demo'
+    url: 'http://wifidemo.placewise.com/'
+    status: true
+  - title: 'Bel Air Mall'
+    url: 'http://belair.placewise.com/'
+    status: true
+  - title: 'Grand Traverse Mall'
+    url: 'http://grandtraverse.placewise.com/'
+    status: true
+  - title: 'Bayshore Mall'
+    url: 'http://bayshore.placewise.com/'
+    status: true
+  - title: 'The Mall at Sierra Vista'
+    url: 'http://mallsierravista.placewise.com/'
+    status: true
+  - title: 'Chula Vista Center'
+    url: 'http://chulavistacenter.placewise.com/'
+    status: true
+  - title: 'NewPark Mall'
+    url: 'http://newpark.placewise.com/'
+    status: true
+  - title: 'Colony Square Mall'
+    url: 'http://colonysquare.placewise.com/'
+    status: true
+  - title: 'Vista Ridge Mall'
+    url: 'http://vistaridgemall.placewise.com/'
+    status: true
+  - title: 'Chesterfield Towne Center'
+    url: 'http://chesterfieldva.placewise.com/'
+    status: true
+  - title: 'Westwood Mall'
+    url: 'http://westwoodmall.placewise.com/'
+    status: true
+  - title: 'The Mall at Barnes Crossing'
+    url: 'http://barnescrossing.placewise.com/'
+    status: true
+  - title: 'The Greenville Mall'
+    url: 'http://thegreenvillemall.placewise.com/'
+    status: true
+  - title: 'Valley Hills Mall'
+    url: 'http://valleyhillsmall.placewise.com/'
+    status: true
+  - title: 'Washington Park Mall'
+    url: 'http://washingtonparkmall.placewise.com/'
+    status: true
+  - title: 'Sikes Senter'
+    url: 'http://sikessenter.placewise.com/'
+    status: true
+  - title: 'Mall St. Vincent'
+    url: 'http://mallstvincent.placewise.com/'
+    status: true
+  - title: 'Pierre Bossier Mall'
+    url: 'http://pierrebossier.placewise.com/'
+    status: true
+  - title: 'The Centre at Salisbury'
+    url: 'http://centreatsalisbury.placewise.com/'
+    status: true
+  - title: 'Birchwood Mall'
+    url: 'http://birchwood.placewise.com/'
+    status: true
+  - title: 'Lansing Mall'
+    url: 'http://lansingmall.placewise.com/'
+    status: true
+  - title: 'Southland Center'
+    url: 'http://southlandcenter.placewise.com/'
+    status: true
+  - title: 'Cache Valley Mall'
+    url: 'http://cachevalley.placewise.com/'
+    status: true
+  - title: 'Three Rivers Mall'
+    url: 'http://threerivers.placewise.com/'
+    status: true
+  - title: 'White Mountain Mall'
+    url: 'http://whitemountain.placewise.com/'
+    status: true
+  - title: 'The Mall at Turtle Creek'
+    url: 'http://mallatturtlecreek.placewise.com/'
+    status: true
+  - title: 'Lakeland Square'
+    url: 'http://lakelandsquaremall.placewise.com/'
+    status: true
+  - title: 'Spring Hill Mall'
+    url: 'http://springhillmall.placewise.com/'
+    status: true
+  - title: 'Mt. Shasta Mall'
+    url: 'http://mtshasta.placewise.com/'
+    status: true
+  - title: 'Southland Mall'
+    url: 'http://southlandmall.placewise.com/'
+    status: true
+  - title: 'West Valley Mall'
+    url: 'http://westvalleymall.placewise.com/'
+    status: true
+  - title: 'Silver Lake Mall'
+    url: 'http://silverlakemall.placewise.com/'
+    status: true
+  - title: 'Animas Valley Mall'
+    url: 'http://animasvalley.placewise.com/'
+    status: true
+  - title: 'North Plains Mall'
+    url: 'http://northplains.placewise.com/'
+    status: true

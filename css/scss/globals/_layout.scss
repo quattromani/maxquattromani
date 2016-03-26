@@ -178,29 +178,3 @@ aside {
     }
   }
 }
-
-
-// section {
-//   @include span-columns(8);
-//   min-height: $base-spacing;
-
-//   @include media($tablet) {
-//     @include span-columns(8);
-//   }
-
-//   @include media($mobile) {
-//     @include span-columns(4);
-//   }
-// }
-
-// aside {
-//   @include span-columns(4);
-
-//   @include media($tablet) {
-//     @include span-columns(4);
-//   }
-
-//   @include media($mobile) {
-//     @include span-columns(4);
-//   }
-// }

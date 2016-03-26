@@ -264,22 +264,10 @@ a.close-panel {
 }
 
 a.open-panel
-  // a.close-panel
   {
     display: inline-block;
   }
 }
-
-// input.search-field {
-//   @include placeholder {
-//     font-family: $fontawesome;
-//   }
-
-//   @include media($tablet) {
-//     width: calc(100% - 2em);
-//     @include margin(($base-spacing /2) $base-spacing);
-//   }
-// }
 
 .open-panel {
   cursor: pointer;
@@ -320,28 +308,6 @@ a.open-panel
 
     &:after {
       transform: rotate(-45deg);
-    }
-  }
-}
-
-.nav-login {
-  position: relative;
-  cursor: pointer;
-
-  #login {
-    display: none;
-    position: absolute;
-    right: 0;
-    width: 100px;
-    padding: 1em;
-    border: 1px solid $color-brand-primary;
-    background-color: $color-white;
-    z-index: 999;
-  }
-
-  &:hover {
-    #login {
-      display: block;
     }
   }
 }

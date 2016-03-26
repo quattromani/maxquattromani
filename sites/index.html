@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Sites I've Built (or helped build)"
+description: "How many sites have I built? Good Question; let's see"
+class: sites
+parent: sites
+---
+
+<h1>{{ page.title }}</h1>
+
+<article role="article">
+  <p class="lede">I thought a fun excercise would be making a list of all the sites I've built or worked on with other fine developers. They're not in any particular order, other than the order in which I thought of them.</p>
+
+  {% for site in site.data.sites %}
+  <h2 class="article-header">{{ site.section }} ({{ site.examples | size }})</h2>
+  <ul class="vertical">
+    {% for titles in site.examples %}
+    <li><a href="{{ titles.url }}" target="_blank">{{ titles.title }}</a>
+      {% if titles.status == false %}
+      <sup class="reference">
+        <a href="#cite-1">
+          <span>[</span>INDEV<span>]</span>
+        </a>
+      </sup>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+</article>
+
+<aside>
+  <div>
+
+    <h5>Notes:</h5>
+    <ul>
+      <li id="cite-1">
+        [INDEV] - These sites are in various states of Development. Some are ready to launch; others are waiting for creative assets or client approval.
+     </li>
+   </ul>
+
+  </div>
+</aside>
