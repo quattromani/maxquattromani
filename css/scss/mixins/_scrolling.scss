@@ -1,10 +1,12 @@
 @mixin scrolling {
   @include inline-block;
   overflow: auto;
-  background: linear-gradient(transparent 15px, hsla(0,0%,100%,0)) 100% 50px,
-  radial-gradient(at top, rgba(0,0,0,.2), transparent 70%) 0 0 / 100% 15px,
-  linear-gradient(to top, transparent 15px, hsla(0,0%,100%,0)) bottom / 100% 50px,
-  radial-gradient(at bottom, rgba(0,0,0,.2), transparent 70%) bottom / 100% 15px;
-  background-repeat: no-repeat;
-  background-attachment: local, scroll, local, scroll;
+  width: 100%;
+  margin-top: $base-spacing / 2;
+  border-top: 1px solid $color-light-grey;
+  border-bottom: 1px solid $color-light-grey;
+  background : linear-gradient(white 30%, rgba($color-white, 0)), linear-gradient(rgba($color-white, 0), white 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba($color-black, .15), rgba($color-black, 0)), radial-gradient(farthest-side at 50% 100%, rgba($color-black, .15), rgba($color-black, 0)) 0 100%;
+  background-repeat : no-repeat;
+  background-size : 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll;
 }

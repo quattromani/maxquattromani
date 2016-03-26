@@ -27,6 +27,7 @@
       &:after {
         @include padding(0 ($base-spacing / 2));
         content: '|';
+        color: currentColor;
       }
 
       &:last-child:after {
@@ -41,6 +42,20 @@
       &:after {
         @include padding(0 ($base-spacing / 2));
         content: '::';
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == bulleted {
+      @include padding;
+
+      &:after {
+        @include padding(0 ($base-spacing / 2));
+        content: '•';
       }
 
       &:last-child:after {
@@ -64,7 +79,7 @@
     }
 
     @if $arg == spaced {
-      margin-left: ($base-spacing / 2);
+      margin-left: $base-spacing/2;
 
       &:first-child {
         margin-left: 0;
@@ -89,6 +104,18 @@
 
   li {
     list-style: outside disc;
+    margin-left: 1.25em;
+    border-bottom: 0;
+  }
+}
+
+@mixin bulleted-square {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: outside square;
     margin-left: 1.25em;
     border-bottom: 0;
   }

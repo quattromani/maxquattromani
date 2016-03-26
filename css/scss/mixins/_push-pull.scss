@@ -7,3 +7,11 @@
   float: left !important;
   margin-left: 0;
 }
+
+.push {
+  @include push;
+}
+
+.pull {
+  @include pull;
+}

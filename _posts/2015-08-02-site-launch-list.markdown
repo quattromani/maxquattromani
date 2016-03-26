@@ -8,8 +8,8 @@ categories:
     - development
 ---
 
-- [ ] meta tags
-- [ ] Viewport tags
+* [x] meta tags
+* [ ] Viewport tags
 - [ ] favicon(s)
 - [ ] Twitter Cards
 - [ ] OG tags

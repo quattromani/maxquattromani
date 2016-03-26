@@ -7,3 +7,23 @@
   object-position: $position;
   overflow: hidden;
 }
+
+@mixin image-rounded {
+  @include border-radius;
+}
+
+@mixin image-circular {
+  @include border-radius(50%);
+}
+
+@mixin image-bordered {
+  border: ($base-spacing / 2) solid $color-white;
+
+  @include media($mobile){
+    border: none;
+  }
+}
+
+@mixin image-shadowed {
+  box-shadow: 0 0 5px -2px rgba($color-black, .6);
+}

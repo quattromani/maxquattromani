@@ -3,7 +3,7 @@
 // Ordered List
 ol {
   @include margin(0 0 0 ($base-spacing * 1.5));
-  @include padding(0);
+  @include padding;
 
   li {
     list-style: decimal;
@@ -16,12 +16,10 @@ ol {
 }
 
 ul {
-  @include margin(0);
-  @include padding(0);
   list-style: none outside none;
 
   ul {
-    @include margin(0);
+    @include margin;
   }
 }
 
@@ -36,7 +34,7 @@ ul {
   }
 
   &.slashes li {
-    @include padding(0);
+    @include padding;
 
     &:after {
       content: '/';
@@ -49,14 +47,14 @@ ul {
   }
 
   &.pipes li {
-    @include padding(0);
+    @include padding;
 
     &:after {
       content: '|';
       @include padding(0 .25em 0 .5em);
     }
 
-    &:last-childt:after {
+    &:last-child:after {
       content: '';
     }
   }
@@ -65,7 +63,8 @@ ul {
 // Vertical List Items
 .vertical {
   li {
-    display: block !important;  }
+    display: block !important;
+  }
 
   > li {
     @include padding(($base-spacing / 2) 0);

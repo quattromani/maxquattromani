@@ -13,6 +13,7 @@
   transform: translate(-50%, -50%);
 }
 
+// placeholder from Horizontal Align
 %center {
   @include center;
 }
@@ -25,8 +26,8 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin horizontal-center {
-  position: relative;
+@mixin horizontal-center($position: relative) {
+  position: $position;
   left: 50%;
   transform: translate(-50%);
 }
