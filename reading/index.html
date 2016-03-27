@@ -21,7 +21,7 @@ parent: Reading
 
   {% for read in site.data.reading %}
   <h2>{{ read.section }}</h2>
-  <ul>
+  <ul class="vertical">
     {% for titles in read.examples %}
     <li><a href="{{ titles.url }}">{{ titles.title }}</a></li>
     {% endfor %}

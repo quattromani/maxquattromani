@@ -251,7 +251,7 @@ a.close-panel {
 
 .open-panel {
   position: absolute;
-  top: $base-spacing/2;
+  top: $base-spacing;
   z-index: 10;
 
   @if $nav-hamburger-side == right {

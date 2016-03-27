@@ -19,3 +19,11 @@ figcaption {
   margin-bottom: ($base-spacing / 2);
   font-weight: bold;
 }
+
+amp-img {
+  &.logo {
+    position: fixed;
+    margin: $base-spacing;
+    z-index: 9999;
+  }
+}

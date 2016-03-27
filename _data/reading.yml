@@ -52,9 +52,11 @@
 
 - section: Magazines
   examples:
-  - title: 'Net Magazine - Issue 257'
+  - title: 'Net Magazine'
     url: 'http://www.creativebloq.com/net-magazine'
-  - title: 'The Responsive Web Design Handbook - 2014'
+  - title: 'Web Designer'
+    url: 'http://www.webdesignermag.co.uk/'
+  - title: 'The Responsive Web Design Handbook - 2015'
     url: 'http://www.amazon.com/RESPONSIVE-WEB-DESIGN-HANDBOOK-Updated/dp/B00KPHS3Z2/ref=sr_1_1?s=books&ie=UTF8&qid=1408998451&sr=1-1&keywords=responsive+web+design+handbook'
   - title: 'The SEO Handbook'
     url: 'http://www.amazon.com/The-SEO-Handbook-2014-Edition/dp/B00PYIZ7WE'

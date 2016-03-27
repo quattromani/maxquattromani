@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-footer {
+footer[role=contentinfo] {
   @include container;
   padding-top: $base-spacing / 2;
   padding-bottom: $base-spacing / 2;

@@ -19,21 +19,21 @@ i {
 }
 
 blockquote {
-  width: 75%;
-  padding-left: $base-spacing;
-  border-left: 3px solid currentColor;
-  font-style: italic;
+  @include padding($base-spacing ($base-spacing * 2));
+  @include border-radius(5px);
+  background-color: $color-light-grey;
   color: tint($base-font-color, 20%);
 
-  &:before {
-    margin-left: -.75em;
-    content: "\201C";
+  @include media($tablet) {
+    @include full-width;
+    @include padding($base-spacing ($base-spacing * 2 !important));
+    @include border-radius;
   }
-}
 
-cite {
   &:before {
-    content: '-';
+    position: absolute;
+    margin-left: -$base-spacing;
+    content: "\201C";
   }
 }
 
