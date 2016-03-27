@@ -17,6 +17,10 @@
 		background-color: $article-header-color;
 		color: $color-white;
 
+    &.notice {
+      background-color: $alert-color;
+    }
+
     &.stick {
       position: fixed;
       top: 0;

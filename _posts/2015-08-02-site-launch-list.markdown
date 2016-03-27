@@ -6,7 +6,17 @@ sub-title: ""
 date:   2015-08-02 15:47:10
 categories: 
     - development
+comments: true
 ---
+
+<amp-img src="/images/launch.jpg"
+      width="800"
+      height="431"
+      layout="responsive"
+      alt="shuttle launch">
+</amp-img>
+
+- - -
 
 * [x] meta tags
 * [ ] Viewport tags
