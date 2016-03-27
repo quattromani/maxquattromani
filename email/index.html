@@ -8,33 +8,38 @@ parent: Email
 
 <h1>{{ page.title }}</h1>
 
-<article role="article">
+<amp-img src="/images/email.jpg"
+      width="800"
+      height="299"
+      layout="responsive"
+      alt="man on mobile email">
+</amp-img>
 
+<article role="article">
   <h3>George Orwell's six elementary rules for writing</h3>
 
-  <ol>
+  <ul class="bulleted">
     <li>Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.</li>
     <li>Never use a long word where a short one will do.</li>
     <li>If it is possible to cut a word out, always cut it out.</li>
     <li>Never use the passive where you can use the active.</li>
     <li>Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.</li>
     <li>Break any of these rules sooner than say anything outright barbarous.</li>
-  </ol>
-
+  </ul>
  </article>
 
  <article role="article">
   <h3>Max's Rules for Emails</h3>
 
-  <ul class="vertical">
+  <ul class="bulleted">
     <li>All emails MUST be from a real person. We do not send email from a no-reply or system account.</li>
     <li>Remember that you're not designing a printable piece of paper, but an actionable email.</li>
     <li>Make sure there is one clear action in the email. Don't add confusion with multiple actions.</li>
-    <li>Have a clear title, lead with "{{ site.title }}" if possible.</li>
+    <li>Have a clear title, lead with {{ "{{ user.name " }}}} if possible.</li>
     <li>Make sure it has a clear preview, or "toast" that the reader can easily see in thier email queue, be it Mobile, Outlook, or gmail. If they can't tell what its about without clicking into it, they may never read it.</li>
     <li>Test on mobile. Don't assume it looks good just because it looks good on your Hi-Res Mac. Make it work well on mobile first, and then on Outlook. Hold your phone at arms length to make sure its still legible.</li>
     <li>Font Sizes &amp; Colors:
-      <ul>
+      <ul class="bulleted">
         <li>The magic number is 4. Use at most 4 font sizes and 4 colors.</li>
         <li>Text should 18px if you want people to read it.</li>
         <li>Legal text or other boilerplate that's less important can be 12px to 14px.</li>
@@ -47,95 +52,89 @@ parent: Email
     <li>Watch out for using jargon in the emails, don't waste space with things people outside the company or industry might not understand.</li>
     <li>While testing, send emails to people directly through the email client app (ConstantContact, Mailchimp, etc.) Forwarding an email destroys the formatting.</li>
   </ul>
-
 </article>
 
 <article role="article">
-
   <h3>The Technical Bits</h3>
+  <ul class="bulleted">
+    <h4>Mind your <code>HEAD</code></h4>
+    <li>
+      <strong>You can't avoid a <code>DOCTYPE</code>.</strong> Many email clients strip your <code>DOCTYPE</code> and either impose their own or leave it out entirely. This means you need to test both with and without a <code>DOCTYPE</code> to ensure your syntax renders how it should.
+    </li>
+    <li>
+      <strong>Don't embed in the <code>HEAD</code>.</strong> Browser-based email services, like Gmail, Yahoo! Mail, Hotmail, etc., generally strip out <code>DOCTYPE</code>, <code>BODY</code>, and <code>HEAD</code> tags. Anything included within those tags, or as attributes on those tags (such as <code>bgcolor</code>, CSS, JavaScript, etc) runs the risk of being stripped.
+    </li>
+  </ul>
 
-  <ol>
-    <li>Mind your <code>HEAD</code>
-      <ul>
-        <li>
-          <strong>You can't avoid a <code>DOCTYPE</code>.</strong> Many email clients strip your <code>DOCTYPE</code> and either impose their own or leave it out entirely. This means you need to test both with and without a <code>DOCTYPE</code> to ensure your syntax renders how it should.
-        </li>
-        <li>
-          <strong>Don't embed in the <code>HEAD</code>.</strong> Browser-based email services, like Gmail, Yahoo! Mail, Hotmail, etc., generally strip out <code>DOCTYPE</code>, <code>BODY</code>, and <code>HEAD</code> tags. Anything included within those tags, or as attributes on those tags (such as <code>bgcolor</code>, CSS, JavaScript, etc) runs the risk of being stripped.
-        </li>
-      </ul>
+  <h4>Use tables for layout</h4>
+  <ul class="bulleted">
+    <li>
+      <strong>Set the width in each cell, not the table.</strong> When you combine <code>table</code> widths, <code>td</code> widths, <code>td</code> padding and CSS padding into an email, the final result is different in almost every email client. The most reliable way to set the width of your table is to set a width for each cell, not for the table itself.
     </li>
-    <li>Use tables for layout
-      <ul>
-        <li>
-          <strong>Set the width in each cell, not the table.</strong> When you combine <code>table</code> widths, <code>td</code> widths, <code>td</code> padding and CSS padding into an email, the final result is different in almost every email client. The most reliable way to set the width of your table is to set a width for each cell, not for the table itself.
-        </li>
-        <li>
-          <strong>Err toward nesting.</strong> Table nesting is far more reliable than setting left and right margins or padding for table cells.
-        </li>
-        <li>
-          <strong>Use a container table for body background colors.</strong> Many email clients ignore background colors specified in your CSS or the <code>BODY</code> tag. To work around this, wrap your entire email with a 100% width table and give that a background color.
-        </li>
-      </ul>
+    <li>
+      <strong>Err toward nesting.</strong> Table nesting is far more reliable than setting left and right margins or padding for table cells.
     </li>
-    <li>CSS and font formatting
-      <ul>
-        <li>
-          <strong>Do you best to avoid CSS altogether.</strong> But, if CSS is a must, make sure you move your CSS inline and review the <a href="http://www.campaignmonitor.com/css/">list of CSS support</a> across the major clients for a good idea of the safe properties and those that should be avoided.
-        </li>
-        <li>
-          <strong>Avoid shorthand.</strong> A number of email clients reject CSS shorthand for the font property as well as hex notation.
-        </li>
-        <li>
-          <strong>Avoid using paragraphs.</strong> If part of your design is height-sensitive and calls for pixel perfection, avoid the paragraph tag altogether and set the text formatting inline in a table cell.
-        </li>
-        <li>
-          <strong>Link colors may be overwritten.</strong> If link color is important to your design, can avoid it being "reset" by setting a default color for each link inline and then adding a redundant <code>span</code> inside the a tag.
-        </li>
-      </ul>
+    <li>
+      <strong>Use a container table for body background colors.</strong> Many email clients ignore background colors specified in your CSS or the <code>BODY</code> tag. To work around this, wrap your entire email with a 100% width table and give that a background color.
     </li>
-    <li>Images in HTML
-      <ul>
-        <li>
-          <strong>Avoid spacer images.</strong> Most email clients replace images with an empty placeholder in the same dimensions, others strip the image altogether. Stick to fixed cell widths to keep your formatting in place with or without images.
-        </li>
-        <li>
-          <strong>Always include the dimensions of your image.</strong> A number of clients will invent their own sizes when images are blocked and break your layout. Also, ensure that any images are correctly sized before adding them to your email; some email clients will ignore the dimensions specified in code and rely on the true dimensions of the image.
-        </li>
-        <li>
-          <strong>Avoid PNG images.</strong> Some email clients don't support 8-bit or 24-bit PNG images, so stick with the GIF or JPG.
-        </li>
-        <li>
-          <strong>Don't use background images.</strong> Some email clients have no support for background images. There are hacks to get full page background images working, but monkey-patching should be a last resort.
-        </li>
-        <li>
-          <strong>Use the display hack for Hotmail.</strong> Windows Live Hotmail adds a few pixels of additional padding below images. A workaround is to set <code>display:block</code> for images.
-        </li>
-        <li>
-          <strong>Don't use floats.</strong> Some email clients offer no support for the <code>float</code> property. Instead, use the <code>align</code> attribute of the <code>img</code> tag to float images in your email.
-        </li>
-        <li>
-          <strong>Use absolute paths.</strong> Images should be hosted on a publicly accessible web server and the image source should point to the full URL.</li></ul>
-        </li>
-        <li>Video in email
-          <ul>
-            <li>
-              <strong>Quite simply, don't do it.</strong> There is no support for JavaScript or the <code>object</code> tag in email and very few email clients support HTML5 video.
-            </li>
-          </ul>
-        </li>
-        <li>Think small
-          <ul>
-            <li>
-              <strong>Stay within the constraints of 550-650px.</strong> Most people view messages in their preview panes, which are narrow and small; for instance, the preview pane in AOL 9 is less than 200 pixels wide. Templates designed by MailChimp and Campaign Monitor are never more than 600 pixels wide.
-            </li>
-            <li>
-              <strong>Mobile screens are much smaller.</strong> The most common mobile email readers are in a range of 320px. The iPhone allows for a 300px width when held vertically and a 480px width in landscape mode. The iPhone also resize email content to fit the screen, but many other smart phones don't, so it makes sense to design for the lowest common denominator.
-            </li>
-          </ul>
-        </li>
-      </ul>
+  </ul>
+
+  <h4>CSS and font formatting</h4>
+  <ul class="bulleted">
+    <li>
+      <strong>Do you best to avoid CSS altogether.</strong> But, if CSS is a must, make sure you move your CSS inline and review the <a href="http://www.campaignmonitor.com/css/">list of CSS support</a> across the major clients for a good idea of the safe properties and those that should be avoided.
     </li>
-  </ol>
+    <li>
+      <strong>Avoid shorthand.</strong> A number of email clients reject CSS shorthand for the font property as well as hex notation.
+    </li>
+    <li>
+      <strong>Avoid using paragraphs.</strong> If part of your design is height-sensitive and calls for pixel perfection, avoid the paragraph tag altogether and set the text formatting inline in a table cell.
+    </li>
+    <li>
+      <strong>Link colors may be overwritten.</strong> If link color is important to your design, can avoid it being "reset" by setting a default color for each link inline and then adding a redundant <code>span</code> inside the a tag.
+    </li>
+  </ul>
+
+  <h4>Images in HTML</h4>
+  <ul class="bulleted">
+    <li>
+      <strong>Avoid spacer images.</strong> Most email clients replace images with an empty placeholder in the same dimensions, others strip the image altogether. Stick to fixed cell widths to keep your formatting in place with or without images.
+    </li>
+    <li>
+      <strong>Always include the dimensions of your image.</strong> A number of clients will invent their own sizes when images are blocked and break your layout. Also, ensure that any images are correctly sized before adding them to your email; some email clients will ignore the dimensions specified in code and rely on the true dimensions of the image.
+    </li>
+    <li>
+      <strong>Avoid PNG images.</strong> Some email clients don't support 8-bit or 24-bit PNG images, so stick with the GIF or JPG.
+    </li>
+    <li>
+      <strong>Don't use background images.</strong> Some email clients have no support for background images. There are hacks to get full page background images working, but monkey-patching should be a last resort.
+    </li>
+    <li>
+      <strong>Use the display hack for Hotmail.</strong> Windows Live Hotmail adds a few pixels of additional padding below images. A workaround is to set <code>display:block</code> for images.
+    </li>
+    <li>
+      <strong>Don't use floats.</strong> Some email clients offer no support for the <code>float</code> property. Instead, use the <code>align</code> attribute of the <code>img</code> tag to float images in your email.
+    </li>
+    <li>
+      <strong>Use absolute paths.</strong> Images should be hosted on a publicly accessible web server and the image source should point to the full URL.</li>
+    </li>
+  </ul>
+
+  <h4>Video in email</h4>
+  <ul class="bulleted">
+    <li>
+      <strong>Quite simply, don't do it...yet.</strong> There is no support for JavaScript or the <code>object</code> tag in email and very few email clients support HTML5 video.
+    </li>
+  </ul>
+
+  <h4>Think small</h4>
+  <ul class="bulleted">
+    <li>
+      <strong>Stay within the constraints of 550-650px.</strong> Most people view messages in their preview panes, which are narrow and small; for instance, the preview pane in AOL 9 is less than 200 pixels wide. Templates designed by MailChimp and Campaign Monitor are never more than 600 pixels wide.
+    </li>
+    <li>
+      <strong>Mobile screens are much smaller.</strong> The most common mobile email readers are in a range of 320px. The iPhone allows for a 300px width when held vertically and a 480px width in landscape mode. The iPhone also resize email content to fit the screen, but many other smart phones don't, so it makes sense to design for the lowest common denominator.
+    </li>
+  </ul>
 
 </article>
