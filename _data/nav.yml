@@ -2,19 +2,19 @@
   url: "/"
 
 - name: "Style Guide"
-  url: "/styleguide"
+  url: "/styleguide#styleguide"
 
 - name: "Email"
-  url: "/email"
+  url: "/email#email"
 
 - name: "SDLC"
-  url: "/SDLC"
+  url: "/SDLC#sdlc"
 
 - name: "Writing"
-  url: "/writing"
+  url: "/writing#writing"
 
 - name: "Contact"
-  url: "/contact"
+  url: "/contact#contact"
 
 - name: "Resume"
-  url: "/resume"
+  url: "/resume#summary"
