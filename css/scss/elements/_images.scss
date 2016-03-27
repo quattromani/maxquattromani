@@ -23,6 +23,8 @@ figcaption {
 amp-img {
   &.logo {
     position: fixed;
+    right: 0;
+    bottom: 0;
     margin: $base-spacing;
     z-index: 9999;
   }
