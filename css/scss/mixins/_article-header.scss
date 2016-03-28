@@ -9,7 +9,7 @@
 
 	@include media($mobile) {
     @include font-size(16);
-    @include margin(0 0 ($base-spacing / 2));
+    @include margin(0 0 ($base-spacing));
 		@include padding($base-spacing/2 $base-spacing);
 		width: calc(100% +  #{$base-spacing*2});
 		margin-left: -$base-spacing;
