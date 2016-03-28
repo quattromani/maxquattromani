@@ -22,10 +22,16 @@ figcaption {
 
 amp-img {
   &.logo {
+    @include border-radius(50%);
+    @include shadow-level(2);
     position: fixed;
     right: 0;
     bottom: 0;
     margin: $base-spacing;
     z-index: 9999;
+  }
+
+  &.headshot {
+    margin: base-spacing;
   }
 }

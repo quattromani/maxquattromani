@@ -21,6 +21,18 @@
   background: rgba($color-black,.5);
 }
 
+header,
+main,
+footer {
+  @include transition;
+}
+
+// .toggle:checked + .outer-wrapper header,
+// .toggle:checked + .outer-wrapper main,
+// .toggle:checked + .outer-wrapper footer {
+//   filter: blur(3px);
+// }
+
 .menu {
   position: absolute;
   top: $base-spacing;
@@ -34,8 +46,7 @@
 
 .close-btn {
   float: right;
-  padding: ($base-spacing * .75);
-  color: $color-white;
+  color: $color-brand-secondary;
 }
 
 .menu-container,
@@ -44,22 +55,46 @@ main {
 }
 
 .menu-container {
+  @include shadow-level(4);
   position: absolute;
   float: left;
-  background: #2c3e50;
+  background: $color-brand-quaternary;
   width: 40%;
   height: 100%;
-  margin-left: -40%;
-  z-index:99;
+  margin-left: -41%;
+  z-index: 99;
 
   @include media($mobile) {
     width: 70%;
     margin-left: -70%;
   }
+
+  header {
+    @include padding($base-spacing);
+    background-color: $color-brand-quaternary-complimentary;
+    text-align: left;
+
+    p {
+      @include font-family($base-font-family-alt);
+      margin-bottom: 0;
+      color: $color-brand-secondary;
+    }
+
+    a {
+      @include font-family($base-font-family-alt);
+      color: $color-brand-secondary;
+    }
+  }
 }
 
 .slide-menu {
   li {
+    i {
+      width: 25px;
+      margin-right: ($base-spacing);
+      color: $color-white;
+    }
+
     @include font-size($nav-font-size);
 
     a {
@@ -72,7 +107,7 @@ main {
       text-transform: uppercase;
 
       &:hover {
-        background-color: #34495e;
+        background-color: $color-grey;
       }
     }
   }

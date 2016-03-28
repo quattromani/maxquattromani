@@ -1,20 +1,27 @@
 - name: "Home"
   url: "/"
+  icon: 'home'
 
 - name: "Style Guide"
   url: "/styleguide/#styleguide"
+  icon: 'paint-brush'
 
 - name: "Email"
   url: "/email/#email"
+  icon: 'envelope'
 
 - name: "SDLC"
   url: "/SDLC/#sdlc"
+  icon: 'code'
 
 - name: "Writing"
   url: "/writing/#writing"
+  icon: 'pencil'
 
 - name: "Contact"
   url: "/contact/#contact"
+  icon: 'paper-plane'
 
 - name: "Resume"
   url: "/resume/#summary"
+  icon: 'file'
