@@ -1,20 +1,25 @@
 {% assign current = page.url | split: '/' %}
-<a href="#" class="open-panel" aria-label="navigation menu"><span></span></a>
 
-<nav role="navigation">
+<div class="menu-container">
 
-    <div class="menu" role="menubar">
-      <ul role="menu">
-        {% for nav in site.data.nav %}
-        {% if nav.name == page.parent %}
-        <li class="active" role="menuitem">
-          {% else %}
-          <li role="menuitem">
-            {% endif %}
-            <a href="{{ nav.url }}">{{ nav.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+  <div class="menu-heading">
+    <label for="offcanvas-menu" class="close-btn">
+      <i class="fa fa-times fa-2x"></i>
+    </label>
+  </div>
 
+  <nav role="navigation" class="slide-menu">
+    <ul>
+    {% for nav in site.data.nav %}
+    {% if nav.name == page.parent %}
+    <li class="active" role="menuitem">
+      {% else %}
+      <li role="menuitem">
+        {% endif %}
+        <a href="{{ nav.url }}">{{ nav.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
   </nav>
+
+</div>
