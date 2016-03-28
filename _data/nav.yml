@@ -2,6 +2,10 @@
   url: "/"
   icon: 'home'
 
+- name: "About Me"
+  url: "/about/#about"
+  icon: 'user'
+
 - name: "Style Guide"
   url: "/styleguide/#styleguide"
   icon: 'paint-brush'
@@ -13,10 +17,6 @@
 - name: "SDLC"
   url: "/SDLC/#sdlc"
   icon: 'code'
-
-- name: "Writing"
-  url: "/writing/#writing"
-  icon: 'pencil'
 
 - name: "Contact"
   url: "/contact/#contact"

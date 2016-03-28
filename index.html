@@ -21,51 +21,19 @@ parent: Home
     <p>Today, Max oversees development for a media agency and takes on a few side projects along the way. Have a look around the site and if you have <a href="contact">feedback</a>, don't be shy.</p>
   </section>
 
-  <section>
-    <h3>How I work</h3>
-    <ul class="bulleted">
-      <li>
-        <a href="http://support.apple.com/kb/SP690">MacBook Pro (Retina, 15-inch, Late 2013) </a> - running Yosemite beta v10.11.4, which I have named Fleetwood Macbook.
-      </li>
-      <li>
-        My editor of choice is <a href="http://www.sublimetext.com/">Sublime Text</a>.
-      </li>
-      <li>
-        <a href="https://www.google.com/chrome/browser/">Chrome</a>: I tend to develop almost exclusively in Chrome at the start of projects. At one point I developed in Firefox exclusively. These days though, I typically do mile-marker checkins in Firefox, Safari, Opera, and Internet Explorer (back to IE9, let's not dwell on that fact).
-      </li>
-      <li>
-        <a href="http://iterm2.com/">iTerm2</a>
-      </li>
-    </ul>
-  </section>
-
 </article>
 
-<aside>
+<aside class="writing">
   <section>
-    <h3>About this site</h3>
-    <ul class="bulleted">
+    <h2>Articles</h2>
+
+    <ul>
+      {% for post in site.posts %}
       <li>
-        This site is now an <a href="https://www.ampproject.org/">Accelerated Mobile Pages (AMP) Project</a>. NOTE: As I rebuild this site using the latest tech, some of my styleguide elements may not work as anticipated (like modals, and other jQuery reliant components).
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
       </li>
-      <li>
-        Built on <a href="http://jekyllrb.com/">Jekyll</a>, the open source static site generator
-      </li>
-      <li>
-        Hosted on  <a href="https://pages.github.com/">Github Pages</a>
-      </li>
-      <li>
-        The HTML is written in vanilla HTML, but I'm redoing it in <a href="http://haml.info/">HAML</a>, because HAML is the bees knees!
-      </li>
-      <li>
-        The CSS is written in <a href="http://sass-lang.com/">Sass</a>
-      </li>
-      <li>Then things get <a href="http://gruntjs.com/">grunt</a>ed, but I'm starting to lean towards <a href="http://gulpjs.com/">gulp</a>. Time will tell.
-      </li>
-      <li>
-        <a href="writing">Posts</a> are written in markdown
-      </li>
+      {% endfor %}
     </ul>
   </section>
 </aside>
-<!-- /.about -->

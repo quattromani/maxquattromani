@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
 .writing {
-  article {
-    ul {
-      @include vertical-list(lined);
-    }
+  ul {
+    @include vertical-list(lined);
+  }
 
-    time {
-      display: block;
-    }
+  time {
+    display: block;
+    color: $color-light-grey;
   }
 }
