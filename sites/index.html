@@ -16,13 +16,32 @@ parent: sites
   <ul class="vertical">
     {% for titles in site.examples %}
     <li><a href="{{ titles.url }}" target="_blank">{{ titles.title }}</a>
-      {% if titles.status == false %}
+
       <sup class="reference">
+      {% if titles.status == false %}
         <a href="#cite-1">
           <span>[</span>INDEV<span>]</span>
         </a>
+      {% endif %}
+      {% if titles.type == 'RR' %}
+        <a href="#cite-2">
+          <span>[</span>{{ titles.type }}<span>]</span>
+        </a>
       </sup>
       {% endif %}
+      {% if titles.type == 'NB' %}
+        <a href="#cite-3">
+          <span>[</span>{{ titles.type }}<span>]</span>
+        </a>
+      </sup>
+      {% endif %}
+      {% if titles.type == 'NB/NR' %}
+        <a href="#cite-4">
+          <span>[</span>{{ titles.type }}<span>]</span>
+        </a>
+      </sup>
+      {% endif %}
+
     </li>
     {% endfor %}
   </ul>
@@ -37,6 +56,15 @@ parent: sites
     <ul>
       <li id="cite-1">
         [INDEV] - These sites are in various states of Development. Some are ready to launch; others are waiting for creative assets or client approval.
+     </li>
+     <li id="cite-2">
+        [RR] - This site was a responsive rebuild of an existing template/site
+     </li>
+     <li id="cite-3">
+        [NB] - This site was a new responsive build.
+     </li>
+     <li id="cite-4">
+        [NB/NR] - This site was a new build, however it is not responsive.
      </li>
    </ul>
 

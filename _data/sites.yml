@@ -3,495 +3,653 @@
   - title: 'Max Quattromani'
     url: 'http://maxquattromani.com'
     status: true
+    type: 'NB'
   - title: 'Patti Quattromani'
     url: 'http://pattiquattromani.com'
     status: true
+    type: 'NB'
 
 - section: Corporate Sites
   examples:
   - title: 'Time Warner Cable'
     url: 'http://twc.com'
     status: true
+    type: 'NB'
   - title: 'Time Warner Cable - Business Class Developer Toolkit'
     url: 'http://quattromani.github.io/devtoolkit/devtoolkit.html'
     status: true
+    type: 'NB'
   - title: 'OppenheimerFunds'
     url: 'http://oppenheimerfunds.com'
     status: true
+    type: 'NB'
   - title: 'GLG'
     url: 'https://glg.it/'
     status: true
+    type: 'NB'
   - title: 'Autoist'
     url: 'http://autoist.com'
     status: true
+    type: 'NB'
   - title: 'Terracare Associates'
     url: 'http://http://terracareassociates.com'
     status: true
+    type: 'NB'
   - title: 'My Statebridge'
     url: 'http://mystatebridge.com'
     status: true
+    type: 'NB'
   - title: 'Oralabs'
     url: 'http://www.oralabs.com/'
     status: true
+    type: 'NB/NR'
   - title: 'Leashables'
     url: 'http://www.leashables.com/'
     status: true
+    type: 'NB/NR'
 
 - section: Smaller Company Projects
   examples:
   - title: 'Clinical Advisory Solutions'
     url: 'http://clinicaladvisorysolutions.com'
     status: true
+    type: 'NB'
   - title: 'Colorado School Superintendents'
     url: 'http://coschoolchiefs.com'
     status: true
+    type: 'NB'
 
 - section: Personal Projects
   examples:
   - title: 'Scaffold'
     url: 'http://quattromani.github.io/scaffold/'
     status: true
+    type: 'NB'
   - title: 'Office Football Club'
     url: 'http://officefootball.club'
     status: true
+    type: 'NB'
   - title: 'Qoppa'
     url: 'http://qoppa.co'
     status: true
+    type: 'NB'
   - title: '1966 Mustang'
     url: 'http://1966mustang.us'
     status: true
+    type: 'NB'
 
 - section: Mall Sites
   examples:
   - title: 'New South Bay Galleria'
     url: 'http://new.southbaygalleria.com'
     status: true
+    type: 'NB'
   - title: 'Boulevard Mall'
     url: 'http://www.boulevard-mall.com'
     status: true
+    type: 'RR'
   - title: 'South Bay Galleria'
     url: 'http://www.southbaygalleria.com'
     status: true
+    type: 'RR'
   - title: 'Galleria at Sunset'
     url: 'http://www.galleriaatsunset.com'
     status: true
+    type: 'RR'
   - title: 'Promenade Temecula'
     url: 'http://www.promenadetemecula.com'
     status: true
+    type: 'RR'
   - title: 'Victoria Gardens'
     url: 'http://www.victoriagardensie.com'
     status: true
+    type: 'RR'
   - title: 'Short Pump Town Center'
     url: 'http://www.shortpumpmall.com/'
     status: true
+    type: 'RR'
   - title: 'The Shops at Wiregrass'
     url: 'http://www.theshopsatwiregrass.com/'
     status: true
+    type: 'RR'
   - title: 'Ridge Hill'
     url: 'http://www.ridgehill.com/'
     status: true
+    type: 'RR'
   - title: 'Antelope Valley Mall'
     url: 'http://www.av-mall.com/'
     status: true
+    type: 'RR'
   - title: 'Charleston Town Center'
     url: 'http://www.charlestontowncenter.com/'
     status: true
+    type: 'RR'
   - title: 'The Shops at Tanforan'
     url: 'http://www.theshopsattanforan.com/'
     status: true
+    type: 'RR'
   - title: 'Tower City Center'
     url: 'http://www.towercitycenter.com/'
     status: true
+    type: 'RR'
   - title: 'Northfield Stapleton'
     url: 'http://www.northfieldstapleton.com/'
     status: true
+    type: 'RR'
   - title: 'Ballston Common Mall'
     url: 'http://www.ballston-common.com/'
     status: true
+    type: 'RR'
   - title: 'The Mall at Robinson'
     url: 'http://www.shoprobinsonmall.com/'
     status: true
+    type: 'RR'
   - title: 'Broadway Mall'
     url: 'http://www.broadwaymall.com'
     status: true
+    type: 'RR'
   - title: 'Yorktown Center'
     url: 'http://www.yorktowncenter.com'
     status: true
+    type: 'RR'
   - title: 'Gateway Mall'
     url: 'http://www.gatewayatl.com'
     status: true
+    type: 'RR'
   - title: 'Gulf Coast Town Center'
     url: 'http://www.gulfcoasttowncenter.com'
     status: true
+    type: 'RR'
   - title: 'Indian River Mall'
     url: 'http://indianrivermall.com'
     status: true
+    type: 'RR'
   - title: 'Shoppes at Knollwood'
     url: 'http://www.shoppesatknollwood.com'
     status: true
+    type: 'RR'
   - title: 'Paseo Colorado'
     url: 'http://www.paseocolorado.com'
     status: true
+    type: 'NB'
   - title: 'Lloyd Center'
     url: 'http://www.lloydcenter.com'
     status: true
+    type: 'NB'
   - title: 'Rock Hill Galleria'
     url: 'http://www.rockhillgalleria.com'
     status: true
+    type: 'NB'
   - title: 'Bassett Place'
     url: 'http://www.shopbassettplace.com'
     status: true
+    type: 'NB'
   - title: 'Glendale Marketplace'
     url: 'http://www.glendalemarketplace.com'
     status: true
+    type: 'NB'
   - title: 'Brookwood Village'
     url: 'http://www.shopbrookwoodvillage.com'
     status: true
+    type: 'NB'
   - title: 'Spanish Fort Town Center'
     url: 'http://www.spanishforttowncenter.com'
     status: true
+    type: 'NB'
   - title: 'Eden Prairie Center'
     url: 'http://www.edenprairiecenter.com'
     status: true
+    type: 'NB'
   - title: 'University Mall (VT)'
     url: 'http://www.umallvt.com'
     status: true
+    type: 'RR'
   - title: 'Plaza Paseo'
     url: 'http://plazapaseomall.com'
     status: true
+    type: 'RR'
   - title: 'The Village at Nellie Gail'
     url: 'http://www.thevillageatnelliegailranch.com'
     status: true
+    type: 'RR'
   - title: 'Wenatchee Valley Mall'
     url: 'http://www.wenatcheevalleymall.com'
     status: true
+    type: 'RR'
   - title: 'Heritage Mall'
     url: 'http://www.heritagemall.com'
     status: true
+    type: 'RR'
   - title: 'The Mall at Whitney Field'
     url: 'http://www.themallatwhitneyfield.com'
     status: true
+    type: 'RR'
   - title: 'Southbay Pavillion'
     url: 'http://www.southbaypavilion.com'
     status: true
+    type: 'RR'
   - title: 'South Lake Mall'
     url: 'http://www.southlakemall.com'
     status: true
+    type: 'RR'
   - title: 'Inlet Square Mall'
     url: 'http://inletsquaremall.com'
     status: true
+    type: 'RR'
   - title: 'PlazAmericas Mall'
     url: 'http://plazamericas.com/'
     status: true
+    type: 'RR'
   - title: 'Oviedo Mall'
     url: 'http://www.myoviedomall.com/'
     status: true
+    type: 'RR'
   - title: 'Mall at Stonecrest'
     url: 'http://www.mallatstonecrest.com/'
     status: true
+    type: 'RR'
   - title: 'The Gallery At South DeKalb'
     url: 'http://galleryatsouthdekalb.placewise.com/'
     status: true
+    type: 'RR'
   - title: 'Oakland Plaza'
     url: 'http://www.shopoaklandplaza.com/'
     status: true
+    type: 'NB'
   - title: 'Rice Village District'
     url: 'http://www.ricevillagedistrict.com/'
     status: true
+    type: 'NB'
   - title: 'Waterside'
     url: 'http://www.watersidefw.com/'
     status: true
+    type: 'NB'
   - title: 'Burr Ridge Village Center'
     url: 'http://www.shopburrridge.com/'
     status: true
+    type: 'NB'
   - title: 'Hillside Village'
     url: 'http://www.shophillsidevillage.com/'
     status: true
+    type: 'NB'
   - title: 'WestBend'
     url: 'http://www.westbendfw.com/'
     status: true
+    type: 'NB'
   - title: 'Watters Creek'
     url: 'http://www.watterscreek.com/'
     status: true
+    type: 'NB'
   - title: 'Market Street Flowood'
     url: 'http://www.marketstreet-flowood.com/'
     status: true
+    type: 'NB'
   - title: 'The Shops at Highland Village'
     url: 'http://www.theshopsathighlandvillage.com/'
     status: true
+    type: 'NB'
   - title: 'Saddle Creek'
     url: 'http://www.shopsofsaddlecreek.com/'
     status: true
+    type: 'NB'
   - title: 'La Palmera'
     url: 'http://www.lapalmera.com/'
     status: true
+    type: 'NB'
   - title: 'First Street Napa'
     url: 'http://www.firststreetnapa.com/'
     status: true
+    type: 'NB'
   - title: 'Glades Plaza'
     url: 'http://gladesplaza.com/'
     status: true
+    type: 'NB'
   - title: 'Midway Mall'
     url: 'http://midwaymallshopping.com/'
     status: true
+    type: 'NB'
   - title: 'Columbia Gorge Outlets'
     url: 'http://shopcolumbiagorgeoutlets.com/'
     status: true
+    type: 'NB'
   - title: 'Louisiana Boardwalk Outlets'
     url: 'http://www.louisianaboardwalk.com/'
     status: true
+    type: 'RR'
   - title: 'Park West'
     url: 'http://www.shopparkwest.com/'
     status: true
+    type: 'NB'
   - title: 'Lakeforest Mall'
     url: 'http://www.shoplakeforest.com/'
     status: true
+    type: 'NB'
   - title: 'The Commons at Federal Way'
     url: 'http://www.shopthecommonsmall.com/'
     status: true
+    type: 'NB'
   - title: 'Everett Mall'
     url: 'http://www.shopeverettmall.com/'
     status: true
+    type: 'NB'
   - title: 'Crossroads Mall (IA)'
     url: 'http://www.shopcrossroadscenter.com/'
     status: true
+    type: 'NB'
   - title: 'Towson Square'
     url: 'http://www.towson-square.com/'
     status: true
+    type: 'NB'
   - title: 'The Promenade Shops at Orchard Valley'
     url: 'http://www.thepromenadeshopsatorchardvalley.com/'
     status: true
+    type: 'RR'
   - title: 'The Promenade Shops at Briargate'
     url: 'http://www.thepromenadeshopsatbriargate.com/'
     status: true
+    type: 'RR'
   - title: 'The Promenade Shops at Evergreen Walk'
     url: 'http://www.thepromenadeshopsatevergreenwalk.com/'
     status: true
+    type: 'RR'
   - title: 'Carriage Crossing'
     url: 'http://www.shopcarriagecrossing.com/'
     status: true
+    type: 'RR'
   - title: 'Meadow Glen Mall'
     url: 'http://www.meadowglen.com/'
     status: true
+    type: 'RR'
   - title: 'One Westside'
     url: 'http://onewestside.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Greenbrier MarketCenter'
     url: 'http://greenbriermc.placewise.com/'
     status: true
+    type: 'RR'
   - title: 'Los Altos MarketCenter'
     url: 'http://losaltosmc.placewise.com/'
     status: true
+    type: 'RR'
   - title: 'CambridgeSide Galleria'
     url: 'http://www.cambridgesidegalleria.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
   - title: 'Outlets of Little Rock'
     url: 'http://www.outletsoflittlerock.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
   - title: 'Asheville Outlets'
     url: 'http://www.shopashevilleoutlets.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
   - title: 'Chestnut Hill Square'
     url: 'http://www.chestnuthillsquare.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
   - title: 'Shop Newburyport'
     url: 'http://www.newburyportshops.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
   - title: 'Palm Beach Outlets'
     url: 'http://www.palmbeachoutlets.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
   - title: 'Westgate Mall (MA)'
     url: 'http://www.shopatwestgatemall.com/?design=castle@NewEnglandDev'
     status: true
+    type: 'RR'
 
 - section: Outlet Centers
   examples:
   - title: 'Outlets at Anthem'
     url: 'http://www.outletsanthem.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Silverthorne'
     url: 'http://www.outletsatsilverthorne.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Hillsboro'
     url: 'http://www.outletsathillsboro.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Loveland'
     url: 'http://www.outletsatloveland.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Conroe'
     url: 'http://www.outletsatconroe.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Cabazon Outlets'
     url: 'http://www.cabazonoutlets.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Vicksburg'
     url: 'http://www.outletsatvicksburg.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Traverse Mountain'
     url: 'http://www.outletsattraversemountain.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Citadel Outlets'
     url: 'http://www.citadeloutlets.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Castle Rock'
     url: 'http://www.outletsatcastlerock.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at The Dells'
     url: 'http://www.outletsatthedells.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlets at Barstow'
     url: 'http://www.theoutletsatbarstow.com/?design=sunshine@Craig'
     status: false
+    type: 'RR'
   - title: 'Outlet Shoppes at Atlanta'
     url: 'http://outletshoppesatatlanta.placewise.com'
     status: false
+    type: 'NB'
   - title: 'The Outlet Shoppes at Gettysburg'
     url: 'http://outletshoppesgettysburg.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'The Outlet Shoppes at El Paso'
     url: 'http://outletshoppeselpaso.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'The Outlet Shoppes at Oklahoma City'
     url: 'http://outletshoppesoklahomacity.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'The Outlet Shoppes of the Bluegrass'
     url: 'http://outletshoppesbluegrass.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'The Outlet Shoppes at Oshkosh'
     url: 'http://outletshoppesoshkosh.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'The Outlet Shoppes at Fremont'
     url: 'http://outletshoppesfreemont.placewise.com/'
     status: false
+    type: 'NB'
 
 - section: Power Centers
   examples:
   - title: 'Mayfair Shopping Center'
     url: 'http://shopmayfairshoppingcenter.com/'
     status: true
+    type: 'NB'
   - title: 'Blue Star Shopping Center'
     url: 'http://bluestarshoppingcenter.com/'
     status: true
+    type: 'NB'
   - title: 'Somerset Shopping Center'
     url: 'http://shopsomersetshoppingcenter.com/'
     status: true
+    type: 'NB'
   - title: 'Post Road Plaza'
     url: 'http://shoppostroadplaza.com/'
     status: true
+    type: 'NB'
   - title: 'Western Lights Shopping Center'
     url: 'http://westernlightsshoppingcenter.com'
     status: true
+    type: 'NB'
   - title: 'Airport Plaza'
     url: 'http://airportplaza.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'Edgewater Commons'
     url: 'http://edgewatercommons.placewise.com/'
     status: false
+    type: 'NB'
   - title: 'Renaissance Centre'
     url: 'http://renaissancecentre.placewise.com/'
     status: false
+    type: 'NB'
 
 - section: WiFi Sites
   examples:
   - title: 'WiFi Demo'
     url: 'http://wifidemo.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Bel Air Mall'
     url: 'http://belair.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Grand Traverse Mall'
     url: 'http://grandtraverse.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Bayshore Mall'
     url: 'http://bayshore.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'The Mall at Sierra Vista'
     url: 'http://mallsierravista.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Chula Vista Center'
     url: 'http://chulavistacenter.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'NewPark Mall'
     url: 'http://newpark.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Colony Square Mall'
     url: 'http://colonysquare.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Vista Ridge Mall'
     url: 'http://vistaridgemall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Chesterfield Towne Center'
     url: 'http://chesterfieldva.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Westwood Mall'
     url: 'http://westwoodmall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'The Mall at Barnes Crossing'
     url: 'http://barnescrossing.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'The Greenville Mall'
     url: 'http://thegreenvillemall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Valley Hills Mall'
     url: 'http://valleyhillsmall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Washington Park Mall'
     url: 'http://washingtonparkmall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Sikes Senter'
     url: 'http://sikessenter.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Mall St. Vincent'
     url: 'http://mallstvincent.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Pierre Bossier Mall'
     url: 'http://pierrebossier.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'The Centre at Salisbury'
     url: 'http://centreatsalisbury.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Birchwood Mall'
     url: 'http://birchwood.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Lansing Mall'
     url: 'http://lansingmall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Southland Center'
     url: 'http://southlandcenter.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Cache Valley Mall'
     url: 'http://cachevalley.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Three Rivers Mall'
     url: 'http://threerivers.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'White Mountain Mall'
     url: 'http://whitemountain.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'The Mall at Turtle Creek'
     url: 'http://mallatturtlecreek.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Lakeland Square'
     url: 'http://lakelandsquaremall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Spring Hill Mall'
     url: 'http://springhillmall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Mt. Shasta Mall'
     url: 'http://mtshasta.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Southland Mall'
     url: 'http://southlandmall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'West Valley Mall'
     url: 'http://westvalleymall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Silver Lake Mall'
     url: 'http://silverlakemall.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'Animas Valley Mall'
     url: 'http://animasvalley.placewise.com/'
     status: true
+    type: 'NB'
   - title: 'North Plains Mall'
     url: 'http://northplains.placewise.com/'
     status: true
+    type: 'NB'
