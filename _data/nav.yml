@@ -25,3 +25,11 @@
 - name: "Resume"
   url: "/resume/#summary"
   icon: 'file'
+
+- name: "Reading"
+  url: "/reading/#reading"
+  icon: 'book'
+
+- name: "Sites"
+  url: "/sites/#sites"
+  icon: 'globe'
