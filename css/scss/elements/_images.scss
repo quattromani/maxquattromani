@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+figure {
+  position: relative;
+  width: 100%;
+}
+
 img {
   display: inherit;
   height: auto;
@@ -9,9 +14,8 @@ img {
   color: $color-brand-primary;
 }
 
-figure {
-  position: relative;
-  width: 100%;
+svg:not(:root) {
+  overflow: hidden;
 }
 
 figcaption {

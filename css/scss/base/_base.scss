@@ -1,16 +1,23 @@
 @charset "UTF-8";
 
+// Base
+@import "reset";
+
 /* ==========================
     Base
    ========================== */
 
+:root {
+  background-color: if(variable-exists(root-background-color), $root-background-color, #ffffff);
+  box-sizing: if(variable-exists(root-box-sizing), $root-box-sizing, border-box);
+  color: if(variable-exists(root-color), $root-color, #000000);
+  cursor: if(variable-exists(root-cursor), $root-cursor, default);
+  font: if(variable-exists(root-font-size), $root-font-size, 100%)/#{if(variable-exists(root-line-height), $root-line-height, 1.5)} if(variable-exists(root-font-family), $root-font-family, sans-serif);
+}
+
 html {
-	box-sizing: border-box;
   overflow: auto;
   height: 100%;
-  font-family: $base-font-family;
-  font-size: $base-font-reset;
-  color: $base-font-color;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +35,6 @@ html, body {
 }
 
 body {
-  background-color: $color-brand-primary-complimentary;
   background-image: url('/images/banner.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -50,7 +56,8 @@ textarea {
 }
 
 [hidden], template {
-  display: none; }
+  display: none;
+}
 
 img,
 canvas,
@@ -59,15 +66,8 @@ video,
 svg,
 select,
 textarea {
+  vertical-align: if(variable-exists(media-element-vertical-align), $media-element-vertical-align, middle);
   max-width: 100%;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 // Base

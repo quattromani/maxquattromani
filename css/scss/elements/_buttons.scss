@@ -3,7 +3,7 @@
 .btn,
 button {
   @include inline-block;
-  @include margin(0);
+  @include margin;
   @include padding($base-spacing/2 $base-spacing);
   @include font-family($button-font-family);
   @include font-size($button-font-size);
@@ -98,8 +98,8 @@ button {
 @-moz-document url-prefix() {
   // Remove button padding in FF
   button::-moz-focus-inner {
-    @include padding(0);
-    border: none;
+    @include padding;
+    border: 0;
   }
 
   input {
