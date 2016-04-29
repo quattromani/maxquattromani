@@ -352,8 +352,16 @@
     url: 'http://www.thepromenadeshopsatevergreenwalk.com/'
     status: true
     type: 'RR'
+  - title: 'The Promenade Shops at Centerra'
+    url: 'http://www.thepromenadeshopsatcenterra.com/'
+    status: true
+    type: 'RR'
   - title: 'Carriage Crossing'
     url: 'http://www.shopcarriagecrossing.com/'
+    status: true
+    type: 'RR'
+  - title: 'Perry Crossing'
+    url: 'http://www.perry-crossing.com/'
     status: true
     type: 'RR'
   - title: 'Meadow Glen Mall'
@@ -400,6 +408,38 @@
     url: 'http://www.shopatwestgatemall.com/?design=castle@NewEnglandDev'
     status: true
     type: 'RR'
+  - title: 'Bay Plaza'
+    url: 'http://bayplaza.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'Hill Country Galleria'
+    url: 'http://www.hillcountrygalleria.com/'
+    status: true
+    type: 'RR'
+  - title: 'Mount Pleasant Town Centre'
+    url: 'http://www.mtpleasanttownecentre.com/'
+    status: true
+    type: 'NB'
+  - title: 'Bridge Street Town Centre'
+    url: 'http://www.bridgestreethuntsville.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Avenue Peach Tree City'
+    url: 'http://peachtreecity.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Avenue East Cobb'
+    url: 'http://eastcobb.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Avenue West Cobb'
+    url: 'http://westcobb.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Avenue Viera'
+    url: 'http://viera.placewise.com/'
+    status: true
+    type: 'NB'
 
 - section: Outlet Centers
   examples:
