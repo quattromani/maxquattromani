@@ -3,7 +3,11 @@ layout: post
 title: "Designs by Puppy"
 permalink: designs-by-puppy
 sub-title: "What my dog has taught me about building for users"
+img:
+img-height:
+img-width:
 date: 2014-08-28 10:32:34
+description: "Just a quick thought I had this morning: my puppy, Pixel, is the perfect user-testing subject. Pixel has pretty basic needs: feed me, shelter me, scratch my belly, be kind to me."
 categories: 
     - design
 ---

@@ -3,7 +3,11 @@ layout: post
 title:  "Start using currentColor in your CSS"
 permalink: start-using-currentColor-in-your-css
 sub-title: ""
+img:
+img-height:
+img-width:
 date:   2014-08-12 12:07:13
+description: currentColoris a CSS variable-like feature that's been avaialble to developers for quite some time, but it goes unused and unknown - forced to live a life of obscurity.
 categories: 
     - css
 ---

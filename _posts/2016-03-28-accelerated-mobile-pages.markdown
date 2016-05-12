@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Accelerated Mobile Pages
-publisher: {{ site.title }}
 permalink: "/:title"
 sub-title: ""
 img: amp.gif

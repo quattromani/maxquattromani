@@ -3,7 +3,11 @@ layout: post
 title:  "The Last Conversation I had with my Mom"
 permalink: the-last-conversation-i-had-with-my-mom
 sub-title: ""
+img:
+img-height:
+img-width:
 date:   2014-10-22 20:49:10
+description: A year ago today, it was a Tuesday, was the last time I had a conversation with my mom.
 categories: 
     - personal
 ---

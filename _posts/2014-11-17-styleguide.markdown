@@ -3,7 +3,11 @@ layout: post
 title:  "Creating the Style Guide"
 permalink: creating-the-style-guide
 sub-title: ""
+img:
+img-height:
+img-width:
 date:   2014-11-17 17:35:10
+description: Back in February I was looking to move on from my position as Manager of Front-End Development at TWC. Through a previous co-worker, I was connected to and had the chance to interview with GLG. During the phone screen I got asked one of those great interview questions; "What are you passionate about?"
 categories: 
     - css
     - UI

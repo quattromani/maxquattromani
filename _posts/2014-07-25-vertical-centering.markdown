@@ -1,9 +1,13 @@
 ---
 layout: post
-title:  "Vertical align an element with 3 lines of CSS"
+title:  Vertical align an element with 3 lines of CSS
 permalink: "/:title"
 sub-title: ""
+img:
+img-height:
+img-width:
 date:   2014-07-25 10:17:10
+description: "With just 3 lines of CSS (*excluding vendor prefixes) we can with the help of transform: translateY vertically center whatever we want, even if we don’t know its height."
 categories: 
     - css
 ---

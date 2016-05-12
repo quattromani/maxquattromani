@@ -2,8 +2,12 @@
 layout: post
 title:  "Using calc() in less"
 sub-title: "Let's do some maths"
+img:
+img-height:
+img-width:
 permalink: using-calc-in-less
 date:   2014-08-22 14:07:13
+description: To use css3 calc() with less you’ll need to play with the format a touch.
 categories: 
     - css
 ---

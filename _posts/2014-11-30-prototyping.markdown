@@ -3,7 +3,11 @@ layout: post
 title:  "Protoyping"
 permalink: prototyping
 sub-title: "Coding in the sandbox"
+img:
+img-height:
+img-width:
 date:   2014-11-30 14:35:10
+description: One of my favorite things to do as a front-end developer is to sandbox new components. Oh sure, we all have to bug fix, feature add, and unit test - but the chance to build something new, solve a new problem, start fresh brings a crazy kind of nerd-joy that I can't articulate well enough in this forum.
 categories: 
     - css
     - UI

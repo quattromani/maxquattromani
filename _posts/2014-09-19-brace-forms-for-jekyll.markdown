@@ -3,7 +3,11 @@ layout: post
 title:  "Copying the sender with Brace Forms"
 permalink: copying-the-sender-with-brace-forms
 sub-title: ""
+img:
+img-height:
+img-width:
 date:   2014-09-19 9:17:10
+description: I have fallen in love with Jekyll and hosting projects on Github. This has become my inspiration workflow.
 categories: 
     - css
     - jquery

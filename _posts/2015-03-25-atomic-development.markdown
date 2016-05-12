@@ -3,7 +3,11 @@ layout: post
 title:  "Atomic Design & Development"
 permalink: atomic-design-and-development
 sub-title: ""
+img:
+img-height:
+img-width:
 date: 2015-03-25 22:17:10
+description: Atomic design is a system for web development that focuses on the smallest, most common elements with clarity and precision first and then works it's way up and out to build more complex components.
 categories: 
     - css 
     - html

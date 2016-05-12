@@ -3,7 +3,11 @@ layout: post
 title:  "Using Google Docs with Jekyll"
 permalink: using-google-docs-with-jekyll
 sub-title: ""
+img:
+img-height:
+img-width:
 date:   2014-11-05 10:35:10
+description: I've been using Jekyll for almost a year now and every time I do it gets better. So much so that I decided to build a client-site using Jekyll as the CMS.
 categories: 
     - jekyll
     - google

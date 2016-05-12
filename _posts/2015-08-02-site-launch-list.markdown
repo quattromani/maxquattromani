@@ -3,7 +3,11 @@ layout: post
 title:  "Website Launch List"
 permalink: website-launch-list
 sub-title: ""
+img: launch.jpg
+img-height: 431
+img-width: 800
 date:   2015-08-02 15:47:10
+description: A pre-launch website checklist
 categories: 
     - development
 comments: true
