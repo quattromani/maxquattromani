@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Accelerated Mobile Pages
+publisher: {{ site.title }}
 permalink: "/:title"
 sub-title: ""
 img: http://maxquattromani.com/images/amp.gif
