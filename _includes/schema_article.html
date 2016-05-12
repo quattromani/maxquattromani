@@ -2,11 +2,16 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "{{page.title}}",
-    "image": "{{page.img}}",
-    "alternativeHeadline": "{{page.sub-title}}",
-    "author": "Max Quattromani",
-    "datePublished": "{{page.date}}",
-    "description": "{{page.description}}"
+    "headline": "{{ page.title }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/{{ page.img }}"
+    },
+    "alternativeHeadline": "{{ page.sub-title }}",
+    "author": "{{ site.title }}",
+    "author": "{{ site.title }}",
+    "datePublished": "{{ page.date }}",
+    "description": "{{ page.description }}",
+    "mainEntityOfPage": "True"
   }
 </script>

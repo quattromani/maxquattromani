@@ -4,7 +4,7 @@ title:  Accelerated Mobile Pages
 publisher: {{ site.title }}
 permalink: "/:title"
 sub-title: ""
-img: http://maxquattromani.com/images/amp.gif
+img: amp.gif
 date:   2016-03-28 10:03:10
 description: "AMP HTML is HTML with some restrictions for reliable performance and some extensions for building rich content beyond basic HTML. The AMP JS library ensures the fast rendering of AMP HTML pages. The Google AMP Cache (optionally) delivers the AMP HTML pages."
 categories: 
