@@ -18,7 +18,16 @@
       "@type": "Person",
       "name": "{{ site.title }}"
     },
-    "publisher": "{{ site.title }}",
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/images/Q.png",
+        "width": 50,
+        "height": 50
+      }
+    },
     "datePublished": "{{ page.date }}",
     "dateModified": "{{ page.date }}",
     "description": "{{ page.description }}"
