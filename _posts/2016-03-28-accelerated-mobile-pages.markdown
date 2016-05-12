@@ -5,6 +5,8 @@ publisher: {{ site.title }}
 permalink: "/:title"
 sub-title: ""
 img: amp.gif
+img-height: 299
+img-width: 800
 date:   2016-03-28 10:03:10
 description: "AMP HTML is HTML with some restrictions for reliable performance and some extensions for building rich content beyond basic HTML. The AMP JS library ensures the fast rendering of AMP HTML pages. The Google AMP Cache (optionally) delivers the AMP HTML pages."
 categories: 
