@@ -14,14 +14,14 @@
   </header>
 
   <nav role="navigation" class="slide-menu">
-    <ul>
+    <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
       {% for nav in site.data.nav %}
       {% if nav.name == page.parent %}
-      <li class="active" role="menuitem">
+      <li class="active" role="menuitem" itemprop="name">
       {% else %}
-      <li role="menuitem">
+      <li role="menuitem" itemprop="name">
         {% endif %}
-        <a href="{{ nav.url }}"><i class="fa fa-{{ nav.icon }} fa-lg"></i> {{ nav.name }}</a>
+        <a href="{{ nav.url }}" itemprop="url"><i class="fa fa-{{ nav.icon }} fa-lg"></i> {{ nav.name }}</a>
       </li>
       {% endfor %}
     </ul>
