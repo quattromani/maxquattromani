@@ -3,14 +3,21 @@ layout: post
 title:  "The Last Conversation I had with my Mom"
 permalink: the-last-conversation-i-had-with-my-mom
 sub-title: ""
-img:
-img-height:
-img-width:
+img: estes.jpg
+img-height: 300
+img-width: 800
 date:   2014-10-22 20:49:10
 description: A year ago today, it was a Tuesday, was the last time I had a conversation with my mom.
 categories: 
     - personal
 ---
+
+<figure><amp-img src="/images/estes.jpg"
+      width="800"
+      height="300"
+      layout="responsive"
+      alt="The Lake in Estes Park">
+</amp-img>
 
 A year ago today, it was a Tuesday, was the last time I had a conversation with my mom.
 <br><br>
