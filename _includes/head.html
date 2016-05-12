@@ -33,7 +33,7 @@
 
   {% include schema_org.html %}
 
-  {% if layout == 'post' %}
+  {% if page.path contains '_posts' %}
     {% include schema_article.html %}
   {% endif %}
 
