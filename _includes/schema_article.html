@@ -2,6 +2,10 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
+    "mainEntityOfPage":{
+      "@type": "WebPage",
+      "@id": "https://example.com/article"
+    },
     "headline": "{{ page.title }}",
     "image": {
       "@type": "ImageObject",
@@ -10,11 +14,23 @@
       "width": "{{ page.img-width }}"
     },
     "alternativeHeadline": "{{ page.sub-title }}",
-    "author": "{{ site.title }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.title }}"
+    },
     "publisher": "{{ site.title }}",
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/images/Q.png",
+        "width": 50,
+        "height": 50
+      }
+    },
     "datePublished": "{{ page.date }}",
     "dateModified": "{{ page.date }}",
     "description": "{{ page.description }}",
-    "mainEntityOfPage": "True"
   }
 </script>
