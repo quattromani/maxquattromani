@@ -460,6 +460,54 @@
     url: 'http://viera.placewise.com/'
     status: true
     type: 'NB'
+  - title: 'Nord Du Lac'
+    url: 'http://norddulac.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Sunrise Mall'
+    url: 'http://sunrisemallonline.com/?design=torreys@Steadfast'
+    status: false
+    type: 'RR'
+  - title: 'Jefferson Pointe'
+    url: 'http://jeffersonshopping.com/?design=antero@UCR'
+    status: false
+    type: 'RR'
+  - title: 'Kukui Grove Center'
+    url: 'http://kukuigrovecenter.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Kukui Grove Center'
+    url: 'http://kukuigrovecenter.placewise.com/'
+    status: false
+    type: 'RR'
+  - title: 'Valley Square Shopping Center'
+    url: 'http://valleysquarepa.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Charolottetown Mall'
+    url: 'http://charlottetownmall.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Newgate Mall'
+    url: 'http://www.newgatemall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Flagstaff Mall'
+    url: 'http://flagstaffmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Village at Meridian'
+    url: 'http://meridian.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Linden Square'
+    url: 'http://shoplindensquare.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Shoppes at Sunset Place'
+    url: 'http://www.shopsunsetplace.com/'
+    status: true
+    type: 'NB'
 
 - section: Outlet Centers
   examples:
@@ -717,52 +765,3 @@
     url: 'http://northplains.placewise.com/'
     status: true
     type: 'NB'
-  - title: 'Nord Du Lac'
-    url: 'http://norddulac.placewise.com/'
-    status: false
-    type: 'NB'
-  - title: 'Sunrise Mall'
-    url: 'http://sunrisemallonline.com/?design=torreys@Steadfast'
-    status: false
-    type: 'RR'
-  - title: 'Jefferson Pointe'
-    url: 'http://jeffersonshopping.com/?design=antero@UCR'
-    status: false
-    type: 'RR'
-  - title: 'Kukui Grove Center'
-    url: 'http://kukuigrovecenter.placewise.com/'
-    status: false
-    type: 'NB'
-  - title: 'Kukui Grove Center'
-    url: 'http://kukuigrovecenter.placewise.com/'
-    status: false
-    type: 'RR'
-  - title: 'Valley Square Shopping Center'
-    url: 'http://valleysquarepa.placewise.com/'
-    status: false
-    type: 'NB'
-  - title: 'Charolottetown Mall'
-    url: 'http://charlottetownmall.placewise.com/'
-    status: false
-    type: 'NB'
-  - title: 'Newgate Mall'
-    url: 'http://www.newgatemall.com/'
-    status: true
-    type: 'NB'
-  - title: 'Flagstaff Mall'
-    url: 'http://flagstaffmall.com/'
-    status: true
-    type: 'NB'
-  - title: 'The Village at Meridian'
-    url: 'http://meridian.placewise.com/'
-    status: false
-    type: 'NB'
-  - title: 'Linden Square'
-    url: 'http://shoplindensquare.com/'
-    status: true
-    type: 'NB'
-  - title: 'The Shoppes at Sunset Place'
-    url: 'http://www.shopsunsetplace.com/'
-    status: true
-    type: 'NB'
-
