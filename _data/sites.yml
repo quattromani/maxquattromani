@@ -148,6 +148,10 @@
     url: 'http://www.broadwaymall.com'
     status: true
     type: 'RR'
+  - title: 'West Oaks Mall'
+    url: 'http://www.shopwestoaksmall.com/'
+    status: true
+    type: 'NB'
   - title: 'Yorktown Center'
     url: 'http://www.yorktowncenter.com'
     status: true
@@ -170,6 +174,10 @@
     type: 'RR'
   - title: 'Paseo Colorado'
     url: 'http://www.paseocolorado.com'
+    status: true
+    type: 'NB'
+  - title: 'The Shoppes at Arbor Lakes'
+    url: 'http://www.shoppesatarborlakes.com/'
     status: true
     type: 'NB'
   - title: 'Lloyd Center'
@@ -198,6 +206,10 @@
     type: 'NB'
   - title: 'Eden Prairie Center'
     url: 'http://www.edenprairiecenter.com'
+    status: true
+    type: 'NB'
+  - title: 'Burbank Center'
+    url: 'http://www.burbanktowncenter.com/'
     status: true
     type: 'NB'
   - title: 'University Mall (VT)'
@@ -244,6 +256,14 @@
     url: 'http://www.myoviedomall.com/'
     status: true
     type: 'RR'
+  - title: 'Oakland Mall'
+    url: 'http://www.oaklandmall.com/'
+    status: true
+    type: 'RR'
+  - title: 'Arnot Mall'
+    url: 'http://arnotmall.com/'
+    status: true
+    type: 'NB'
   - title: 'Mall at Stonecrest'
     url: 'http://www.mallatstonecrest.com/'
     status: true
@@ -554,6 +574,10 @@
     url: 'http://renaissancecentre.placewise.com/'
     status: false
     type: 'NB'
+  - title: 'Exeter Commons'
+    url: 'http://www.exetercommons.com/'
+    status: true
+    type: 'NB'
 
 - section: WiFi Sites
   examples:
@@ -693,3 +717,52 @@
     url: 'http://northplains.placewise.com/'
     status: true
     type: 'NB'
+  - title: 'Nord Du Lac'
+    url: 'http://norddulac.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Sunrise Mall'
+    url: 'http://sunrisemallonline.com/?design=torreys@Steadfast'
+    status: false
+    type: 'RR'
+  - title: 'Jefferson Pointe'
+    url: 'http://jeffersonshopping.com/?design=antero@UCR'
+    status: false
+    type: 'RR'
+  - title: 'Kukui Grove Center'
+    url: 'http://kukuigrovecenter.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Kukui Grove Center'
+    url: 'http://kukuigrovecenter.placewise.com/'
+    status: false
+    type: 'RR'
+  - title: 'Valley Square Shopping Center'
+    url: 'http://valleysquarepa.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Charolottetown Mall'
+    url: 'http://charlottetownmall.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Newgate Mall'
+    url: 'http://www.newgatemall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Flagstaff Mall'
+    url: 'http://flagstaffmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Village at Meridian'
+    url: 'http://meridian.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Linden Square'
+    url: 'http://shoplindensquare.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Shoppes at Sunset Place'
+    url: 'http://www.shopsunsetplace.com/'
+    status: true
+    type: 'NB'
+
