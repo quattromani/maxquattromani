@@ -475,10 +475,6 @@
   - title: 'Kukui Grove Center'
     url: 'http://kukuigrovecenter.placewise.com/'
     status: false
-    type: 'NB'
-  - title: 'Kukui Grove Center'
-    url: 'http://kukuigrovecenter.placewise.com/'
-    status: false
     type: 'RR'
   - title: 'Valley Square Shopping Center'
     url: 'http://valleysquarepa.placewise.com/'
@@ -513,54 +509,58 @@
   examples:
   - title: 'Outlets at Anthem'
     url: 'http://www.outletsanthem.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Silverthorne'
     url: 'http://www.outletsatsilverthorne.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Hillsboro'
     url: 'http://www.outletsathillsboro.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Loveland'
     url: 'http://www.outletsatloveland.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Conroe'
     url: 'http://www.outletsatconroe.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Cabazon Outlets'
     url: 'http://www.cabazonoutlets.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Vicksburg'
     url: 'http://www.outletsatvicksburg.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Traverse Mountain'
     url: 'http://www.outletsattraversemountain.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Citadel Outlets'
     url: 'http://www.citadeloutlets.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Castle Rock'
     url: 'http://www.outletsatcastlerock.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at The Dells'
     url: 'http://www.outletsatthedells.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlets at Barstow'
     url: 'http://www.theoutletsatbarstow.com/?design=sunshine@Craig'
-    status: false
+    status: true
     type: 'RR'
   - title: 'Outlet Shoppes at Atlanta'
     url: 'http://outletshoppesatatlanta.placewise.com'
+    status: false
+    type: 'NB'
+  - title: 'Outlet Shoppes at Burlington'
+    url: 'http://outletshoppesburlington.placewise.com'
     status: false
     type: 'NB'
   - title: 'The Outlet Shoppes at Gettysburg'
@@ -611,16 +611,16 @@
     status: true
     type: 'NB'
   - title: 'Airport Plaza'
-    url: 'http://airportplaza.placewise.com/'
-    status: false
+    url: 'http://www.shopairportplaza.com/'
+    status: true
     type: 'NB'
   - title: 'Edgewater Commons'
-    url: 'http://edgewatercommons.placewise.com/'
-    status: false
+    url: 'http://www.shopedgewatercommons.com/'
+    status: true
     type: 'NB'
   - title: 'Renaissance Centre'
-    url: 'http://renaissancecentre.placewise.com/'
-    status: false
+    url: 'http://www.shoprenaissancecentre.com/'
+    status: true
     type: 'NB'
   - title: 'Exeter Commons'
     url: 'http://www.exetercommons.com/'
