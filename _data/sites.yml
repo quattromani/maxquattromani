@@ -68,6 +68,9 @@
   - title: 'Office Football Club'
     url: 'http://officefootball.club'
     status: true
+  - title: 'lifebinder'
+    url: 'http://lifebinder.io'
+    status: true
     type: 'NB'
   - title: 'Qoppa'
     url: 'http://qoppa.co'
