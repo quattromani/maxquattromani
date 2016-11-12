@@ -58,6 +58,10 @@
     url: 'http://coschoolchiefs.com'
     status: true
     type: 'NB'
+  - title: 'Ward Village Foundation'
+    url: 'http://www.wardvillagefoundation.org/'
+    status: true
+    type: 'RR'
 
 - section: Personal Projects
   examples:
@@ -479,6 +483,10 @@
     url: 'http://kukuigrovecenter.placewise.com/'
     status: true
     type: 'RR'
+  - title: 'Southern Hills Mall'
+    url: 'http://www.southernhillsmall.com/'
+    status: true
+    type: 'NB'
   - title: 'Valley Square Shopping Center'
     url: 'http://valleysquarepa.placewise.com/'
     status: true
@@ -491,8 +499,20 @@
     url: 'http://www.newgatemall.com/'
     status: true
     type: 'NB'
+  - title: 'Merritt Square Mall'
+    url: 'http://www.merrittsquaremall.com/'
+    status: true
+    type: 'NB'
   - title: 'Flagstaff Mall'
     url: 'http://flagstaffmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Military Circle Mall'
+    url: 'http://www.shopmilitarycirclemall.com/'
+    status: true
+    type: 'RR'
+  - title: 'The Shoppes at Flemington'
+    url: 'http://theshoppesatflemington.com/'
     status: true
     type: 'NB'
   - title: 'The Village at Meridian'
@@ -627,6 +647,10 @@
     url: 'http://www.coastalgrand.com/'
     status: true
     type: 'RR'
+  - title: 'Centennial Shops'
+    url: 'http://www.centennialshops.com/'
+    status: true
+    type: 'NB'
   - title: 'Chapel Hills Mall'
     url: 'http://www.chapelhillsmall.com/'
     status: true
@@ -819,6 +843,10 @@
     url: 'http://www.theshoppesatwebbgin.com/'
     status: true
     type: 'RR'
+  - title: 'Ashley Park'
+    url: 'http://ashleypark.placewise.com//'
+    status: false
+    type: 'NB'
   - title: 'Orland Park Crossing'
     url: 'http://www.shoporlandparkcrossing.com/'
     status: true
@@ -855,6 +883,30 @@
     url: 'http://www.marleystation.com/'
     status: true
     type: 'RR'
+  - title: 'Sierra Vista Mall'
+    url: 'http://www.sierravistamall.com/'
+    status: true
+    type: 'RR'
+  - title: 'The Shops at SkyView Center'
+    url: 'http://www.shopskyviewcenter.com/'
+    status: true
+    type: 'RR'
+  - title: 'Outlets of Mississippi'
+    url: 'http://www.outletsofms.com/'
+    status: true
+    type: 'RR'
+  - title: 'Baldwin Hills Crenshaw'
+    url: 'http://www.baldwinhillscrenshawplaza.com/'
+    status: true
+    type: 'RR'
+
+
+
+
+
+
+
+
 
 - section: Outlet Centers
   examples:
@@ -937,6 +989,14 @@
   - title: 'The Outlet Shoppes at Fremont'
     url: 'http://outletshoppesfreemont.placewise.com/'
     status: true
+    type: 'NB'
+  - title: The Outlet Shoppes at Laredo'
+    url: 'http://outletlaredo.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'The Outlet Shoppes at Rentschler Field'
+    url: 'http://outletshoppesrentschler.placewise.com/'
+    status: false
     type: 'NB'
 
 - section: Power Centers
@@ -1114,5 +1174,25 @@
     type: 'NB'
   - title: 'North Plains Mall'
     url: 'http://northplains.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'MainPlace Mall'
+    url: 'http://mainplacemall.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'Hawthorn Mall'
+    url: 'http://hawthornmall.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'Connecticut Post Mall'
+    url: 'http://connecticutpostmall.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'Fox Valley Mall'
+    url: 'http://foxvalleymall.placewise.com/'
+    status: true
+    type: 'NB'
+  - title: 'Vancouver Mall'
+    url: 'http://vancouvermallwa.placewise.com/'
     status: true
     type: 'NB'
