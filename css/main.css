@@ -981,15 +981,6 @@ button {
       button.mobile-full {
         margin-top: 2rem; } }
 
-/* Firefox */
-@-moz-document url-prefix() {
-  button::-moz-focus-inner {
-    padding: 0;
-    border: 0; }
-
-  input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="reset"]::-moz-focus-inner {
-    padding: 0;
-    border: none; } }
 .search-goog input[type='text'] {
   border: 1px solid #e1e1e1 !important;
   padding: .5em !important;
@@ -1121,13 +1112,6 @@ form .select {
     background: none; }
     form .select select::-ms-expand {
       display: none; }
-@-moz-document url-prefix() {
-  form .select {
-    border: 1px solid #e1e1e1; }
-    form .select select {
-      padding: 0.5em;
-      border: none;
-      -moz-appearance: window; } }
 form ::-webkit-input-placeholder {
   color: #455A64;
   font-weight: 100; }

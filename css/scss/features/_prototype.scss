@@ -1,6 +1,6 @@
 @if $prototype {
 
-  @charset "UTF-8";
+
 
   .viewport, .loadtime, .pv {
     @include padding(($base-spacing / 4) ($base-spacing / 2));
