@@ -94,7 +94,6 @@ button {
 }
 
 /* Firefox */
-
 @-moz-document url-prefix() {
   // Remove button padding in FF
   button::-moz-focus-inner {
