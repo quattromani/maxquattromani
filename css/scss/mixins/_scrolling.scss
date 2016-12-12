@@ -1,5 +1,5 @@
 @mixin scrolling {
-  @include inline-block;
+  display: inline-block;
   overflow: auto;
   width: 100%;
   margin-top: $base-spacing / 2;

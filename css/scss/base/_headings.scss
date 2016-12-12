@@ -36,7 +36,7 @@ $i: 1;
 .h4,
 .h5,
 .h6 {
-	@include inline-block;
+	display: inline-block;
 }
 
 h1,

@@ -2,12 +2,12 @@
 
 .btn,
 button {
-  @include inline-block;
   @include margin;
   @include padding($base-spacing/2 $base-spacing);
   @include font-family($button-font-family);
   @include font-size($button-font-size);
   @include transition;
+  display: inline-block;
   bottom: $base-spacing/2;
   background-color: $base-button-bg;
   font-weight: 200;

@@ -261,7 +261,8 @@ We'll write some Sass for our new card component:
 {% highlight css %}
 .card-component {
   position: relative;
-  @include inline-block;
+  display: inline-block;
+
   width: 100%;
   border-radius: $base-border-radius;
 
