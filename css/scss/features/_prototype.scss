@@ -1,44 +1,47 @@
-@charset "UTF-8";
+@if $prototype {
 
-.viewport, .loadtime, .pv {
-  @include padding(($base-spacing / 4) ($base-spacing / 2));
-  position: fixed;
-  background: rgba(0, 43, 54, $site-alpha);
-  font-family: $pre;
-  color: #2aa198;
-  z-index: 100;
-}
+  @charset "UTF-8";
 
-.pv {
-  @include border-radius(0 0 3px 0);
-  top: 0;
-  left: 0;
-  cursor: pointer;
+  .viewport, .loadtime, .pv {
+    @include padding(($base-spacing / 4) ($base-spacing / 2));
+    position: fixed;
+    background: rgba(0, 43, 54, $site-alpha);
+    font-family: $pre;
+    color: #2aa198;
+    z-index: 100;
+  }
+
+  .pv {
+    @include border-radius(0 0 3px 0);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    @include media($mobile) {
+      display: none;
+    }
+  }
+
+  .viewport {
+    @include border-radius(0 0 0 3px);
+    top: 0;
+    right: 0;
+  }
+
+  .loadtime {
+    @include border-radius(0 3px 0 0);
+    bottom: 0;
+    left: 0;
+  }
 
   @include media($mobile) {
-    display: none;
-  }
-}
-
-.viewport {
-  @include border-radius(0 0 0 3px);
-  top: 0;
-  right: 0;
-}
-
-.loadtime {
- @include border-radius(0 3px 0 0);
- bottom: 0;
- left: 0;
-}
-
-@include media($mobile) {
-  .fold {
-    position: absolute;
-    top: 480px;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid green;
-    z-index: 9999;
+    .fold {
+      position: absolute;
+      top: 480px;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid green;
+      z-index: 9999;
+    }
   }
 }
