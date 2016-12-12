@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 form {
   input,
@@ -116,16 +116,6 @@ form {
 
     &::-ms-expand {
       display: none;
-    }
-  }
-
-  @-moz-document url-prefix() {
-    border: 1px solid $color-light-grey;
-
-    select {
-      @include padding(.5em);
-      border: none;
-      -moz-appearance: window;
     }
   }
 }
