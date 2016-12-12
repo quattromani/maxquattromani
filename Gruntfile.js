@@ -44,7 +44,7 @@ grunt.initConfig({
     },
     dist: {
       files: {
-        'css/main.css': ['css/main.css']
+        '_includes/main.css': ['css/main.css']
       }
     }
   },
