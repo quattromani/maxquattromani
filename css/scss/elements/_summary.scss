@@ -9,10 +9,10 @@ details {
 	}
 
 	summary {
-		@include inline-block;
-    @include padding($base-spacing / 4);
+		@include padding($base-spacing / 4);
     // @include icon-before($fa-var-chevron-down);
     @include font-family($base-font-family-alt);
+    display: inline-block;
 		width: 100%;
 		background: $color-grey;
 		outline: none;
