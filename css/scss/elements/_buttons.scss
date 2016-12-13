@@ -1,19 +1,12 @@
-
-
 .btn,
 button {
-<<<<<<< HEAD
-
-display: inline-block;
-=======
->>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   @include margin;
-  @include padding($base-spacing/2 $base-spacing);
+  @include padding($half-spacing $base-spacing);
   @include font-family($button-font-family);
   @include font-size($button-font-size);
   @include transition;
   display: inline-block;
-  bottom: $base-spacing/2;
+  bottom: $half-spacing;
   background-color: $base-button-bg;
   font-weight: 200;
   color: $base-button-color;
@@ -69,7 +62,7 @@ display: inline-block;
   }
 
   &.btn-xl {
-    @include padding(.75em, ($base-spacing * 2));
+    @include padding(.75em, $double-spacing);
   }
 
   &.btn-lg {
@@ -78,7 +71,7 @@ display: inline-block;
 
   &.btn-sm {
     min-width: 0;
-    @include padding(($base-spacing / 6), ($base-spacing / 1.5));
+    @include padding($sixth-spacing, ($base-spacing / 1.5));
   }
 
   @media (max-width: $mobile) {
