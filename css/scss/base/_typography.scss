@@ -30,7 +30,7 @@ blockquote {
 
   @include media($tablet) {
     @include full-width;
-    @include padding($base-spacing ($base-spacing * 2 !important));
+    @include padding($base-spacing ($base-spacing * 2));
     @include border-radius;
   }
 

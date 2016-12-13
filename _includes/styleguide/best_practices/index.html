@@ -114,15 +114,15 @@
             <li>Other</li>
           </ol>
 
-{% highlight css %}
-.someDiv { color: #222; }
+          {% highlight css %}
+          .someDiv { color: #222; }
 
-.someOtherDiv,
-.someAdditional Div {
-  margin: 0 auto;
-  color: #222;
-}
-{% endhighlight %}
+          .someOtherDiv,
+          .someAdditional Div {
+          margin: 0 auto;
+          color: #222;
+        }
+        {% endhighlight %}
 
       </li>
       <li>
@@ -130,34 +130,34 @@
 
         <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
 
-{% highlight css %}
-.print {
-  display: block;
-  margin: 0;
-  padding: 0 7px;
-  height: 30px;
-  background: #4f799f;
-  line-height: 30px;
-}
+        {% highlight css %}
+        .print {
+        display: block;
+        margin: 0;
+        padding: 0 7px;
+        height: 30px;
+        background: #4f799f;
+        line-height: 30px;
+      }
 
-.print:hover { background: #265a83; }
-{% endhighlight %}
+      .print:hover { background: #265a83; }
+      {% endhighlight %}
 
     </li>
     <li>
       <p>Avoid Qualifying ID and class names with type selectors</p>
 
-{% highlight css %}
-// this is bad
-ul#example { color: #ff0; }
-div.error { color: red; }
-{% endhighlight %}
+      {% highlight css %}
+      // this is bad
+      ul#example { color: #ff0; }
+      div.error { color: red; }
+      {% endhighlight %}
 
-{% highlight css %}
-// this is good
-.example { color: #0f0; }
-.error { color: green; }
-{% endhighlight %}
+      {% highlight css %}
+      // this is good
+      .example { color: #0f0; }
+      .error { color: green; }
+      {% endhighlight %}
 
       <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
     </li>
@@ -166,14 +166,14 @@ div.error { color: red; }
 
       <p>For color values that permit, 3 character hexadecimal is preferred</p>
 
-{% highlight css %}
-/* not recommended */
-color: #00ff00;
-{% endhighlight %}
-{% highlight css %}
-/* recommended */
-color: #0f0;
-{% endhighlight %}
+      {% highlight css %}
+      /* not recommended */
+      color: #00ff00;
+      {% endhighlight %}
+      {% highlight css %}
+      /* recommended */
+      color: #0f0;
+      {% endhighlight %}
 
     </li>
     <li>
@@ -191,27 +191,27 @@ color: #0f0;
     <li>
       <h5>Use the SMACSS Approach</h5>
 
-{% highlight css %}
-.componentName {
-  Base {
-    ...
-  }
+      {% highlight css %}
+      .componentName {
+      Base {
+      ...
+    }
 
-  Layout {
+    Layout {
     ...
   }
 
   Module {
-    ...
-  }
+  ...
+}
 
-  State {
-    ...
-  }
+State {
+...
+}
 
-  Theme {
-    ...
-  }
+Theme {
+...
+}
 }
 {% endhighlight %}
 
@@ -220,26 +220,26 @@ color: #0f0;
   <h5>Commenting</h5>
 
   {% highlight html %}
-// File headers are commented thusly:
+  // File headers are commented thusly:
 
-/* ==========================================================================
-Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
-========================================================================== */
-{% endhighlight %}
+  /* ==========================================================================
+  Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
+  ========================================================================== */
+  {% endhighlight %}
 
-{% highlight html %}
-// Section chunks get styled as such:
-/*
-* Chunk of long
-* text gets commented
-* like this
-*/
-{% endhighlight %}
+  {% highlight html %}
+  // Section chunks get styled as such:
+  /*
+  * Chunk of long
+  * text gets commented
+  * like this
+  */
+  {% endhighlight %}
 
-{% highlight html %}
-// Hints get styled like this:
-/* Hint */
-{% endhighlight %}
+  {% highlight html %}
+  // Hints get styled like this:
+  /* Hint */
+  {% endhighlight %}
 
 </li>
 </ul>
@@ -263,22 +263,22 @@ Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
       </li>
     </ul>
 
-{% highlight html %}
-sass/
-├── main.scss
-├── globals/
-|   ├── _mixins.scss
-|   ├── _var.scss
-├── partials/
-|   ├── _btn.scss
-|   ├── _list.scss
-|   ├── _nav.scss
-|   ├── _etc...
-├── theme/
-|   ├── _btn-theme.scss
-└── vendor/
-└── _jquery.ui.core.scss
-{% endhighlight %}
+    {% highlight html %}
+    sass/
+    ├── main.scss
+    ├── globals/
+    |   ├── _mixins.scss
+    |   ├── _var.scss
+    ├── partials/
+    |   ├── _btn.scss
+    |   ├── _list.scss
+    |   ├── _nav.scss
+    |   ├── _etc...
+    ├── theme/
+    |   ├── _btn-theme.scss
+    └── vendor/
+    └── _jquery.ui.core.scss
+    {% endhighlight %}
 
   </li>
   <li>
@@ -287,49 +287,38 @@ sass/
     <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
     <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
 
-{% highlight scss %}
-/* Mixins and Variables */
-// All globals are combined in allModules.scss to reduce the nuber of updates necessary to add new files
-@import "global/allModules";
+    {% highlight scss %}
+    @charset "UTF-8";
 
-/* Base */
-@import "partials/base";
+    @import "vendor";
 
-/* Layout */
-@import "partials/layout";
+    @import "theme/theme";
 
-/* Modules */
+    @import "mixins/mixins";
+    @import "functions/functions";
 
-@import "partials/colors";
+    // Base
+    @import "base/base";
 
-@import "partials/typography";
+    // Modules
+    @import "globals/globals";
 
-@import "partials/helpers";
+    // Modules
+    @import "helpers/helpers";
 
-@import "partials/lists";
+    // Components
+    @import "components/components";
 
-@import "partials/buttons";
+    // Elements
+    @import "elements/elements";
 
-@import "partials/pagination";
+    // Features
+    @import "features/features";
 
-@import "partials/accessibility";
+    // Pages
+    @import "pages/pages";
 
-@import "partials/forms";
-
-@import "partials/images";
-
-@import "partials/videos";
-
-@import "partials/modules";
-
-@import "partials/jumpTo";
-
-@import "partials/_prototype";
-
-@import "partials/_styleguide";
-
-/* Components */
-{% endhighlight %}
+    {% endhighlight %}
 
   </li>
   <li>
@@ -441,51 +430,57 @@ sass/
     <p>banner - typically the "header" of the page</p>
 
     {% highlight html %}
-    <header role="banner" class="header"></header>
+    <header role="banner"></header>
     {% endhighlight %}
 
     <p>navigation - any navigation list, typically the nav element</p>
 
     {% highlight html %}
-    <nav role="navigation" class="nav"></nav>
+    <nav role="navigation""></nav>
     {% endhighlight %}
 
     <p>main - the main content area</p>
 
     {% highlight html %}
-    <section role="main" class="main"></main>
-      {% endhighlight %}
+    <main role="main"></main>
+    {% endhighlight %}
 
-      <p>complimentary - information that is tangentially related to the main content</p>
+    <p>article - *the article role is not an ARIA landmark</p>
 
-      {% highlight html %}
-      <aside role="complimentary" class="aside"></aside>
-      {% endhighlight %}
+    {% highlight html %}
+    <article></article>
+    {% endhighlight %}
 
-      <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
+    <p>complimentary - information that is tangentially related to the main content</p>
 
-      {% highlight html %}
-      <footer role="contentinfo" class="footer"></footer>
-      {% endhighlight %}
+    {% highlight html %}
+    <aside role="complimentary"></aside>
+    {% endhighlight %}
 
-    </li>
-    <li>
-      <h5>Using alt Text Properly</h5>
-      <p>A few tips on how and when to use the alt attribute:</p>
+    <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
 
-      <ul>
-        <li>Use the alt attribute for any image that is used as content.</li>
-        <li>Use an empty alt atribute for any image that is decorative or not necessary for understanding the content of the page (alt=”“).</li>
-        <li>Make sure the description of the image is useful. For example, if the image is your logo your alt should be your company name and not “logo”</li>
-      </ul>
+    {% highlight html %}
+    <footer role="contentinfo"></footer>
+    {% endhighlight %}
 
-      <p>The alt attribute is meant to help users using assitive techonology not miss any content, so make sure your text is helpful to anyone not seeing the image.</p>
-    </li>
-    <li>
-      <code><.visually-hidden></code> - The Visually-Hidden class allows for 508 Compliance on an element needed for visually assisted users.
-    </li>
-  </ul>
-  <!-- .Best Practices Component -->
+  </li>
+  <li>
+    <h5>Using alt Text Properly</h5>
+    <p>A few tips on how and when to use the alt attribute:</p>
+
+    <ul>
+      <li>Use the alt attribute for any image that is used as content.</li>
+      <li>Use an empty alt atribute for any image that is decorative or not necessary for understanding the content of the page (alt=”“).</li>
+      <li>Make sure the description of the image is useful. For example, if the image is your logo your alt should be your company name and not “logo”</li>
+    </ul>
+
+    <p>The alt attribute is meant to help users using assitive techonology not miss any content, so make sure your text is helpful to anyone not seeing the image.</p>
+  </li>
+  <li>
+    <code><.visually-hidden></code> - The Visually-Hidden class allows for 508 Compliance on an element needed for visually assisted users.
+  </li>
+</ul>
+<!-- .Best Practices Component -->
 
 </article>
 

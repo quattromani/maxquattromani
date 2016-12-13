@@ -37,6 +37,10 @@ footer {
   position: absolute;
   top: $base-spacing;
   left: $base-spacing;
+
+  i {
+    color: $color-white;
+  }
 }
 
 .toggle-btn,
@@ -60,6 +64,7 @@ main {
   float: left;
   background: $color-brand-quaternary;
   width: 40%;
+  max-width: 400px;
   height: 100%;
   margin-left: -41%;
   z-index: 99;
@@ -73,6 +78,10 @@ main {
     @include padding($base-spacing);
     background-color: $color-brand-quaternary-complimentary;
     text-align: left;
+
+    .headshot {
+      @include size(60px);
+    }
 
     p {
       @include font-family($base-font-family-alt);
@@ -90,8 +99,8 @@ main {
 .slide-menu {
   li {
     i {
-      width: 25px;
-      margin-right: ($base-spacing);
+      width: 20px;
+      margin-right: $half-spacing;
       color: $color-white;
     }
 

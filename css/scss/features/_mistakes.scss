@@ -14,7 +14,7 @@
   th {
     &:empty {
       padding: 2em;
-      border: 2px dotted red !important;
+      border: 2px dotted red;
     }
   }
 
@@ -28,7 +28,7 @@
   *[id=""],
   a[href=""],
   a[href="#"] {
-    border: 2px solid blue !important;
+    border: 2px solid blue;
   }
 
 /* ==========================
@@ -43,8 +43,8 @@
   isindex,
   menu,
   strike {
-    border: 2px dotted red !important;
-    background-color: tint(red, 40%) !important;
+    border: 2px dotted red;
+    background-color: tint(red, 40%);
   }
 
 /* ==========================
@@ -79,8 +79,8 @@
   ul[type],
   ol[type],
   li[type] {
-    border: 2px solid red !important;
-    background-color: tint(red, 40%) !important;
+    border: 2px solid red;
+    background-color: tint(red, 40%);
   }
 
 /* ==========================
@@ -89,8 +89,8 @@
 
   big,
   tt {
-    border: 2px dotted blue !important;
-    background-color: tint(blue, 40%) !important;
+    border: 2px dotted blue;
+    background-color: tint(blue, 40%);
   }
 
 /* ==========================
@@ -102,8 +102,8 @@
   table[cellpadding],
   table[cellspacing],
   *[name] {
-    border: 2px solid blue !important;
-    background-color: tint(blue, 40%) !important;
+    border: 2px solid blue;
+    background-color: tint(blue, 40%);
   }
 
 }

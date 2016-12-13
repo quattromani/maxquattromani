@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
+// List Reset
+ul {
+  list-style: none outside none;
+
+  ul {
+    @include margin;
+  }
+}
+
 // Ordered List
 ol {
-  @include margin(0 0 0 ($base-spacing * 1.5));
+  @include margin(0 0 0 $one-and-half-spacing);
   @include padding;
 
   li {
@@ -15,74 +24,12 @@ ol {
   }
 }
 
-ul {
-  list-style: none outside none;
-
-  ul {
-    @include margin;
-  }
+// Definition List
+dt {
+  font-weight: bold;
 }
 
-.bulleted {
-  @include bulleted;
+dd {
+  margin-left: $base-spacing;
 }
 
-// Horizontal List Items
-.horizontal {
-  li {
-    display: inline;
-  }
-
-  &.slashes li {
-    @include padding;
-
-    &:after {
-      content: '/';
-      @include padding(0 ($base-spacing / 2));
-    }
-
-    &:last-child:after {
-      content: '';
-    }
-  }
-
-  &.pipes li {
-    @include padding;
-
-    &:after {
-      content: '|';
-      @include padding(0 .25em 0 .5em);
-    }
-
-    &:last-child:after {
-      content: '';
-    }
-  }
-}
-
-// Vertical List Items
-.vertical {
-  li {
-    display: block !important;
-  }
-
-  > li {
-    @include padding(($base-spacing / 2) 0);
-  }
-
-  &.lined > li {
-    overflow: auto;
-    border-bottom: 1px dotted $color-grey;
-
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
-}
-
-// Striped List Items
-.striped {
-  li:nth-child(odd) {
-    background-color: rgba($color-light-grey, .5);
-  }
-}
