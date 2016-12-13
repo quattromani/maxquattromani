@@ -1,11 +1,6 @@
 // Vertical List Items
 @mixin vertical-list($arg: null, $padding: $half-spacing) {
   > li {
-<<<<<<< HEAD
-=======
-    display: inline-block;
-
->>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
     @include padding($padding 0);
     display: inline-block;
     width: 100%;

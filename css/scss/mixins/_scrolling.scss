@@ -1,13 +1,8 @@
 @mixin scrolling {
-<<<<<<< HEAD
-
-display: inline-block;
-=======
   display: inline-block;
->>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   overflow: auto;
   width: 100%;
-  margin-top: $base-spacing / 2;
+  margin-top: $half-spacing;
   border-top: 1px solid $color-light-grey;
   border-bottom: 1px solid $color-light-grey;
   background : linear-gradient(white 30%, rgba($color-white, 0)), linear-gradient(rgba($color-white, 0), white 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba($color-black, .15), rgba($color-black, 0)), radial-gradient(farthest-side at 50% 100%, rgba($color-black, .15), rgba($color-black, 0)) 0 100%;
