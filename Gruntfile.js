@@ -34,7 +34,7 @@ grunt.initConfig({
 
   postcss: {
     options: {
-      map: true,
+      map: false,
 
       processors: [
         require('pixrem')(),

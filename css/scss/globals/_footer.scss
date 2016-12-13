@@ -18,26 +18,26 @@ footer[role=contentinfo] {
   }
 
   .twitter {
-    @include icon-before($fa-var-twitter, 0, 24px, $color: $twitter);
+    @include icon-before($icon-twitter, 0, 24px, $color: $twitter);
   }
 
   .github {
-    @include icon-before($fa-var-github, 0, 24px, $color: $github);
+    @include icon-before($icon-github, 0, 24px, $color: $github);
   }
 
   .codepen {
-    @include icon-before($fa-var-codepen, 0, 24px, $color: $codepen);
+    @include icon-before($icon-codepen, 0, 24px, $color: $codepen);
   }
 
   .dribbble {
-    @include icon-before($fa-var-dribbble, 0, 24px, $color: $dribbble);
+    @include icon-before($icon-dribbble, 0, 24px, $color: $dribbble);
   }
 
   .linkedin {
-    @include icon-before($fa-var-linkedin, 0, 24px, $color: $linkedin);
+    @include icon-before($icon-linkedin, 0, 24px, $color: $linkedin);
   }
 
   .sitemap {
-    @include icon-before($fa-var-sitemap, 0, 24px, $color: $base-link-color);
+    @include icon-before($icon-sitemap, 0, 24px, $color: $base-link-color);
   }
 }

@@ -1,1 +1,13 @@
-  $base-spacing: 1rem !default;
+// Spacing
+$base-spacing: 1rem !default;
+$half-spacing: ($base-spacing / 2) !default;
+$third-spacing: ($base-spacing / 3) !default;
+$fourth-spacing: ($base-spacing / 4) !default;
+$fifth-spacing: ($base-spacing / 5) !default;
+$sixth-spacing: ($base-spacing / 6) !default;
+$three-quarters-spacing: ($base-spacing * .375) !default;
+$three-fourths-spacing: ($base-spacing * .75) !default;
+$one-and-half-spacing: ($base-spacing * 1.5) !default;
+$double-spacing: ($base-spacing * 2) !default;
+$triple-spacing: ($base-spacing * 3) !default;
+$quadruple-spacing: ($base-spacing * 4) !default;

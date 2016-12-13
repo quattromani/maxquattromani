@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 video {
-  @include inline-block;
+
+display: inline-block;
   @include margin;
   top: 0;
   left: 0;

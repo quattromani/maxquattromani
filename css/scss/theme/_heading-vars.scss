@@ -1,6 +1,6 @@
 // =Headings
-$heading-font-family: 'Merriweather Sans', sans-serif;
-$heading-font-family-alt: 'Merriweather', 'Times New Roman', Times, Baskerville, Georgia, serif;
+$heading-font-family: $base-font-family-alt;
+$heading-font-family-alt: $base-font-family-alt;
 $heading-color-primary: $color-brand-primary;
 $heading-color-secondary: $color-brand-secondary;
 $heading-line-height: 1.618;

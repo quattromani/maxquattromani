@@ -9,7 +9,8 @@ details {
 	}
 
 	summary {
-		@include inline-block;
+
+display: inline-block;
     @include padding($base-spacing / 4);
     // @include icon-before($fa-var-chevron-down);
     @include font-family($base-font-family-alt);
