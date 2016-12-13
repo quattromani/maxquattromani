@@ -1,6 +1,10 @@
 @mixin scrolling {
+<<<<<<< HEAD
 
 display: inline-block;
+=======
+  display: inline-block;
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   overflow: auto;
   width: 100%;
   margin-top: $base-spacing / 2;

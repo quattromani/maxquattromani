@@ -1,17 +1,17 @@
-@charset "UTF-8";
-
 @if $find-mistakes {
+
+
 
 /* ==========================
    Empty Elements
    ========================== */
 
-  div,
-  span,
-  li,
-  p,
-  td,
-  th {
+   div,
+   span,
+   li,
+   p,
+   td,
+   th {
     &:empty {
       padding: 2em;
       border: 2px dotted red;
@@ -22,6 +22,7 @@
    Empty Attributes
    ========================== */
 
+<<<<<<< HEAD
   *[alt=""],
   *[title=""],
   *[class=""],
@@ -29,12 +30,22 @@
   a[href=""],
   a[href="#"] {
     border: 2px solid blue;
+=======
+   *[alt=""],
+   *[title=""],
+   *[class=""],
+   *[id=""],
+   a[href=""],
+   a[href="#"] {
+    border: 2px solid blue !important;
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   }
 
 /* ==========================
    Deprecated Elements
    ========================== */
 
+<<<<<<< HEAD
   applet,
   basefont,
   center,
@@ -45,12 +56,25 @@
   strike {
     border: 2px dotted red;
     background-color: tint(red, 40%);
+=======
+   applet,
+   basefont,
+   center,
+   dir,
+   font,
+   isindex,
+   menu,
+   strike {
+    border: 2px dotted red !important;
+    background-color: tint(red, 40%) !important;
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   }
 
 /* ==========================
    Deprecated Attributes
    ========================== */
 
+<<<<<<< HEAD
   *[background],
   *[bgcolor],
   *[clear],
@@ -81,22 +105,62 @@
   li[type] {
     border: 2px solid red;
     background-color: tint(red, 40%);
+=======
+   *[background],
+   *[bgcolor],
+   *[clear],
+   *[color],
+   *[compact],
+   *[noshade],
+   *[nowrap],
+   *[size],
+   *[start],
+   *[bottommargin],
+   *[leftmargin],
+   *[rightmargin],
+   *[topmargin],
+   *[marginheight],
+   *[marginwidth],
+   *[alink],
+   *[link],
+   *[text],
+   *[vlink],
+   *[align],
+   *[valign],
+   *[hspace],
+   *[vspace],
+   *[height],
+   *[width],
+   ul[type],
+   ol[type],
+   li[type] {
+    border: 2px solid red !important;
+    background-color: tint(red, 40%) !important;
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   }
 
 /* ==========================
    Proposed Deprecated Elements
    ========================== */
 
+<<<<<<< HEAD
   big,
   tt {
     border: 2px dotted blue;
     background-color: tint(blue, 40%);
+=======
+   big,
+   tt {
+    border: 2px dotted blue !important;
+    background-color: tint(blue, 40%) !important;
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   }
 
 /* ==========================
    Proposed Deprecated Attributes
    ========================== */
 
+<<<<<<< HEAD
   *[border],
   a[target],
   table[cellpadding],
@@ -104,6 +168,14 @@
   *[name] {
     border: 2px solid blue;
     background-color: tint(blue, 40%);
+=======
+   *[border],
+   a[target],
+   table[cellpadding],
+   table[cellspacing],
+   *[name] {
+    border: 2px solid blue !important;
+    background-color: tint(blue, 40%) !important;
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   }
-
 }

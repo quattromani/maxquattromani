@@ -1,14 +1,18 @@
-@charset "UTF-8";
+
 
 .btn,
 button {
+<<<<<<< HEAD
 
 display: inline-block;
+=======
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
   @include margin;
   @include padding($base-spacing/2 $base-spacing);
   @include font-family($button-font-family);
   @include font-size($button-font-size);
   @include transition;
+  display: inline-block;
   bottom: $base-spacing/2;
   background-color: $base-button-bg;
   font-weight: 200;

@@ -1,0 +1,18 @@
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.#{$fa-css-prefix}-home:before { content: $fa-var-home; }
+.#{$fa-css-prefix}-paint-brush:before { content: $fa-var-paint-brush; }
+.#{$fa-css-prefix}-code:before { content: $fa-var-code; }
+.#{$fa-css-prefix}-paper-plane:before { content: $fa-var-paper-plane; }
+.#{$fa-css-prefix}-paper-plane-o:before { content: $fa-var-paper-plane-o; }
+.#{$fa-css-prefix}-globe:before { content: $fa-var-globe; }
+.#{$fa-css-prefix}-book:before { content: $fa-var-book; }
+.#{$fa-css-prefix}-envelope-o:before { content: $fa-var-envelope-o; }
+.#{$fa-css-prefix}-envelope:before { content: $fa-var-envelope; }
+.#{$fa-css-prefix}-file-o:before { content: $fa-var-file-o; }
+.#{$fa-css-prefix}-files-o:before { content: $fa-var-files-o; }
+.#{$fa-css-prefix}-file:before { content: $fa-var-file; }
+.#{$fa-css-prefix}-file-text:before { content: $fa-var-file-text; }
+.#{$fa-css-prefix}-file-text-o:before { content: $fa-var-file-text-o; }
+.#{$fa-css-prefix}-user:before { content: $fa-var-user; }
