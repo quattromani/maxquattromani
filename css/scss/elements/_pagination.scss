@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 .pagination {
   ol {
@@ -20,8 +20,13 @@
   }
 
   @include media($mobile) {
+<<<<<<< HEAD
 
 display: inline-block;
+=======
+    display: inline-block;
+
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
     width: 100%;
     margin: 0 auto;
     text-align: center;

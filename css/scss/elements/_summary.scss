@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 details {
 	@include margin(($base-spacing / 2) 0);
@@ -9,11 +9,16 @@ details {
 	}
 
 	summary {
+<<<<<<< HEAD
 
 display: inline-block;
     @include padding($base-spacing / 4);
+=======
+		@include padding($base-spacing / 4);
+>>>>>>> eac0ee0399a3fc61db5d82d0697ca7d48a2ae834
     // @include icon-before($fa-var-chevron-down);
     @include font-family($base-font-family-alt);
+    display: inline-block;
 		width: 100%;
 		background: $color-grey;
 		outline: none;

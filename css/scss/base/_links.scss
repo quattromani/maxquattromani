@@ -1,8 +1,8 @@
-@charset "UTF-8";
+
 
 a {
-  @include margin(0);
-  @include padding(0);
+  @include margin;
+  @include padding;
   @include transition;
   background-color: transparent;
   vertical-align: baseline;
