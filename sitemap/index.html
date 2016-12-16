@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Human Readable Sitemap
-description: "The Internet home of Max Quattromani, web developer and designer. I write a little about technology and what I'm working on, here. I also keep a resume and a reading list if you're interested."
+title: Sitemap
+permalink: "/sitemap/"
+description:
 class: sitemap
-parent:
+parent: Sitemap
 ---
 
 <h1>Sitemap</h1>
@@ -11,36 +12,13 @@ parent:
 <article>
 
   <ul>
+    {% for page in site.pages %}
+    {% unless page.sitemap.exclude == "yes" %}
     <li>
-      <a href="/">Home</a>
+      <a href="{{ page.url }}">{{ page.title }}</a>
     </li>
-    <li>
-      <a href="/about">About</a>
-    </li>
-    <li>
-      <a href="/resume">Resume</a>
-    </li>
-    <li>
-      <a href="/styleguide">Style Guide</a>
-    </li>
-    <li>
-      <a href="/patterns">Pattern Library</a>
-    </li>
-    <li>
-      <a href="/email">Email Guidelines</a>
-    </li>
-    <li>
-      <a href="/SDLC">Software Development Life Cycle</a>
-    </li>
-    <li>
-      <a href="/reading">What I'm Reading</a>
-    </li>
-    <li>
-      <a href="/sites">See All The Sites I've Built</a>
-    </li>
-    <li>
-      <a href="/archive">Archive</a>
-    </li>
+    {% endunless %}
+    {% endfor %}
   </ul>
 
 </article>
