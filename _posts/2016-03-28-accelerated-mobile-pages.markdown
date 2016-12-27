@@ -28,11 +28,11 @@ categories:
 
 Last October, Google announced the introduction of its Accelerated Mobile Pages project, a new open-source initiative aiming to “dramatically improve the performance of the mobile web.”
 
-For severarl reasons I decided to give AMP a runthrough on my own site. Firstly, my site is almost entirely static - making it a perfect candidate. Secondly, the content that primarily changes are the articles, like this one. Last, but not least, I want to give my site the fastest possible deliver in the most performant manner. 
+For several reasons I decided to give AMP a runthrough on my own site. Firstly, my site is almost entirely static - making it a perfect candidate. Secondly, the content that primarily changes are the articles, like this one. Last, but not least, I want to give my site the fastest possible deliver in the most performant manner. 
 
-Leading up to this switch I had always taken pride in my clean semantic markup and lean css. In fact, when it came time to inline my css in the "amp-custom" style tag (which has a limit of 50kb) I was pleasantly surprised that I was already under that threshold. 
+Leading up to this switch I had always taken pride in my clean semantic markup and lean CSS. In fact, when it came time to inline my CSS in the "amp-custom" style tag (which has a limit of 50kb) I was pleasantly surprised that I was already under that threshold. 
 
-My biggest bump in the road came in the form of mobile navigation. I previously had a nice off-canvas mobile nav solution that I have, since creation, reused on a number of projects. AMP does not allow author-written JavaScript or any third-party JS. So I immediately had a broken experience in mobile. Fortunately I had a free Sunday evening and rewrote the nav to be entirely HTML/CSS - which is nice.
+My biggest bump in the road came in the form of mobile navigation. I previously had a nice off-canvas mobile nav solution that I have, since creation, reused on a number of projects. AMP does not allow author-written JavaScript or any third-party JS. So I immediately had a broken experience in mobile. Fortunately I had a free Sunday evening and rewrote the <code><nav></code> to be entirely HTML/CSS - which is nice.
 
 On my TODO list are integration of AMP's modal/dialog boxes and playing with the carousels.
 
