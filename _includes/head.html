@@ -3,6 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript">
+    var host = "{{ site.enforce_ssl }}";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+  </script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.title }}</title>
   <link rel="canonical" href="{{ site.url }}/{{ page.class }}">
@@ -27,7 +32,7 @@
   {% include schema_org.html %}
 
   {% if page.path contains '_posts' %}
-    {% include schema_article.html %}
+  {% include schema_article.html %}
   {% endif %}
 
   <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
@@ -36,43 +41,43 @@
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 
-<style amp-custom>
-{% include main.css %}
+  <style amp-custom>
+  {% include main.css %}
 </style>
 
 </head>
 
 <body class="{{ page.class }}">
 
-<amp-analytics type="googleanalytics" id="analytics1">
-<script type="application/json">
-{
-  "vars": {
-    "account": "{{ site.google_analytics_id }}"
-  },
-  "triggers": {
-    "trackPageview": {
-      "on": "visible",
-      "request": "pageview"
-    }
-  }
-}
-</script>
-</amp-analytics>
+  <amp-analytics type="googleanalytics" id="analytics1">
+    <script type="application/json">
+      {
+        "vars": {
+          "account": "{{ site.google_analytics_id }}"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
 
-<a href="/">
-  <amp-img src="/images/Q.png" class="logo" width="50" height="50" alt="Q logo"></amp-img>
-</a>
+  <a href="/">
+    <amp-img src="/images/Q.png" class="logo" width="50" height="50" alt="Q logo"></amp-img>
+  </a>
 
-<input type="checkbox" id="offcanvas-menu" class="toggle">
+  <input type="checkbox" id="offcanvas-menu" class="toggle">
 
-<div class="outer-wrapper">
+  <div class="outer-wrapper">
 
-  <label for="offcanvas-menu" class="full-screen-close"></label>
+    <label for="offcanvas-menu" class="full-screen-close"></label>
 
-  {% include nav.html %}
+    {% include nav.html %}
 
-  {% include header.html %}
+    {% include header.html %}
 
-  <!-- Begin Content Wrapper -->
-  <main role="main">
+    <!-- Begin Content Wrapper -->
+    <main role="main">
