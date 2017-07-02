@@ -4,7 +4,8 @@ email: max@maxquattromani.com
 description: ""
 baseurl: ""
 version: 0.2.4
-url: "http://maxquattromani.com"
+url: https://maxquattromani.com
+enforce_ssl: maxquattromani.com
 author: "Max Quattromani"
 twitter_username: maxquattromani
 github_username:  quattromani
