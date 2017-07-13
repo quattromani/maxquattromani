@@ -1,7 +1,7 @@
 @mixin visually-hidden {
   @include size(1px);
   @include margin(-$base-spacing /2);
-  @include padding;
+  @include padding(0);
   position: absolute;
   border: 0;
   clip: rect(0 0 0 0);
@@ -11,10 +11,14 @@
     &:active,
     &:focus {
       @include size(auto);
-      @include margin;
+      @include margin(0);
       clip: auto;
       overflow: visible;
       position: static;
     }
   }
+}
+
+.visually-hidden {
+  @include visually-hidden;
 }

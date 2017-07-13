@@ -5,6 +5,23 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.visually-hidden {
+  height: 1px;
+  width: 1px;
+  margin: -1rem;
+  padding: 0;
+  position: absolute;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+  .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+    height: auto;
+    width: auto;
+    margin: 0;
+    clip: auto;
+    overflow: visible;
+    position: static; }
+
 article,
 aside,
 details,
