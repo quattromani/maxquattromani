@@ -4,10 +4,6 @@
     url: 'http://maxquattromani.com'
     status: true
     type: 'NB'
-  - title: 'Patti Quattromani'
-    url: 'http://pattiquattromani.com'
-    status: true
-    type: 'NB'
 
 - section: Corporate Sites
   examples:
@@ -47,9 +43,21 @@
     url: 'http://www.leashables.com/'
     status: true
     type: 'NB/NR'
+  - title: 'Citywide Home Loans Goal Tracker'
+    url: 'https://quattromani.github.io/pattiquattromani/CHL/july/'
+    status: true
+    type: 'NB'
+  - title: 'Placewise Corporate Website'
+    url: 'https://placewisemedia.github.io/PWCorp/'
+    status: false
+    type: 'NB'
 
 - section: Smaller Company Projects
   examples:
+  - title: 'Union Station'
+    url: 'http://www.unionstationdc.com/'
+    status: true
+    type: 'RR'
   - title: 'Clinical Advisory Solutions'
     url: 'http://clinicaladvisorysolutions.com'
     status: true
@@ -62,6 +70,10 @@
     url: 'http://www.wardvillagefoundation.org/'
     status: true
     type: 'RR'
+  - title: 'Science and Technology Park at Johns Hopkins'
+    url: 'http://scienceparkjohnshopkins.net/'
+    status: true
+    type: 'NB'
 
 - section: Personal Projects
   examples:
@@ -78,10 +90,6 @@
     type: 'NB'
   - title: 'Qoppa'
     url: 'http://qoppa.co'
-    status: true
-    type: 'NB'
-  - title: '1966 Mustang'
-    url: 'http://1966mustang.us'
     status: true
     type: 'NB'
 
@@ -899,8 +907,70 @@
     url: 'http://www.baldwinhillscrenshawplaza.com/'
     status: true
     type: 'RR'
-
-
+  - title: 'The Shoppes at Cross Keys'
+    url: 'http://shoppesatcrosskeys.com/'
+    status: true
+    type: 'NB'
+  - title: 'Red Cliffs Mall'
+    url: 'http://www.redcliffsmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Red Cliffs Mall'
+    url: 'http://www.redcliffsmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Anaheim GardenWalk'
+    url: 'http://anaheimgardenwalk.com/'
+    status: true
+    type: 'NB'
+  - title: 'A Timberland Town Center'
+    url: 'http://www.timberlandtowncenter.com/'
+    status: true
+    type: 'NB'
+  - title: 'Manhattan Village'
+    url: 'http://manhattanvillage.placewise.com/'
+    status: false
+    type: 'NB'
+  - title: 'Manhattan Town Center'
+    url: 'http://www.manhattantowncenter.com/'
+    status: true
+    type: 'NB'
+  - title: 'Brazos Mall'
+    url: 'http://www.shopbrazosmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Chico Mall'
+    url: 'http://www.shopchicomall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Connecticut Post Mall'
+    url: 'http://www.shopconnecticutpostmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Fox Valley Mall'
+    url: 'http://www.shopfoxvalleymall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Hawthorn Mall'
+    url: 'http://www.shophawthornmall.com/'
+    status: true
+    type: 'NB'
+  - title: 'MainPlace Mall'
+    url: 'http://www.shopmainplacemall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Pueblo Mall'
+    url: 'http://www.shoppueblomall.com/'
+    status: true
+    type: 'NB'
+  - title: 'Vancouver Mall'
+    url: 'http://www.shopvancouvermall.com/'
+    status: true
+    type: 'NB'
+  - title: 'The Boulevard'
+    url: 'http://www.theboulevard.com/'
+    status: true
+    type: 'NB'
 
 
 
