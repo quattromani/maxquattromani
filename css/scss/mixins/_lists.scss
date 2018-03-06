@@ -171,3 +171,7 @@
     }
   }
 }
+
+.bulleted {
+  @include bulleted;
+}

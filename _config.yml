@@ -20,6 +20,9 @@ highlighter: rouge
 
 permalink: pretty
 
+# Included Plugins (previously gems)
+plugins: [jekyll-paginate]
+
 exclude: ['node_modules', 'scss', 'DAM']
 
 google_analytics: true

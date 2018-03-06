@@ -22,6 +22,13 @@ html {
     overflow: visible;
     position: static; }
 
+.bulleted ~ ul {
+  margin-bottom: 0; }
+.bulleted > li {
+  list-style: outside disc;
+  margin-left: 1.25em;
+  border-bottom: 0; }
+
 article,
 aside,
 details,
@@ -110,7 +117,7 @@ h1,
   margin-top: .5em;
   margin-bottom: .5em;
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.618;
   text-transform: uppercase; }
   @media screen and (max-width: 1025px) {
@@ -128,7 +135,7 @@ h2,
   margin-top: .5em;
   margin-bottom: .5em;
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.618;
   text-transform: uppercase; }
   @media screen and (max-width: 1025px) {
@@ -146,7 +153,7 @@ h3,
   margin-top: .5em;
   margin-bottom: .5em;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.618;
   text-transform: uppercase; }
   @media screen and (max-width: 1025px) {
@@ -272,7 +279,7 @@ ol,
 dl,
 blockquote {
   clear: inherit;
-  margin-bottom: 0.66667rem;
+  margin-bottom: 0.6666666667rem;
   vertical-align: middle; }
 
 p {
@@ -660,8 +667,7 @@ audio {
   audio:not([controls]) {
     display: none; }
 
-.btn, .search-goog input[type='submit'], input[type='submit'], .cta,
-button {
+.btn, .search-goog input[type='submit'], input[type='submit'], .cta, button {
   margin: 0;
   padding: 1rem 2rem;
   font-family: "Raleway", sans-serif, Arial, sans-serif;
@@ -681,76 +687,47 @@ button {
   line-height: initial;
   text-transform: uppercase;
   letter-spacing: .075em; }
-  a .btn, a .search-goog input[type='submit'], .search-goog a input[type='submit'], a input[type='submit'], a .cta, a
-  button {
+  a .btn, a .search-goog input[type='submit'], .search-goog a input[type='submit'], a input[type='submit'], a .cta,
+  a button {
     color: #fff; }
-  .btn:hover, input[type='submit']:hover, .cta:hover,
-  button:hover {
+  .btn:hover, input[type='submit']:hover, .cta:hover, button:hover {
     background-color: #455a64;
     color: #00BCD4; }
-  .btn:focus, input[type='submit']:focus, .cta:focus,
-  button:focus {
+  .btn:focus, input[type='submit']:focus, .cta:focus, button:focus {
     background-color: #455a64;
     background-image: 0;
     outline: none; }
-  .btn.btn-error, input.btn-error[type='submit'], .btn-error.cta,
-  button.btn-error {
+  .btn.btn-error, input.btn-error[type='submit'], .btn-error.cta, button.btn-error {
     background: red;
     color: #fff; }
-    .btn.btn-error:hover, input.btn-error[type='submit']:hover, .btn-error.cta:hover,
-    button.btn-error:hover {
+    .btn.btn-error:hover, input.btn-error[type='submit']:hover, .btn-error.cta:hover, button.btn-error:hover {
       background: #ff8080; }
-  .btn:disabled, input[type='submit']:disabled, .cta:disabled, .btn.js-disabled, input.js-disabled[type='submit'], .js-disabled.cta, .btn.disabled, input.disabled[type='submit'], .disabled.cta,
-  button:disabled,
-  button.js-disabled,
-  button.disabled {
+  .btn:disabled, input[type='submit']:disabled, .cta:disabled, .btn.js-disabled, input.js-disabled[type='submit'], .js-disabled.cta, .btn.disabled, input.disabled[type='submit'], .disabled.cta, button:disabled, button.js-disabled, button.disabled {
     cursor: default;
     background: #e1e1e1;
     color: #212121;
     pointer-events: none; }
-    .btn:disabled:hover, input[type='submit']:disabled:hover, .cta:disabled:hover, .btn:disabled:active, input[type='submit']:disabled:active, .cta:disabled:active, .btn.js-disabled:hover, input.js-disabled[type='submit']:hover, .js-disabled.cta:hover, .btn.js-disabled:active, input.js-disabled[type='submit']:active, .js-disabled.cta:active, .btn.disabled:hover, input.disabled[type='submit']:hover, .disabled.cta:hover, .btn.disabled:active, input.disabled[type='submit']:active, .disabled.cta:active,
-    button:disabled:hover,
-    button:disabled:active,
-    button.js-disabled:hover,
-    button.js-disabled:active,
-    button.disabled:hover,
-    button.disabled:active {
+    .btn:disabled:hover, input[type='submit']:disabled:hover, .cta:disabled:hover, .btn:disabled:active, input[type='submit']:disabled:active, .cta:disabled:active, .btn.js-disabled:hover, input.js-disabled[type='submit']:hover, .js-disabled.cta:hover, .btn.js-disabled:active, input.js-disabled[type='submit']:active, .js-disabled.cta:active, .btn.disabled:hover, input.disabled[type='submit']:hover, .disabled.cta:hover, .btn.disabled:active, input.disabled[type='submit']:active, .disabled.cta:active, button:disabled:hover, button:disabled:active, button.js-disabled:hover, button.js-disabled:active, button.disabled:hover, button.disabled:active {
       background: #00BCD4; }
-  .btn.block, input.block[type='submit'], .block.cta,
-  button.block {
+  .btn.block, input.block[type='submit'], .block.cta, button.block {
     display: block;
     width: 100%;
     text-align: center; }
-  .btn.btn-xl, input.btn-xl[type='submit'], .btn-xl.cta,
-  button.btn-xl {
+  .btn.btn-xl, input.btn-xl[type='submit'], .btn-xl.cta, button.btn-xl {
     padding: 0.75em 4rem; }
-  .btn.btn-lg, input.btn-lg[type='submit'], .btn-lg.cta,
-  button.btn-lg {
+  .btn.btn-lg, input.btn-lg[type='submit'], .btn-lg.cta, button.btn-lg {
     padding: 0.5em 3rem; }
-  .btn.btn-sm, input.btn-sm[type='submit'], .btn-sm.cta,
-  button.btn-sm {
+  .btn.btn-sm, input.btn-sm[type='submit'], .btn-sm.cta, button.btn-sm {
     min-width: 0;
-    padding: 0.33333rem 1.33333rem; }
+    padding: 0.3333333333rem 1.3333333333rem; }
   @media (max-width: max-width 750px 4) {
-    .btn.mobile-full, input.mobile-full[type='submit'], .mobile-full.cta,
-    button.mobile-full {
+    .btn.mobile-full, input.mobile-full[type='submit'], .mobile-full.cta, button.mobile-full {
       display: block;
       width: 100%; }
-      .btn.mobile-full a, input.mobile-full[type='submit'] a, .mobile-full.cta a,
-      button.mobile-full a {
+      .btn.mobile-full a, input.mobile-full[type='submit'] a, .mobile-full.cta a, button.mobile-full a {
         display: block;
         text-align: center; }
-      .btn.mobile-full + .btn.mobile-full, .search-goog input.mobile-full[type='submit'] + .btn.mobile-full, input.mobile-full[type='submit'] + .btn.mobile-full, .mobile-full.cta + .btn.mobile-full, .search-goog .btn.mobile-full + input.mobile-full[type='submit'], .search-goog .mobile-full.cta + input.mobile-full[type='submit'], .btn.mobile-full + input.mobile-full[type='submit'], .search-goog input.mobile-full[type='submit'] + input.mobile-full[type='submit'], input.mobile-full[type='submit'] + input.mobile-full[type='submit'], .mobile-full.cta + input.mobile-full[type='submit'], .btn.mobile-full + .mobile-full.cta, .search-goog input.mobile-full[type='submit'] + .mobile-full.cta, input.mobile-full[type='submit'] + .mobile-full.cta, .mobile-full.cta + .mobile-full.cta,
-      button.mobile-full + .btn.mobile-full,
-      .search-goog button.mobile-full + input.mobile-full[type='submit'],
-      button.mobile-full + input.mobile-full[type='submit'],
-      button.mobile-full + .mobile-full.cta, .btn.mobile-full +
-      button.mobile-full, .search-goog input.mobile-full[type='submit'] +
-      button.mobile-full, input.mobile-full[type='submit'] +
-      button.mobile-full, .mobile-full.cta +
-      button.mobile-full,
-      button.mobile-full +
-      button.mobile-full {
+      .btn.mobile-full + .btn.mobile-full, .search-goog input.mobile-full[type='submit'] + .btn.mobile-full, input.mobile-full[type='submit'] + .btn.mobile-full, .mobile-full.cta + .btn.mobile-full, .search-goog .btn.mobile-full + input.mobile-full[type='submit'], .search-goog .mobile-full.cta + input.mobile-full[type='submit'], .btn.mobile-full + input.mobile-full[type='submit'], .search-goog input.mobile-full[type='submit'] + input.mobile-full[type='submit'], input.mobile-full[type='submit'] + input.mobile-full[type='submit'], .mobile-full.cta + input.mobile-full[type='submit'], .btn.mobile-full + .mobile-full.cta, .search-goog input.mobile-full[type='submit'] + .mobile-full.cta, input.mobile-full[type='submit'] + .mobile-full.cta, .mobile-full.cta + .mobile-full.cta, button.mobile-full + .btn.mobile-full, .search-goog button.mobile-full + input.mobile-full[type='submit'], button.mobile-full + input.mobile-full[type='submit'], button.mobile-full + .mobile-full.cta, .btn.mobile-full + button.mobile-full, .search-goog input.mobile-full[type='submit'] + button.mobile-full, input.mobile-full[type='submit'] + button.mobile-full, .mobile-full.cta + button.mobile-full, button.mobile-full + button.mobile-full {
         margin-top: 2rem; } }
 
 .search-goog input[type='text'] {
@@ -791,14 +768,12 @@ form label {
     clip: auto;
     overflow: visible;
     position: static; }
-form input[type]:not([type=range]):not([type=submit]),
-form textarea,
-form select {
+form input[type]:not([type=range]):not([type=submit]), form textarea, form select {
   padding: 0.35em 0.5em 0.35em 0;
   margin: 0 0 2rem;
   background-clip: border-box;
   border-radius: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   will-change: transition;
   transition: all 0.2s ease-in-out;
   width: 100%;
@@ -809,26 +784,16 @@ form select {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   color: inherit; }
-  .ie form input[type]:not([type=range]):not([type=submit]), .ie
-  form textarea, .ie
-  form select {
+  .ie form input[type]:not([type=range]):not([type=submit]),
+  .ie form textarea,
+  .ie form select {
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#00000000)";
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
     zoom: 1; }
-  form input[type]:not([type=range]):not([type=submit])[type='search']::-webkit-search-decoration, form input[type]:not([type=range]):not([type=submit])[type='search']::-webkit-search-cancel-button, form input[type]:not([type=range]):not([type=submit])[type='search']::-webkit-datetime-edit-fields-wrapper,
-  form textarea[type='search']::-webkit-search-decoration,
-  form textarea[type='search']::-webkit-search-cancel-button,
-  form textarea[type='search']::-webkit-datetime-edit-fields-wrapper,
-  form select[type='search']::-webkit-search-decoration,
-  form select[type='search']::-webkit-search-cancel-button,
-  form select[type='search']::-webkit-datetime-edit-fields-wrapper {
+  form input[type]:not([type=range]):not([type=submit])[type='search']::-webkit-search-decoration, form input[type]:not([type=range]):not([type=submit])[type='search']::-webkit-search-cancel-button, form input[type]:not([type=range]):not([type=submit])[type='search']::-webkit-datetime-edit-fields-wrapper, form textarea[type='search']::-webkit-search-decoration, form textarea[type='search']::-webkit-search-cancel-button, form textarea[type='search']::-webkit-datetime-edit-fields-wrapper, form select[type='search']::-webkit-search-decoration, form select[type='search']::-webkit-search-cancel-button, form select[type='search']::-webkit-datetime-edit-fields-wrapper {
     -webkit-appearance: none; }
-  form input[type]:not([type=range]):not([type=submit])[type="radio"], form input[type]:not([type=range]):not([type=submit])[type="checkbox"],
-  form textarea[type="radio"],
-  form textarea[type="checkbox"],
-  form select[type="radio"],
-  form select[type="checkbox"] {
+  form input[type]:not([type=range]):not([type=submit])[type="radio"], form input[type]:not([type=range]):not([type=submit])[type="checkbox"], form textarea[type="radio"], form textarea[type="checkbox"], form select[type="radio"], form select[type="checkbox"] {
     margin: 0.25em 0.5em 1em 0.1em;
     float: left; }
 form textarea {
@@ -1244,6 +1209,9 @@ header {
   border-bottom: 1px solid #e1e1e1; }
   .sdlc article ul > li:last-child {
     border-bottom: 0; }
+
+.ada main {
+  padding-bottom: 2rem; }
 
 .resume main {
   padding-top: 0;

@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-SITEMAP: http://maxquattromani.com/sitemap.xml
+SITEMAP: https://maxquattromani.com/sitemap.xml
