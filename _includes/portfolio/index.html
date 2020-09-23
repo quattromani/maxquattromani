@@ -33,14 +33,12 @@
     <div id="{{ item.section }}" class="row">
       {% for example in item.examples %}
       <div class="fourth">
-        <span class="modal-button" id="{{ example.slide }}">
-          <div class="portfolio-gallery">
-            <div class="cap">
-              {{ example.title }}
-            </div>
-            <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
-          </div>
-        </span>
+        <figure>
+          <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
+          <figcaption>
+            {{ example.title }}
+          </figcaption>
+        </figure>
       </div>
       {% endfor %}
     </div>
