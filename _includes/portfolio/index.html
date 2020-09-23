@@ -30,6 +30,9 @@
 
     {% for item in site.data.modals %}
     <h3>{{ item.section }}</h3>
+    {% if item.description %}
+    <p>{{ item.description }}</p>
+    {% endif %}
     <div id="{{ item.section }}" class="row">
       {% for example in item.examples %}
       <div class="fourth">
