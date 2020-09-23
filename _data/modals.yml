@@ -1,4 +1,5 @@
 - section: Web
+  description: 
   examples:
   - img: 'twc.jpg'
     alt: 'Time Warner Cable'
@@ -22,6 +23,7 @@
     slide: 4
 
 - section: Email
+  description:
   examples:
   - img: 'chicago.jpg'
     alt: 'Chicago ASI show email'
@@ -41,6 +43,7 @@
     slide: 8
 
 - section: Print
+  description:
   examples:
   - img: 'buyersGuide.jpg'
     alt: 'Buyers Guide'
@@ -52,6 +55,7 @@
     slide: 10
 
 - section: Packaging
+  description:
   examples:
   - img: 'scope.jpg'
     alt: 'Scope Minibrush - Retail Packaging'
@@ -67,6 +71,7 @@
     slide: 13
 
 - section: Art
+  description: 'I recently moved my Art to a Facebook group to share with Friends: <a href="https://www.facebook.com/groups/2482377752004215">Max Qreates</a>'
   examples:
   - img: '12.jpg'
     alt: 'Nude - Still Life Study'
