@@ -34,12 +34,13 @@
       {% for example in item.examples %}
       <div class="fourth">
         <figure>
-          <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
           <figcaption>
             {{ example.title }}
           </figcaption>
+          <img src="/images/{{ example.img }}" alt="{{ example.alt }}">
         </figure>
       </div>
+      <br>
       {% endfor %}
     </div>
     <hr>
