@@ -58,3 +58,5 @@ DEPENDENCIES
 
 BUNDLED WITH
    1.15.3
+
+gem "jekyll", ">= 3.6.3"
