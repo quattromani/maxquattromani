@@ -94,7 +94,15 @@
 	margin-left: $base-spacing;
 }
 
+.image-rounded {
+  @include image-circular;
+}
+
 .image-circular {
+  @include image-circular;
+}
+
+.image-bordered {
   @include image-circular;
 }
 
