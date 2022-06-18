@@ -12,7 +12,7 @@ $('a').each(function() {
 var smallBreakPoint = 640;
 var mediumBreakPoint = 768;
 
- /* ==========================================================================
+/* ==========================================================================
     Styleguide -- Version: 0.4.1 - Updated: 2/22/2014
     ========================================================================== */
 
@@ -30,27 +30,27 @@ function hexc(colorval) {
 // Get color value of swatch and print to div
 var color = '';
 $('.swatch').each(function() {
-	var classList = $(this).children('.swatch-color').attr('class').split(' ');
-	for(i=0; i <= classList.length-1; i++){
-		if(classList[i].match(/color-/g)){
-			$(this).children('.swatch-info').prepend('<p>$' + classList[i] + '</p>');
-			break;
-		}
-	}
-	var x = $(this).children('.swatch-color').css('backgroundColor');
-	hexc(x);
-	$(this).children('.swatch-info').append('<p>' + color + '</p>');
-	$(this).children('.swatch-info').append('<p>' + x + '</p>');
+  var classList = $(this).children('.swatch-color').attr('class').split(' ');
+  for(i=0; i <= classList.length-1; i++){
+    if(classList[i].match(/color-/g)){
+      $(this).children('.swatch-info').prepend('<p>$' + classList[i] + '</p>');
+      break;
+    }
+  }
+  var x = $(this).children('.swatch-color').css('backgroundColor');
+  hexc(x);
+  $(this).children('.swatch-info').append('<p>' + color + '</p>');
+  $(this).children('.swatch-info').append('<p>' + x + '</p>');
 });
 
 (function($) {
 
-	$.fn.vs = function() {
+  $.fn.vs = function() {
         // View source buttons
         $('.vs').click(function(){
-        	$(this).parent().next().find('.prettyprint').toggle();
-        	$(this).not('.disabled').toggleClass('js-active');
-        	return false;
+          $(this).parent().next().find('.prettyprint').toggle();
+          $(this).not('.disabled').toggleClass('js-active');
+          return false;
         });
       }
 
@@ -60,8 +60,8 @@ $('.vs').vs();
 
 // Get font-family property and return
 $('.fonts').each(function(){
-	var fonts = $(this).css('font-family');
-	$(this).prepend(fonts);
+  var fonts = $(this).css('font-family');
+  $(this).prepend(fonts);
 });
 
 /* ==========================================================================
@@ -205,29 +205,6 @@ $(window).on("resize", function () {
   }
 }).resize();
 
-
-// Make room for the fixed header
-navHeight = $('nav').height();
-
-$('a[href*=#]:not([href=#])').click(function() {
-
-  var windowWidth = $("body").width();
-  var offset = windowWidth > 1020 ? $('nav') : $('header[role=banner]');
-  var offset_height = offset.outerHeight();
-
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    || location.hostname == this.hostname) {
-
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-     if (target.length) {
-       $('html,body').animate({
-           scrollTop: target.offset().top - navHeight
-      }, 1000);
-      return false;
-    }
-  }
-});
 
 /* ==========================================================================
     Select with Link -- Version: 1.9.0.2 - Updated: 3/24/2014
