@@ -736,6 +736,10 @@ footer[role=contentinfo] {
   float: right;
   margin-left: 2rem; }
 
+.image-circular {
+  background-clip: border-box;
+  border-radius: 50%; }
+
 .box {
   margin: 0 0 2rem 0;
   padding: 2rem;

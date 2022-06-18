@@ -94,6 +94,10 @@
 	margin-left: $base-spacing;
 }
 
+.image-circular {
+  @include image-circular;
+}
+
 .box {
 	@include margin(0, 0, $base-spacing, 0);
 	@include padding($base-spacing);
