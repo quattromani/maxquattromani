@@ -9,7 +9,7 @@
 }
 
 @mixin image-rounded {
-  @include border-radius;
+  @include border-radius(20px);
 }
 
 @mixin image-circular {

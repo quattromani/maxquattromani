@@ -9,24 +9,24 @@
     </section>
 
     <section>
-      <h3>HTML</h3>
+      <h2>HTML</h2>
 
       <ul>
         <li>
-          <h5>Human Readable</h5>
+          <h3>Human Readable</h3>
 
           <p class="lede">Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
         </li>
         <li>
-          <h5>HTML5 doctype</h5>
+          <h3>HTML5 doctype</h3>
 
           <p class="lede">Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
-          {% highlight html %}
-          <!DOCTYPE html>
-          {% endhighlight %}
+{% highlight html %}
+<!DOCTYPE html>
+{% endhighlight %}
         </li>
         <li>
-          <h5>Syntax</h5>
+          <h3>Syntax</h3>
           <ul class="bulleted">
             <li>Use soft-tabs with two spaces</li>
             <li>Nested elements should be indented once (2 spaces)</li>
@@ -34,7 +34,7 @@
           </ul>
         </li>
         <li>
-          <h5>Attributes</h5>
+          <h3>Attributes</h3>
           <ul class="bulleted">
             <li>
               Attributes should be lowercase.
@@ -48,7 +48,7 @@
           </ul>
         </li>
         <li>
-          <h5>Attribute order</h5>
+          <h3>Attribute order</h3>
           <p>HTML attributes should come in this particular order for easier reading of code.</p>
           <ul class="vertical bulleted">
             <li><code>id</code></li>
@@ -58,7 +58,7 @@
           </ul>
         </li>
         <li>
-          <h5>HTML Comments</h5>
+          <h3>HTML Comments</h3>
           <ul class="bulleted">
             <li>
               Section comments are separated from the previous block by two lines, and should have one following line of space.
@@ -68,13 +68,13 @@
             </li>
           </ul>
 
-          {% highlight html %}
-          <!-- Component Name -->
-          <div class="componentName">
-            ...
-          </div>
-          <!-- ./Component Name -->
-          {% endhighlight %}
+{% highlight html %}
+<!-- Component Name -->
+<div class="componentName">
+  ...
+</div>
+<!-- ./Component Name -->
+{% endhighlight %}
 
         </li>
       </ul>
@@ -104,7 +104,7 @@
           </ul>
         </li>
         <li>
-          <h5>Declaration Organization</h5>
+          <h3>Declaration Organization</h3>
 
           <ol>
             <li>Box (Display, Float, Position, Left, Top, Width, Height, Margin, Padding, etc.)</li>
@@ -114,110 +114,110 @@
             <li>Other</li>
           </ol>
 
-          {% highlight css %}
-          .someDiv { color: #222; }
+{% highlight css %}
+.someDiv { color: #222; }
 
-          .someOtherDiv,
-          .someAdditional Div {
-          margin: 0 auto;
-          color: #222;
-        }
-        {% endhighlight %}
+.someOtherDiv,
+.someAdditional Div {
+  margin: 0 auto;
+  color: #222;
+}
+{% endhighlight %}
 
       </li>
       <li>
-        <h5>General Formatting</h5>
+        <h3>General Formatting</h3>
 
         <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
 
-        {% highlight css %}
-        .print {
-        display: block;
-        margin: 0;
-        padding: 0 7px;
-        height: 30px;
-        background: #4f799f;
-        line-height: 30px;
-      }
+{% highlight css %}
+.print {
+  display: block;
+  margin: 0;
+  padding: 0 7px;
+  height: 30px;
+  background: #4f799f;
+  line-height: 30px;
+}
 
-      .print:hover { background: #265a83; }
-      {% endhighlight %}
+.print:hover { background: #265a83; }
+{% endhighlight %}
 
     </li>
     <li>
       <p>Avoid Qualifying ID and class names with type selectors</p>
 
-      {% highlight css %}
-      // this is bad
-      ul#example { color: #ff0; }
-      div.error { color: red; }
-      {% endhighlight %}
+{% highlight css %}
+// this is bad
+ul#example { color: #ff0; }
+div.error { color: red; }
+{% endhighlight %}
 
-      {% highlight css %}
-      // this is good
-      .example { color: #0f0; }
-      .error { color: green; }
-      {% endhighlight %}
+{% highlight css %}
+// this is good
+.example { color: #0f0; }
+.error { color: green; }
+{% endhighlight %}
 
       <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
     </li>
     <li>
-      <h5>Hexadecimal Notation</h5>
+      <h3>Hexadecimal Notation</h3>
 
       <p>For color values that permit, 3 character hexadecimal is preferred</p>
 
-      {% highlight css %}
-      /* not recommended */
-      color: #00ff00;
-      {% endhighlight %}
-      {% highlight css %}
-      /* recommended */
-      color: #0f0;
-      {% endhighlight %}
+{% highlight css %}
+/* not recommended */
+color: #00ff00;
+{% endhighlight %}
+{% highlight css %}
+/* recommended */
+color: #0f0;
+{% endhighlight %}
 
     </li>
     <li>
       <div class="row">
         <div class="error-box">
           <span class="message">
-            <span class="h4">!important</span>
+            <span class="h2">!important</span>
           </span>
         </div>
       </div>
 
-      <h5>Just don't do it.</h5>
-      <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife</p>
+      <h3>Just don't do it.</h3>
+      <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife.</p>
     </li>
     <li>
-      <h5>Use the SMACSS Approach</h5>
+      <h3>Use the SMACSS Approach</h3>
 
-      {% highlight css %}
-      .componentName {
-      Base {
-      ...
-    }
+{% highlight css %}
+.componentName {
+  Base {
+    ...
+  }
 
-    Layout {
+  Layout {
     ...
   }
 
   Module {
-  ...
-}
+    ...
+  }
 
-State {
-...
-}
+  State {
+    ...
+  }
 
-Theme {
-...
-}
+  Theme {
+    ...
+  }
 }
 {% endhighlight %}
 
 </li>
 <li>
-  <h5>Commenting</h5>
+  <h3>Commenting</h3>
 
   {% highlight html %}
   // File headers are commented thusly:
@@ -250,7 +250,7 @@ Theme {
 
 <ul class="vertical lined">
   <li>
-    <h5>File Organization</h5>
+    <h3>File Organization</h3>
     <ul class="bulleted">
       <li>
         Mixins and variables go in scss/global/.
@@ -263,66 +263,66 @@ Theme {
       </li>
     </ul>
 
-    {% highlight html %}
-    sass/
-    ├── main.scss
-    ├── globals/
-    |   ├── _mixins.scss
-    |   ├── _var.scss
-    ├── partials/
-    |   ├── _btn.scss
-    |   ├── _list.scss
-    |   ├── _nav.scss
-    |   ├── _etc...
-    ├── theme/
-    |   ├── _btn-theme.scss
-    └── vendor/
-    └── _jquery.ui.core.scss
-    {% endhighlight %}
+{% highlight html %}
+sass/
+├── main.scss
+├── globals/
+|   ├── _mixins.scss
+|   ├── _var.scss
+├── partials/
+|   ├── _btn.scss
+|   ├── _list.scss
+|   ├── _nav.scss
+|   ├── _etc...
+├── theme/
+|   ├── _btn-theme.scss
+└── vendor/
+└── _jquery.ui.core.scss
+{% endhighlight %}
 
   </li>
   <li>
-    <h5>Main Stylesheet</h5>
+    <h3>Main Stylesheet</h3>
     <p>All files get compiled into the main.scss stylesheet, and should be scoped accordingly.</p>
     <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
     <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
 
-    {% highlight scss %}
-    @charset "UTF-8";
+{% highlight scss %}
+@charset "UTF-8";
 
-    @import "vendor";
+@import "vendor";
 
-    @import "theme/theme";
+@import "theme/theme";
 
-    @import "mixins/mixins";
-    @import "functions/functions";
+@import "mixins/mixins";
+@import "functions/functions";
 
-    // Base
-    @import "base/base";
+// Base
+@import "base/base";
 
-    // Modules
-    @import "globals/globals";
+// Modules
+@import "globals/globals";
 
-    // Modules
-    @import "helpers/helpers";
+// Modules
+@import "helpers/helpers";
 
-    // Components
-    @import "components/components";
+// Components
+@import "components/components";
 
-    // Elements
-    @import "elements/elements";
+// Elements
+@import "elements/elements";
 
-    // Features
-    @import "features/features";
+// Features
+@import "features/features";
 
-    // Pages
-    @import "pages/pages";
+// Pages
+@import "pages/pages";
 
-    {% endhighlight %}
+{% endhighlight %}
 
   </li>
   <li>
-    <h5>Structuring Code</h5>
+    <h3>Structuring Code</h3>
     <p>@extends and @includes are likely to be overwritten by future elements, placing them at the top of the property list calls them out and avoids the beginning of a specificity war.</p>
 
     <ul class="bulleted">
@@ -345,12 +345,12 @@ Theme {
 
   </li>
   <li>
-    <h5>Limit nesting to 3 levels and/or 50 lines</h5>
+    <h3>Limit nesting to 3 levels and/or 50 lines</h3>
     <p>Nesting selectors more than three levels deep and the code is at risk of being to reliant on HTML structure, overly-specific and difficult to understand.</p>
     <p>50 lines is reasonable length for keeping an entire block on a code editor screen without having to scroll.</p>
   </li>
   <li>
-    <h5>Variablize ALL THE THINGS!</h5>
+    <h3>Variablize ALL THE THINGS!</h3>
     <ul class="bulleted">
       <li>
         Variablize all colors.
@@ -377,7 +377,7 @@ Theme {
     </ul>
   </li>
   <li>
-    <h5>Comments</h5>
+    <h3>Comments</h3>
     <p>Try to stick with standard CSS comments, but you can use the Sass style (//) comments for trivial comments or quickly debugging.</p>
   </li>
 </ul>
@@ -395,13 +395,13 @@ Theme {
 <hr>
 <h2>SEO</h2>
 
-<h5>Only One h1 Tag Per Page</h5>
+<h3>Only One h1 Tag Per Page</h3>
 
 <p>While technically we <em>could</em> load a page up with h1 tags, it's a bad SEO practice and can cause penalties.</p>
 
 <hr>
 
-<h5>Use Title Attributes with Links</h5>
+<h3>Use Title Attributes with Links</h3>
 
 <p>Using a title attribute in your anchor elements will improve accessibility when used the right way.</p>
 
@@ -409,7 +409,7 @@ Theme {
 
 <hr>
 
-<h5>How Much Will A Reader Read?</h5>
+<h3>How Much Will A Reader Read?</h3>
 
 <blockquote>
   A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts.
@@ -425,47 +425,47 @@ Theme {
     <p class="lede">Making it possible to provide an enhanced user experience for people with disabilities when using internet applications with assistive technologies.</p>
   </li>
   <li>
-    <h5>Landmark Roles</h5>
+    <h3>Landmark Roles</h3>
 
-    <p>banner - typically the "header" of the page</p>
+    <p><span class="h3">banner</span> - typically the "header" of the page</p>
 
-    {% highlight html %}
-    <header role="banner"></header>
-    {% endhighlight %}
+{% highlight html %}
+<header role="banner"></header>
+{% endhighlight %}
 
-    <p>navigation - any navigation list, typically the nav element</p>
+    <p><span class="h3">navigation</span> - any navigation list, typically the nav element</p>
 
-    {% highlight html %}
-    <nav role="navigation""></nav>
-    {% endhighlight %}
+{% highlight html %}
+<nav role="navigation""></nav>
+{% endhighlight %}
 
-    <p>main - the main content area</p>
+    <p><span class="h3">main</span> - the main content area</p>
 
-    {% highlight html %}
-    <main role="main"></main>
-    {% endhighlight %}
+{% highlight html %}
+<main role="main"></main>
+{% endhighlight %}
 
-    <p>article - *the article role is not an ARIA landmark</p>
+    <p><span class="h3">article</span> - *the article role is not an ARIA landmark</p>
 
-    {% highlight html %}
-    <article></article>
-    {% endhighlight %}
+{% highlight html %}
+<article></article>
+{% endhighlight %}
 
-    <p>complimentary - information that is tangentially related to the main content</p>
+    <p><span class="h3">complimentary</span> - information that is tangentially related to the main content</p>
 
-    {% highlight html %}
-    <aside role="complimentary"></aside>
-    {% endhighlight %}
+{% highlight html %}
+<aside role="complimentary"></aside>
+{% endhighlight %}
 
-    <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
+    <p><span class="h3">contentinfo</span> - contains information about the parent document such as copyrights and privacy statements</p>
 
-    {% highlight html %}
-    <footer role="contentinfo"></footer>
-    {% endhighlight %}
+{% highlight html %}
+<footer role="contentinfo"></footer>
+{% endhighlight %}
 
   </li>
   <li>
-    <h5>Using alt Text Properly</h5>
+    <h3>Using alt Text Properly</h3>
     <p>A few tips on how and when to use the alt attribute:</p>
 
     <ul>

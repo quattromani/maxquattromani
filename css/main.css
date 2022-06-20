@@ -5,6 +5,63 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.color-white {
+  color: #fff; }
+
+.color-off-white {
+  color: #f9f9f9; }
+
+.color-black {
+  color: #000; }
+
+.color-grey {
+  color: #455A64; }
+
+.color-light-grey {
+  color: #e1e1e1; }
+
+.color-dark-grey {
+  color: #727272; }
+
+.color-brand-primary {
+  color: #00BCD4; }
+
+.color-brand-secondary {
+  color: #212121; }
+
+.color-brand-tertiary {
+  color: #fff; }
+
+.color-brand-quaternary {
+  color: #607d8b; }
+
+.color-brand-quinary {
+  color: #bbdefb; }
+
+.color-brand-primary-complimentary {
+  color: #455a64; }
+
+.color-brand-secondary-complimentary {
+  color: #2bb3dd; }
+
+.color-brand-tertiary-complimentary {
+  color: #00bdbd; }
+
+.color-brand-quaternary-complimentary {
+  color: #b3e5fc; }
+
+.color-brand-quinary-complimentary {
+  color: green; }
+
+.color-primary-red {
+  color: red; }
+
+.color-primary-green {
+  color: green; }
+
+.color-primary-blue {
+  color: #bbdefb; }
+
 .visually-hidden {
   height: 1px;
   width: 1px;
@@ -107,6 +164,258 @@ select,
 textarea {
   vertical-align: middle;
   max-width: 100%; }
+
+.row {
+  zoom: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem; }
+  .row:before, .row:after {
+    content: ' ';
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.half {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .half:last-child {
+    margin-right: 0; }
+  .marginless .half {
+    display: table-cell;
+    width: 50%;
+    margin-right: 0; }
+
+.third {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%; }
+  .third:last-child {
+    margin-right: 0; }
+  .marginless .third {
+    display: table-cell;
+    width: 33.3333333333%;
+    margin-right: 0; }
+
+.fourth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 23.2317613015%; }
+  .fourth:last-child {
+    margin-right: 0; }
+  .marginless .fourth {
+    display: table-cell;
+    width: 25%;
+    margin-right: 0; }
+
+.fifth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 18.1138787216%; }
+  .fifth:last-child {
+    margin-right: 0; }
+  .marginless .fifth {
+    display: table-cell;
+    width: 20%;
+    margin-right: 0; }
+
+.sixth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 14.7019570017%; }
+  .sixth:last-child {
+    margin-right: 0; }
+  .marginless .sixth {
+    display: table-cell;
+    width: 16.6666666667%;
+    margin-right: 0; }
+
+.seventh {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 12.264870059%; }
+  .seventh:last-child {
+    margin-right: 0; }
+  .marginless .seventh {
+    display: table-cell;
+    width: 14.2857142858%;
+    margin-right: 0; }
+
+.eighth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 10.4370548518%; }
+  .eighth:last-child {
+    margin-right: 0; }
+  .marginless .eighth {
+    display: table-cell;
+    width: 12.5%;
+    margin-right: 0; }
+
+.ninth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 9.0154208015%; }
+  .ninth:last-child {
+    margin-right: 0; }
+  .marginless .ninth {
+    display: table-cell;
+    width: 11.1111111108%;
+    margin-right: 0; }
+
+.tenth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 7.8781135619%; }
+  .tenth:last-child {
+    margin-right: 0; }
+  .marginless .tenth {
+    display: table-cell;
+    width: 10%;
+    margin-right: 0; }
+
+.eleventh {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 6.9475894563%; }
+  .eleventh:last-child {
+    margin-right: 0; }
+  .marginless .eleventh {
+    display: table-cell;
+    width: 9.0909090908%;
+    margin-right: 0; }
+
+.twelfth {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 6.1721527019%; }
+  .twelfth:last-child {
+    margin-right: 0; }
+  .marginless .twelfth {
+    display: table-cell;
+    width: 8.3333333333%;
+    margin-right: 0; }
+
+.golden-long {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 60.9041849888%; }
+  .golden-long:last-child {
+    margin-right: 0; }
+  .marginless .golden-long {
+    display: table-cell;
+    width: 61.8046971567%;
+    margin-right: 0; }
+
+.golden-short {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 36.7381634132%; }
+  .golden-short:last-child {
+    margin-right: 0; }
+  .marginless .golden-short {
+    display: table-cell;
+    width: 38.1953028433%;
+    margin-right: 0; }
+
+.two-thirds {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%; }
+  .two-thirds:last-child {
+    margin-right: 0; }
+  .marginless .two-thirds {
+    display: table-cell;
+    width: 66.6666666667%;
+    margin-right: 0; }
+
+.two-fifths {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 38.5854090412%; }
+  .two-fifths:last-child {
+    margin-right: 0; }
+  .marginless .two-fifths {
+    display: table-cell;
+    width: 40%;
+    margin-right: 0; }
+
+.three-fifths {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 59.0569393608%; }
+  .three-fifths:last-child {
+    margin-right: 0; }
+  .marginless .three-fifths {
+    display: table-cell;
+    width: 60%;
+    margin-right: 0; }
+
+.three-eighths {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 36.0264677513%; }
+  .three-eighths:last-child {
+    margin-right: 0; }
+  .marginless .three-eighths {
+    display: table-cell;
+    width: 37.5%;
+    margin-right: 0; }
+
+.five-eighths {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 61.6158806508%; }
+  .five-eighths:last-child {
+    margin-right: 0; }
+  .marginless .five-eighths {
+    display: table-cell;
+    width: 62.5%;
+    margin-right: 0; }
+
+.three-fourths {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 74.4105871005%; }
+  .three-fourths:last-child {
+    margin-right: 0; }
+  .marginless .three-fourths {
+    display: table-cell;
+    width: 75%;
+    margin-right: 0; }
+
+.four-fifths {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 79.5284696804%; }
+  .four-fifths:last-child {
+    margin-right: 0; }
+  .marginless .four-fifths {
+    display: table-cell;
+    width: 80%;
+    margin-right: 0; }
 
 /* ==========================
     Headings
@@ -738,15 +1047,14 @@ footer[role=contentinfo] {
 
 .image-rounded {
   background-clip: border-box;
-  border-radius: 50%; }
+  border-radius: 20px; }
 
 .image-circular {
   background-clip: border-box;
   border-radius: 50%; }
 
 .image-bordered {
-  background-clip: border-box;
-  border-radius: 50%; }
+  border: 1rem solid #00BCD4; }
 
 .box {
   margin: 0 0 2rem 0;
@@ -1237,7 +1545,8 @@ video {
 .styleguide .swatch-color,
 .patterns .swatch-color {
   padding: 3.5em 2rem;
-  position: relative; }
+  position: relative;
+  background-color: currentColor; }
   .styleguide .swatch-color.color-white,
   .patterns .swatch-color.color-white {
     border: 1px solid #e1e1e1;
@@ -1463,6 +1772,10 @@ header {
     @media screen and (max-width: 750px) {
       .resume main section {
         padding: 2rem; } }
+.resume h3 a,
+.resume .lede a {
+  color: #fff;
+  text-decoration: underline; }
 .resume .summary,
 .resume .featured {
   background-color: #00bdbd;
