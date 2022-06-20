@@ -16,6 +16,14 @@
     }
   }
 
+  h3,
+  .lede {
+    & a {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+
   .summary,
   .featured {
     background-color: $color-brand-tertiary-complimentary;

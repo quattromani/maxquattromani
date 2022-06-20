@@ -1,0 +1,184 @@
+.row {
+  @include outer-container;
+  margin-bottom: $base-spacing;
+}
+
+.half {
+  @include span-columns(6);
+
+  .marginless & {
+    @include span-columns(6 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.third {
+  @include span-columns(4);
+
+  .marginless & {
+    @include span-columns(4 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.fourth {
+  @include span-columns(3);
+
+  .marginless & {
+    @include span-columns(3 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.fifth {
+  @include span-columns(2.4);
+
+  .marginless & {
+    @include span-columns(2.4 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.sixth {
+  @include span-columns(2);
+
+  .marginless & {
+    @include span-columns(2 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.seventh {
+  @include span-columns(1.7142857143);
+
+  .marginless & {
+    @include span-columns(1.7142857143 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.eighth {
+  @include span-columns(1.5);
+
+  .marginless & {
+    @include span-columns(1.5 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.ninth {
+  @include span-columns(1.3333333333);
+
+  .marginless & {
+    @include span-columns(1.3333333333 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.tenth {
+  @include span-columns(1.2);
+
+  .marginless & {
+    @include span-columns(1.2 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.eleventh  {
+  @include span-columns(1.0909090909);
+
+  .marginless & {
+    @include span-columns(1.0909090909 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.twelfth {
+  @include span-columns(1);
+
+  .marginless & {
+    @include span-columns(1 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.golden-long {
+  @include span-columns(7.4165636588);
+
+  .marginless & {
+    @include span-columns(7.4165636588 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.golden-short {
+  @include span-columns(4.5834363412);
+
+  .marginless & {
+    @include span-columns(4.5834363412 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.two-thirds {
+  @include span-columns(8);
+
+  .marginless & {
+    @include span-columns(8 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.two-fifths {
+  @include span-columns(4.8);
+
+  .marginless & {
+    @include span-columns(4.8 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.three-fifths {
+  @include span-columns(7.2);
+
+  .marginless & {
+    @include span-columns(7.2 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.three-eighths {
+  @include span-columns(4.5);
+
+  .marginless & {
+    @include span-columns(4.5 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.five-eighths {
+  @include span-columns(7.5);
+
+  .marginless & {
+    @include span-columns(7.5 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.three-fourths {
+  @include span-columns(9);
+
+  .marginless & {
+    @include span-columns(9 of 12, table);
+    margin-right: 0;
+  }
+}
+
+.four-fifths {
+  @include span-columns(9.6);
+
+  .marginless & {
+    @include span-columns(9.6 of 12, table);
+    margin-right: 0;
+  }
+}

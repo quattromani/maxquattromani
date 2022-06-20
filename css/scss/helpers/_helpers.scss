@@ -95,7 +95,7 @@
 }
 
 .image-rounded {
-  @include image-circular;
+  @include image-rounded;
 }
 
 .image-circular {
@@ -103,7 +103,7 @@
 }
 
 .image-bordered {
-  @include image-circular;
+  border: ($base-spacing / 2) solid $color-brand-primary;
 }
 
 .box {

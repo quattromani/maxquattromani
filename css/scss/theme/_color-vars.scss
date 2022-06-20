@@ -23,6 +23,43 @@ $color-primary-red: red;
 $color-primary-green: green;
 $color-primary-blue: $color-brand-quinary;
 
+// =Colors
+$colors: (
+  color-white: #fff,
+  color-off-white: #f9f9f9,
+  color-black: #000,
+  color-grey: #455A64,
+  color-light-grey: #e1e1e1,
+  color-dark-grey: #727272,
+
+  // =Brand Palette
+  color-brand-primary: #00BCD4,
+  color-brand-secondary: #212121,
+  color-brand-tertiary: #fff,
+  color-brand-quaternary: #607d8b,
+  color-brand-quinary: #bbdefb,
+
+  color-brand-primary-complimentary: #455a64,
+  color-brand-secondary-complimentary: #2bb3dd,
+  color-brand-tertiary-complimentary: #00bdbd,
+  color-brand-quaternary-complimentary: #b3e5fc,
+  color-brand-quinary-complimentary: green,
+
+  color-primary-red: red,
+  color-primary-green: green,
+  color-primary-blue: #bbdefb,
+);
+
+@mixin colors {
+  @each $name, $color in $colors {
+    .#{$name} {
+      color: $color;
+    }
+  }
+}
+
+@include colors;
+
 // =Background
 $site-bg: $color-white;
 $site-bg-start: $color-white;
