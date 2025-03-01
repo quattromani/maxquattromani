@@ -1800,26 +1800,26 @@ header {
     width: 100%; }
   .resume .featured a {
     color: #fff; }
-.resume .skills {
+.resume .experience {
   background-color: #f9f9f9;
   color: #212121; }
-  .resume .skills header span {
+  .resume .experience header span {
     background-color: #f9f9f9; }
-  .resume .skills ul {
+  .resume .experience ul {
     column-count: 3;
     column-gap: 2rem;
     text-align: center; }
     @media screen and (max-width: 750px) {
-      .resume .skills ul {
+      .resume .experience ul {
         column-count: 1; } }
-.resume .experience {
+.resume .skills {
   background-color: #2bb3dd;
   color: #fff; }
-  .resume .experience a {
+  .resume .skills a {
     color: #fff; }
-    .resume .experience a:hover {
+    .resume .skills a:hover {
       color: #e1e1e1; }
-  .resume .experience header span {
+  .resume .skills header span {
     background-color: #2bb3dd; }
 .resume .education {
   color: #212121;
