@@ -11,3 +11,6 @@ _site
 
 # Ignore anything .orig
 *.orig
+
+/dist/
+.DS_Store
