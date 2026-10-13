@@ -14,3 +14,6 @@ _site
 
 /dist/
 .DS_Store
+
+# Local campaign source snapshots contain contact details.
+_sources/biography/*.html
