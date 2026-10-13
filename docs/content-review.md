@@ -61,7 +61,7 @@ Do not repeat "Fortune 150" or "industry-recognized" unless the precise attribut
 
 Before office-related wording goes public, confirm the jurisdiction, exact office title, current election or appointment status, effective date, and authoritative office website and contact route. The draft intentionally makes no current-office claim.
 
-For the career pass, confirm the 2007–2010 history; titles, dates, and employer names; current Parsimony and Qoppa status; degree wording; and the two or three accomplishments Max considers most consequential. For each selected project, obtain a role, date, artifact, collaborator credit, and any supportable result. Ask whether there is relevant public-service preparation, training, or prior administrative experience. Do not substitute a software career for missing assessment credentials.
+For the career pass, confirm the 2007–2010 history; titles, dates, and employer names; Qoppa status; degree wording; and the two or three accomplishments Max considers most consequential. For each selected project, obtain a role, date, artifact, collaborator credit, and any supportable result. Ask whether there is relevant public-service preparation, training, or prior administrative experience. Do not substitute a software career for missing assessment credentials.
 
 For the personal biography, obtain the reason for the career change in Max's own words and one or two personal details he wants readers to know. Do not invent community roots, family circumstances, civic service, or motivation. Confirm the personal mailbox is monitored and whether media inquiries should use it.
 
@@ -74,3 +74,10 @@ The recommendations follow repository-first knowledge ownership, plain writing, 
 ## Role verification update
 
 The user confirmed that the election is November 3, 2026, with an anticipated January 2027 start if elected. The user confirmed candidacy. An indexed official primary notice corroborated it, but its direct URL returned 404. The [official assessor destination](https://gagecountyne.gov/county-assessor/) was retrieved successfully. This resolves jurisdiction and supports candidacy wording. It does not establish the future election result or exact term-start date. The user's informal "assessor-apparent" wording and claim about eligible certificate holders are excluded from proposed public copy.
+
+
+## Recent career and preparation update
+
+User-confirmed October 13, 2026: Parsimony Shoppes has been the primary focus since 2022 alongside smaller consulting projects. The business is being wound down in preparation for the anticipated assessor role. Nebraska assessor certification has been earned, and 75 continuing education hours have been completed, including IAAO coursework. Certification date, course titles, and completion records remain to be collected. The goal of exceeding 100 hours before year-end is prospective and is not presented as completed credit. Canonical facts and reusable wording are maintained in `_data/profile.yml`.
+
+The Nebraska Department of Revenue's [certification and education page](https://revenue.nebraska.gov/PAD/assessor) was consulted for program terminology; it does not independently verify Max's completion.
