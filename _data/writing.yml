@@ -1,0 +1,15 @@
+sections:
+  - id: civic
+    title: Civic
+    description: Property assessment, local government, and public life.
+  - id: legal
+    title: Legal
+    description: Essays and study notes on law and legal reasoning.
+  - id: technology
+    title: Technology
+    description: Development, design systems, and building for the web.
+    archive_note: These earlier technical pieces are archived with their original dates. Examples reflect the tools and practices of their time.
+  - id: personal
+    title: Personal
+    description: Personal essays and reflections.
+    archive_note: Earlier personal writing is preserved with its original dates.

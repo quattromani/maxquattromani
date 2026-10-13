@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  Vertical align an element with 3 lines of CSS
 permalink: "/:title"

@@ -687,3 +687,11 @@ dialog [data-close-dialog] {
   font-size: 15px;
   line-height: 1.5;
 }
+
+.writing-category {
+  margin-top: 56px;
+}
+.archive-intro {
+  color: var(--muted);
+  font-size: 15px;
+}

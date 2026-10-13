@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title: "Designs by Puppy"
 permalink: designs-by-puppy

@@ -275,7 +275,7 @@ const nav = [
 ];
 const resources = [
   ["Career and selected work", "/resume/"],
-  ["Writing archive", "/writing/"],
+  ["Writing", "/writing/"],
   ["Reading list", "/reading/"],
 ];
 const links = (items, url) =>
@@ -285,8 +285,41 @@ const links = (items, url) =>
         `<a href="${href}"${url === href ? ' aria-current="page"' : ""}>${label}</a>`,
     )
     .join("");
-const articleList = () =>
-  `<ol class="article-list">${posts.map((post, index) => `<li><span class="article-number">${String(index + 1).padStart(2, "0")}</span><a href="${post.url}">${escape(post.title)}</a><time datetime="${post.date}">${formatDate(post.date)}</time><span aria-hidden="true">↗</span></li>`).join("")}</ol>`;
+const articleList = (items = posts) =>
+  `<ol class="article-list">${items.map((post, index) => `<li><span class="article-number">${String(index + 1).padStart(2, "0")}</span><a href="${post.url}">${escape(post.title)}</a><time datetime="${post.date}">${post.preview ? "Written " : ""}${formatDate(post.date)}${post.preview ? " (preview)" : post.archived ? " (archive)" : ""}</time><span aria-hidden="true">↗</span></li>`).join("")}</ol>`;
+const writingSections = () => {
+  const entries = [
+    ...posts,
+    ...pages
+      .filter((page) => page.meta.article)
+      .map((page) => ({
+        ...page.meta,
+        url: page.url,
+        date: page.meta.written,
+        preview: page.meta.preview,
+      })),
+  ];
+  const unknown = entries.filter(
+    (entry) =>
+      !data.writing.sections.some(
+        (section) => section.id === entry.writing_section,
+      ),
+  );
+  if (unknown.length)
+    throw new Error(
+      "Writing entries require a known section: " +
+        unknown.map((entry) => entry.title).join(", "),
+    );
+  return data.writing.sections
+    .map((section) => {
+      const items = entries
+        .filter((entry) => entry.writing_section === section.id)
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      if (!items.length && !process.argv.includes("--preview")) return "";
+      return `<section class="writing-category" aria-labelledby="writing-${section.id}"><div class="prose"><h2 id="writing-${section.id}">${escape(section.title)}</h2><p>${escape(section.description)}</p>${items.some((item) => item.archived) && section.archive_note ? `<p class="archive-intro">${escape(section.archive_note)}</p>` : ""}</div>${items.length ? articleList(items) : '<p class="prose">No pieces added yet.</p>'}</section>`;
+    })
+    .join("");
+};
 const portrait = (className) =>
   `<img class="${className}" src="${escape(site.data.profile.portrait.src)}" alt="${escape(site.data.profile.portrait.alt)}" width="${site.data.profile.portrait.width}" height="${site.data.profile.portrait.height}" decoding="async">`;
 const template = await fs.readFile("templates/page.html", "utf8");
@@ -370,7 +403,7 @@ for (const page of pages) {
     const $ = cheerio.load(body, {}, false);
     body = `<section class="hero"><p class="eyebrow">Digital Strategist • Marketing Leader • Front-End Architect</p><h1>Max<br>Quattromani<span>.</span></h1><div class="hero-bottom"><p>${$("h3").first().html()}</p><a class="text-link" href="/about/">About Me <span aria-hidden="true">↗</span></a></div></section><section class="profile-section"><div class="section-label"><span aria-hidden="true">01 /</span><h2>${page.meta.title}</h2></div><div class="profile-copy">${$("p").first().html()}</div></section><section class="writing-section"><div class="section-label"><span aria-hidden="true">02 /</span><h2>Articles</h2></div>${articleList()}</section>`;
   } else if (page.url === "/writing/") {
-    body = `<header class="page-heading"><p class="eyebrow">Max Quattromani</p><h1>Writing archive<span>.</span></h1></header><div class="prose">${body}</div>${articleList()}`;
+    body = `<header class="page-heading"><p class="eyebrow">Max Quattromani</p><h1>Writing<span>.</span></h1></header><div class="prose">${body}</div>${writingSections()}`;
   } else {
     const $ = cheerio.load(body, {}, false);
     const heading = $("h1").first();

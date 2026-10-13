@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Start using currentColor in your CSS"
 permalink: start-using-currentColor-in-your-css
