@@ -1,0 +1,29 @@
+# Personal site modernization
+
+## Scope and brief
+
+Rebuild the presentation from the existing words, articles, links, images, and data. Preserve public routes and content for a subsequent editorial pass. Audience: prospective collaborators and readers seeking Max's work, experience, and technical writing. Use an editorial rather than a dashboard composition: warm paper, dark ink, restrained rust, oversized name, clear typographic hierarchy, and generous readable measures. Five guiding words: personal, thoughtful, clear, confident, durable. Existing site is the content reference; its AMP, off-canvas navigation, CSS, and JavaScript are not design precedents. No taste skill was installed; the user authorized a fresh direction on October 13, 2026.
+
+## Architecture
+
+Existing page files, Markdown posts, and `_data` remain authoritative content. A small Node build reads their Liquid expressions, normalizes obsolete presentation markup, and renders a new shared shell. No old styles or scripts enter the output. Generated files live in `dist`, never in authored source. Deployment is GitHub Pages through Actions. Historical descriptions of AMP, Sass, and equipment are deliberately preserved for the later content review.
+
+## Acceptance criteria
+
+All existing public page and article routes build. Existing substantive copy remains intact. Navigation, contact links, and article links work without JavaScript. Images use native HTML. Narrow screens have no page overflow. Keyboard focus is visible; menus expose their state. No private Documents folder or obsolete runtime scripts enter the release. Review representative home, content, résumé, and article pages. Verify DNS and HTTPS separately from the presentation build.
+
+## Hosting findings
+
+October 13, 2026: Pages builds from `gh-pages`, custom domain `maxquattromani.com`, HTTPS enforcement disabled. Apex A records are `192.30.252.153` and `192.30.252.154`; TLS presents `*.github.com` and fails hostname validation. Current GitHub documentation specifies `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`; www should CNAME to `quattromani.github.io`. Preserve mail and other service records. Source: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+The public repository contains apparently sensitive PDFs in Documents. Those files were not opened and are excluded from the new website artifact. This does not remove existing public Git history. History cleanup requires a separate scoped decision.
+
+## Verification
+
+The build produces 62 HTML pages, including 12 articles and the standalone AMP experiment, using the new shell. The build verifies that every word in the normalized source content remains in the rendered page. The output check passes for document landmarks, headings, duplicate IDs, all local asset and navigation targets, and the Documents exclusion. All installed dependencies pass npm audit.
+
+Browser review in Chrome covered the home, About, résumé, article, and modal templates. A 390-pixel viewport had no horizontal page overflow. Mobile navigation exposes its state, Escape dismisses it and restores focus. Modal open, Escape close, and trigger focus restoration were verified. Desktop home, About, and article compositions were inspected. Safari, Firefox, physical mobile devices, screen readers, and remote historical link availability remain unverified; this is not a full accessibility certification.
+
+DNS values were updated in Network Solutions and independently verified against the authoritative nameserver. Email records were left intact. GitHub's custom domain was reapplied to restart certificate provisioning after the initial request remained pending. HTTPS requires a valid certificate before enforcement can be enabled.
+
+The guidance checkpoint found no material divergence from the authorized scope. Preserving outdated source prose is a deliberate requirement for this presentation pass; the subsequent editorial pass must update the technology descriptions and time-sensitive claims.
