@@ -1,17 +1,19 @@
 ---
 title: About me
-description: "Max Quattromani’s development career, love of learning, and preparation for the Gage County Assessor role."
+description: "Max Quattromani’s life in Beatrice, development career, love of learning, and preparation for the Gage County Assessor role."
 format: markdown
 presentation: current
 ---
 
-Web development has been my work since {{ site.data.profile.career_start }}. What began with building websites grew into leading development teams, creating shared tools, consulting, and running an online retail business.
+I'm a {{ site.data.profile.personal.family_roles | join: ", " | replace: ", grandfather", ", and grandfather" }}. My wife, {{ site.data.profile.personal.spouse }}, and I moved to {{ site.data.profile.personal.home }}, in the {{ site.data.profile.personal.moved }} from {{ site.data.profile.personal.previous_home }}. Away from work and study, we enjoy {{ site.data.profile.personal.interests | join: ", " }}.
 
-Across those roles, the work often came down to making complicated systems easier to use and maintain. At Time Warner Cable, that meant responsive interfaces and documented development practices. At Placewise, it meant reusable components and coordination across front-end, back-end, and data teams.
+Before moving into technology, I served in the Navy as a {{ site.data.profile.earlier_career.navy_role }} aboard {{ site.data.profile.earlier_career.navy_ship }}. {{ site.data.profile.earlier_career.mechanic | replace: "Spent", "Afterward, I spent" }}. Web development followed. The subjects changed, but an interest in systems and patterns kept me learning.
 
-One project began before the job did. While preparing for an interview with GLG in 2014, I brought a collection of code snippets, components, and development practices together into Scaffold. It became a framework I could use in my work and share with other developers. More detail on those projects is in my [career history](/resume/).
+A {{ site.data.profile.education.degree }} in {{ site.data.profile.education.field }} gave that interest another direction: how people find, understand, and use information. Since {{ site.data.profile.career_start }}, development work has put those questions into practice through websites, shared tools, and team leadership. At Time Warner Cable and Placewise, reusable components and documented practices helped people build and maintain complicated systems.
 
-Learning new skills is part of what has kept that work interesting. Reading is another constant: my [reading list](/reading/) ranges from writing and information seeking to law. {{ site.data.reading.favorite.author }}'s *{{ site.data.reading.favorite.title }}* is my favorite nonfiction book, and I try to return to it a few times a year.
+Scaffold grew from that work. While preparing for a GLG interview in 2014, I brought a collection of code snippets, components, and development practices into a framework to use and share. My [career history](/resume/) follows those projects and the work that came after.
+
+Reading leaves room to explore beyond the immediate project. My [reading list](/reading/) ranges from writing and information seeking to law. {{ site.data.reading.favorite.author }}'s *{{ site.data.reading.favorite.title }}* is my favorite nonfiction book, and I try to read it a few times a year.
 
 {{ site.data.profile.recent_work }}
 
@@ -19,10 +21,10 @@ Learning new skills is part of what has kept that work interesting. Reading is a
 
 {{ site.data.profile.transition }}
 
-The transition has meant studying a different field in depth. Since 2025, certification study and continuing education in assessment have occupied much of my time. {{ site.data.profile.certification }} As of {{ site.data.profile.continuing_education.as_of }}, I have completed {{ site.data.profile.continuing_education.hours }} hours of continuing education, including coursework through the {{ site.data.profile.continuing_education.coursework }}:
+Since 2025, much of my time has gone toward certification study and continuing education in assessment. {{ site.data.profile.certification | remove: "." }} in {{ site.data.profile.certification_year }}.{% if site.data.profile.additional_education.paralegal_certificate %} My education also includes a paralegal certificate.{% endif %} As of {{ site.data.profile.continuing_education.as_of }}, I have completed {{ site.data.profile.continuing_education.hours }} hours of continuing education, including coursework through the {{ site.data.profile.continuing_education.coursework }}:
 
 {% for course in site.data.profile.continuing_education.courses %}
 - **Course {{ course.number }}: {{ course.title }}.** {{ course.status }}
 {% endfor %}
 
-The subject is new; the habits of studying, organizing information, and documenting work are familiar. That background gives me a way to approach the preparation, while the coursework helps build the assessment knowledge needed for the role.
+Studying a new field draws on familiar habits of organizing information and documenting work. The coursework builds the assessment knowledge needed for the role.
