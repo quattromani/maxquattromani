@@ -6,6 +6,7 @@ provenance:
   career_start: User statement, October 13, 2026
   transition: User confirmation, October 13, 2026; election result pending
   career_record: Historical résumé; titles and chronology await owner review
+  portrait: User-provided portrait, October 13, 2026; original filename Warm Professional Headshot with Bookshelves.png.
 recent_work: Since 2022, Parsimony Shoppes has been my primary focus alongside smaller consulting projects. Over the past year, I have begun winding down the business and preparing for the assessor role.
 certification: I earned Nebraska assessor certification.
 continuing_education:
@@ -26,3 +27,8 @@ preparation_provenance:
   certification: User confirmation, October 13, 2026; date and certificate documentation pending
   continuing_education: User-reported completed hours, October 13, 2026; course titles and completion records pending. Year-end goal is prospective.
   courses: User confirmation, October 13, 2026. Course titles checked against https://www.iaao.org/education/courses/. Completion and state credit are user-reported; individual course hours not inferred.
+portrait:
+  src: /images/max-quattromani-portrait.png
+  alt: Max Quattromani
+  width: 1086
+  height: 1448

@@ -44,3 +44,8 @@ Validation: generated-page checks and nine launch-gate tests passed. Editorial a
 ## Reading list
 
 The current reading page renders user-selected books and a separately labeled research model from `_data/reading.yml`. It replaces the obsolete technical bookmark list and is restored to the sitemap, linked from About and the footer. Favorite status and reading frequency come from the user. Linked sources establish titles and author names without implying a particular edition, translation, or personal interpretation.
+
+
+## Portrait placement
+
+The user-provided portrait is stored as `images/max-quattromani-portrait.png`; the original Desktop file is preserved. Canonical image path, dimensions, and alternative text are in `_data/profile.yml`. Home pairs the portrait with the background section; About places it beside the biography and stacks it above the text on narrow screens. Both retain the full image without cropping and explicit dimensions reserve its space during loading.
