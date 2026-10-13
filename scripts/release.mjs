@@ -78,7 +78,10 @@ const rows = record.checks.map((item) => {
           stale: "Stale",
         }[pending.effective_status] || pending.effective_status
       : "Pass";
-  return `| ${item.title} | ${status} | ${item.owner || record.owner} | ${item.evidence || "Evidence still required."} |`;
+  const evidence = item.automated
+    ? `Automated ${item.automated} verification ran for this source fingerprint; see scripts/release.mjs.`
+    : item.evidence || "Evidence still required.";
+  return `| ${item.title} | ${status} | ${item.owner || record.owner} | ${evidence} |`;
 });
 await fs.writeFile(
   "docs/launch-status.md",
