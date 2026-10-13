@@ -20,23 +20,7 @@ Editor note: Recheck role wording after the November 3 election and again when t
 
 ## About
 
-### About me
-
-I'm Max Quattromani. Since 2007, I've worked at the intersection of web development, design, and communication. Over that time, I've built customer-facing websites, managed development teams, worked as an independent consultant, and started an online retail business.
-
-My work has often involved making a complicated system easier for people to use and easier for others to maintain. At Time Warner Cable, that meant building responsive interfaces and documenting shared development practices. At Placewise, it meant developing reusable components and coordinating work across front-end, back-end, and data teams.
-
-I created Scaffold in 2014 while preparing a project for an interview with GLG. I had been collecting code snippets, components, and development practices, and brought them together into a shared framework. The project became part of my work and a way to explain my approach to building for the web.
-
-I studied technical communications at Metropolitan State University of Denver, with a minor in marketing.
-
-I am now preparing for a change in direction. I am a candidate for Gage County Assessor in the November 3, 2026 election, with an anticipated transition into office in January 2027 if elected.
-
-### How I approach work
-
-I start by understanding the question people need answered. Then I organize the information, build what is needed, test it, and improve it. Clear documentation and reusable systems help other people carry the work forward.
-
-Editor note: This final section paraphrases the existing SDLC page and the user's adopted project guidance. Have Max review it as a personal statement. Add an original paragraph about his move toward public service using his own reasons, plus one chosen personal detail. Avoid a generic "lifelong commitment to community" substitute. The degree name is retained from the existing résumé and need confirmation.
+The revised biography is maintained in `about/index.html`. It connects development work, Scaffold, reading and learning, business wind-down, and assessment preparation. Reusable facts remain in `_data/profile.yml` and `_data/reading.yml`. The earlier About draft is superseded.
 
 ## Career
 
