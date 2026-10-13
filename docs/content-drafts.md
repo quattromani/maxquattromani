@@ -28,7 +28,7 @@ My work has often involved making a complicated system easier for people to use 
 
 I created Scaffold in 2014 while preparing a project for an interview with GLG. I had been collecting code snippets, components, and development practices, and brought them together into a shared framework. The project became part of my work and a way to explain my approach to building for the web.
 
-I studied technical communications at Metropolitan State University of Denver, with a minor in marketing, and graduated cum laude.
+I studied technical communications at Metropolitan State University of Denver, with a minor in marketing.
 
 I am now preparing for a change in direction. I am a candidate for Gage County Assessor in the November 3, 2026 election, with an anticipated transition into office in January 2027 if elected.
 
@@ -36,7 +36,7 @@ I am now preparing for a change in direction. I am a candidate for Gage County A
 
 I start by understanding the question people need answered. Then I organize the information, build what is needed, test it, and improve it. Clear documentation and reusable systems help other people carry the work forward.
 
-Editor note: This final section paraphrases the existing SDLC page and the user's adopted project guidance. Have Max review it as a personal statement. Add an original paragraph about his move toward public service using his own reasons, plus one chosen personal detail. Avoid a generic "lifelong commitment to community" substitute. The degree name and honors are retained from the existing résumé and need confirmation.
+Editor note: This final section paraphrases the existing SDLC page and the user's adopted project guidance. Have Max review it as a personal statement. Add an original paragraph about his move toward public service using his own reasons, plus one chosen personal detail. Avoid a generic "lifelong commitment to community" substitute. The degree name is retained from the existing résumé and need confirmation.
 
 ## Career
 
