@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title | escape }} | {{ site.title | escape }}</title>
+    <title>
+      {{ title | escape }}{% unless page.url == "/" %} | {{ site.title | escape
+      }}{% endunless %}
+    </title>
     <meta name="description" content="{{ description | escape }}" />
+    {% if page.retired %}
+    <meta name="robots" content="noindex, follow" />
+    {% endif %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -53,13 +59,11 @@
         >
         <nav aria-label="Resources">{{ resources }}</nav>
         <nav aria-label="Social links">
-          <a href="https://github.com/quattromani">Github ↗</a>
-          <a href="http://codepen.io/quattromani/">Codepen ↗</a>
-          <a href="https://dribbble.com/maxquattromani">Dribbble ↗</a>
+          <a href="https://github.com/quattromani">GitHub ↗</a>
         </nav>
       </div>
       <div class="footer-bottom">
-        <span>Copyright Me. Everything. Every year, forever.</span>
+        <span>© 2026 Max Quattromani. Personal website.</span>
         <nav aria-label="Site information">
           {{ policies }} <a href="/sitemap/">Sitemap</a>
         </nav>

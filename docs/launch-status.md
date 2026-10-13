@@ -2,7 +2,7 @@
 
 Generated from [the canonical checklist](../ops/launch.yml). Run `npm run launch:status` to refresh this view. This snapshot describes the candidate, not the live site's complete readiness.
 
-Source fingerprint: `a57ab838cf459bbf3ce39021537dbad5fc47d528405ccfbfdc6012587ceed52b`
+Source fingerprint: `9821ce178fbe24a000d13ad01fe909c0910c38c50450c5ead4143c0fed2e7b73`
 
 20 pre-release checks remain unresolved. Production verification follows deployment.
 

@@ -1,14 +1,14 @@
 # Site settings
 title: Max Quattromani
 email: max@maxquattromani.com
-description: ""
+description: "The personal website of Max Quattromani, with career background, selected development work, and historical writing."
 baseurl: ""
 version: 0.2.4
 url: https://maxquattromani.com
 enforce_ssl: maxquattromani.com
 author: "Max Quattromani"
 twitter_username: maxquattromani
-github_username:  quattromani
+github_username: quattromani
 
 # Build settings
 markdown: kramdown
@@ -22,16 +22,15 @@ permalink: pretty
 # Included Plugins (previously gems)
 plugins: [jekyll-paginate]
 
-exclude: ['node_modules', 'scss', 'DAM']
-
+exclude: ["node_modules", "scss", "DAM"]
 
 sitemap:
   file: "/sitemap.xml"
   exclude:
-      - "/atom.xml"
-      - "/feed.xml"
-      - "/feed/index.xml"
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
   include_posts:
-      - "/index.html"
+    - "/index.html"
   change_frequency_name: "change_frequency"
   priority_name: "priority"

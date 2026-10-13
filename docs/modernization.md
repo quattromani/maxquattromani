@@ -29,3 +29,13 @@ DNS values were updated in Network Solutions and independently verified against 
 The guidance checkpoint found no material divergence from the authorized scope. Preserving outdated source prose is a deliberate requirement for this presentation pass; the subsequent editorial pass must update the technology descriptions and time-sensitive claims.
 
 The first production workflow completed successfully. A final maintenance pass preserves the original RSS format and full article content, moves the new document shell into an editable template, excludes Finder metadata from copied assets, and removes obsolete Ruby manifests, Grunt tasks, and the debug log. These removals retire unused tooling; public prose stays unchanged.
+
+## Editorial brief: October 2026
+
+The audience now includes residents, journalists, colleagues, and professional acquaintances searching for Max as he prepares for an anticipated move into county administration. Their first questions are who he is, what he has done, what his present status is, and where to direct assessment matters. The personal site remains a biography, not an official county service.
+
+Interpretation: clear, grounded, restrained, personal, accountable. Preserve the existing editorial design while replacing the recruiting pitch with concrete career contributions. Primary destinations are About, Career, Writing, and Contact; Home is reached through the name. Career includes selected work. Historical essays keep dates and contextual notices. Obsolete demonstration and advice routes retain retirement notices with noindex and are omitted from the sitemap; Git preserves their source. The old résumé PDF is excluded from the release.
+
+The maintained profile data owns career start and transition wording. The historical résumé supports the selected chronology, pending owner confirmation. Internal review and draft documents record the evidence and missing details. No election result, current officeholding, certification roster, or official policy is asserted. Education wording and unsupported numerical outcomes remain outside the public draft.
+
+Validation: generated-page checks and nine launch-gate tests passed. Editorial artifact tests cover election status, retirement routing, obsolete PDF exclusion, and dated writing. Browser preview was blocked by browser security policy; the revised layout remains visually unverified. Launch approval is still pending, including career confirmation, accessibility review, HTTPS, and sensitive repository material. No global guidance divergence is proposed.
