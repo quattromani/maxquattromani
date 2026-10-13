@@ -677,3 +677,13 @@ dialog [data-close-dialog] {
   font-size: 13px;
   margin: 4px 0 0;
 }
+
+.archive-note {
+  max-width: 850px;
+  margin: 0 auto 32px;
+  padding: 16px 20px;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
