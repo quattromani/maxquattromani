@@ -98,7 +98,7 @@ The project reflects a recurring interest in my career: making decisions once, d
 
 Link: View Scaffold on GitHub
 
-Editor notes: Confirm organization names, exact role titles, and dates. "From 2019" deliberately avoids asserting the business remains active. This is not yet a complete career record: the user's 2007–2010 work is missing. Move GLG interview detail into the project section if its repetition with About feels unnecessary. Keep the concise role chronology while obtaining evidence for deeper TWC and Placewise case studies. Do not publish unsupported numerical outcomes.
+Editor notes: Confirm organization names, exact role titles, and dates. Max confirmed that the business is being wound down on October 13, 2026. This is not yet a complete career record: the user's 2007–2010 work is missing. Move GLG interview detail into the project section if its repetition with About feels unnecessary. Keep the concise role chronology while obtaining evidence for deeper TWC and Placewise case studies. Do not publish unsupported numerical outcomes.
 
 ## Contact
 
@@ -145,3 +145,10 @@ Contact description:
 Contact Max Quattromani about his background and work.
 
 Editor note: Use the same maintained biography facts for page copy, metadata, and structured data. Add a verified current role consistently across these views after confirmation. Do not introduce unsupported credentials through schema fields.
+
+
+## Recent career and preparation update
+
+User-confirmed October 13, 2026: Parsimony Shoppes has been the primary focus since 2022 alongside smaller consulting projects. The business is being wound down in preparation for the anticipated assessor role. Nebraska assessor certification has been earned, and 75 continuing education hours have been completed, including IAAO coursework. Certification date, course titles, and completion records remain to be collected. The goal of exceeding 100 hours before year-end is prospective and is not presented as completed credit. Canonical facts and reusable wording are maintained in `_data/profile.yml`.
+
+The Nebraska Department of Revenue's [certification and education page](https://revenue.nebraska.gov/PAD/assessor) was consulted for program terminology; it does not independently verify Max's completion.
