@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { sourceFingerprint } from "./release-state.mjs";
 import path from "node:path";
 import yaml from "js-yaml";
 import { Liquid } from "liquidjs";
@@ -283,6 +284,13 @@ async function shell(page, body) {
     description: page.meta.description || "",
     navigation: links(nav, page.url),
     resources: links(resources, page.url),
+    policies: links(
+      [
+        ["Privacy policy", "/privacy/"],
+        ["Accessibility", "/accessibility/"],
+      ],
+      page.url,
+    ),
     body,
   });
 }
@@ -399,4 +407,9 @@ await fs.writeFile(
 );
 console.log(
   `Built ${pages.length} pages, including ${posts.length} articles, into dist.`,
+);
+
+await fs.writeFile(
+  path.join(out, "release-source.json"),
+  JSON.stringify({ fingerprint: await sourceFingerprint() }),
 );

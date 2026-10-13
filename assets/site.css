@@ -595,3 +595,9 @@ dialog [data-close-dialog] {
 .prose dialog h3 {
   margin-top: 0;
 }
+
+.footer-bottom nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
