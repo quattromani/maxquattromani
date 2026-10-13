@@ -359,8 +359,11 @@ for (const page of pages) {
   );
   if (page.meta.article) {
     const image = site.data.profile.portrait;
-    const byline = `<div class="article-byline"><img src="${escape(image.src)}" alt="" width="48" height="48" class="author-avatar" decoding="async"><div><a href="/about/">${escape(site.data.profile.name)}</a><p>Draft. Publication date to be confirmed.</p></div></div>`;
-    body = `<article aria-labelledby="article-title"><header class="article-heading"><p class="eyebrow">Article preview</p><h1 id="article-title">${titleHtml(page.meta.title)}</h1><p class="article-deck">${escape(page.meta.description)}</p>${byline}</header><div class="prose post-content">${body}</div></article>`;
+    const dateLabel = page.meta.written
+      ? `Written <time datetime="${escape(page.meta.written)}">${formatDate(page.meta.written)}</time>`
+      : "Draft. Publication date to be confirmed.";
+    const byline = `<div class="article-byline"><img src="${escape(image.src)}" alt="" width="48" height="48" class="author-avatar" decoding="async"><div><a href="/about/">${escape(site.data.profile.name)}</a><p>${dateLabel}</p></div></div>`;
+    body = `<article aria-labelledby="article-title"><header class="article-heading"><p class="eyebrow">Article preview</p><h1 id="article-title">${titleHtml(page.meta.title)}</h1><p class="article-deck">${escape(page.meta.description)}</p>${byline}</header>${page.meta.historical ? '<aside class="archive-note">This first civic essay is preserved as originally written.</aside>' : ""}<div class="prose post-content">${body}</div></article>`;
   } else if (page.url === "/" && page.meta.presentation === "current") {
     body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2>${portrait("home-portrait")}</div><div class="profile-copy">${body}</div></section>`;
   } else if (page.url === "/") {
