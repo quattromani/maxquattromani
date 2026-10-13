@@ -24,65 +24,7 @@ The revised biography is maintained in `about/index.html`. It connects developme
 
 ## Career
 
-### Career and selected work
-
-My work has spanned web development, design, technical leadership, consulting, and business operations. These are selected roles and projects from that history.
-
-### Independent business and consulting
-
-**Parsimony Shoppes | Founder and business operator | From 2019**
-
-I founded Parsimony Shoppes, an online resale business. My work included building its storefront, developing inventory and storage processes, preparing product listings, and managing day-to-day operations.
-
-**Qoppa | Principal | 2017 to 2022**
-
-Through Qoppa, I provided design and development consulting, including web development, brand identity, packaging, and marketing materials.
-
-**Placewise Digital | Contract consulting | 2017 to 2020**
-
-After my full-time role, I continued consulting on website migrations, front-end architecture, and reusable site templates.
-
-### Development leadership
-
-**Placewise Media | Senior director, development | 2014 to 2017**
-
-I led a development team working across front-end, back-end, and data disciplines. We developed modular site architecture and a static site generator that incorporated data from application programming interfaces. I also coordinated product decisions with executive, marketing, and sales teams.
-
-**GLG | Software engineer | 2014**
-
-I worked on front-end components, mobile application design, and a style guide and pattern library for internal applications.
-
-**Time Warner Cable | Front-end development manager | 2013 to 2014**
-
-I developed a responsive framework for the company's website and online commerce, brought front-end responsibilities in-house from a third-party vendor, and documented development practices for the team. I also created a component-prototyping system to help stakeholders review design ideas.
-
-**Time Warner Cable | Senior web design and development consultant | 2012 to 2013**
-
-I contributed to the redesign of the customer-facing website, working with design and development teams on responsive layouts, forms, and browser consistency.
-
-### Earlier work
-
-**OraLabs | Creative director | 2012**
-
-I led work across web development, product and packaging design, email marketing, catalogs, and other marketing materials.
-
-**Placewise Media | Front-end UX/UI engineer | 2011 to 2012**
-
-I developed websites for shopping centers and commercial properties, contributing to shared interfaces and consistent behavior across browsers.
-
-**OraLabs | Web developer | 2010 to 2011**
-
-I worked on corporate and product websites, email marketing, and packaging design, and helped colleagues with databases, spreadsheets, and reporting.
-
-### Selected project: Scaffold
-
-I created Scaffold in 2014 to bring reusable components, a style guide, and development practices into one framework. It grew from a collection of tools I had been using in my own work and became the project I took to my GLG interview.
-
-The project reflects a recurring interest in my career: making decisions once, documenting them, and giving teams a consistent foundation they can adapt.
-
-Link: View Scaffold on GitHub
-
-Editor notes: Confirm organization names, exact role titles, and dates. Max confirmed that the business is being wound down on October 13, 2026. This is not yet a complete career record: the user's 2007–2010 work is missing. Move GLG interview detail into the project section if its repetition with About feels unnecessary. Keep the concise role chronology while obtaining evidence for deeper TWC and Placewise case studies. Do not publish unsupported numerical outcomes.
+The revised career account is maintained in `resume/index.html`. It presents dated roles through their work and contributions, with shared credit for team accomplishments. The earlier résumé-style draft is superseded. Historical titles and chronology still require owner review; unsupported numerical outcomes remain excluded. Recent business status and assessor preparation are maintained in `_data/profile.yml`.
 
 ## Contact
 
