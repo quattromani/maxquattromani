@@ -39,3 +39,8 @@ Interpretation: clear, grounded, restrained, personal, accountable. Preserve the
 The maintained profile data owns career start and transition wording. The historical résumé supports the selected chronology, pending owner confirmation. Internal review and draft documents record the evidence and missing details. No election result, current officeholding, certification roster, or official policy is asserted. Education wording and unsupported numerical outcomes remain outside the public draft.
 
 Validation: generated-page checks and nine launch-gate tests passed. Editorial artifact tests cover election status, retirement routing, obsolete PDF exclusion, and dated writing. Browser preview was blocked by browser security policy; the revised layout remains visually unverified. Launch approval is still pending, including career confirmation, accessibility review, HTTPS, and sensitive repository material. No global guidance divergence is proposed.
+
+
+## Reading list
+
+The current reading page renders user-selected books and a separately labeled research model from `_data/reading.yml`. It replaces the obsolete technical bookmark list and is restored to the sitemap, linked from About and the footer. Favorite status and reading frequency come from the user. Linked sources establish titles and author names without implying a particular edition, translation, or personal interpretation.

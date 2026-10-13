@@ -136,7 +136,6 @@ const retiredPrefixes = [
   "/amp/",
   "/templates/",
   "/sites/",
-  "/reading/",
   "/SDLC/",
   "/thank-you/",
 ];
@@ -276,6 +275,7 @@ const nav = [
 const resources = [
   ["Career and selected work", "/resume/"],
   ["Writing archive", "/writing/"],
+  ["Reading list", "/reading/"],
 ];
 const links = (items, url) =>
   items
