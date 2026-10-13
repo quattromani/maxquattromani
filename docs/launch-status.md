@@ -2,7 +2,7 @@
 
 Generated from [the canonical checklist](../ops/launch.yml). Run `npm run launch:status` to refresh this view. This snapshot describes the candidate, not the live site's complete readiness.
 
-Source fingerprint: `bdc791da87dfb6878497808cb77f5da60b6e4c8a9e6b009c44e0f62fddab5039`
+Source fingerprint: `abb79addab451d407595009a9f9d739700349afd2ea084f8ba00aa198c94b5eb`
 
 20 pre-release checks remain unresolved. Production verification follows deployment.
 
@@ -21,7 +21,7 @@ Source fingerprint: `bdc791da87dfb6878497808cb77f5da60b6e4c8a9e6b009c44e0f62fdda
 | Privacy and accessibility pages remain present and linked on every page | Pass | Max Quattromani | Automated policies verification ran for this source fingerprint; see scripts/release.mjs. |
 | The no-tracking statement remains consistent with the delivered scripts | Pass | Max Quattromani | Automated tracking verification ran for this source fingerprint; see scripts/release.mjs. |
 | Measure representative loading and stability; check asset sizes and failure fallbacks | Not checked | Max Quattromani | Evidence still required. |
-| Valid domain certificate and HTTP-to-HTTPS redirect on apex and www | Blocked | Max Quattromani | GitHub certificate authorization is pending; HTTPS hostname verification failed on October 13, 2026. |
+| Valid domain certificate and HTTP-to-HTTPS redirect on apex and www | Blocked | Max Quattromani | Certificate approved for apex and www; both HTTPS requests validated on October 13, 2026. HTTPS enforcement enabled and confirmed through the Pages API. Cached HTTP responses still lacked the required HTTPS redirect immediately after the change; redirect verification remains pending. |
 | Verify Pages source, redirects, deep-route status, cache behavior, and retained assets | Not checked | Max Quattromani | Evidence still required. |
 | Review titles, descriptions, canonical URLs, sitemap, RSS, robots, icons, and sharing | Not checked | Max Quattromani | Evidence still required. |
 | Verify mailto contact and clearly distinguish sample forms from working submissions | Not checked | Max Quattromani | Evidence still required. |

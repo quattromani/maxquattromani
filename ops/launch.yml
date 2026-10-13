@@ -81,7 +81,7 @@ checks:
     group: hosting
     title: Valid domain certificate and HTTP-to-HTTPS redirect on apex and www
     status: blocked
-    evidence: GitHub certificate authorization is pending; HTTPS hostname verification failed on October 13, 2026.
+    evidence: Certificate approved for apex and www; both HTTPS requests validated on October 13, 2026. HTTPS enforcement enabled and confirmed through the Pages API. Cached HTTP responses still lacked the required HTTPS redirect immediately after the change; redirect verification remains pending.
   - id: delivery
     group: hosting
     title: Verify Pages source, redirects, deep-route status, cache behavior, and retained assets
