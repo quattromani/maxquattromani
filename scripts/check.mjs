@@ -31,7 +31,7 @@ for (const file of files.filter((name) => name.endsWith(".html"))) {
   )
     issues.push(`${file}: legacy runtime present`);
   for (const el of $(
-    "a[href],img[src],script[src],link[rel=stylesheet]",
+    "a[href],img[src],source[src],script[src],link[rel=stylesheet]",
   ).toArray()) {
     const ref = $(el).attr("href") || $(el).attr("src");
     if (!ref || /^(https?:|mailto:|tel:|data:|javascript:)/.test(ref)) {
