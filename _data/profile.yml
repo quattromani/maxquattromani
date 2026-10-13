@@ -7,6 +7,7 @@ provenance:
   transition: User confirmation, October 13, 2026; election result pending
   career_record: Historical résumé; titles and chronology await owner review
   portrait: User-provided portrait, October 13, 2026; original filename Warm Professional Headshot with Bookshelves.png.
+  education: User confirmed degree field October 13, 2026. GPA and honors are excluded. Institution and exact degree title remain from the historical résumé and are not restated without confirmation.
 recent_work: Since 2022, Parsimony Shoppes has been my primary focus alongside smaller consulting projects. Over the past year, I have begun winding down the business and preparing for the assessor role.
 certification: I earned Nebraska assessor certification.
 continuing_education:
@@ -32,3 +33,5 @@ portrait:
   alt: Max Quattromani
   width: 1086
   height: 1448
+education:
+  field: technical communications

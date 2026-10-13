@@ -61,3 +61,8 @@ Large Home and About portraits retain their full rectangular composition with an
 ## Writing organization
 
 Writing has four subject lanes: Civic, Legal, Technology, and Personal. Archive is an independent status, not a category. Post frontmatter owns the subject and archive status; `_data/writing.yml` defines the sections and context. Older post bodies and URLs are unchanged. The first civic essay appears only in preview. Empty sections are visible while developing the local preview and omitted from release output until there is content. No published legal-writing claim is made by an empty section.
+
+
+## Home editorial perspective
+
+The user confirmed a degree in technical communications and asked that the introduction foreground information-seeking behavior and information design. Home now treats web development and business systems as applications of that perspective, while retaining concrete career evidence and accurate election status. The degree field is maintained in `_data/profile.yml`; no additional academic credentials or honors are inferred.
