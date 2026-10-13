@@ -78,6 +78,9 @@ The user confirmed that the election is November 3, 2026, with an anticipated Ja
 
 ## Recent career and preparation update
 
-User-confirmed October 13, 2026: Parsimony Shoppes has been the primary focus since 2022 alongside smaller consulting projects. The business is being wound down in preparation for the anticipated assessor role. Nebraska assessor certification has been earned, and 75 continuing education hours have been completed, including IAAO coursework. Certification date, course titles, and completion records remain to be collected. The goal of exceeding 100 hours before year-end is prospective and is not presented as completed credit. Canonical facts and reusable wording are maintained in `_data/profile.yml`.
+User-confirmed October 13, 2026: Parsimony Shoppes has been the primary focus since 2022 alongside smaller consulting projects. The business is being wound down in preparation for the anticipated assessor role. Nebraska assessor certification has been earned, and 75 continuing education hours have been completed, including IAAO coursework. Certification date and completion records remain to be collected. The goal of exceeding 100 hours before year-end is prospective and is not presented as completed credit. Canonical facts and reusable wording are maintained in `_data/profile.yml`.
 
 The Nebraska Department of Revenue's [certification and education page](https://revenue.nebraska.gov/PAD/assessor) was consulted for program terminology; it does not independently verify Max's completion.
+
+
+Course detail confirmed October 13, 2026: IAAO Course 101, Fundamentals of Real Property Appraisal, is completed and passed, with hours certified by the state. Course 300, Fundamentals of Mass Appraisal, is in progress with anticipated completion by the end of 2026. Course 300 is not included as completed credit. Course titles were checked against the [IAAO course catalogue](https://www.iaao.org/education/courses/). The certification date remains unknown.
