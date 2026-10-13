@@ -1,36 +1,20 @@
 ---
-layout: default
-title: Web Designer &amp; Developer
-description: "The Internet home of Max Quattromani, web developer and designer. I write a little about technology and what I'm working on, here. I also keep a resume and a reading list if you're interested."
-class: home
-parent: Home
+title: Max Quattromani
+description: "The personal website of Max Quattromani, with his career background, selected development work, and writing."
+format: markdown
+presentation: current
 ---
 
-<article role="article">
-  <section>
-    <h3>Formerly led digital marketing, development, and brand strategy for <a href="http://placewise.com" target="_blank">Placewise Digital</a> and managed front-end development at <a href="http://twc.com" target="_blank">Time Warner Cable</a>. Founder of <a href="http://parsimonyshoppes.com" target="_blank">Parsimony Shoppes</a> and creator of the <a href="https://quattromani.github.io/scaffold" target="_blank">Scaffold Design System</a>, an industry-recognized front-end framework.</h3>
-    
-    <p class="lede">
-      An <a href="https://mediatemple.net/blog/design-creative/six-stunning-style-guides/" target="_blank">accomplished Digital Strategist & Front-End Developer</a> with over a decade of experience delivering <strong>B2B and B2C marketing, e-commerce, and digital platform solutions</strong> across industries—from startups to Fortune 150 enterprises. 
-      <br><br>
-      Proven expertise in <strong>brand development, web architecture, digital marketing, and scalable front-end solutions</strong>. Recognized for pioneering structured design systems, including the widely adopted <strong>Scaffold Design System</strong>, which has powered thousands of web properties and influenced modern front-end frameworks.
-      <br><br>
-      <strong>Currently open to new opportunities</strong> where I can contribute my skills in <strong>marketing strategy, e-commerce optimization, and digital transformation</strong> to drive growth, customer engagement, and business success.
-    </p>
-  </section>
-</article>
+I've worked in web development since {{ site.data.profile.career_start }}. My career has included building websites, leading development teams, creating design systems, and running an independent business.
 
-<aside class="writing">
-  <section>
-    <h2>Articles</h2>
+At Time Warner Cable, I managed front-end development for the company's website and online commerce. At Placewise, I led development across a portfolio of commercial-property websites. I also created Scaffold, a framework for reusable web components and consistent design.
 
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-</aside>
+{{ site.data.profile.transition }}
+
+This site brings together my background, selected work, and writing.
+
+[About me](/about/)
+
+[Career and selected work](/resume/)
+
+[Writing archive](/writing/)

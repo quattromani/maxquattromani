@@ -126,6 +126,22 @@ for (const file of files.filter((file) => /\.(html|markdown|md)$/.test(file))) {
     date: post ? path.basename(file).slice(0, 10) : undefined,
   });
 }
+const retiredPrefixes = [
+  "/ADA/",
+  "/audit/",
+  "/email/",
+  "/styleguide/",
+  "/patterns/",
+  "/sandbox/",
+  "/amp/",
+  "/templates/",
+  "/sites/",
+  "/reading/",
+  "/SDLC/",
+  "/thank-you/",
+];
+for (const page of pages)
+  page.retired = retiredPrefixes.some((prefix) => page.url.startsWith(prefix));
 const posts = pages
   .filter((page) => page.post)
   .sort((a, b) => b.date.localeCompare(a.date))
@@ -135,7 +151,7 @@ const site = {
   data,
   posts,
   pages: pages
-    .filter((page) => !page.post)
+    .filter((page) => !page.post && !page.retired)
     .map((page) => ({ ...page.meta, url: page.url })),
 };
 
@@ -252,17 +268,14 @@ function normalize(html, page) {
   return $.html();
 }
 const nav = [
-  ["About Me", "/about/"],
-  ["Resume", "/resume/"],
+  ["About", "/about/"],
+  ["Career", "/resume/"],
   ["Writing", "/writing/"],
-  ["Sites", "/sites/"],
   ["Contact", "/contact/"],
 ];
 const resources = [
-  ["Style Guide", "/styleguide/"],
-  ["Email Guidelines", "/email/"],
-  ["SDLC", "/SDLC/"],
-  ["Reading", "/reading/"],
+  ["Career and selected work", "/resume/"],
+  ["Writing archive", "/writing/"],
 ];
 const links = (items, url) =>
   items
@@ -304,10 +317,6 @@ for (const name of [
   "apple-touch-icon.png",
   "CNAME",
   "robots.txt",
-  "resume/Max_Quattromani_resume.pdf",
-  "styleguide/assets",
-  "sandbox/image-overlay/images",
-  "amp/education.jpg",
   "humans.txt",
 ]) {
   try {
@@ -326,7 +335,14 @@ for (const page of pages) {
     page: { ...page.meta, url: page.url, date: page.date, path: page.relative },
     post: page.meta,
   });
-  if (page.post) rendered = md.render(rendered);
+  if (page.retired) {
+    page.meta.title = "Historical page retired";
+    page.meta.description = "This historical resource is no longer maintained.";
+    rendered =
+      '<p>This historical page is no longer maintained. Its source remains in the project history.</p><p><a href="/resume/">Read my career background</a> or <a href="/accessibility/">view the accessibility statement</a>.</p>';
+  }
+  if (page.post || page.meta.format === "markdown")
+    rendered = md.render(rendered);
   let body = normalize(rendered, page);
   const textOf = (nodes) =>
     nodes
@@ -338,11 +354,13 @@ for (const page of pages) {
   const originalContent = textOf(
     cheerio.load(body, {}, false).root().contents().toArray(),
   );
-  if (page.url === "/") {
+  if (page.url === "/" && page.meta.presentation === "current") {
+    body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2></div><div class="profile-copy">${body}</div></section>`;
+  } else if (page.url === "/") {
     const $ = cheerio.load(body, {}, false);
     body = `<section class="hero"><p class="eyebrow">Digital Strategist • Marketing Leader • Front-End Architect</p><h1>Max<br>Quattromani<span>.</span></h1><div class="hero-bottom"><p>${$("h3").first().html()}</p><a class="text-link" href="/about/">About Me <span aria-hidden="true">↗</span></a></div></section><section class="profile-section"><div class="section-label"><span aria-hidden="true">01 /</span><h2>${page.meta.title}</h2></div><div class="profile-copy">${$("p").first().html()}</div></section><section class="writing-section"><div class="section-label"><span aria-hidden="true">02 /</span><h2>Articles</h2></div>${articleList()}</section>`;
   } else if (page.url === "/writing/") {
-    body = `<header class="page-heading"><p class="eyebrow">Max Quattromani</p><h1>Writing<span>.</span></h1></header><div class="prose">${cheerio.load(body, {}, false)("img").toString()}</div>${articleList()}`;
+    body = `<header class="page-heading"><p class="eyebrow">Max Quattromani</p><h1>Writing archive<span>.</span></h1></header><div class="prose">${body}</div>${articleList()}`;
   } else {
     const $ = cheerio.load(body, {}, false);
     const heading = $("h1").first();
@@ -360,7 +378,10 @@ for (const page of pages) {
       const el = $(node);
       el.replaceWith($("<h2></h2>").attr("id", el.attr("id")).html(el.html()));
     });
-    body = `<header class="page-heading"><p class="eyebrow">${page.post ? "Articles" : "Max Quattromani"}</p><h1 id="${escape(page.meta.class || "page-title")}">${titleHtml(page.meta.title)}<span>.</span></h1>${page.post ? `<time datetime="${page.date}">${formatDate(page.date)}</time>` : ""}</header><div class="prose${page.post ? " post-content" : ""}">${$.html()}</div>`;
+    if (page.post)
+      body = `<p>This is historical writing, originally published ${formatDate(page.date)}. Technical examples may need updates before reuse.</p>${$.html()}`;
+    else body = $.html();
+    body = `<header class="page-heading"><p class="eyebrow">${page.post ? "Writing archive" : "Max Quattromani"}</p><h1 id="${escape(page.meta.class || "page-title")}">${titleHtml(page.meta.title)}<span>.</span></h1>${page.post ? `<time datetime="${page.date}">${formatDate(page.date)}</time>` : ""}</header><div class="prose${page.post ? " post-content" : ""}">${body}</div>`;
   }
   const destination = page.post
     ? path.join(out, page.url, "index.html")
@@ -391,7 +412,7 @@ await fs.writeFile(path.join(out, ".nojekyll"), "");
 await fs.writeFile(
   path.join(out, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages
-    .filter((page) => page.relative !== "404.html")
+    .filter((page) => page.relative !== "404.html" && !page.retired)
     .map((page) => `<url><loc>${escape(site.url + page.url)}</loc></url>`)
     .join("")}</urlset>`,
 );
