@@ -56,3 +56,8 @@ The user-provided portrait is stored as `images/max-quattromani-portrait.png`; t
 Large Home and About portraits retain their full rectangular composition with an 8px corner radius. Article bylines use a 48px circular CSS mask, an empty alternative beside the author name, and an About link. This distinguishes a small author identifier from the larger biographical photograph. [W3C avatar guidance](https://design-system.w3.org/styles/avatars.html) supports the circular identity pattern.
 
 `preview/article/index.html` is an unpublished article specimen, built only by `npm run build:preview`. Its `preview: true` flag excludes it from ordinary release builds, navigation, and sitemaps; preview output is noindex. The sample contains no invented publication date or article. Before publishing a real piece, supply the manuscript, title, description, publication date, sources, and any necessary editorial disclosures, then replace sample text and draft metadata.
+
+
+## Writing organization
+
+Writing has four subject lanes: Civic, Legal, Technology, and Personal. Archive is an independent status, not a category. Post frontmatter owns the subject and archive status; `_data/writing.yml` defines the sections and context. Older post bodies and URLs are unchanged. The first civic essay appears only in preview. Empty sections are visible while developing the local preview and omitted from release output until there is content. No published legal-writing claim is made by an empty section.

@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Using Google Docs with Jekyll"
 permalink: using-google-docs-with-jekyll

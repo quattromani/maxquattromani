@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Atomic Design & Development"
 permalink: atomic-design-and-development
