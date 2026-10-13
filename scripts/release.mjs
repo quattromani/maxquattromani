@@ -16,6 +16,10 @@ try {
 }
 if (artifact?.fingerprint !== fingerprint)
   failures.push("The website artifact is stale; rebuild it.");
+if (artifact?.preview)
+  failures.push(
+    "Preview artifacts cannot be released; run the ordinary build.",
+  );
 const check = spawnSync(process.execPath, ["scripts/check.mjs"], {
   stdio: "inherit",
 });

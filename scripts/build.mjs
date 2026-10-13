@@ -100,7 +100,8 @@ for (const file of files.filter((file) => /\.(html|markdown|md)$/.test(file))) {
       body: $("body").html(),
     };
   }
-  if (!source) continue;
+  if (!source || (source.meta.preview && !process.argv.includes("--preview")))
+    continue;
   const relative = path.relative(root, file);
   const post = relative.startsWith("_posts/");
   const slug = path
@@ -150,7 +151,7 @@ const site = {
   data,
   posts,
   pages: pages
-    .filter((page) => !page.post && !page.retired)
+    .filter((page) => !page.post && !page.retired && !page.meta.preview)
     .map((page) => ({ ...page.meta, url: page.url })),
 };
 
@@ -356,7 +357,11 @@ for (const page of pages) {
   const originalContent = textOf(
     cheerio.load(body, {}, false).root().contents().toArray(),
   );
-  if (page.url === "/" && page.meta.presentation === "current") {
+  if (page.meta.article) {
+    const image = site.data.profile.portrait;
+    const byline = `<div class="article-byline"><img src="${escape(image.src)}" alt="" width="48" height="48" class="author-avatar" decoding="async"><div><a href="/about/">${escape(site.data.profile.name)}</a><p>Draft. Publication date to be confirmed.</p></div></div>`;
+    body = `<article aria-labelledby="article-title"><header class="article-heading"><p class="eyebrow">Article preview</p><h1 id="article-title">${titleHtml(page.meta.title)}</h1><p class="article-deck">${escape(page.meta.description)}</p>${byline}</header><div class="prose post-content">${body}</div></article>`;
+  } else if (page.url === "/" && page.meta.presentation === "current") {
     body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2>${portrait("home-portrait")}</div><div class="profile-copy">${body}</div></section>`;
   } else if (page.url === "/") {
     const $ = cheerio.load(body, {}, false);
@@ -419,7 +424,10 @@ await fs.writeFile(path.join(out, ".nojekyll"), "");
 await fs.writeFile(
   path.join(out, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages
-    .filter((page) => page.relative !== "404.html" && !page.retired)
+    .filter(
+      (page) =>
+        page.relative !== "404.html" && !page.retired && !page.meta.preview,
+    )
     .map((page) => `<url><loc>${escape(site.url + page.url)}</loc></url>`)
     .join("")}</urlset>`,
 );
@@ -439,5 +447,8 @@ console.log(
 
 await fs.writeFile(
   path.join(out, "release-source.json"),
-  JSON.stringify({ fingerprint: await sourceFingerprint() }),
+  JSON.stringify({
+    fingerprint: await sourceFingerprint(),
+    preview: process.argv.includes("--preview"),
+  }),
 );

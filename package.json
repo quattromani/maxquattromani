@@ -10,7 +10,8 @@
     "launch:status": "node scripts/release.mjs",
     "release:check": "npm run build && node scripts/release.mjs --strict",
     "test:release": "node --test scripts/release-state.test.mjs",
-    "test:editorial": "node --test scripts/editorial.test.mjs"
+    "test:editorial": "node --test scripts/editorial.test.mjs",
+    "build:preview": "node scripts/build.mjs --preview"
   },
   "engines": {
     "node": ">=22"

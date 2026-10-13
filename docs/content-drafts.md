@@ -4,19 +4,7 @@ Drafted October 13, 2026. The body copy below uses the user's career start date 
 
 ## Home
 
-### Max Quattromani
-
-I've worked in web development since 2007. My career has included building websites, leading development teams, creating design systems, and running an independent business.
-
-At Time Warner Cable, I managed front-end development for the company's website and online commerce. At Placewise, I led development across a portfolio of commercial-property websites. I also created Scaffold, a framework for reusable web components and consistent design.
-
-I am a candidate for Gage County Assessor in the November 3, 2026 election. I am preparing for an anticipated transition into the office in January 2027, subject to the election result.
-
-This site brings together my background, selected work, and writing.
-
-Links: About me · Career and selected work · Writing
-
-Editor note: Recheck role wording after the November 3 election and again when the term begins. The user's preferred informal phrase "assessor-apparent" should remain out of formal biography and metadata. No result or current officeholding is asserted.
+The current introduction is maintained in `index.html`, with reusable biography facts in `_data/profile.yml`. It introduces development, team and business work, learning, and the anticipated assessor transition, then points to About and Career for detail. The earlier Home draft is superseded.
 
 ## About
 
