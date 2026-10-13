@@ -4,7 +4,7 @@ Generated from [the canonical checklist](../ops/launch.yml). Run `npm run launch
 
 Source fingerprint: `2c9bb0c3ec614530eb91015753b16907df1a49884f8b13b574690ed60b957505`
 
-20 pre-release checks remain unresolved. Production verification follows deployment.
+19 pre-release checks remain unresolved. Production verification follows deployment.
 
 | Check | Status | Owner | Evidence or next step |
 | --- | --- | --- | --- |
@@ -21,7 +21,7 @@ Source fingerprint: `2c9bb0c3ec614530eb91015753b16907df1a49884f8b13b574690ed60b9
 | Privacy and accessibility pages remain present and linked on every page | Pass | Max Quattromani | Automated policies verification ran for this source fingerprint; see scripts/release.mjs. |
 | The no-tracking statement remains consistent with the delivered scripts | Pass | Max Quattromani | Automated tracking verification ran for this source fingerprint; see scripts/release.mjs. |
 | Measure representative loading and stability; check asset sizes and failure fallbacks | Not checked | Max Quattromani | Evidence still required. |
-| Valid domain certificate and HTTP-to-HTTPS redirect on apex and www | Blocked | Max Quattromani | Certificate approved for apex and www; both HTTPS requests validated on October 13, 2026. HTTPS enforcement enabled and confirmed through the Pages API. Cached HTTP responses still lacked the required HTTPS redirect immediately after the change; redirect verification remains pending. |
+| Valid domain certificate and HTTP-to-HTTPS redirect on apex and www | Pass | Max Quattromani | October 13, 2026: approved certificate validates apex and www. HTTPS enforcement enabled. Following HTTP redirects from both variants ends at https://maxquattromani.com/ with status 200; www currently takes an extra hop through the apex. |
 | Verify Pages source, redirects, deep-route status, cache behavior, and retained assets | Not checked | Max Quattromani | Evidence still required. |
 | Review titles, descriptions, canonical URLs, sitemap, RSS, robots, icons, and sharing | Not checked | Max Quattromani | Evidence still required. |
 | Verify mailto contact and clearly distinguish sample forms from working submissions | Not checked | Max Quattromani | Evidence still required. |

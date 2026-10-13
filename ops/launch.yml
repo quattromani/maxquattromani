@@ -80,8 +80,10 @@ checks:
   - id: https
     group: hosting
     title: Valid domain certificate and HTTP-to-HTTPS redirect on apex and www
-    status: blocked
-    evidence: Certificate approved for apex and www; both HTTPS requests validated on October 13, 2026. HTTPS enforcement enabled and confirmed through the Pages API. Cached HTTP responses still lacked the required HTTPS redirect immediately after the change; redirect verification remains pending.
+    status: pass
+    evidence: 'October 13, 2026: approved certificate validates apex and www. HTTPS enforcement enabled. Following HTTP redirects from both variants ends at https://maxquattromani.com/ with status 200; www currently takes an extra hop through the apex.'
+    reviewed_at: '2026-10-13'
+    source_fingerprint: 2c9bb0c3ec614530eb91015753b16907df1a49884f8b13b574690ed60b957505
   - id: delivery
     group: hosting
     title: Verify Pages source, redirects, deep-route status, cache behavior, and retained assets
