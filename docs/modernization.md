@@ -27,3 +27,5 @@ Browser review in Chrome covered the home, About, résumé, article, and modal t
 DNS values were updated in Network Solutions and independently verified against the authoritative nameserver. Email records were left intact. GitHub's custom domain was reapplied to restart certificate provisioning after the initial request remained pending. HTTPS requires a valid certificate before enforcement can be enabled.
 
 The guidance checkpoint found no material divergence from the authorized scope. Preserving outdated source prose is a deliberate requirement for this presentation pass; the subsequent editorial pass must update the technology descriptions and time-sensitive claims.
+
+The first production workflow completed successfully. A final maintenance pass preserves the original RSS format and full article content, moves the new document shell into an editable template, excludes Finder metadata from copied assets, and removes obsolete Ruby manifests, Grunt tasks, and the debug log. These removals retire unused tooling; public prose stays unchanged.

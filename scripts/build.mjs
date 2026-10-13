@@ -272,11 +272,21 @@ const links = (items, url) =>
     .join("");
 const articleList = () =>
   `<ol class="article-list">${posts.map((post, index) => `<li><span class="article-number">${String(index + 1).padStart(2, "0")}</span><a href="${post.url}">${escape(post.title)}</a><time datetime="${post.date}">${formatDate(post.date)}</time><span aria-hidden="true">↗</span></li>`).join("")}</ol>`;
-function shell(page, body) {
-  const title = page.meta.title || site.title;
-  const cleanTitle = cheerio.load(String(title), {}, false).text();
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(cleanTitle)} | Max Quattromani</title><meta name="description" content="${escape(page.meta.description || "")}"><link rel="canonical" href="${site.url}${page.url}"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="site-header"><a class="wordmark" href="/" aria-label="Max Quattromani home">mq<span aria-hidden="true">.</span></a><button class="menu-button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu</button><nav id="primary-nav" aria-label="Main navigation">${links(nav, page.url)}</nav></header><main id="content" class="${page.url === "/" ? "home" : "inner-page"}">${body}</main><footer class="site-footer"><div class="footer-top"><a class="footer-name" href="/">Max<br>Quattromani<span>.</span></a><nav aria-label="Resources">${links(resources, page.url)}</nav><nav aria-label="Social links"><a href="https://github.com/quattromani">Github ↗</a><a href="http://codepen.io/quattromani/">Codepen ↗</a><a href="https://dribbble.com/maxquattromani">Dribbble ↗</a></nav></div><div class="footer-bottom"><span>Copyright Me. Everything. Every year, forever.</span><a href="/sitemap/">Sitemap</a></div></footer></body></html>`;
+const template = await fs.readFile("templates/page.html", "utf8");
+async function shell(page, body) {
+  return engine.parseAndRender(template, {
+    site,
+    page,
+    title: cheerio
+      .load(String(page.meta.title || site.title), {}, false)
+      .text(),
+    description: page.meta.description || "",
+    navigation: links(nav, page.url),
+    resources: links(resources, page.url),
+    body,
+  });
 }
+
 await fs.rm(out, { recursive: true, force: true });
 await fs.mkdir(out, { recursive: true });
 for (const name of [
@@ -294,7 +304,10 @@ for (const name of [
 ]) {
   try {
     await fs.mkdir(path.dirname(path.join(out, name)), { recursive: true });
-    await fs.cp(name, path.join(out, name), { recursive: true });
+    await fs.cp(name, path.join(out, name), {
+      recursive: true,
+      filter: (source) => path.basename(source) !== ".DS_Store",
+    });
   } catch (error) {
     if (error.code !== "ENOENT") throw error;
   }
@@ -313,6 +326,7 @@ for (const page of pages) {
         node.type === "text" ? node.data : textOf(node.children || []),
       )
       .join(" ");
+  if (page.post) posts.find((post) => post.url === page.url).content = body;
   const originalContent = textOf(
     cheerio.load(body, {}, false).root().contents().toArray(),
   );
@@ -344,7 +358,7 @@ for (const page of pages) {
     ? path.join(out, page.url, "index.html")
     : path.join(out, page.relative);
   await fs.mkdir(path.dirname(destination), { recursive: true });
-  const output = shell(page, body);
+  const output = await shell(page, body);
   const visibleText = textOf(cheerio.load(output)("main").contents().toArray());
   const words = (text) =>
     (text.match(/[\p{L}\p{N}]+/gu) || []).reduce(
@@ -375,7 +389,13 @@ await fs.writeFile(
 );
 await fs.writeFile(
   path.join(out, "feed.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Max Quattromani</title><id>${site.url}/</id><updated>${posts[0].date}T00:00:00Z</updated>${posts.map((post) => `<entry><title>${escape(post.title)}</title><id>${site.url}${post.url}</id><link href="${site.url}${post.url}"/><updated>${post.date}T00:00:00Z</updated></entry>`).join("")}</feed>`,
+  `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Max Quattromani</title><description>${escape(site.description)}</description><link>${site.url}/</link><atom:link href="${site.url}/feed.xml" rel="self" type="application/rss+xml"/>${posts
+    .slice(0, 10)
+    .map(
+      (post) =>
+        `<item><title>${escape(post.title)}</title><description>${escape(post.content)}</description><pubDate>${new Date(post.date).toUTCString()}</pubDate><link>${site.url}${post.url}</link><guid isPermaLink="true">${site.url}${post.url}</guid>${[...(post.tags || []), ...(post.categories || [])].map((category) => `<category>${escape(category)}</category>`).join("")}</item>`,
+    )
+    .join("")}</channel></rss>`,
 );
 console.log(
   `Built ${pages.length} pages, including ${posts.length} articles, into dist.`,
