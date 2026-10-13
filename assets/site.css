@@ -635,3 +635,45 @@ dialog [data-close-dialog] {
     max-width: 290px;
   }
 }
+
+.home-portrait,
+.about-portrait {
+  border-radius: 8px;
+}
+.article-heading {
+  max-width: 850px;
+  margin: 60px auto 44px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+.article-heading h1 {
+  font: 400 clamp(42px, 6vw, 76px)/1.08 var(--display);
+  letter-spacing: -0.04em;
+  margin: 20px 0;
+}
+.article-deck {
+  font-size: clamp(19px, 2.5vw, 24px);
+  line-height: 1.5;
+  color: var(--muted);
+}
+.article-byline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.author-avatar {
+  display: block;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 50%;
+}
+.article-byline p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 4px 0 0;
+}
