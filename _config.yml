@@ -9,7 +9,6 @@ enforce_ssl: maxquattromani.com
 author: "Max Quattromani"
 twitter_username: maxquattromani
 github_username:  quattromani
-disqus: maxquattromani
 
 # Build settings
 markdown: kramdown
@@ -25,9 +24,6 @@ plugins: [jekyll-paginate]
 
 exclude: ['node_modules', 'scss', 'DAM']
 
-google_analytics: true
-google_analytics_id: UA-50387096-2
-jquery_version: 1.11.2
 
 sitemap:
   file: "/sitemap.xml"

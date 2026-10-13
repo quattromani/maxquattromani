@@ -19,6 +19,18 @@ for (const file of files.filter((name) => name.endsWith(".html"))) {
   const $ = cheerio.load(await fs.readFile(file, "utf8"));
   if ($("main").length !== 1 || !$("title").text() || $("h1").length < 1)
     issues.push(`${file}: missing document landmarks, title, or heading`);
+  for (const route of ["/privacy/", "/accessibility/"])
+    if (!$(`footer a[href="${route}"]`).length)
+      issues.push(`${file}: missing footer policy link ${route}`);
+  for (const script of $("script[src]").toArray())
+    if ($(script).attr("src") !== "/assets/site.js")
+      issues.push(`${file}: undeclared script ${$(script).attr("src")}`);
+  if (
+    $("script:not([src])")
+      .toArray()
+      .some((script) => $(script).attr("type") !== "application/ld+json")
+  )
+    issues.push(`${file}: undeclared inline executable script`);
   const ids = new Set();
   for (const node of $("[id]").toArray()) {
     const id = $(node).attr("id");
