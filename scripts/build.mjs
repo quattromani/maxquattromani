@@ -286,6 +286,8 @@ const links = (items, url) =>
     .join("");
 const articleList = () =>
   `<ol class="article-list">${posts.map((post, index) => `<li><span class="article-number">${String(index + 1).padStart(2, "0")}</span><a href="${post.url}">${escape(post.title)}</a><time datetime="${post.date}">${formatDate(post.date)}</time><span aria-hidden="true">↗</span></li>`).join("")}</ol>`;
+const portrait = (className) =>
+  `<img class="${className}" src="${escape(site.data.profile.portrait.src)}" alt="${escape(site.data.profile.portrait.alt)}" width="${site.data.profile.portrait.width}" height="${site.data.profile.portrait.height}" decoding="async">`;
 const template = await fs.readFile("templates/page.html", "utf8");
 async function shell(page, body) {
   return engine.parseAndRender(template, {
@@ -355,7 +357,7 @@ for (const page of pages) {
     cheerio.load(body, {}, false).root().contents().toArray(),
   );
   if (page.url === "/" && page.meta.presentation === "current") {
-    body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2></div><div class="profile-copy">${body}</div></section>`;
+    body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2>${portrait("home-portrait")}</div><div class="profile-copy">${body}</div></section>`;
   } else if (page.url === "/") {
     const $ = cheerio.load(body, {}, false);
     body = `<section class="hero"><p class="eyebrow">Digital Strategist • Marketing Leader • Front-End Architect</p><h1>Max<br>Quattromani<span>.</span></h1><div class="hero-bottom"><p>${$("h3").first().html()}</p><a class="text-link" href="/about/">About Me <span aria-hidden="true">↗</span></a></div></section><section class="profile-section"><div class="section-label"><span aria-hidden="true">01 /</span><h2>${page.meta.title}</h2></div><div class="profile-copy">${$("p").first().html()}</div></section><section class="writing-section"><div class="section-label"><span aria-hidden="true">02 /</span><h2>Articles</h2></div>${articleList()}</section>`;
@@ -382,6 +384,11 @@ for (const page of pages) {
       body = `<p>This is historical writing, originally published ${formatDate(page.date)}. Technical examples may need updates before reuse.</p>${$.html()}`;
     else body = $.html();
     body = `<header class="page-heading"><p class="eyebrow">${page.post ? "Writing archive" : "Max Quattromani"}</p><h1 id="${escape(page.meta.class || "page-title")}">${titleHtml(page.meta.title)}<span>.</span></h1>${page.post ? `<time datetime="${page.date}">${formatDate(page.date)}</time>` : ""}</header><div class="prose${page.post ? " post-content" : ""}">${body}</div>`;
+    if (page.url === "/about/") {
+      const $ = cheerio.load(body, {}, false);
+      const prose = $(".prose").remove();
+      body = `${$.html()}<div class="biography">${portrait("about-portrait")}${prose.toString()}</div>`;
+    }
   }
   const destination = page.post
     ? path.join(out, page.url, "index.html")

@@ -601,3 +601,37 @@ dialog [data-close-dialog] {
   flex-wrap: wrap;
   gap: 12px 24px;
 }
+
+/* The portrait complements the biography without cropping the supplied image. */
+.home-portrait {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  margin-top: 28px;
+}
+.biography {
+  display: grid;
+  grid-template-columns: minmax(180px, 270px) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+.about-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.biography .prose {
+  width: 100%;
+}
+.biography .prose > p:first-child {
+  margin-top: 0;
+}
+@media (max-width: 800px) {
+  .biography {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .about-portrait {
+    max-width: 290px;
+  }
+}
