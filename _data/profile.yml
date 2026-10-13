@@ -1,21 +1,28 @@
 name: Max Quattromani
 career_start: 2007
-transition: "I am a candidate for Gage County Assessor in the November 3, 2026 election. I am preparing for an anticipated transition into the office in January 2027, subject to the election result."
+transition: I am a candidate for Gage County Assessor in the November 3, 2026 election. I am preparing for an anticipated transition into the office in January 2027, subject to the election result.
 official_office_url: https://gagecountyne.gov/county-assessor/
 provenance:
   career_start: User statement, October 13, 2026
   transition: User confirmation, October 13, 2026; election result pending
   career_record: Historical résumé; titles and chronology await owner review
-recent_work: "Since 2022, Parsimony Shoppes has been my primary focus alongside smaller consulting projects. Over the past year, I have begun winding down the business and preparing for the assessor role."
-certification: "I earned Nebraska assessor certification."
+recent_work: Since 2022, Parsimony Shoppes has been my primary focus alongside smaller consulting projects. Over the past year, I have begun winding down the business and preparing for the assessor role.
+certification: I earned Nebraska assessor certification.
 continuing_education:
   hours: 75
   as_of: October 13, 2026
   coursework: International Association of Assessing Officers (IAAO)
   goal_hours: 100
   goal_deadline: December 31, 2026
-  courses: []
+  courses:
+    - number: 101
+      title: Fundamentals of Real Property Appraisal
+      status: Completed and passed; continuing education hours certified by the state.
+    - number: 300
+      title: Fundamentals of Mass Appraisal
+      status: In progress; expected completion by the end of 2026.
 preparation_provenance:
   recent_work: User confirmation, October 13, 2026
   certification: User confirmation, October 13, 2026; date and certificate documentation pending
   continuing_education: User-reported completed hours, October 13, 2026; course titles and completion records pending. Year-end goal is prospective.
+  courses: User confirmation, October 13, 2026. Course titles checked against https://www.iaao.org/education/courses/. Completion and state credit are user-reported; individual course hours not inferred.

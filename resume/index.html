@@ -13,6 +13,13 @@ My work has spanned web development, design, technical leadership, consulting, a
 
 As of {{ site.data.profile.continuing_education.as_of }}, I have completed {{ site.data.profile.continuing_education.hours }} hours of continuing education, including coursework through the {{ site.data.profile.continuing_education.coursework }}.
 
+### IAAO coursework
+
+{% for course in site.data.profile.continuing_education.courses %}
+- **Course {{ course.number }}: {{ course.title }}.** {{ course.status }}
+{% endfor %}
+
+
 ## Independent business and consulting
 
 **Parsimony Shoppes | Founder and business operator | From 2019**
