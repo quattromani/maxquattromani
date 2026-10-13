@@ -5,36 +5,44 @@ favorite:
   author: Blaise Pascal
   note: My favorite nonfiction book. I try to read it a few times a year.
   url: https://www.penguinrandomhouse.com/books/261095/pensees-by-blaise-pascal-translated-with-an-introduction-by-a-j-krailsheimer/9780140446456/
-books:
-  - title: On Writing Well
-    author: William Zinsser
-    url: https://officialharpercollins.shop/products/on-writing-well-william-zinsserwilliam-zinsser
-  - title: Looking for Information
-    author: Donald O. Case and Lisa M. Given
-    url: https://lisagiven.com/publications/books-and-edited-works/
-  - title: The Common Law
-    author: Oliver Wendell Holmes Jr.
-    url: https://www.jstor.org/stable/j.ctt13x0kkk
-  - title: Writing to Win
-    author: Steven D. Stark
-    url: https://www.penguinrandomhouse.com/books/171941/writing-to-win-by-steven-d-stark/
-  - title: Crucial Conversations
-    author: Kerry Patterson and coauthors
-    url: https://www.mheducation.com/highered/mhp/product/crucial-conversations-3e-hc.html?viewOption=student
-  - title: Plain English for Lawyers
-    author: Richard C. Wydick
-    url: https://cap-press.com/authors/4/Richard-C.-Wydick
-  - title: The 48 Laws of Power
-    author: Robert Greene
-    url: https://www.penguinrandomhouse.com/books/330912/the-48-laws-of-power-by-robert-greene/9781101042458/
-  - title: A Manual for Writers of Research Papers, Theses, and Dissertations
-    author: Kate L. Turabian
-    url: https://press.uchicago.edu/ucp/books/author/T/K/au5387673.html
-research:
-  title: Information Search Process (ISP)
-  author: Carol Collier Kuhlthau
-  url: https://wp.comminfo.rutgers.edu/ckuhlthau/information-search-process-theory/
 provenance:
   selection: User reading list, October 13, 2026. Favorite status and reading frequency are user supplied.
   bibliography: Titles and names checked against linked author, publisher, and institutional references. Editions and translations are unspecified; links identify works, not editions owned.
   isp: ISP is a research model, not a book title. Linked to Kuhlthau’s Rutgers explanation.
+sections:
+  - title: Writing
+    items:
+      - title: On Writing Well
+        author: William Zinsser
+        url: https://officialharpercollins.shop/products/on-writing-well-william-zinsserwilliam-zinsser
+      - title: A Manual for Writers of Research Papers, Theses, and Dissertations
+        author: Kate L. Turabian
+        url: https://press.uchicago.edu/ucp/books/author/T/K/au5387673.html
+  - title: Legal
+    items:
+      - title: The Common Law
+        author: Oliver Wendell Holmes Jr.
+        url: https://www.jstor.org/stable/j.ctt13x0kkk
+      - title: Writing to Win
+        author: Steven D. Stark
+        url: https://www.penguinrandomhouse.com/books/171941/writing-to-win-by-steven-d-stark/
+      - title: Plain English for Lawyers
+        author: Richard C. Wydick
+        url: https://cap-press.com/authors/4/Richard-C.-Wydick
+  - title: Information seeking
+    items:
+      - title: Looking for Information
+        author: Donald O. Case and Lisa M. Given
+        url: https://lisagiven.com/publications/books-and-edited-works/
+      - title: Information Search Process (ISP)
+        author: Carol Collier Kuhlthau
+        url: https://wp.comminfo.rutgers.edu/ckuhlthau/information-search-process-theory/
+        note: A research model rather than a book.
+  - title: Communication and power
+    items:
+      - title: Crucial Conversations
+        author: Kerry Patterson and coauthors
+        url: https://www.mheducation.com/highered/mhp/product/crucial-conversations-3e-hc.html?viewOption=student
+      - title: The 48 Laws of Power
+        author: Robert Greene
+        url: https://www.penguinrandomhouse.com/books/330912/the-48-laws-of-power-by-robert-greene/9781101042458/

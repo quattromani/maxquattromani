@@ -7,20 +7,17 @@ presentation: current
 
 {{ site.data.reading.intro }}
 
-## A favorite I return to
-
-### [{{ site.data.reading.favorite.title }}]({{ site.data.reading.favorite.url }})
+## A favorite: [{{ site.data.reading.favorite.title }}]({{ site.data.reading.favorite.url }})
 
 {{ site.data.reading.favorite.author }}
 
 {{ site.data.reading.favorite.note }}
 
-## Books
+{% for section in site.data.reading.sections %}
+## {{ section.title }}
 
-{% for book in site.data.reading.books %}
-- [*{{ book.title }}*]({{ book.url }}) by {{ book.author }}.
+{% for item in section.items %}
+- [*{{ item.title }}*]({{ item.url }}) by {{ item.author }}.{% if item.note %} {{ item.note }}{% endif %}
 {% endfor %}
 
-## Information seeking
-
-[{{ site.data.reading.research.title }}]({{ site.data.reading.research.url }}) by {{ site.data.reading.research.author }}. This is a research model rather than a book.
+{% endfor %}
