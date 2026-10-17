@@ -138,7 +138,6 @@ const retiredPrefixes = [
   "/templates/",
   "/sites/",
   "/SDLC/",
-  "/thank-you/",
 ];
 for (const page of pages)
   page.retired = retiredPrefixes.some((prefix) => page.url.startsWith(prefix));
@@ -151,7 +150,10 @@ const site = {
   data,
   posts,
   pages: pages
-    .filter((page) => !page.post && !page.retired && !page.meta.preview)
+    .filter(
+      (page) =>
+        !page.post && !page.retired && !page.meta.preview && !page.meta.noindex,
+    )
     .map((page) => ({ ...page.meta, url: page.url })),
 };
 
@@ -244,7 +246,9 @@ function normalize(html, page) {
     const el = $(node);
     for (const key of Object.keys(node.attribs || {}))
       if (
-        ["class", "style", "role", "tabindex", "layout", "on"].includes(key) ||
+        (["class", "role"].includes(key) &&
+          page.meta.presentation !== "current") ||
+        ["style", "tabindex", "layout", "on"].includes(key) ||
         key.startsWith("on")
       )
         el.removeAttr(key);
@@ -462,7 +466,10 @@ await fs.writeFile(
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages
     .filter(
       (page) =>
-        page.relative !== "404.html" && !page.retired && !page.meta.preview,
+        page.relative !== "404.html" &&
+        !page.retired &&
+        !page.meta.preview &&
+        !page.meta.noindex,
     )
     .map((page) => `<url><loc>${escape(site.url + page.url)}</loc></url>`)
     .join("")}</urlset>`,

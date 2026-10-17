@@ -8,7 +8,7 @@
       }}{% endunless %}
     </title>
     <meta name="description" content="{{ description | escape }}" />
-    {% if page.retired or page.meta.preview %}
+    {% if page.retired or page.meta.preview or page.meta.noindex %}
     <meta name="robots" content="noindex, follow" />
     {% endif %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />

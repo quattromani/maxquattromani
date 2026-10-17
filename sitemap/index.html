@@ -1,24 +1,51 @@
 ---
-layout: default
 title: Sitemap
-permalink: "/sitemap/"
-description:
-class: sitemap
-parent: Sitemap
+description: Browse the main pages, writing archive, and help pages on Max Quattromani’s personal website.
+presentation: current
 ---
 
-<h1>Sitemap</h1>
+<p>Use this page to find your way around the site.</p>
 
-<article>
+<h2>Background and interests</h2>
+<ul>
+  <li><a href="/">Home</a>: an introduction and current direction.</li>
+  <li>
+    <a href="/about/">About</a>: personal background, learning, and preparation
+    for public service.
+  </li>
+  <li><a href="/resume/">Career</a>: work, projects, and contributions.</li>
+  <li><a href="/reading/">Reading list</a>: books and research I return to.</li>
+</ul>
 
-  <ul>
-    {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </li>
-    {% endunless %}
-    {% endfor %}
-  </ul>
+<h2>Writing and archive</h2>
+<p>
+  <a href="/writing/">Browse writing by subject</a>. The earlier pieces below
+  retain their original publication dates.
+</p>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+  </li>
+  {% endfor %}
+</ul>
 
-</article>
+<h2>Contact and site information</h2>
+<ul>
+  <li>
+    <a href="/contact/">Contact</a>: personal correspondence and the official
+    county office route.
+  </li>
+  <li>
+    <a href="/privacy/">Privacy policy</a>: visits, email, and external
+    resources.
+  </li>
+  <li>
+    <a href="/accessibility/">Accessibility</a>: current review status and help
+    with barriers.
+  </li>
+  <li>
+    <a href="/feed.xml">Writing RSS feed</a>: article updates for a feed reader.
+  </li>
+</ul>

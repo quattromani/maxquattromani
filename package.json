@@ -9,9 +9,10 @@
     "dev": "npm run build && python3 -m http.server 4173 --directory dist",
     "launch:status": "node scripts/release.mjs",
     "release:check": "npm run build && node scripts/release.mjs --strict",
-    "test:release": "node --test scripts/release-state.test.mjs",
+    "test:release": "node --test scripts/release-state.test.mjs scripts/editorial.test.mjs scripts/contact.test.mjs",
     "test:editorial": "node --test scripts/editorial.test.mjs",
-    "build:preview": "node scripts/build.mjs --preview"
+    "build:preview": "node scripts/build.mjs --preview",
+    "test:contact": "node --test scripts/contact.test.mjs"
   },
   "engines": {
     "node": ">=22"
