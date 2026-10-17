@@ -1,4 +1,6 @@
 ---
+writing_section: personal
+archived: true
 layout: post
 title:  "The Last Conversation I had with my Mom"
 permalink: the-last-conversation-i-had-with-my-mom

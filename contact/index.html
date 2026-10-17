@@ -1,60 +1,120 @@
 ---
-layout: default
-title: Contact Me
-description: "Say something; I'm giving up on you"
-class: contact
-parent: Contact
+title: Contact
+description: Contact Max Quattromani for personal correspondence, writing questions, or website help, and find the official county assessment office.
+presentation: current
 ---
 
-<h1 id="{{ page.class }}">{{ page.title }}</h1>
+<p>
+  For a question about my work, a piece of writing, or this website, email me
+  directly. For county assessment business, use the official office linked
+  below.
+</p>
 
-<article class="contact" id="contact">
+<div class="contact-options">
+  <section class="contact-panel" aria-labelledby="personal-contact">
+    <h2 id="personal-contact">Email Max</h2>
+    <p>Personal correspondence, writing, and website questions.</p>
+    <label class="contact-label" for="contact-address">Email address</label>
+    <input
+      id="contact-address"
+      type="text"
+      value="{{ site.email }}"
+      readonly
+      spellcheck="false"
+      autocapitalize="off"
+    />
+    <div data-contact-topics hidden>
+      <label class="contact-label" for="contact-topic"
+        >What would you like to discuss?</label
+      >
+      <select id="contact-topic" aria-describedby="contact-topic-help">
+        <option
+          value="Personal correspondence"
+          data-hint="A brief introduction and the reason for your message are helpful."
+        >
+          Personal correspondence
+        </option>
+        <option
+          value="Question about your writing"
+          data-hint="Include the title or link to the piece you’re writing about."
+        >
+          A piece of writing
+        </option>
+        <option
+          value="Website problem"
+          data-hint="Include the page address, what happened, and what you expected to happen."
+        >
+          A website problem
+        </option>
+        <option
+          value="Website accessibility"
+          data-hint="Include the page address and the information you need or the barrier you encountered."
+        >
+          An accessibility barrier
+        </option>
+        <option
+          value="Website privacy question"
+          data-hint="Describe your question or request without including sensitive personal information."
+        >
+          A privacy question
+        </option>
+      </select>
+      <p id="contact-topic-help" class="contact-help">
+        A brief introduction and the reason for your message are helpful.
+      </p>
+    </div>
+    <div class="contact-actions">
+      <a
+        class="contact-primary"
+        data-contact-email
+        href="mailto:{{ site.email }}?subject=Personal%20correspondence"
+        >Open email app</a
+      >
+      <button class="contact-secondary" type="button" data-copy-email hidden>
+        Copy email address
+      </button>
+    </div>
+    <p
+      class="contact-status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      data-copy-status
+    ></p>
+    <p class="contact-help">
+      You’ll review and send the message in your email app. If one doesn’t open,
+      copy the address into the email service you use.
+    </p>
+  </section>
 
-<amp-img src="/images/contact-me.jpg"
-      width="800"
-      height="299"
-      layout="responsive"
-      alt="mouse and keyboard">
-</amp-img>
+  <section class="contact-panel" aria-labelledby="county-contact">
+    <h2 id="county-contact">County assessment questions</h2>
+    <p>
+      For property-assessment questions, records, forms, or submissions, contact
+      the Gage County Assessor’s office.
+    </p>
+    <p>
+      <a href="{{ site.data.profile.official_office_url }}"
+        >Visit the official assessor’s office page</a
+      >
+    </p>
+    <p class="contact-help">
+      The county’s website provides current office contact details and services.
+      This is my personal website, and this email address is for personal
+      correspondence.
+    </p>
+  </section>
+</div>
 
-<!--     <section>
-      <h4>Contact Information</h4>
-      <address>
-        <h6>Max Quattromani</h6>
-        7637 Nuthatch Cir / Parker / CO 80134<br><br>
-        <h6>Telephone</h6>
-        <a class="tel" href="tel:+3038757843">303-875-7843</a><br><br>
-        <h6>Email</h6>
-        <a href="mailto:max@maxquattromani.com">max@maxquattromani.com</a>
-      </address>
-    </section> -->
-
-    <section>
-      <h3>Let's Talk</h3>
-
-      <a href="mailto:max@maxquattromani.com?subject=From your Website">Send an email to max@maxquattromani.com</a>
-
-      <!-- <form action="http://formspree.io/max@maxquattromani.com" method="POST">
-        <input type="hidden" name="_next" value="http://maxquattromani.com/thank-you" />
-        <fieldset>
-
-          <label for="name" class="visually-hidden">Name</label>
-          <input type="text" id="name" name="name" x-autocompletetype="name-full" placeholder="Name" tabindex="91" required>
-
-          <label for="email" class="visually-hidden">Email</label>
-          <input type="email" id="email" name="email" x-autocompletetype="email" placeholder="Email Address" tabindex="92" required>
-
-          <label for="textarea" class="visually-hidden">Send me a message:</label>
-          <textarea id="textarea" name="message" placeholder="Message" tabindex="93"></textarea>
-
-        </fieldset>
-        <button class="btn" type="submit" name="submit" value="Submit">Submit</button>
-
-        <button type="reset" name="reset" value="reset">
-          <span>Clear</span>
-        </button>
-      </form> -->
-    </section>
-
-  </article>
- <!-- /.contact -->
+<h2>Before you write</h2>
+<p>
+  Please include enough context to understand your question. Avoid sending
+  account numbers, identification documents, or other sensitive personal
+  information.
+</p>
+<p>
+  To report a website barrier or request another format, see
+  <a href="/accessibility/">Accessibility</a>. The
+  <a href="/privacy/">privacy policy</a> explains how visits and correspondence
+  are handled.
+</p>

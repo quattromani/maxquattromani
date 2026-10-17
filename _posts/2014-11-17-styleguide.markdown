@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Creating the Style Guide"
 permalink: creating-the-style-guide

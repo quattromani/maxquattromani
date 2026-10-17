@@ -1,0 +1,16 @@
+{
+  "retrieved": "2026-10-13",
+  "purpose": "Preserve user-authored biography source ahead of planned campaign-site retirement. Local-only HTML snapshots, ignored by Git, not an interactive archive. Not pushed or delivered as website content.",
+  "sources": [
+    {
+      "file": "maxforassessor-meet-max.html",
+      "url": "https://maxforassessor.com/meet-max",
+      "sha256": "4d036400f1ddfdcec698c553533a5fc7ddab42a02c8998c58616a6655753f4e8"
+    },
+    {
+      "file": "maxforassessor-home.html",
+      "url": "https://maxforassessor.com/",
+      "sha256": "7a7a3f3ada16a2a4cbfd633c8374b3186550773b0150bc33e3aa63254a3d6ea7"
+    }
+  ]
+}

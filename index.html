@@ -1,36 +1,14 @@
 ---
-layout: default
-title: Web Designer &amp; Developer
-description: "The Internet home of Max Quattromani, web developer and designer. I write a little about technology and what I'm working on, here. I also keep a resume and a reading list if you're interested."
-class: home
-parent: Home
+title: Max Quattromani
+description: "The personal website of Max Quattromani, with his career background, selected development work, and writing."
+format: markdown
+presentation: current
 ---
 
-<article role="article">
-  <section>
-    <h3>Formerly led digital marketing, development, and brand strategy for <a href="http://placewise.com" target="_blank">Placewise Digital</a> and managed front-end development at <a href="http://twc.com" target="_blank">Time Warner Cable</a>. Founder of <a href="http://parsimonyshoppes.com" target="_blank">Parsimony Shoppes</a> and creator of the <a href="https://quattromani.github.io/scaffold" target="_blank">Scaffold Design System</a>, an industry-recognized front-end framework.</h3>
-    
-    <p class="lede">
-      An <a href="https://mediatemple.net/blog/design-creative/six-stunning-style-guides/" target="_blank">accomplished Digital Strategist & Front-End Developer</a> with over a decade of experience delivering <strong>B2B and B2C marketing, e-commerce, and digital platform solutions</strong> across industries—from startups to Fortune 150 enterprises. 
-      <br><br>
-      Proven expertise in <strong>brand development, web architecture, digital marketing, and scalable front-end solutions</strong>. Recognized for pioneering structured design systems, including the widely adopted <strong>Scaffold Design System</strong>, which has powered thousands of web properties and influenced modern front-end frameworks.
-      <br><br>
-      <strong>Currently open to new opportunities</strong> where I can contribute my skills in <strong>marketing strategy, e-commerce optimization, and digital transformation</strong> to drive growth, customer engagement, and business success.
-    </p>
-  </section>
-</article>
+My {{ site.data.profile.education.degree }} in {{ site.data.profile.education.field }} shaped an enduring interest in how people **seek, understand, and use information**. That perspective guides my work in information design: organizing data and content around the questions people need answered.
 
-<aside class="writing">
-  <section>
-    <h2>Articles</h2>
+Since {{ site.data.profile.career_start }}, my [career](/resume/) has put those concerns to work in development, team leadership, and business systems. Shared components and documented practices at Time Warner Cable and Placewise helped teams build and maintain websites.
 
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-</aside>
+Today, much of my attention has turned to assessment. {{ site.data.profile.transition }} {{ site.data.profile.certification | remove: "." }} in {{ site.data.profile.certification_year }}. My [preparation](/about/) continues through coursework and study.
+
+My [reading](/reading/) ranges from information seeking to law, while my [writing](/writing/) records the questions and ideas encountered along the way.
