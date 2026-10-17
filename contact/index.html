@@ -1,12 +1,120 @@
 ---
 title: Contact
-description: "Contact Max Quattromani about his background and work."
-format: markdown
+description: Contact Max Quattromani for personal correspondence, writing questions, or website help, and find the official county assessment office.
 presentation: current
 ---
 
-For personal correspondence or questions about my background and work, email [max@maxquattromani.com](mailto:max@maxquattromani.com).
+<p>
+  For a question about my work, a piece of writing, or this website, email me
+  directly. For county assessment business, use the official office linked
+  below.
+</p>
 
-For property-assessment questions, records, or submissions, contact the [Gage County Assessor's office](https://gagecountyne.gov/county-assessor/).
+<div class="contact-options">
+  <section class="contact-panel" aria-labelledby="personal-contact">
+    <h2 id="personal-contact">Email Max</h2>
+    <p>Personal correspondence, writing, and website questions.</p>
+    <label class="contact-label" for="contact-address">Email address</label>
+    <input
+      id="contact-address"
+      type="text"
+      value="{{ site.email }}"
+      readonly
+      spellcheck="false"
+      autocapitalize="off"
+    />
+    <div data-contact-topics hidden>
+      <label class="contact-label" for="contact-topic"
+        >What would you like to discuss?</label
+      >
+      <select id="contact-topic" aria-describedby="contact-topic-help">
+        <option
+          value="Personal correspondence"
+          data-hint="A brief introduction and the reason for your message are helpful."
+        >
+          Personal correspondence
+        </option>
+        <option
+          value="Question about your writing"
+          data-hint="Include the title or link to the piece you’re writing about."
+        >
+          A piece of writing
+        </option>
+        <option
+          value="Website problem"
+          data-hint="Include the page address, what happened, and what you expected to happen."
+        >
+          A website problem
+        </option>
+        <option
+          value="Website accessibility"
+          data-hint="Include the page address and the information you need or the barrier you encountered."
+        >
+          An accessibility barrier
+        </option>
+        <option
+          value="Website privacy question"
+          data-hint="Describe your question or request without including sensitive personal information."
+        >
+          A privacy question
+        </option>
+      </select>
+      <p id="contact-topic-help" class="contact-help">
+        A brief introduction and the reason for your message are helpful.
+      </p>
+    </div>
+    <div class="contact-actions">
+      <a
+        class="contact-primary"
+        data-contact-email
+        href="mailto:{{ site.email }}?subject=Personal%20correspondence"
+        >Open email app</a
+      >
+      <button class="contact-secondary" type="button" data-copy-email hidden>
+        Copy email address
+      </button>
+    </div>
+    <p
+      class="contact-status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      data-copy-status
+    ></p>
+    <p class="contact-help">
+      You’ll review and send the message in your email app. If one doesn’t open,
+      copy the address into the email service you use.
+    </p>
+  </section>
 
-Please avoid sending sensitive personal information.
+  <section class="contact-panel" aria-labelledby="county-contact">
+    <h2 id="county-contact">County assessment questions</h2>
+    <p>
+      For property-assessment questions, records, forms, or submissions, contact
+      the Gage County Assessor’s office.
+    </p>
+    <p>
+      <a href="{{ site.data.profile.official_office_url }}"
+        >Visit the official assessor’s office page</a
+      >
+    </p>
+    <p class="contact-help">
+      The county’s website provides current office contact details and services.
+      This is my personal website, and this email address is for personal
+      correspondence.
+    </p>
+  </section>
+</div>
+
+<h2>Before you write</h2>
+<p>
+  Please include enough context to understand your question. Avoid sending
+  account numbers, identification documents, or other sensitive personal
+  information.
+</p>
+<p>
+  To report a website barrier or request another format, see
+  <a href="/accessibility/">Accessibility</a>. The
+  <a href="/privacy/">privacy policy</a> explains how visits and correspondence
+  are handled.
+</p>

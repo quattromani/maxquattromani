@@ -1,13 +1,13 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
+# Site author and technology colophon
 
-# TEAM
+# AUTHOR
+Max Quattromani
 
-    Max Quattromani - Developer - @maxquattromani
+# CONTACT
+https://maxquattromani.com/contact/
 
-# THANKS
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr
+# TECHNOLOGY
+Semantic HTML, CSS, and JavaScript
+Build: Node.js
+Hosting: GitHub Pages
