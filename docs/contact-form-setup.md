@@ -4,9 +4,11 @@
 
 This site is static HTML with first-party JavaScript hosted on GitHub Pages. It needs no React app or third-party browser SDK. It uses Formspree to accept messages, with a standard HTML POST as the baseline. Names, email addresses, topics, and messages have native labels and validation. A hidden `_gotcha` field adds the provider-supported honeypot; it is not a guarantee against spam.
 
-The signed-in Formspree dashboard was reviewed on October 19, 2026. The form used in the user's supplied JavaScript snippets, `mbojbyqx`, exists in the account and its settings show notifications targeting the site's public email address, an enabled submission archive, enabled reCAPTCHA, and disabled Formshield. No account settings were changed. Several other similarly named forms exist; they were not deleted or repurposed.
+On October 19, 2026, a live test of `mbojbyqx` reached hosted reCAPTCHA but returned "This form isn't set up yet" after the user completed verification. The dashboard archive contained no submissions. Its presence in the dashboard did not establish a working endpoint.
 
-The dashboard's HTML endpoint display uses an email-based path while its JavaScript snippets identify the form by ID. The implementation uses the dashboard-confirmed form ID in `https://formspree.io/f/mbojbyqx`, consistent with Formspree's ID-based integration. Read-only GET requests return 405 for both paths and do not establish successful delivery. A live end-to-end submission is still required before launch.
+A dedicated form, **Personal website contact**, was created in the signed-in Chrome dashboard with endpoint `https://formspree.io/f/mgaobkpr` and recipient `max@maxquattromani.com`. Form Enabled, Email Notifications, Submission Archive, Formshield, and reCAPTCHA are enabled. Existing forms were left unchanged, including `xegdjkax`, which targets a different address.
+
+Live testing through port 4174 completed on October 19, 2026. The user completed hosted CAPTCHA and Formspree displayed its successful-submission confirmation. Three repeated test messages containing a localhost URL were classified as spam; one was marked Not Spam and moved into the Formspree Inbox. A fresh plain-language message without a URL then appeared directly in the Formspree Inbox without manual reclassification. The provider did not expose the reason for the earlier classifications. The user responded positively after being asked to check email; actual mailbox receipt was not independently observed by the agent, which has no connected inbox.
 
 ## Configuration
 
@@ -18,12 +20,10 @@ An alternative `delivery: ajax` supports inline status, a 15-second timeout, dup
 
 ## Remaining dashboard and launch work
 
-1. Keep the original form enabled and its notification recipient set to `max@maxquattromani.com`.
-2. Consider turning Formshield on as an additional server-side spam filter. Keep reCAPTCHA enabled. These settings were inspected but not changed.
-3. Optionally give the form a distinctive name such as “Personal website contact” to distinguish it from the similarly named forms.
-4. Verify the recipient address in Formspree if the account requests it. The account login email can be managed separately; no password, private API key, paid upgrade, or HTTP API access is required for this form integration.
-5. Submit one deliberate test through the actual form, complete the verification yourself, and confirm both provider acceptance and receipt in the intended inbox. Check Spam if necessary. Confirm replies go to the visitor address. This has not been done by the agent.
-6. Before launch, verify validation, mobile and keyboard use, CAPTCHA accessibility/fallback, and behavior without JavaScript. Preserve email as the alternative channel. If account settings or additional verification providers change, recheck Privacy.
+1. Keep the dedicated form enabled, with notifications to `max@maxquattromani.com`, Formshield, and reCAPTCHA enabled.
+2. Provider confirmation and acceptance into the Formspree Inbox are verified. Confirm mailbox receipt explicitly and confirm replies go to the visitor address. Check the Formspree Spam tab periodically for false positives.
+3. Before launch, verify mobile and keyboard use, CAPTCHA accessibility/fallback, and behavior without JavaScript. Preserve email as the alternative channel. If verification providers change, recheck Privacy.
+4. The account login email is separate from the notification recipient. No password, private API key, paid upgrade, or HTTP API access is required for this integration.
 
 ## Sources
 
@@ -32,4 +32,4 @@ Reviewed October 19, 2026: [HTML form setup](https://help.formspree.io/articles/
 
 ## Preview identity
 
-Use `npm run dev` in this repository, then open `http://127.0.0.1:4174/contact/`. Port 4173 is used by Guided Parcel Review in the shared workspace. The preview is bound to the loopback interface. Before reporting a preview as ready, confirm both the page title (`Contact | Max Quattromani`) and the form action (`https://formspree.io/f/mbojbyqx`), rather than accepting an HTTP 200 response alone. A successful response from another local project does not verify this site.
+Use `npm run dev` in this repository, then open `http://127.0.0.1:4174/contact/`. Port 4173 is used by Guided Parcel Review in the shared workspace. The preview is bound to the loopback interface. Before reporting a preview as ready, confirm both the page title (`Contact | Max Quattromani`) and the form action (`https://formspree.io/f/mgaobkpr`), rather than accepting an HTTP 200 response alone. A successful response from another local project does not verify this site.
