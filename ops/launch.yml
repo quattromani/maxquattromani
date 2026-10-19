@@ -94,9 +94,9 @@ checks:
     status: not_checked
   - id: forms
     group: forms
-    title: Verify mailto contact and clearly distinguish sample forms from working submissions
+    title: Verify contact form delivery, spam protection, feedback, and email fallback
     status: not_checked
-    evidence: Formspree form, native verification handoff, honeypot, and simulated submission outcomes tested. Live verification, recipient delivery, and browser accessibility checks remain pending; see docs/contact-form-setup.md.
+    evidence: Formspree form, native verification handoff, honeypot, and simulated submission outcomes tested. Dedicated endpoint mgaobkpr configured on October 19, 2026; hosted CAPTCHA, success confirmation, and a plain-language test appearing directly in the Formspree Inbox verified. Mailbox receipt and browser accessibility checks remain pending; see docs/contact-form-setup.md.
   - id: account_transactions
     group: forms
     title: Authentication, payments, and uploads
