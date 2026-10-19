@@ -29,3 +29,7 @@ Sources reviewed October 16, 2026: [county office](https://gagecountyne.gov/coun
 The stale technology colophon was also updated to reflect the actual site and hosting. The local preview was confirmed to respond successfully.
 
 The guidance checkpoint found no material conflict. These contact and recovery patterns are local implementations of the established accessibility and editorial rules; no global guidance change is proposed. Publication remains subject to the launch gate.
+
+## Superseding form update
+
+The email-only implementation described above was superseded on October 19, 2026 by an actual Formspree contact form. See [contact form setup](contact-form-setup.md) for current delivery, spam protection, privacy, tests, and remaining verification. The email and copy actions remain as fallbacks.

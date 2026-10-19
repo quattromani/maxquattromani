@@ -96,6 +96,7 @@ checks:
     group: forms
     title: Verify mailto contact and clearly distinguish sample forms from working submissions
     status: not_checked
+    evidence: Formspree form, native verification handoff, honeypot, and simulated submission outcomes tested. Live verification, recipient delivery, and browser accessibility checks remain pending; see docs/contact-form-setup.md.
   - id: account_transactions
     group: forms
     title: Authentication, payments, and uploads

@@ -1,0 +1,4 @@
+# Public form ID verified in the user's signed-in dashboard.
+endpoint: https://formspree.io/f/mbojbyqx
+# Keep hosted reCAPTCHA enabled: Formspree handles verification and confirmation.
+delivery: hosted

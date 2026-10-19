@@ -2,7 +2,7 @@
 
 Generated from [the canonical checklist](../ops/launch.yml). Run `npm run launch:status` to refresh this view. This snapshot describes the candidate, not the live site's complete readiness.
 
-Source fingerprint: `83db0474eb36973db7a1a3628bc7ac1aea05d01230be813fc607030566b41127`
+Source fingerprint: `666601f73f107b7b64b18a40d6ba3b2b4d17f593696de7bdcdc77c0d156af4a6`
 
 20 pre-release checks remain unresolved. Production verification follows deployment.
 
@@ -24,7 +24,7 @@ Source fingerprint: `83db0474eb36973db7a1a3628bc7ac1aea05d01230be813fc607030566b
 | Valid domain certificate and HTTP-to-HTTPS redirect on apex and www | Stale | Max Quattromani | October 13, 2026: approved certificate validates apex and www. HTTPS enforcement enabled. Following HTTP redirects from both variants ends at https://maxquattromani.com/ with status 200; www currently takes an extra hop through the apex. |
 | Verify Pages source, redirects, deep-route status, cache behavior, and retained assets | Not checked | Max Quattromani | Evidence still required. |
 | Review titles, descriptions, canonical URLs, sitemap, RSS, robots, icons, and sharing | Not checked | Max Quattromani | Evidence still required. |
-| Verify mailto contact and clearly distinguish sample forms from working submissions | Not checked | Max Quattromani | Evidence still required. |
+| Verify mailto contact and clearly distinguish sample forms from working submissions | Not checked | Max Quattromani | Formspree form, native verification handoff, honeypot, and simulated submission outcomes tested. Live verification, recipient delivery, and browser accessibility checks remain pending; see docs/contact-form-setup.md. |
 | Authentication, payments, and uploads | Not checked | Max Quattromani | The current personal site has no account, payment, or upload service. Reopen if one is introduced. |
 | Review PDF accessibility, print, audio alternatives, and video captions | Not checked | Max Quattromani | Evidence still required. |
 | Localization, offline storage, device permissions, and background services | Not checked | Max Quattromani | No translated experience, service worker, device-permission feature, or offline data store is implemented. Reopen when scope changes. |
