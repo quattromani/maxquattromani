@@ -17,3 +17,6 @@ _site
 
 # Local campaign source snapshots contain contact details.
 _sources/biography/*.html
+
+# Private records must never enter the public repository.
+/Documents/

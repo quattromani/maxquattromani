@@ -54,7 +54,7 @@ checks:
     group: security
     title: Resolve the sensitive PDFs still in the public repository and its history
     status: blocked
-    evidence: Website artifact excludes Documents, but public repository/history remediation remains unresolved. Do not open or republish the files.
+    evidence: Documents removed from local history and all three branch histories on October 19, 2026, with a private backup. GitHub pull-request refs, cached views, and server-side garbage collection require Support; see docs/repository-cleanup.md.
   - id: security_review
     group: security
     title: Review mixed content, external resources, headers, and trust boundaries

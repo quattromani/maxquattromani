@@ -15,7 +15,7 @@ Source fingerprint: `86b30ee172e98b9722dbc61c6716770a0af86d3149b3e572bb0196aae48
 | Review keyboard, screen reader, headings, labels, contrast, reflow, and reduced motion | Not checked | Max Quattromani | Initial Chrome navigation and dialog checks are recorded in docs/modernization.md; full coverage is still due. |
 | Build integrity, local links, required pages, policy links, and private-file exclusion | Pass | Max Quattromani | Automated artifact verification ran for this source fingerprint; see scripts/release.mjs. |
 | Review dependency findings and preserve licenses | Not checked | Max Quattromani | Evidence still required. |
-| Resolve the sensitive PDFs still in the public repository and its history | Blocked | Max Quattromani | Website artifact excludes Documents, but public repository/history remediation remains unresolved. Do not open or republish the files. |
+| Resolve the sensitive PDFs still in the public repository and its history | Blocked | Max Quattromani | Documents removed from local history and all three branch histories on October 19, 2026, with a private backup. GitHub pull-request refs, cached views, and server-side garbage collection require Support; see docs/repository-cleanup.md. |
 | Review mixed content, external resources, headers, and trust boundaries | Not checked | Max Quattromani | Evidence still required. |
 | Verify privacy disclosures against actual requests, storage, hosting, and email handling | Not checked | Max Quattromani | Evidence still required. |
 | Privacy and accessibility pages remain present and linked on every page | Pass | Max Quattromani | Automated policies verification ran for this source fingerprint; see scripts/release.mjs. |
