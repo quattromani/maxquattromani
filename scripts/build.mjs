@@ -87,6 +87,21 @@ for (const name of await fs.readdir("_data"))
     data[name.replace(/\.ya?ml$/, "")] = yaml.load(
       await fs.readFile(`_data/${name}`, "utf8"),
     );
+const endpoint = data.contact?.endpoint || "";
+if (endpoint && !/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(endpoint))
+  throw new Error(
+    "Contact endpoint must be a Formspree form URL: https://formspree.io/f/FORM_ID",
+  );
+if (
+  data.contact?.delivery &&
+  !["hosted", "ajax"].includes(data.contact.delivery)
+)
+  throw new Error("Contact delivery must be hosted or ajax.");
+data.contact = {
+  ...data.contact,
+  delivery: data.contact?.delivery || "hosted",
+  enabled: Boolean(endpoint),
+};
 const config = yaml.load(await fs.readFile("_config.yml", "utf8"));
 const files = await walk(root);
 const pages = [];

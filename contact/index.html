@@ -5,15 +5,120 @@ presentation: current
 ---
 
 <p>
-  For a question about my work, a piece of writing, or this website, email me
-  directly. For county assessment business, use the official office linked
-  below.
+  A question about my work, a piece of writing, or this website? Send me a
+  message here, or use the email address below. For county assessment business,
+  contact the official office.
 </p>
 
 <div class="contact-options">
   <section class="contact-panel" aria-labelledby="personal-contact">
-    <h2 id="personal-contact">Email Max</h2>
-    <p>Personal correspondence, writing, and website questions.</p>
+    <h2 id="personal-contact">What’s on your mind?</h2>
+    {% unless site.data.contact.enabled %}
+    <p class="form-notice">
+      The form isn’t available yet. Please use the email address below for now.
+    </p>
+    {% endunless %}
+    <form
+      id="contact-form"
+      method="post"
+      {%
+      if
+      site.data.contact.enabled
+      %}action="{{ site.data.contact.endpoint | escape }}"
+      {%
+      endif
+      %}
+      data-configured="{{ site.data.contact.enabled }}"
+      data-delivery="{{ site.data.contact.delivery }}"
+      aria-describedby="form-privacy"
+    >
+      <fieldset {% unless site.data.contact.enabled %}disabled{% endunless %}>
+        <legend class="visually-hidden">
+          Your message. All fields are required.
+        </legend>
+        <p class="contact-help">All fields are required.</p>
+        <label class="contact-label" for="sender-name">Your name</label>
+        <input
+          id="sender-name"
+          name="name"
+          autocomplete="name"
+          maxlength="100"
+          required
+          aria-describedby="name-error"
+        />
+        <p id="name-error" class="field-error" data-field-error="name"></p>
+        <label class="contact-label" for="sender-email">Your email</label>
+        <input
+          id="sender-email"
+          type="email"
+          name="email"
+          autocomplete="email"
+          maxlength="254"
+          required
+          aria-describedby="email-error"
+        />
+        <p id="email-error" class="field-error" data-field-error="email"></p>
+        <label class="contact-label" for="message-topic">Topic</label>
+        <select id="message-topic" name="subject" required>
+          <option value="">Choose a topic</option>
+          <option>Personal correspondence</option>
+          <option>A piece of writing</option>
+          <option>A website problem</option>
+          <option>An accessibility barrier</option>
+          <option>A privacy question</option>
+        </select>
+        <label class="contact-label" for="sender-message">Message</label>
+        <textarea
+          id="sender-message"
+          name="message"
+          rows="7"
+          maxlength="6000"
+          required
+          aria-describedby="message-help message-error"
+        ></textarea>
+        <p id="message-help" class="contact-help">
+          For a writing question or website problem, include the title or page
+          address. Please avoid sensitive personal information. Up to 6,000
+          characters.
+        </p>
+        <p
+          id="message-error"
+          class="field-error"
+          data-field-error="message"
+        ></p>
+        <div hidden aria-hidden="true">
+          <label for="contact-company">Leave this field empty</label
+          ><input id="contact-company" name="_gotcha" autocomplete="off" />
+        </div>
+        <button class="contact-primary" type="submit" data-send-message>
+          {% if site.data.contact.delivery == "hosted" %}Continue to
+          verification{% else %}Send message{% endif %}
+        </button>
+      </fieldset>
+      <p id="form-privacy" class="contact-help">
+        {% if site.data.contact.enabled %}Messages are processed by Formspree.
+        {% if site.data.contact.delivery == "hosted" %}You’ll continue to
+        Formspree to complete any spam verification and see confirmation. {%
+        endif %} {% endif %}Read the
+        <a href="/privacy/">privacy policy</a> before sending. This form is for
+        personal correspondence.
+      </p>
+      <p
+        class="form-feedback"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        data-form-status
+      ></p>
+      <noscript
+        ><p class="contact-help">
+          {% if site.data.contact.enabled %}Sending will take you to Formspree
+          for confirmation or any additional verification.{% else %}Please use
+          the email address below.{% endif %}
+        </p></noscript
+      >
+    </form>
+    <h3>Prefer email?</h3>
     <label class="contact-label" for="contact-address">Email address</label>
     <input
       id="contact-address"
@@ -23,51 +128,8 @@ presentation: current
       spellcheck="false"
       autocapitalize="off"
     />
-    <div data-contact-topics hidden>
-      <label class="contact-label" for="contact-topic"
-        >What would you like to discuss?</label
-      >
-      <select id="contact-topic" aria-describedby="contact-topic-help">
-        <option
-          value="Personal correspondence"
-          data-hint="A brief introduction and the reason for your message are helpful."
-        >
-          Personal correspondence
-        </option>
-        <option
-          value="Question about your writing"
-          data-hint="Include the title or link to the piece you’re writing about."
-        >
-          A piece of writing
-        </option>
-        <option
-          value="Website problem"
-          data-hint="Include the page address, what happened, and what you expected to happen."
-        >
-          A website problem
-        </option>
-        <option
-          value="Website accessibility"
-          data-hint="Include the page address and the information you need or the barrier you encountered."
-        >
-          An accessibility barrier
-        </option>
-        <option
-          value="Website privacy question"
-          data-hint="Describe your question or request without including sensitive personal information."
-        >
-          A privacy question
-        </option>
-      </select>
-      <p id="contact-topic-help" class="contact-help">
-        A brief introduction and the reason for your message are helpful.
-      </p>
-    </div>
     <div class="contact-actions">
-      <a
-        class="contact-primary"
-        data-contact-email
-        href="mailto:{{ site.email }}?subject=Personal%20correspondence"
+      <a class="contact-secondary" href="mailto:{{ site.email }}"
         >Open email app</a
       >
       <button class="contact-secondary" type="button" data-copy-email hidden>
@@ -81,12 +143,7 @@ presentation: current
       aria-atomic="true"
       data-copy-status
     ></p>
-    <p class="contact-help">
-      You’ll review and send the message in your email app. If one doesn’t open,
-      copy the address into the email service you use.
-    </p>
   </section>
-
   <section class="contact-panel" aria-labelledby="county-contact">
     <h2 id="county-contact">County assessment questions</h2>
     <p>
@@ -105,16 +162,3 @@ presentation: current
     </p>
   </section>
 </div>
-
-<h2>Before you write</h2>
-<p>
-  Please include enough context to understand your question. Avoid sending
-  account numbers, identification documents, or other sensitive personal
-  information.
-</p>
-<p>
-  To report a website barrier or request another format, see
-  <a href="/accessibility/">Accessibility</a>. The
-  <a href="/privacy/">privacy policy</a> explains how visits and correspondence
-  are handled.
-</p>
