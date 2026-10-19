@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
-    "dev": "npm run build && python3 -m http.server 4173 --directory dist",
+    "dev": "npm run build:preview && python3 -m http.server 4174 --bind 127.0.0.1 --directory dist",
     "launch:status": "node scripts/release.mjs",
     "release:check": "npm run build && node scripts/release.mjs --strict",
     "test:release": "node --test scripts/release-state.test.mjs scripts/editorial.test.mjs scripts/contact.test.mjs",

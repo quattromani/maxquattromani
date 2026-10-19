@@ -28,3 +28,8 @@ An alternative `delivery: ajax` supports inline status, a 15-second timeout, dup
 ## Sources
 
 Reviewed October 19, 2026: [HTML form setup](https://help.formspree.io/articles/building-your-form/building-an-html-form), [AJAX integration](https://help.formspree.io/articles/building-your-form/submit-forms-with-javascript-ajax), [honeypot](https://help.formspree.io/articles/building-your-form/honeypot-spam-filtering), [reCAPTCHA settings](https://help.formspree.io/articles/form-and-project-settings/recaptcha-settings/), and [Formspree privacy](https://formspree.io/legal/privacy-policy/).
+
+
+## Preview identity
+
+Use `npm run dev` in this repository, then open `http://127.0.0.1:4174/contact/`. Port 4173 is used by Guided Parcel Review in the shared workspace. The preview is bound to the loopback interface. Before reporting a preview as ready, confirm both the page title (`Contact | Max Quattromani`) and the form action (`https://formspree.io/f/mbojbyqx`), rather than accepting an HTTP 200 response alone. A successful response from another local project does not verify this site.
