@@ -1,0 +1,64 @@
+name: Max Quattromani
+career_start: 2007
+transition: I am a candidate for Gage County Assessor in the November 3, 2026 election. I am preparing for an anticipated transition into the office in January 2027, subject to the election result.
+official_office_url: https://gagecountyne.gov/county-assessor/
+provenance:
+  career_start: User statement, October 13, 2026
+  transition: User confirmation, October 13, 2026; election result pending
+  career_record: Historical résumé; titles and chronology await owner review
+  portrait: User-provided portrait, October 13, 2026; original filename Warm Professional Headshot with Bookshelves.png.
+  education: User confirmed degree field October 13, 2026. Bachelor of Science title supplied in the user-authored campaign biography. Institution and graduation date are not restated. GPA and honors excluded.
+  campaign_biography:
+    url: https://maxforassessor.com/meet-max
+    reviewed: '2026-10-13'
+    basis: User-supplied personal biography. Family, residence, service, earlier work, degree title, certification year, and paralegal certificate adopted as user-authored facts. Campaign promises and appeals excluded.
+    uncertainty: Early-2000s webmaster chronology versus user-supplied 2007 development start, and Oppenheimer role/dates remain unresolved. No service dates, certificate issuer, or degree graduation date inferred.
+  additional_contract_work: User clarified contract status October 13, 2026. Oppenheimer title, scope, and dates unspecified; early webmaster date unresolved.
+recent_work: Since 2022, Parsimony Shoppes has been my primary focus alongside smaller consulting projects. Over the past year, I have begun winding down the business and preparing for the assessor role.
+certification: I earned Nebraska assessor certification.
+continuing_education:
+  hours: 75
+  as_of: October 13, 2026
+  coursework: International Association of Assessing Officers (IAAO)
+  goal_hours: 100
+  goal_deadline: December 31, 2026
+  courses:
+    - number: 101
+      title: Fundamentals of Real Property Appraisal
+      status: Completed and passed; continuing education hours certified by the state.
+    - number: 300
+      title: Fundamentals of Mass Appraisal
+      status: In progress; expected completion by the end of 2026.
+preparation_provenance:
+  recent_work: User confirmation, October 13, 2026
+  certification: User confirmation, October 13, 2026; date and certificate documentation pending
+  continuing_education: User-reported completed hours, October 13, 2026; course titles and completion records pending. Year-end goal is prospective.
+  courses: User confirmation, October 13, 2026. Course titles checked against https://www.iaao.org/education/courses/. Completion and state credit are user-reported; individual course hours not inferred.
+portrait:
+  src: /images/max-quattromani-portrait.png
+  alt: Max Quattromani
+  width: 1086
+  height: 1448
+education:
+  field: technical communications
+  degree: Bachelor of Science
+personal:
+  family_roles:
+    - husband
+    - father
+    - grandfather
+  spouse: Patti
+  home: Beatrice, Nebraska
+  moved: fall of 2020
+  previous_home: Douglas County, Colorado
+  interests:
+    - garage and estate sales
+earlier_career:
+  navy_role: Fire Control Technician
+  navy_ship: USS Fletcher (DD-992)
+  mechanic: Spent a decade as an ASE-certified mechanic before moving into sales
+certification_year: 2025
+additional_education:
+  paralegal_certificate: true
+additional_contract_work:
+  - Oppenheimer

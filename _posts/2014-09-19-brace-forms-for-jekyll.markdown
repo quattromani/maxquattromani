@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Copying the sender with Brace Forms"
 permalink: copying-the-sender-with-brace-forms

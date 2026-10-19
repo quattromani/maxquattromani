@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Website Launch List"
 permalink: website-launch-list

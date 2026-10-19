@@ -1,99 +1,48 @@
-- section: Currently Reading
-  examples:
-  - title: 'World War Z: An Oral History of the Zombie War'
-    url: 'https://www.amazon.com/World-War-Oral-History-Zombie/dp/0307346617'
-
-- section: Books
-  examples:
-  - title: 'Full Stack Javascript Development with MEAN'
-    url: 'http://www.amazon.com/Full-Stack-JavaScript-Development-With/dp/0992461251'
-  - title: 'CSS Secrets'
-    url: 'http://www.amazon.com/CSS-Secrets-Solutions-Everyday-Problems/dp/1449372635/ref=sr_1_1?s=books&ie=UTF8&qid=1459021453&sr=1-1&keywords=css+secrets'
-  - title: 'Above the Fold'
-    url: 'http://www.amazon.com/Above-Revised-Edition-Brian-Miller/dp/1440336660'
-  - title: 'Pragmatic Guide to JavaScript'
-    url: 'http://www.amazon.com/Pragmatic-Guide-JavaScript-Programmers/dp/1934356670/ref=sr_1_1?s=books&ie=UTF8&qid=1459021679&sr=1-1&keywords=pragmatic+guide+to+javascript'
-  - title: 'SMACSS'
-    url: 'http://shop.smacss.com/'
-  - title: 'Pragmatic Guide to Sass'
-    url: 'http://pragprog.com/book/pg_sass/pragmatic-guide-to-sass'
-  - title: 'HTML &amp; CSS - Design and Build Websites'
-    url: 'http://www.htmlandcssbook.com/'
-  - title: 'Javascript &amp; JQuery - Interactive Front-End Web Development'
-    url: 'http://javascriptbook.com/'
-  - title: 'Pro GIT'
-    url: 'http://git-scm.com/book'
-  - title: 'Responsive Design Workflow'
-    url: 'http://responsivedesignworkflow.com/'
-  - title: 'HTML5 for Web Designers'
-    url: 'http://www.abookapart.com/products/html5-for-web-designers'
-  - title: 'CSS3 for Web Designers'
-    url: 'http://www.abookapart.com/products/css3-for-web-designers'
-  - title: 'The Elements of Content Strategy'
-    url: 'http://www.abookapart.com/products/the-elements-of-content-strategy'
-  - title: 'Responsive Web Design'
-    url: 'http://www.abookapart.com/products/responsive-web-design'
-  - title: 'Designing for Emotion'
-    url: 'http://www.abookapart.com/products/designing-for-emotion'
-  - title: 'Mobile First'
-    url: 'http://www.abookapart.com/products/mobile-first'
-  - title: 'Design is a Job'
-    url: 'http://www.abookapart.com/products/design-is-a-job'
-  - title: 'Content Strategy for Mobile'
-    url: 'http://www.abookapart.com/products/content-strategy-for-mobile'
-  - title: 'Sass for Web Designers'
-    url: 'http://www.abookapart.com/products/sass-for-web-designers'
-  - title: 'Node.js the Right Way'
-    url: 'http://pragprog.com/book/jwnode/node-js-the-right-way'
-  - title: 'Responsible Responsive Design'
-    url: 'http://www.abookapart.com/products/responsible-responsive-design'
-  - title: 'The Decision Book - 50 Models for Strategic Thinking'
-    url: 'http://www.barnesandnoble.com/w/decision-book-mikael-krogerus/1103217590?ean=9780393079616'
-
-- section: Magazines
-  examples:
-  - title: 'Net Magazine'
-    url: 'http://www.creativebloq.com/net-magazine'
-  - title: 'Web Designer'
-    url: 'http://www.webdesignermag.co.uk/'
-  - title: 'The Responsive Web Design Handbook - 2015'
-    url: 'http://www.amazon.com/RESPONSIVE-WEB-DESIGN-HANDBOOK-Updated/dp/B00KPHS3Z2/ref=sr_1_1?s=books&ie=UTF8&qid=1408998451&sr=1-1&keywords=responsive+web+design+handbook'
-  - title: 'The SEO Handbook'
-    url: 'http://www.amazon.com/The-SEO-Handbook-2014-Edition/dp/B00PYIZ7WE'
-
-- section: Online &amp; Bookmarks
-  examples:
-  - title: 'Style Guide Resources'
-    url: 'http://styleguides.io'
-  - title: 'Web Field Manual'
-    url: 'http://webfieldmanual.com/'
-  - title: 'Single Responsibility'
-    url: 'http://drewbarontini.com/articles/single-responsibility/'
-  - title: 'CSS Guidlines'
-    url: 'http://cssguidelin.es/'
-  - title: 'About HTML semantics and front-end architecture'
-    url: 'http://nicolasgallagher.com/about-html-semantics-front-end-architecture/'
-  - title: 'Code Guide by @mdo'
-    url: 'http://codeguide.co/'
-  - title: 'Sass Style guide'
-    url: 'http://css-tricks.com/sass-style-guide/'
-  - title: 'ALL THE EMMET SHORTCUTS YOU FORGOT!'
-    url: 'http://mmcfadyen.ca/blog/all-the-emmet-shortcuts-you-forgot/'
-  - title: 'Pixel Perfect Precision'
-    url: 'http://ustwo.com/ppp/'
-  - title: 'Pure - A set of small, responsive CSS modules that you can use in every web project.'
-    url: 'http://purecss.io/'
-  - title: 'North - Responsive Web Design'
-    url: 'http://pointnorth.io/#responsive-web-design'
-  - title: 'ALL THE EMMET SHORTCUTS YOU FORGOT!'
-    url: 'http://mmcfadyen.ca/blog/all-the-emmet-shortcuts-you-forgot/'
-  - title: 'Front-End Dev Bookmarks'
-    url: 'https://github.com/dypsilon/frontend-dev-bookmarks'
-  - title: 'Dopelists'
-    url: 'http://dopelists.com/'
-  - title: 'Must Watch CSS Videos'
-    url: 'https://github.com/AllThingsSmitty/must-watch-css'
-  - title: 'MDN'
-    url: 'https://developer.mozilla.org/en-US/'
-  - title: 'Web Design Repo'
-    url: 'http://www.webdesignrepo.com/'
+updated: October 13, 2026
+intro: I love to read. These are some of my favorites and references I return to.
+favorite:
+  title: Pensées
+  author: Blaise Pascal
+  note: My favorite nonfiction book. I try to read it a few times a year.
+  url: https://www.penguinrandomhouse.com/books/261095/pensees-by-blaise-pascal-translated-with-an-introduction-by-a-j-krailsheimer/9780140446456/
+provenance:
+  selection: User reading list, October 13, 2026. Favorite status and reading frequency are user supplied.
+  bibliography: Titles and names checked against linked author, publisher, and institutional references. Editions and translations are unspecified; links identify works, not editions owned.
+  isp: ISP is a research model, not a book title. Linked to Kuhlthau’s Rutgers explanation.
+sections:
+  - title: Writing
+    items:
+      - title: On Writing Well
+        author: William Zinsser
+        url: https://officialharpercollins.shop/products/on-writing-well-william-zinsserwilliam-zinsser
+      - title: A Manual for Writers of Research Papers, Theses, and Dissertations
+        author: Kate L. Turabian
+        url: https://press.uchicago.edu/ucp/books/author/T/K/au5387673.html
+  - title: Legal
+    items:
+      - title: The Common Law
+        author: Oliver Wendell Holmes Jr.
+        url: https://www.jstor.org/stable/j.ctt13x0kkk
+      - title: Writing to Win
+        author: Steven D. Stark
+        url: https://www.penguinrandomhouse.com/books/171941/writing-to-win-by-steven-d-stark/
+      - title: Plain English for Lawyers
+        author: Richard C. Wydick
+        url: https://cap-press.com/authors/4/Richard-C.-Wydick
+  - title: Information seeking
+    items:
+      - title: Looking for Information
+        author: Donald O. Case and Lisa M. Given
+        url: https://lisagiven.com/publications/books-and-edited-works/
+      - title: Information Search Process (ISP)
+        author: Carol Collier Kuhlthau
+        url: https://wp.comminfo.rutgers.edu/ckuhlthau/information-search-process-theory/
+        note: A research model rather than a book.
+  - title: Communication and power
+    items:
+      - title: Crucial Conversations
+        author: Kerry Patterson and coauthors
+        url: https://www.mheducation.com/highered/mhp/product/crucial-conversations-3e-hc.html?viewOption=student
+      - title: The 48 Laws of Power
+        author: Robert Greene
+        url: https://www.penguinrandomhouse.com/books/330912/the-48-laws-of-power-by-robert-greene/9781101042458/

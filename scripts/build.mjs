@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { sourceFingerprint } from "./release-state.mjs";
 import path from "node:path";
 import yaml from "js-yaml";
 import { Liquid } from "liquidjs";
@@ -86,6 +87,21 @@ for (const name of await fs.readdir("_data"))
     data[name.replace(/\.ya?ml$/, "")] = yaml.load(
       await fs.readFile(`_data/${name}`, "utf8"),
     );
+const endpoint = data.contact?.endpoint || "";
+if (endpoint && !/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(endpoint))
+  throw new Error(
+    "Contact endpoint must be a Formspree form URL: https://formspree.io/f/FORM_ID",
+  );
+if (
+  data.contact?.delivery &&
+  !["hosted", "ajax"].includes(data.contact.delivery)
+)
+  throw new Error("Contact delivery must be hosted or ajax.");
+data.contact = {
+  ...data.contact,
+  delivery: data.contact?.delivery || "hosted",
+  enabled: Boolean(endpoint),
+};
 const config = yaml.load(await fs.readFile("_config.yml", "utf8"));
 const files = await walk(root);
 const pages = [];
@@ -99,7 +115,8 @@ for (const file of files.filter((file) => /\.(html|markdown|md)$/.test(file))) {
       body: $("body").html(),
     };
   }
-  if (!source) continue;
+  if (!source || (source.meta.preview && !process.argv.includes("--preview")))
+    continue;
   const relative = path.relative(root, file);
   const post = relative.startsWith("_posts/");
   const slug = path
@@ -125,6 +142,20 @@ for (const file of files.filter((file) => /\.(html|markdown|md)$/.test(file))) {
     date: post ? path.basename(file).slice(0, 10) : undefined,
   });
 }
+const retiredPrefixes = [
+  "/ADA/",
+  "/audit/",
+  "/email/",
+  "/styleguide/",
+  "/patterns/",
+  "/sandbox/",
+  "/amp/",
+  "/templates/",
+  "/sites/",
+  "/SDLC/",
+];
+for (const page of pages)
+  page.retired = retiredPrefixes.some((prefix) => page.url.startsWith(prefix));
 const posts = pages
   .filter((page) => page.post)
   .sort((a, b) => b.date.localeCompare(a.date))
@@ -134,7 +165,10 @@ const site = {
   data,
   posts,
   pages: pages
-    .filter((page) => !page.post)
+    .filter(
+      (page) =>
+        !page.post && !page.retired && !page.meta.preview && !page.meta.noindex,
+    )
     .map((page) => ({ ...page.meta, url: page.url })),
 };
 
@@ -227,7 +261,9 @@ function normalize(html, page) {
     const el = $(node);
     for (const key of Object.keys(node.attribs || {}))
       if (
-        ["class", "style", "role", "tabindex", "layout", "on"].includes(key) ||
+        (["class", "role"].includes(key) &&
+          page.meta.presentation !== "current") ||
+        ["style", "tabindex", "layout", "on"].includes(key) ||
         key.startsWith("on")
       )
         el.removeAttr(key);
@@ -251,17 +287,15 @@ function normalize(html, page) {
   return $.html();
 }
 const nav = [
-  ["About Me", "/about/"],
-  ["Resume", "/resume/"],
+  ["About", "/about/"],
+  ["Career", "/resume/"],
   ["Writing", "/writing/"],
-  ["Sites", "/sites/"],
   ["Contact", "/contact/"],
 ];
 const resources = [
-  ["Style Guide", "/styleguide/"],
-  ["Email Guidelines", "/email/"],
-  ["SDLC", "/SDLC/"],
-  ["Reading", "/reading/"],
+  ["Career and selected work", "/resume/"],
+  ["Writing", "/writing/"],
+  ["Reading list", "/reading/"],
 ];
 const links = (items, url) =>
   items
@@ -270,8 +304,43 @@ const links = (items, url) =>
         `<a href="${href}"${url === href ? ' aria-current="page"' : ""}>${label}</a>`,
     )
     .join("");
-const articleList = () =>
-  `<ol class="article-list">${posts.map((post, index) => `<li><span class="article-number">${String(index + 1).padStart(2, "0")}</span><a href="${post.url}">${escape(post.title)}</a><time datetime="${post.date}">${formatDate(post.date)}</time><span aria-hidden="true">↗</span></li>`).join("")}</ol>`;
+const articleList = (items = posts) =>
+  `<ol class="article-list">${items.map((post, index) => `<li><span class="article-number">${String(index + 1).padStart(2, "0")}</span><a href="${post.url}">${escape(post.title)}</a><time datetime="${post.date}">${post.preview ? "Written " : ""}${formatDate(post.date)}${post.preview ? " (preview)" : post.archived ? " (archive)" : ""}</time><span aria-hidden="true">↗</span></li>`).join("")}</ol>`;
+const writingSections = () => {
+  const entries = [
+    ...posts,
+    ...pages
+      .filter((page) => page.meta.article)
+      .map((page) => ({
+        ...page.meta,
+        url: page.url,
+        date: page.meta.written,
+        preview: page.meta.preview,
+      })),
+  ];
+  const unknown = entries.filter(
+    (entry) =>
+      !data.writing.sections.some(
+        (section) => section.id === entry.writing_section,
+      ),
+  );
+  if (unknown.length)
+    throw new Error(
+      "Writing entries require a known section: " +
+        unknown.map((entry) => entry.title).join(", "),
+    );
+  return data.writing.sections
+    .map((section) => {
+      const items = entries
+        .filter((entry) => entry.writing_section === section.id)
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      if (!items.length && !process.argv.includes("--preview")) return "";
+      return `<section class="writing-category" aria-labelledby="writing-${section.id}"><div class="prose"><h2 id="writing-${section.id}">${escape(section.title)}</h2><p>${escape(section.description)}</p>${items.some((item) => item.archived) && section.archive_note ? `<p class="archive-intro">${escape(section.archive_note)}</p>` : ""}</div>${items.length ? articleList(items) : '<p class="prose">No pieces added yet.</p>'}</section>`;
+    })
+    .join("");
+};
+const portrait = (className) =>
+  `<img class="${className}" src="${escape(site.data.profile.portrait.src)}" alt="${escape(site.data.profile.portrait.alt)}" width="${site.data.profile.portrait.width}" height="${site.data.profile.portrait.height}" decoding="async">`;
 const template = await fs.readFile("templates/page.html", "utf8");
 async function shell(page, body) {
   return engine.parseAndRender(template, {
@@ -283,6 +352,13 @@ async function shell(page, body) {
     description: page.meta.description || "",
     navigation: links(nav, page.url),
     resources: links(resources, page.url),
+    policies: links(
+      [
+        ["Privacy policy", "/privacy/"],
+        ["Accessibility", "/accessibility/"],
+      ],
+      page.url,
+    ),
     body,
   });
 }
@@ -296,10 +372,6 @@ for (const name of [
   "apple-touch-icon.png",
   "CNAME",
   "robots.txt",
-  "resume/Max_Quattromani_resume.pdf",
-  "styleguide/assets",
-  "sandbox/image-overlay/images",
-  "amp/education.jpg",
   "humans.txt",
 ]) {
   try {
@@ -318,7 +390,14 @@ for (const page of pages) {
     page: { ...page.meta, url: page.url, date: page.date, path: page.relative },
     post: page.meta,
   });
-  if (page.post) rendered = md.render(rendered);
+  if (page.retired) {
+    page.meta.title = "Historical page retired";
+    page.meta.description = "This historical resource is no longer maintained.";
+    rendered =
+      '<p>This historical page is no longer maintained. Its source remains in the project history.</p><p><a href="/resume/">Read my career background</a> or <a href="/accessibility/">view the accessibility statement</a>.</p>';
+  }
+  if (page.post || page.meta.format === "markdown")
+    rendered = md.render(rendered);
   let body = normalize(rendered, page);
   const textOf = (nodes) =>
     nodes
@@ -330,11 +409,20 @@ for (const page of pages) {
   const originalContent = textOf(
     cheerio.load(body, {}, false).root().contents().toArray(),
   );
-  if (page.url === "/") {
+  if (page.meta.article) {
+    const image = site.data.profile.portrait;
+    const dateLabel = page.meta.written
+      ? `Written <time datetime="${escape(page.meta.written)}">${formatDate(page.meta.written)}</time>`
+      : "Draft. Publication date to be confirmed.";
+    const byline = `<div class="article-byline"><img src="${escape(image.src)}" alt="" width="48" height="48" class="author-avatar" decoding="async"><div><a href="/about/">${escape(site.data.profile.name)}</a><p>${dateLabel}</p></div></div>`;
+    body = `<article aria-labelledby="article-title"><header class="article-heading"><p class="eyebrow">Article preview</p><h1 id="article-title">${titleHtml(page.meta.title)}</h1><p class="article-deck">${escape(page.meta.description)}</p>${byline}</header>${page.meta.historical ? '<aside class="archive-note">This first civic essay is preserved as originally written.</aside>' : ""}<div class="prose post-content">${body}</div></article>`;
+  } else if (page.url === "/" && page.meta.presentation === "current") {
+    body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2>${portrait("home-portrait")}</div><div class="profile-copy">${body}</div></section>`;
+  } else if (page.url === "/") {
     const $ = cheerio.load(body, {}, false);
     body = `<section class="hero"><p class="eyebrow">Digital Strategist • Marketing Leader • Front-End Architect</p><h1>Max<br>Quattromani<span>.</span></h1><div class="hero-bottom"><p>${$("h3").first().html()}</p><a class="text-link" href="/about/">About Me <span aria-hidden="true">↗</span></a></div></section><section class="profile-section"><div class="section-label"><span aria-hidden="true">01 /</span><h2>${page.meta.title}</h2></div><div class="profile-copy">${$("p").first().html()}</div></section><section class="writing-section"><div class="section-label"><span aria-hidden="true">02 /</span><h2>Articles</h2></div>${articleList()}</section>`;
   } else if (page.url === "/writing/") {
-    body = `<header class="page-heading"><p class="eyebrow">Max Quattromani</p><h1>Writing<span>.</span></h1></header><div class="prose">${cheerio.load(body, {}, false)("img").toString()}</div>${articleList()}`;
+    body = `<header class="page-heading"><p class="eyebrow">Max Quattromani</p><h1>Writing<span>.</span></h1></header><div class="prose">${body}</div>${writingSections()}`;
   } else {
     const $ = cheerio.load(body, {}, false);
     const heading = $("h1").first();
@@ -352,7 +440,15 @@ for (const page of pages) {
       const el = $(node);
       el.replaceWith($("<h2></h2>").attr("id", el.attr("id")).html(el.html()));
     });
-    body = `<header class="page-heading"><p class="eyebrow">${page.post ? "Articles" : "Max Quattromani"}</p><h1 id="${escape(page.meta.class || "page-title")}">${titleHtml(page.meta.title)}<span>.</span></h1>${page.post ? `<time datetime="${page.date}">${formatDate(page.date)}</time>` : ""}</header><div class="prose${page.post ? " post-content" : ""}">${$.html()}</div>`;
+    if (page.post)
+      body = `<p>This is historical writing, originally published ${formatDate(page.date)}. Technical examples may need updates before reuse.</p>${$.html()}`;
+    else body = $.html();
+    body = `<header class="page-heading"><p class="eyebrow">${page.post ? "Writing archive" : "Max Quattromani"}</p><h1 id="${escape(page.meta.class || "page-title")}">${titleHtml(page.meta.title)}<span>.</span></h1>${page.post ? `<time datetime="${page.date}">${formatDate(page.date)}</time>` : ""}</header><div class="prose${page.post ? " post-content" : ""}">${body}</div>`;
+    if (page.url === "/about/") {
+      const $ = cheerio.load(body, {}, false);
+      const prose = $(".prose").remove();
+      body = `${$.html()}<div class="biography">${portrait("about-portrait")}${prose.toString()}</div>`;
+    }
   }
   const destination = page.post
     ? path.join(out, page.url, "index.html")
@@ -383,7 +479,13 @@ await fs.writeFile(path.join(out, ".nojekyll"), "");
 await fs.writeFile(
   path.join(out, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages
-    .filter((page) => page.relative !== "404.html")
+    .filter(
+      (page) =>
+        page.relative !== "404.html" &&
+        !page.retired &&
+        !page.meta.preview &&
+        !page.meta.noindex,
+    )
     .map((page) => `<url><loc>${escape(site.url + page.url)}</loc></url>`)
     .join("")}</urlset>`,
 );
@@ -399,4 +501,12 @@ await fs.writeFile(
 );
 console.log(
   `Built ${pages.length} pages, including ${posts.length} articles, into dist.`,
+);
+
+await fs.writeFile(
+  path.join(out, "release-source.json"),
+  JSON.stringify({
+    fingerprint: await sourceFingerprint(),
+    preview: process.argv.includes("--preview"),
+  }),
 );

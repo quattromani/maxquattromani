@@ -1,0 +1,118 @@
+---
+layout: default
+title: Privacy policy
+description: How this personal website handles visits, email, and external resources.
+class: privacy
+---
+
+<h1>Privacy policy</h1>
+<p>Last updated: <time datetime="2026-10-19">October 19, 2026</time></p>
+<p>
+  This policy covers Max Quattromani's personal website at maxquattromani.com.
+</p>
+
+<h2>Browsing this site</h2>
+<p>
+  This site does not use analytics or advertising trackers. Its code does not
+  set cookies or save choices in browser storage. You can read its pages without
+  an account.
+</p>
+<p>
+  GitHub Pages hosts the site. GitHub logs and stores visitors' IP addresses for
+  security purposes, including when visitors are not signed in to GitHub. See
+  <a
+    href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection"
+    >GitHub Pages data collection</a
+  >
+  and
+  <a
+    href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    >GitHub's privacy statement</a
+  >
+  for its practices.
+</p>
+
+<h2>Contact form</h2>
+{% if site.data.contact.enabled %}
+<p>
+  When you send the <a href="/contact/">contact form</a>, your name, email
+  address, selected topic, and message go to Formspree, the service that handles
+  submissions for this site. Formspree processes the submission, stores it as
+  part of its service, and sends an email notification to me. I use your message
+  to read and respond to your inquiry.
+</p>
+<p>
+  Formspree can also collect request information, such as your IP address and
+  browser details, to operate the service and filter spam. Its handling and
+  retention of submissions depend on its service policies and account settings.
+  See
+  <a href="https://formspree.io/legal/privacy-policy/"
+    >Formspree's privacy policy</a
+  >.
+</p>
+<p>
+  {% if site.data.contact.delivery == "hosted" %}Sending takes you to Formspree,
+  where spam verification and delivery confirmation are handled. The configured
+  verification uses reCAPTCHA; its provider’s
+  <a href="https://policies.google.com/privacy">privacy policy</a> applies on
+  that verification page. {% endif %} The site sends form information only when
+  you submit it. It does not save a draft in browser storage. Please do not
+  include sensitive personal information; the form does not accept attachments.
+</p>
+{% else %}
+<p>
+  The <a href="/contact/">contact form</a> is not yet enabled and cannot send a
+  submission. Use the email link on that page instead. Once enabled, the form
+  will use Formspree to process messages, and this section will describe the
+  information sent to that service. You can read
+  <a href="https://formspree.io/legal/privacy-policy/"
+    >Formspree's privacy policy</a
+  >
+  before choosing to use it.
+</p>
+{% endif %}
+
+<h2>Email and the copy button</h2>
+<p>
+  The email link asks your configured email application to start a draft; you
+  decide whether to send it. If you use the copy button, the site writes the
+  email address to your clipboard. It does not read your clipboard.
+</p>
+<p>
+  If you send an email, I receive your address, message, and any attachments you
+  include, and use them to read and respond to your inquiry. Email providers
+  process and store messages as part of delivering them. Please avoid sending
+  sensitive personal information.
+</p>
+<p>
+  For a privacy question or a request about correspondence you have sent, email
+  <a href="mailto:{{ site.email }}?subject=Website%20privacy"
+    >{{ site.email }}</a
+  >. Describe your request without including sensitive documents. I can explain
+  what correspondence I hold and discuss what can be removed. Records held
+  independently by service providers are outside my control.
+</p>
+
+<h2>External resources and links</h2>
+<p>
+  Some historical technical examples load images from other websites when you
+  open the page. Those requests can share your IP address and browser request
+  information with the image provider. External links take you to separate
+  websites. Each provider's privacy practices apply to its services.
+</p>
+
+<h2>County business</h2>
+<p>
+  This personal website is separate from the county's services. For assessment
+  questions, official records, or county business, use the
+  <a href="{{ site.data.profile.official_office_url }}"
+    >Gage County Assessor's official website</a
+  >
+  and its contact options.
+</p>
+
+<h2>Policy updates</h2>
+<p>
+  Changes to the site's services or practices may require an update to this
+  policy. The date above identifies the latest revision.
+</p>

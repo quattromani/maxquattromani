@@ -1,21 +1,50 @@
 ---
-layout: default
-title: Resume
-description: "Wanna hire me but need all the pertinent information first? Look no further. This resume solves that problem."
-class: resume
-parent: Resume
+title: Career and selected work
+description: "An account of Max Quattromani’s work in development, team leadership, consulting, and independent business."
+format: markdown
+presentation: current
 ---
 
-{% include summary/index.html %}
+Web development has been my work since {{ site.data.profile.career_start }}. Over time, building individual websites became work on shared systems, development teams, and the daily operations of a business. The projects below show how those responsibilities developed. Other work included a contract engagement with {{ site.data.profile.additional_contract_work | join: ", " }}.
 
-{% include experience/index.html %}
+## Earlier work
 
-{% include education/index.html %}
+Before development, I served in the Navy as a {{ site.data.profile.earlier_career.navy_role }} aboard {{ site.data.profile.earlier_career.navy_ship }}. {{ site.data.profile.earlier_career.mechanic | replace: "Spent", "I spent" }}. Those roles preceded the web development career described below.
 
-{% include skills/index.html %}
+A {{ site.data.profile.education.degree }} in {{ site.data.profile.education.field }} connects my interest in systems with the way people find and use information. That perspective has carried into website development, shared tools, and the organization of business records.
 
-{% include portfolio/index.html %}
+## Websites, products, and design
 
-{% include code_samples/index.html %}
+At OraLabs, web development was closely connected to the products the company made. As a web developer from 2010 to 2011, I worked on corporate and product websites, email campaigns, and packaging, while helping colleagues with databases, spreadsheets, and reporting.
 
-{% include featured/index.html %}
+A move to Placewise Media in 2011 brought a different challenge: developing websites for shopping centers and commercial properties, with shared interfaces that behaved consistently across browsers. After that role ended in 2012, I returned to OraLabs as creative director, leading work on websites, packaging, catalogs, and marketing materials.
+
+## Bringing development in-house
+
+In 2012, I joined Time Warner Cable as a senior web design and development consultant, becoming front-end development manager in 2013 and serving in that role until 2014. The initial work supported the redesign of its customer-facing website, including responsive layouts, forms, and browser consistency.
+
+As manager, I developed a responsive framework for the website and online commerce and brought front-end responsibilities in-house from an outside vendor. A component-prototyping system gave stakeholders a way to review design ideas during development. Documented practices in the team’s wiki provided a reference for the people building and maintaining the site.
+
+## Scaffold and work at GLG
+
+Preparing for a GLG interview in 2014 gave me a reason to bring my collection of code snippets, components, and development practices into one project. The result was [Scaffold](https://github.com/quattromani/scaffold), a framework with reusable components and a style guide that I could use in my own work and share with other developers.
+
+That same year, as a software engineer at GLG, my work included front-end components, mobile application design, and a style guide and pattern library for internal applications.
+
+## Leading a development team
+
+Returning to Placewise Media as senior director of development from 2014 to 2017 meant responsibility for a team working across front-end, back-end, and data disciplines. Together, we developed modular site architecture and a static site generator that incorporated data from other systems. The shared architecture gave the team a common foundation for building commercial property websites.
+
+The role also required coordination with executive, marketing, and sales teams on product decisions. After leaving the full-time position, I continued consulting for Placewise Digital from 2017 to 2020 on website migrations, front-end architecture, and reusable site templates.
+
+## Independent consulting and Parsimony Shoppes
+
+Through Qoppa, where I was principal from 2017 to 2022, the work extended from web development to brand identity, packaging, and marketing materials.
+
+In 2019, I founded Parsimony Shoppes, an online resale business. Building the storefront was one part of running it. Inventory needed product identifiers, storage locations, barcodes, and listings, so I developed processes connecting the digital catalog to the items on the shelves. The work also included product presentation and day-to-day operations.
+
+{{ site.data.profile.recent_work }}
+
+## Preparing for public service
+
+Since 2025, much of my time has gone toward certification study and continuing education in assessment. {{ site.data.profile.certification }} My [About page](/about/) describes the completed coursework and study still underway as I prepare for an anticipated transition into the Gage County Assessor’s office, subject to the election result.

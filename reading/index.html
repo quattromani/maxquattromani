@@ -1,35 +1,23 @@
 ---
-layout: default
-title: Reading List
-description: "A collection of some of my favorites books related to Technology, Design, and Organization."
-class: reading
-parent: Reading
+title: Reading list
+description: "Books and research Max Quattromani returns to, including Pensées, writing, information seeking, and law."
+format: markdown
+presentation: current
 ---
 
-<h1 id="{{ page.class }}">{{ page.title }}</h1>
+{{ site.data.reading.intro }}
 
-<article role="article">
+## A favorite: [{{ site.data.reading.favorite.title }}]({{ site.data.reading.favorite.url }})
 
-  <blockquote>
-    <p>I don't know how to put this but I'm kind of a big deal. People know me. I have many leather-bound books and my office smells of rich mahogany.</p>
-    <footer>
-      — <cite><a href="https://www.youtube.com/watch?v=jKKtnSVeY9o">Ron Burgundy</a></cite>
-    </footer>
-  </blockquote>
+{{ site.data.reading.favorite.author }}
 
-  <hr>
+{{ site.data.reading.favorite.note }}
 
-  {% for read in site.data.reading %}
-  <h2>{{ read.section }}</h2>
-  <ul class="vertical">
-    {% for titles in read.examples %}
-    <li><a href="{{ titles.url }}">{{ titles.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% for section in site.data.reading.sections %}
+## {{ section.title }}
 
-  <hr>
-  {% endfor %}
+{% for item in section.items %}
+- [*{{ item.title }}*]({{ item.url }}) by {{ item.author }}.{% if item.note %} {{ item.note }}{% endif %}
+{% endfor %}
 
-  <p>This is a partial list. I will try to keep it updated as I add, and occassionally add some old stuff from the bookshelf to it. I bookmark a lot on <a href="https://twitter.com/maxquattromani/favorites">Twitter</a>.</p>
-
-</section>
+{% endfor %}

@@ -25,3 +25,9 @@ The workflow in `.github/workflows/pages.yml` builds and validates on pushes to 
 The private `Documents` folder, source tooling, legacy CSS and JavaScript, and original DAM files are excluded. This artifact exclusion does not remove files already in public Git history.
 
 The former Jekyll layouts and CSS are retained as historical source, but they do not participate in the modern build. The obsolete Ruby dependency manifests, Grunt task file, and debug log have been removed; Git history preserves them. The current build replaces their runtime behavior. See [modernization notes](docs/modernization.md) for scope, DNS findings, and verification evidence.
+
+## Launch readiness
+
+Start with [the launch procedure](docs/launch-checklist.md) and [the current checklist view](docs/launch-status.md). `ops/launch.yml` is the authoritative record. `npm run launch:status` refreshes the report. `npm run release:check` rebuilds the candidate and blocks release when required reviews are absent, unresolved, or stale. Pull requests build for review; production publication uses this strict gate.
+
+Privacy and accessibility pages are linked from every footer. Their statements must stay aligned with the delivered services and verified accessibility evidence. Check their wording whenever analytics, storage, embeds, forms, or contact handling changes.

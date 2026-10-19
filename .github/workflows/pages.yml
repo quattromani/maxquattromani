@@ -2,11 +2,13 @@ name: Publish personal site
 on:
   push:
     branches: [gh-pages]
+  pull_request:
+    branches: [gh-pages]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: pages
+  group: pages-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
   cancel-in-progress: true
 jobs:
   build:
@@ -20,11 +22,20 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run check
+      - run: npm run test:release
+      - name: Report launch readiness
+        run: npm run launch:status
+      - name: Require launch readiness before publication
+        if: github.event_name != 'pull_request'
+        run: node scripts/release.mjs --strict
       - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
         with:
           path: dist
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:

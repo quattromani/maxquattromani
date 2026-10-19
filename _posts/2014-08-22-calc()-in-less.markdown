@@ -1,4 +1,6 @@
 ---
+writing_section: technology
+archived: true
 layout: post
 title:  "Using calc() in less"
 sub-title: "Let's do some maths"

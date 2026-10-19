@@ -1,0 +1,130 @@
+version: 1
+release: Personal site content and trust-page launch
+owner: Max Quattromani
+target: https://maxquattromani.com
+accessibility_target: WCAG 2.2 Level AA
+groups:
+  - content
+  - journeys
+  - browsers
+  - accessibility
+  - build
+  - security
+  - privacy
+  - performance
+  - hosting
+  - discovery
+  - forms
+  - alternate_outputs
+  - operations
+  - verification
+checks:
+  - id: content_review
+    group: content
+    title: Review biography, résumé, dates, claims, and historical examples
+    status: not_checked
+    evidence: Existing wording was preserved; the editorial pass is still due.
+  - id: rights
+    group: content
+    title: Confirm rights and attribution for images, media, and downloadable files
+    status: not_checked
+  - id: navigation
+    group: journeys
+    title: Exercise home, résumé, writing, contact, footer, deep links, and not-found journeys
+    status: not_checked
+  - id: browsers
+    group: browsers
+    title: Review current Chrome, Safari, Firefox, a physical mobile device, and enlarged text
+    status: not_checked
+  - id: accessibility_review
+    group: accessibility
+    title: Review keyboard, screen reader, headings, labels, contrast, reflow, and reduced motion
+    status: not_checked
+    evidence: Initial Chrome navigation and dialog checks are recorded in docs/modernization.md; full coverage is still due.
+  - id: artifact
+    group: build
+    title: Build integrity, local links, required pages, policy links, and private-file exclusion
+    automated: artifact
+    status: not_checked
+  - id: dependencies
+    group: build
+    title: Review dependency findings and preserve licenses
+    status: not_checked
+  - id: sensitive_repository_files
+    group: security
+    title: Resolve the sensitive PDFs still in the public repository and its history
+    status: blocked
+    evidence: Website artifact excludes Documents, but public repository/history remediation remains unresolved. Do not open or republish the files.
+  - id: security_review
+    group: security
+    title: Review mixed content, external resources, headers, and trust boundaries
+    status: not_checked
+  - id: privacy_review
+    group: privacy
+    title: Verify privacy disclosures against actual requests, storage, hosting, and email handling
+    status: not_checked
+  - id: policy_routes
+    group: privacy
+    title: Privacy and accessibility pages remain present and linked on every page
+    automated: policies
+    status: not_checked
+  - id: tracking_inventory
+    group: privacy
+    title: The no-tracking statement remains consistent with the delivered scripts
+    automated: tracking
+    status: not_checked
+  - id: performance
+    group: performance
+    title: Measure representative loading and stability; check asset sizes and failure fallbacks
+    status: not_checked
+  - id: https
+    group: hosting
+    title: Valid domain certificate and HTTP-to-HTTPS redirect on apex and www
+    status: pass
+    evidence: 'October 13, 2026: approved certificate validates apex and www. HTTPS enforcement enabled. Following HTTP redirects from both variants ends at https://maxquattromani.com/ with status 200; www currently takes an extra hop through the apex.'
+    reviewed_at: '2026-10-13'
+    source_fingerprint: 2c9bb0c3ec614530eb91015753b16907df1a49884f8b13b574690ed60b957505
+  - id: delivery
+    group: hosting
+    title: Verify Pages source, redirects, deep-route status, cache behavior, and retained assets
+    status: not_checked
+  - id: discovery
+    group: discovery
+    title: Review titles, descriptions, canonical URLs, sitemap, RSS, robots, icons, and sharing
+    status: not_checked
+  - id: forms
+    group: forms
+    title: Verify contact form delivery, spam protection, feedback, and email fallback
+    status: not_checked
+    evidence: Formspree form, native verification handoff, honeypot, and simulated submission outcomes tested. Dedicated endpoint mgaobkpr configured on October 19, 2026; hosted CAPTCHA, success confirmation, and a plain-language test appearing directly in the Formspree Inbox verified. Mailbox receipt and browser accessibility checks remain pending; see docs/contact-form-setup.md.
+  - id: account_transactions
+    group: forms
+    title: Authentication, payments, and uploads
+    status: not_applicable
+    evidence: The current personal site has no account, payment, or upload service. Reopen if one is introduced.
+  - id: documents_media
+    group: alternate_outputs
+    title: Review PDF accessibility, print, audio alternatives, and video captions
+    status: not_checked
+  - id: localization_offline
+    group: alternate_outputs
+    title: Localization, offline storage, device permissions, and background services
+    status: not_applicable
+    evidence: No translated experience, service worker, device-permission feature, or offline data store is implemented. Reopen when scope changes.
+  - id: recovery
+    group: operations
+    title: Document and exercise rollback; confirm domain and service ownership
+    status: not_checked
+  - id: followup
+    group: operations
+    title: Assign maintenance and incident follow-up without implying unscheduled monitoring
+    status: not_checked
+  - id: guidance
+    group: verification
+    title: Review the complete experience against the project guidance before release
+    status: not_checked
+  - id: production_verification
+    group: verification
+    title: Verify the exact deployed artifact, critical routes, certificates, and policy pages
+    phase: after_deploy
+    status: not_checked
