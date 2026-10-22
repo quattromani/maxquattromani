@@ -38,3 +38,9 @@ Ticket #4877351 was checked directly in the signed-in portal on October 22. It r
 ## Remaining release requirements
 
 Three pre-release checks remain unresolved: Support's sensitive-data purge, cross-browser/physical-device coverage, and manual accessibility coverage. No exception or blanket override has been recorded. All other reviews are refreshed against the current source fingerprint with their actual scope. Production verification remains a separate post-deployment check. GPR was not edited.
+
+## Owner iPhone results
+
+On October 22, Max reported successful physical-device testing in Safari on a larger iPhone believed to be in the iPhone 15 family. The menu, article reading, rotation, contact controls, and larger text all worked. These are owner-reported observations, not automated results; the precise device model was not independently confirmed. This closes the physical iPhone portion of browser coverage. Desktop Safari, Firefox, and the remaining manual accessibility checks, including screen-reader interaction, remain unverified.
+
+The headshot metadata scrub changed source hashes after the prior review. Decoded pixels and dimensions were verified identical, and the rebuilt 70-page artifact passed checks. Existing completed reviews were carried forward to this metadata-only fingerprint; no unperformed browser or accessibility review was approved.
