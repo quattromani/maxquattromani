@@ -26,7 +26,7 @@ The checklist tracks content and rights; critical journeys; browser and device b
 
 ## Current open work
 
-The editorial pass and HTTPS setup are complete. Current evidence and the precise remaining owner inputs are recorded in [the October 19 review](launch-review-2026-10-19.md). Rights, current facts, email receipt, and lab performance are now confirmed. Remaining checks concern GitHub Support purging old sensitive references, cross-browser/accessibility coverage, and print. Additional writing is deferred and does not block this release.
+The editorial pass and HTTPS setup are complete. Current evidence and the precise remaining owner inputs are recorded in [the October 22 revalidation](launch-revalidation-2026-10-22.md). Rights, current facts, email receipt, and lab performance are now confirmed. Print checks and new-article performance are complete. Remaining checks concern GitHub Support purging old sensitive references and cross-browser/manual accessibility coverage. Additional writing is deferred and does not block this release.
 
 ## Publishing and recovery
 

@@ -489,9 +489,11 @@ await fs.writeFile(
     .map((page) => `<url><loc>${escape(site.url + page.url)}</loc></url>`)
     .join("")}</urlset>`,
 );
+// Include current article pages as well as the older Markdown archive.
+const feedEntries = [...posts, ...pages.filter((page) => page.meta.article && !page.meta.preview && !page.meta.noindex).map((page) => ({ title: page.meta.title, url: page.url, date: page.meta.written, content: page.meta.description, categories: [page.meta.writing_section] }))].sort((a, b) => new Date(b.date) - new Date(a.date));
 await fs.writeFile(
   path.join(out, "feed.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Max Quattromani</title><description>${escape(site.description)}</description><link>${site.url}/</link><atom:link href="${site.url}/feed.xml" rel="self" type="application/rss+xml"/>${posts
+  `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Max Quattromani</title><description>${escape(site.description)}</description><link>${site.url}/</link><atom:link href="${site.url}/feed.xml" rel="self" type="application/rss+xml"/>${feedEntries
     .slice(0, 10)
     .map(
       (post) =>

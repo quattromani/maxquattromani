@@ -46,6 +46,7 @@ test("GPR reading editions include published articles only and retain source con
     assert.equal(metadata.published, true);
     assert.equal(metadata.draft, false);
     const route = `/writing/${record.slug}/`;
+    assert.ok((await fs.readFile("dist/feed.xml", "utf8")).includes(route));
     assert.equal(index(`#writing-civic`).closest("section").find(`a[href="${route}"]`).length, 1);
     const $ = cheerio.load(await fs.readFile(`dist${route}index.html`, 'utf8'));
     assert.equal($('main h1').length, 1);

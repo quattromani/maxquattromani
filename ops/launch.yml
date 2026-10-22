@@ -23,33 +23,33 @@ checks:
     group: content
     title: Review biography, résumé, dates, claims, and historical examples
     status: pass
-    evidence: Editorial passes completed; owner explicitly confirmed Career details and CE hours current October 19, 2026. Current candidate wording remains conditional on the November election. Additional writing is deferred and does not block launch.
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'Owner approved Career/current CE facts, the four already-published Civic reading editions, and The Letter with its final note. Original Letter body preserved. Current election wording stays conditional. October 22 revalidation: see docs/launch-revalidation-2026-10-22.md.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: rights
     group: content
     title: Confirm rights and attribution for images, media, and downloadable files
     status: pass
-    evidence: Owner explicitly confirmed October 19, 2026 that the images are theirs to use. Existing MIT code license retained. No additional third-party content added.
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: Owner explicitly confirmed image rights October 19. Imported writing is owner-authored and requested for republication; original source links and dates retained. No GPR hero photographs or application assets copied. Existing MIT license retained.
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: navigation
     group: journeys
     title: Exercise home, résumé, writing, contact, footer, deep links, and not-found journeys
     status: pass
-    evidence: 'October 19: primary routes, contact, policy pages, and 404 opened in the browser on port 4174. All 64 generated pages pass local-link and structure checks. Live form acceptance separately verified. See docs/launch-review-2026-10-19.md.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: 70-page local-link checks and 22 tests pass. Chrome reviewed primary routes and all five civic articles, narrow/wide reflow, keyboard mobile-menu activation, and skip-link focus. Source-tool links remain external to GPR. See launch revalidation report.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: browsers
     group: browsers
     title: Review current Chrome, Safari, Firefox, a physical mobile device, and enlarged text
     status: not_checked
-    evidence: Chrome and in-app browser primary routes reviewed. Safari, Firefox, physical mobile, orientation, and enlarged-text coverage remain unverified.
+    evidence: 'October 22: Chrome mobile emulation at 320/375/1280 requested widths and primary/article routes reviewed. Homepage overflow repaired. Safari, Firefox, actual mobile device and enlarged-text testing remain unverified.'
   - id: accessibility_review
     group: accessibility
     title: Review keyboard, screen reader, headings, labels, contrast, reflow, and reduced motion
     status: not_checked
-    evidence: 64-page static scan has one main H1 per page, alt attributes, and no heading skips after archive markup repairs. Chrome skip-link focus observed; native contact labels and error behavior tested. Screen-reader, contrast across states, mobile reflow, text spacing, and full keyboard flows remain unverified. No WCAG conformance claim.
+    evidence: 'October 22: automated scores 100 on Home and five Civic pages; main H1, alt, heading order, label-name, keyboard menu, skip focus, and narrow reflow checked. Manual screen-reader, full state contrast/text-spacing/enlargement and assistive-technology coverage remain unverified. No WCAG conformance claim.'
   - id: artifact
     group: build
     title: Build integrity, local links, required pages, policy links, and private-file exclusion
@@ -59,28 +59,28 @@ checks:
     group: build
     title: Review dependency findings and preserve licenses
     status: pass
-    evidence: 'October 22: patched markdown-it 14.3.2 to 14.3.3 for GHSA-gfr2-rv44-r23c / CVE-2026-111758. npm audit reports zero vulnerabilities. All 22 tests and 70-page artifact checks pass. Rendered files are byte-identical to the pre-patch artifact (release fingerprint metadata excluded). Malformed 200 KB reference smoke test completed in 154 ms. License retained; dependencies remain build-only.'
+    evidence: 'October 22: markdown-it 14.3.3 installed; npm audit reports zero vulnerabilities; GitHub Dependabot alert #16 is fixed. All 22 tests pass. No dependency directories ship in dist.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 4978d2c544f032d8a3d98ac96bf526ef9f1f6aecf6351a576dd39cde065cef68
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: sensitive_repository_files
     group: security
     title: Resolve the sensitive PDFs still in the public repository and its history
     status: blocked
-    evidence: 'All three branch histories sanitized; owner-only backup verified. GitHub Support ticket #4877351 submitted October 19, 2026 and confirmed Open; old PR refs/cache purge awaits Support confirmation. See docs/repository-cleanup.md.'
+    evidence: 'October 22 portal check: Support ticket #4877351 is Open with only the original owner request. No response or purge confirmation. All branch histories sanitized; GitHub read-only PR refs/caches remain unresolved.'
   - id: security_review
     group: security
     title: Review mixed content, external resources, headers, and trust boundaries
     status: pass
-    evidence: 'October 19: static artifact and first-party JavaScript reviewed. No mixed-content resources, third-party scripts, browser storage, authentication, payments, uploads, or private PDFs in dist. External image requests disclosed. GitHub Pages lacks configurable response headers; no claim of comprehensive backend certification. Sensitive history tracked separately.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: current artifact and scripts reviewed. No private PDFs, new third-party scripts, client storage, uploads, auth, payments, or copied GPR application code. Local history excludes Documents. GitHub Pages header limitations unchanged; pending sensitive PR refs/cache handled separately.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: privacy_review
     group: privacy
     title: Verify privacy disclosures against actual requests, storage, hosting, and email handling
     status: pass
-    evidence: 'October 19: disclosure matches hosted Formspree, archive and email notifications, reCAPTCHA, clipboard write-only behavior, no browser draft storage or analytics, GitHub hosting, and two historical external images. No attachment support. Retention depends on providers; no unsupported retention period promised.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: no new data collection introduced by article copies, print styling, or RSS. Disclosed Formspree/reCAPTCHA, GitHub hosting, clipboard behavior, and two legacy external images remain accurate. Owner confirmed actual test email receipt. No retention guarantees added.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: policy_routes
     group: privacy
     title: Privacy and accessibility pages remain present and linked on every page
@@ -95,77 +95,79 @@ checks:
     group: performance
     title: Measure representative loading and stability; check asset sizes and failure fallbacks
     status: pass
-    evidence: 'Lighthouse 13.5.0 local production-build lab checks completed October 19, 2026: Home mobile 99/desktop 100; About, Contact, and Writing mobile meet recorded budgets. Portrait reduced to 107455 bytes; high fetch priority applied. Field INP unavailable; see docs/performance-review-2026-10-19.md.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: final Lighthouse 13.5.0 mobile audits on Home and all five civic pages score 99–100; all meet LCP<2.5s, TBT<200ms, CLS<0.1. Prior desktop Home score 100. No field INP claim. See docs/launch-audits-2026-10-22.json and revalidation report.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: https
     group: hosting
     title: Valid domain certificate and HTTP-to-HTTPS redirect on apex and www
     status: pass
-    evidence: 'October 19: certificate-valid HTTPS requests succeed. HTTP apex and www redirect to https://maxquattromani.com/ with 200. GitHub API confirms HTTPS enforcement and custom domain.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: certificate-valid HTTP apex/www checks both end at https://maxquattromani.com/ with 200. GitHub Pages API confirms HTTPS enforcement.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: delivery
     group: hosting
     title: Verify Pages source, redirects, deep-route status, cache behavior, and retained assets
     status: pass
-    evidence: 'October 19: Pages API confirms workflow publishing, maxquattromani.com custom domain, and HTTPS enforcement. Live host returns 404 for missing routes and caches HTML for 600 seconds. Candidate deep links pass build checks; candidate production verification remains a separate post-deployment check.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: Pages API confirms workflow hosting, correct custom domain, and HTTPS enforcement. 70 local pages/deep links pass. Host routing/cache evidence from October 19 unchanged; candidate production verification remains after_deploy.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: discovery
     group: discovery
     title: Review titles, descriptions, canonical URLs, sitemap, RSS, robots, icons, and sharing
     status: pass
-    evidence: 'October 19: all 64 pages have titles, descriptions, and canonical links. Sitemap, RSS, icons, Open Graph metadata, intentional noindex exclusions, and private/preview exclusion reviewed. No unsupported structured-data claims. Search results and share-card rendering are not guaranteed.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: all 70 pages have metadata and canonical links. Sitemap and RSS include all five civic pieces; preview/noindex routes excluded as intended. Icons, crawlable navigation, and Open Graph remain present. Feed regression assertion added.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: forms
     group: forms
     title: Verify contact form delivery, spam protection, feedback, and email fallback
     status: pass
-    evidence: Hosted CAPTCHA, confirmation, direct Formspree Inbox acceptance, and owner-confirmed actual mailbox receipt verified October 19, 2026. Nine contact tests cover labels, validation, honeypot, duplicate prevention, errors, timeout, native handoff, and fallback. Reply-To email field present; production-path recheck follows deployment.
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: nine contact behavior tests pass; endpoint unchanged and hosted CAPTCHA/success plus owner-confirmed receipt remain valid. No added test emails. Print view retains direct email as fallback; post-deployment delivery-path check remains required.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: account_transactions
     group: forms
     title: Authentication, payments, and uploads
     status: not_applicable
     evidence: The current personal site has no account, payment, or upload service. Reopen if one is introduced.
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: documents_media
     group: alternate_outputs
     title: Review PDF accessibility, print, audio alternatives, and video captions
-    status: not_checked
-    evidence: Production artifact contains no PDFs, audio, or video. Original civic essay remains source-only. Print CSS exists; actual print-preview review still required.
+    status: pass
+    evidence: 'October 22: no PDFs/audio/video shipped. Chrome print exports rendered and inspected for primary templates and Civic articles, including annual-value table and letter end. Contact print reduced to one usable page; disclosures visible for data. Not a PDF/UA claim. See launch revalidation report.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: localization_offline
     group: alternate_outputs
     title: Localization, offline storage, device permissions, and background services
     status: not_applicable
     evidence: No translated experience, service worker, device-permission feature, or offline data store is implemented. Reopen when scope changes.
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: recovery
     group: operations
     title: Document and exercise rollback; confirm domain and service ownership
     status: pass
-    evidence: 'October 19: prior sanitized revision 32a35ed3 checked out in a separate local clone, built to 64 pages, and passed checks using the installed locked dependencies. Restore only sanitized source; never restore the private bundle into public history. See recovery runbook.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: Sanitized prior revision 32a35ed3 was built and checked in a separate clone on October 19. October 22 review confirms same static build/deploy method, locked inputs, and no data migrations. Restore sanitized source only; never merge private backup history. Runbook remains applicable.
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: followup
     group: operations
     title: Assign maintenance and incident follow-up without implying unscheduled monitoring
     status: pass
-    evidence: Max owns domain, GitHub, Formspree, content, and incident response. Manual maintenance and post-election updates assigned in docs/launch-review-2026-10-19.md. No recurring monitor is scheduled.
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: Max remains owner of domain, GitHub, Formspree, incident handling, and content. Post-election wording must change only on verified events. Support follow-up is pending; no recurring monitoring scheduled.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: guidance
     group: verification
     title: Review the complete experience against the project guidance before release
     status: pass
-    evidence: 'October 19: shared guidance checkpoint completed. Canonical data, current election qualifications, historical text, private-file exclusion, accessibility semantics, and honest incomplete evidence reviewed. No global guidance change proposed; unresolved checks remain explicit.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: shared guidance checkpoint completed against current article content, source provenance, semantics, privacy boundaries, and release evidence. Historical Letter remains intact with approved note. Unperformed browser/accessibility checks and Support purge stay unresolved.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
   - id: production_verification
     group: verification
     title: Verify the exact deployed artifact, critical routes, certificates, and policy pages
