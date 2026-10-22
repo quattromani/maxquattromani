@@ -67,6 +67,17 @@ console.log(
   `\n${blockers.length} unresolved release checks; ${result.pending.filter((item) => item.phase === "after_deploy").length} post-deployment checks.`,
 );
 if (failures.length || (strict && blockers.length)) process.exitCode = 1;
+// CI distinguishes an invalid build from an otherwise valid candidate awaiting review.
+if (process.argv.includes("--ci")) {
+  const ready = failures.length === 0 && blockers.length === 0;
+  if (process.env.GITHUB_OUTPUT)
+    await fs.appendFile(process.env.GITHUB_OUTPUT, `ready=${ready}\n`);
+  if (process.env.GITHUB_STEP_SUMMARY)
+    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,
+      `## Publication ${ready ? "ready" : "held"}\n\n${ready ? "All pre-release checks passed." : "The live site was not updated."}\n\n` +
+      blockers.map((item) => `- ${item.title}: ${item.effective_status}`).join("\n") + "\n");
+}
+
 
 const rows = record.checks.map((item) => {
   const pending = result.pending.find((check) => check.id === item.id);

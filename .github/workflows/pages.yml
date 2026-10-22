@@ -1,4 +1,4 @@
-name: Publish personal site
+name: Validate and conditionally publish personal site
 on:
   push:
     branches: [gh-pages]
@@ -12,6 +12,9 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
+    name: Build and test
+    outputs:
+      ready: ${{ steps.readiness.outputs.ready }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,19 +26,21 @@ jobs:
       - run: npm run build
       - run: npm run check
       - run: npm run test:release
-      - name: Report launch readiness
-        run: npm run launch:status
+      - name: Assess publication readiness
+        id: readiness
+        run: node scripts/release.mjs --ci
       - name: Require launch readiness before publication
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && steps.readiness.outputs.ready == 'true'
         run: node scripts/release.mjs --strict
       - uses: actions/configure-pages@v5
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && steps.readiness.outputs.ready == 'true'
       - uses: actions/upload-pages-artifact@v3
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && steps.readiness.outputs.ready == 'true'
         with:
           path: dist
   deploy:
-    if: github.event_name != 'pull_request'
+    name: Publish approved site
+    if: github.event_name != 'pull_request' && needs.build.outputs.ready == 'true'
     needs: build
     runs-on: ubuntu-latest
     permissions:

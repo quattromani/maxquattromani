@@ -25,21 +25,21 @@ checks:
     status: pass
     evidence: 'Owner approved Career/current CE facts, the four already-published Civic reading editions, and The Letter with its final note. Original Letter body preserved. Current election wording stays conditional. October 22 revalidation: see docs/launch-revalidation-2026-10-22.md.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: rights
     group: content
     title: Confirm rights and attribution for images, media, and downloadable files
     status: pass
     evidence: Owner explicitly confirmed image rights October 19. Imported writing is owner-authored and requested for republication; original source links and dates retained. No GPR hero photographs or application assets copied. Existing MIT license retained.
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: navigation
     group: journeys
     title: Exercise home, résumé, writing, contact, footer, deep links, and not-found journeys
     status: pass
     evidence: 'October 22: 70-page local-link checks and 22 tests pass. Chrome reviewed primary routes and all five civic articles, narrow/wide reflow, keyboard mobile-menu activation, and skip-link focus. Source-tool links remain external to GPR. See launch revalidation report.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: browsers
     group: browsers
     title: Review current Chrome, Safari, Firefox, a physical mobile device, and enlarged text
@@ -61,7 +61,7 @@ checks:
     status: pass
     evidence: 'October 22: markdown-it 14.3.3 installed; npm audit reports zero vulnerabilities; GitHub Dependabot alert #16 is fixed. All 22 tests pass. No dependency directories ship in dist.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: sensitive_repository_files
     group: security
     title: Resolve the sensitive PDFs still in the public repository and its history
@@ -73,14 +73,14 @@ checks:
     status: pass
     evidence: 'October 22: current artifact and scripts reviewed. No private PDFs, new third-party scripts, client storage, uploads, auth, payments, or copied GPR application code. Local history excludes Documents. GitHub Pages header limitations unchanged; pending sensitive PR refs/cache handled separately.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: privacy_review
     group: privacy
     title: Verify privacy disclosures against actual requests, storage, hosting, and email handling
     status: pass
     evidence: 'October 22: no new data collection introduced by article copies, print styling, or RSS. Disclosed Formspree/reCAPTCHA, GitHub hosting, clipboard behavior, and two legacy external images remain accurate. Owner confirmed actual test email receipt. No retention guarantees added.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: policy_routes
     group: privacy
     title: Privacy and accessibility pages remain present and linked on every page
@@ -97,77 +97,77 @@ checks:
     status: pass
     evidence: 'October 22: final Lighthouse 13.5.0 mobile audits on Home and all five civic pages score 99–100; all meet LCP<2.5s, TBT<200ms, CLS<0.1. Prior desktop Home score 100. No field INP claim. See docs/launch-audits-2026-10-22.json and revalidation report.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: https
     group: hosting
     title: Valid domain certificate and HTTP-to-HTTPS redirect on apex and www
     status: pass
     evidence: 'October 22: certificate-valid HTTP apex/www checks both end at https://maxquattromani.com/ with 200. GitHub Pages API confirms HTTPS enforcement.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: delivery
     group: hosting
     title: Verify Pages source, redirects, deep-route status, cache behavior, and retained assets
     status: pass
     evidence: 'October 22: Pages API confirms workflow hosting, correct custom domain, and HTTPS enforcement. 70 local pages/deep links pass. Host routing/cache evidence from October 19 unchanged; candidate production verification remains after_deploy.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: discovery
     group: discovery
     title: Review titles, descriptions, canonical URLs, sitemap, RSS, robots, icons, and sharing
     status: pass
     evidence: 'October 22: all 70 pages have metadata and canonical links. Sitemap and RSS include all five civic pieces; preview/noindex routes excluded as intended. Icons, crawlable navigation, and Open Graph remain present. Feed regression assertion added.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: forms
     group: forms
     title: Verify contact form delivery, spam protection, feedback, and email fallback
     status: pass
     evidence: 'October 22: nine contact behavior tests pass; endpoint unchanged and hosted CAPTCHA/success plus owner-confirmed receipt remain valid. No added test emails. Print view retains direct email as fallback; post-deployment delivery-path check remains required.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: account_transactions
     group: forms
     title: Authentication, payments, and uploads
     status: not_applicable
     evidence: The current personal site has no account, payment, or upload service. Reopen if one is introduced.
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: documents_media
     group: alternate_outputs
     title: Review PDF accessibility, print, audio alternatives, and video captions
     status: pass
     evidence: 'October 22: no PDFs/audio/video shipped. Chrome print exports rendered and inspected for primary templates and Civic articles, including annual-value table and letter end. Contact print reduced to one usable page; disclosures visible for data. Not a PDF/UA claim. See launch revalidation report.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: localization_offline
     group: alternate_outputs
     title: Localization, offline storage, device permissions, and background services
     status: not_applicable
     evidence: No translated experience, service worker, device-permission feature, or offline data store is implemented. Reopen when scope changes.
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: recovery
     group: operations
     title: Document and exercise rollback; confirm domain and service ownership
     status: pass
     evidence: Sanitized prior revision 32a35ed3 was built and checked in a separate clone on October 19. October 22 review confirms same static build/deploy method, locked inputs, and no data migrations. Restore sanitized source only; never merge private backup history. Runbook remains applicable.
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: followup
     group: operations
     title: Assign maintenance and incident follow-up without implying unscheduled monitoring
     status: pass
     evidence: 'October 22: Max remains owner of domain, GitHub, Formspree, incident handling, and content. Post-election wording must change only on verified events. Support follow-up is pending; no recurring monitoring scheduled.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: guidance
     group: verification
     title: Review the complete experience against the project guidance before release
     status: pass
     evidence: 'October 22: shared guidance checkpoint completed against current article content, source provenance, semantics, privacy boundaries, and release evidence. Historical Letter remains intact with approved note. Unperformed browser/accessibility checks and Support purge stay unresolved.'
     reviewed_at: '2026-10-22'
-    source_fingerprint: 7d9d758506045738771b251c640790fde635f0099fd32fb71bd7beda81525a96
+    source_fingerprint: c35183d17fcb961e970686c45909702036b7cc4f891b3334405b745d50781578
   - id: production_verification
     group: verification
     title: Verify the exact deployed artifact, critical routes, certificates, and policy pages

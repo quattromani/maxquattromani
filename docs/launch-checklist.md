@@ -39,3 +39,9 @@ Assign later maintenance through this checklist. Monitoring or recurring work is
 ## Sources
 
 The governing checklist is [front-end launch guidance](/Users/maxquattromani/.codex/skills/front-end-engineering/references/launch-checklist.md). The accessibility statement follows [W3C WAI guidance](https://www.w3.org/WAI/planning/statements/). Hosting disclosures follow [GitHub Pages data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages). The working record in [modernization notes](modernization.md) distinguishes previous checks from reviews still due.
+
+## CI reporting
+
+A valid build awaiting manual release reviews is reported as successful validation with publication held. The workflow summary lists unmet checks. `release.mjs --ci` emits `ready=false` for a held candidate and still exits unsuccessfully for an invalid artifact or checklist error. Only `ready=true` allows the strict publication check, artifact upload, and deploy job. `release.mjs --strict` continues to reject any unresolved pre-release requirement. This changes reporting, not release approval.
+
+October 22 verification: the current candidate passes validation and emits ready=false; strict publication exits 1. A deliberately marked preview artifact exits 1 in CI mode and emits ready=false. The valid artifact was restored afterward. Build, artifact checks, and all 22 tests passed. Existing verified reviews were carried forward to the workflow-only fingerprint; no unresolved review was approved.
