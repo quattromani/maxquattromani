@@ -138,7 +138,7 @@ $('.widgetFunction').widgetFunction();
 
 <hr>
 
-### Create a process and stick to it
+## Create a process and stick to it
 
 This process works for me. It is based on the roles that I have had the opportunity to hold. Your experience and/or role on a team may be different, but having a process, however it looks, will increase your productivity, improve your code quality, and make you the hero of your back-end team.
 

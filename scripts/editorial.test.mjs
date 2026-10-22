@@ -36,3 +36,25 @@ test("historical writing retains dates and context", async () => {
   assert.ok($("main time[datetime]").length);
   assert.match($("main").text(), /historical writing, originally published/);
 });
+
+test("GPR reading editions include published articles only and retain source context", async () => {
+  const records = JSON.parse(await fs.readFile('_sources/writing/gpr/provenance.json', 'utf8'));
+  assert.equal(records.length, 4);
+  const index = cheerio.load(await fs.readFile('dist/writing/index.html', 'utf8'));
+  for (const record of records) {
+    const metadata = JSON.parse(await fs.readFile(`_sources/writing/gpr/${record.slug}/metadata.json`, 'utf8'));
+    assert.equal(metadata.published, true);
+    assert.equal(metadata.draft, false);
+    const route = `/writing/${record.slug}/`;
+    assert.equal(index(`#writing-civic`).closest("section").find(`a[href="${route}"]`).length, 1);
+    const $ = cheerio.load(await fs.readFile(`dist${route}index.html`, 'utf8'));
+    assert.equal($('main h1').length, 1);
+    assert.ok($('main a').toArray().some(a => $(a).attr('href') === record.original));
+    assert.match($('main').text(), /Time-sensitive details reflect its original publication date/);
+    assert.equal($('main script, main input, main button, main video, main audio').length, 0);
+    assert.equal($('main time').attr('datetime'), metadata.publishDate.slice(0, 10));
+  }
+  assert.doesNotMatch(index('main').text(), /TIF and the Big BUT|Cost Is Personal|How to Choose Comparable Properties/);
+  const taxRoll = cheerio.load(await fs.readFile('dist/writing/watch-the-tax-roll-move/index.html', 'utf8'));
+  assert.match(taxRoll('main').text(), /Equal movement changes the levy/);
+});

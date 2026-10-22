@@ -67,5 +67,5 @@ Or you can use the Sass placeholder selector to reduce code bloat in the output 
 <hr>
 
 Credit to:
-<h4>Sebastian Ekström</h4>
+<h2>Sebastian Ekström</h2>
 <cite><a href="http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/">http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/</a></cite>

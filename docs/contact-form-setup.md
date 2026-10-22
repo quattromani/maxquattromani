@@ -8,7 +8,7 @@ On October 19, 2026, a live test of `mbojbyqx` reached hosted reCAPTCHA but retu
 
 A dedicated form, **Personal website contact**, was created in the signed-in Chrome dashboard with endpoint `https://formspree.io/f/mgaobkpr` and recipient `max@maxquattromani.com`. Form Enabled, Email Notifications, Submission Archive, Formshield, and reCAPTCHA are enabled. Existing forms were left unchanged, including `xegdjkax`, which targets a different address.
 
-Live testing through port 4174 completed on October 19, 2026. The user completed hosted CAPTCHA and Formspree displayed its successful-submission confirmation. Three repeated test messages containing a localhost URL were classified as spam; one was marked Not Spam and moved into the Formspree Inbox. A fresh plain-language message without a URL then appeared directly in the Formspree Inbox without manual reclassification. The provider did not expose the reason for the earlier classifications. The user responded positively after being asked to check email; actual mailbox receipt was not independently observed by the agent, which has no connected inbox.
+Live testing through port 4174 completed on October 19, 2026. The user completed hosted CAPTCHA and Formspree displayed its successful-submission confirmation. Three repeated test messages containing a localhost URL were classified as spam; one was marked Not Spam and moved into the Formspree Inbox. A fresh plain-language message without a URL then appeared directly in the Formspree Inbox without manual reclassification. The provider did not expose the reason for the earlier classifications. The owner explicitly confirmed mailbox receipt on October 19, 2026. The agent did not independently access the mailbox.
 
 ## Configuration
 
@@ -21,7 +21,7 @@ An alternative `delivery: ajax` supports inline status, a 15-second timeout, dup
 ## Remaining dashboard and launch work
 
 1. Keep the dedicated form enabled, with notifications to `max@maxquattromani.com`, Formshield, and reCAPTCHA enabled.
-2. Provider confirmation and acceptance into the Formspree Inbox are verified. Confirm mailbox receipt explicitly and confirm replies go to the visitor address. Check the Formspree Spam tab periodically for false positives.
+2. Provider confirmation and acceptance into the Formspree Inbox are verified. Mailbox receipt is owner-confirmed. Reply-To is supplied by the form email field; independently checking reply behavior remains a post-deployment check. Check the Formspree Spam tab periodically for false positives.
 3. Before launch, verify mobile and keyboard use, CAPTCHA accessibility/fallback, and behavior without JavaScript. Preserve email as the alternative channel. If verification providers change, recheck Privacy.
 4. The account login email is separate from the notification recipient. No password, private API key, paid upgrade, or HTTP API access is required for this integration.
 

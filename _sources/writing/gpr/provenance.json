@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "assessment-season-ends-budget-season-begins",
+    "title": "Assessment Season Is Ending. Budget Season Starts Now.",
+    "original": "https://quattromani.github.io/Guided-Parcel-Review/articles/assessment-season-ends-budget-season-begins/",
+    "published": "2026-07-31T12:00:00-05:00",
+    "imported": "2026-10-22",
+    "manifest": "data/app/articles.json",
+    "publicationRule": "published === true && draft !== true",
+    "render_sha256": "da56926e8e670ea5360d493f3c666a20cde2e094f119fa1414390afb3f6e2db0",
+    "edition": "Static reading edition; dynamic experiments rendered from authored lesson data; interactive tools linked to GPR."
+  },
+  {
+    "slug": "before-you-walk-into-a-property-protest",
+    "title": "Before You Walk Into a Property Protest",
+    "original": "https://quattromani.github.io/Guided-Parcel-Review/articles/before-you-walk-into-a-property-protest/",
+    "published": "2026-06-25T17:33:00-05:00",
+    "imported": "2026-10-22",
+    "manifest": "data/app/articles.json",
+    "publicationRule": "published === true && draft !== true",
+    "render_sha256": "9a4804b9eed52b35613bef37cd1533598db96b85f339094a9bc7c8dfba7595c1",
+    "edition": "Static reading edition; dynamic experiments rendered from authored lesson data; interactive tools linked to GPR."
+  },
+  {
+    "slug": "assessment-up-protest-denied-taxes",
+    "title": "Assessment Up. Protest Denied. Taxes?",
+    "original": "https://quattromani.github.io/Guided-Parcel-Review/articles/assessment-up-protest-denied-taxes/",
+    "published": "2026-06-23",
+    "imported": "2026-10-22",
+    "manifest": "data/app/articles.json",
+    "publicationRule": "published === true && draft !== true",
+    "render_sha256": "cf614c2fdb90c733f224d3efb353f4f59493ecd8c6bb31fe7006e26a9aa197ba",
+    "edition": "Static reading edition; dynamic experiments rendered from authored lesson data; interactive tools linked to GPR."
+  },
+  {
+    "slug": "watch-the-tax-roll-move",
+    "title": "Watch the Tax Roll Move",
+    "original": "https://quattromani.github.io/Guided-Parcel-Review/articles/watch-the-tax-roll-move/",
+    "published": "2026-07-08",
+    "imported": "2026-10-22",
+    "manifest": "data/app/articles.json",
+    "publicationRule": "published === true && draft !== true",
+    "render_sha256": "b8db0469f948322ae7b2df94f46c6b95bec8ebe913f6d33444e53f1993e33f42",
+    "edition": "Static reading edition; dynamic experiments rendered from authored lesson data; interactive tools linked to GPR."
+  }
+]

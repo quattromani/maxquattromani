@@ -21,7 +21,7 @@ categories:
 
 Atomic design is a system for web development that focuses on the smallest, most common elements with clarity and precision first and then works it's way up and out to build more complex components.
 
-### Commonalities
+## Commonalities
 
 All websites at their core are composed of the same tags.     
 
@@ -116,10 +116,10 @@ Let's say we've been tasked with building a widget that is an information card o
 
 ---
 
-##### Our Close State
+#### Our Close State
 ![alt text](https://raw.githubusercontent.com/quattromani/placewise/gh-pages/sandbox/card/images/show.png "Sample Component")
 
-##### Our Reveal State
+#### Our Reveal State
 ![alt text](https://raw.githubusercontent.com/quattromani/placewise/gh-pages/sandbox/card/images/hide.png "Sample Component")
 
 ---

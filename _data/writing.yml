@@ -1,7 +1,7 @@
 sections:
   - id: civic
     title: Civic
-    description: Property assessment, local government, and public life.
+    description: Property assessment, property taxes, local government, and public life.
   - id: legal
     title: Legal
     description: Essays and study notes on law and legal reasoning.

@@ -340,7 +340,7 @@ const writingSections = () => {
     .join("");
 };
 const portrait = (className) =>
-  `<img class="${className}" src="${escape(site.data.profile.portrait.src)}" alt="${escape(site.data.profile.portrait.alt)}" width="${site.data.profile.portrait.width}" height="${site.data.profile.portrait.height}" decoding="async">`;
+  `<img class="${className}" src="${escape(site.data.profile.portrait.src)}" alt="${escape(site.data.profile.portrait.alt)}" width="${site.data.profile.portrait.width}" height="${site.data.profile.portrait.height}" fetchpriority="high" decoding="async">`;
 const template = await fs.readFile("templates/page.html", "utf8");
 async function shell(page, body) {
   return engine.parseAndRender(template, {
@@ -412,10 +412,10 @@ for (const page of pages) {
   if (page.meta.article) {
     const image = site.data.profile.portrait;
     const dateLabel = page.meta.written
-      ? `Written <time datetime="${escape(page.meta.written)}">${formatDate(page.meta.written)}</time>`
+      ? `${page.meta.source_url ? "Published" : "Written"} <time datetime="${escape(page.meta.written)}">${formatDate(page.meta.written)}</time>`
       : "Draft. Publication date to be confirmed.";
     const byline = `<div class="article-byline"><img src="${escape(image.src)}" alt="" width="48" height="48" class="author-avatar" decoding="async"><div><a href="/about/">${escape(site.data.profile.name)}</a><p>${dateLabel}</p></div></div>`;
-    body = `<article aria-labelledby="article-title"><header class="article-heading"><p class="eyebrow">Article preview</p><h1 id="article-title">${titleHtml(page.meta.title)}</h1><p class="article-deck">${escape(page.meta.description)}</p>${byline}</header>${page.meta.historical ? '<aside class="archive-note">This first civic essay is preserved as originally written.</aside>' : ""}<div class="prose post-content">${body}</div></article>`;
+    body = `<article aria-labelledby="article-title"><header class="article-heading"><p class="eyebrow">${page.meta.preview ? "Article preview" : escape(data.writing.sections.find((section) => section.id === page.meta.writing_section)?.title || "Writing")}</p><h1 id="article-title">${titleHtml(page.meta.title)}</h1><p class="article-deck">${escape(page.meta.description)}</p>${byline}</header>${page.meta.editor_note ? `<aside class="archive-note prose" aria-label="Editor’s note"><p><strong>Editor’s note</strong></p><p>${escape(page.meta.editor_note)}</p></aside><hr>` : page.meta.historical ? '<aside class="archive-note">This first civic essay is preserved as originally written.</aside>' : ""}<div class="prose post-content">${body}</div></article>`;
   } else if (page.url === "/" && page.meta.presentation === "current") {
     body = `<section class="hero"><p class="eyebrow">Development, leadership, and public service</p><h1>Max<br>Quattromani<span>.</span></h1></section><section class="profile-section"><div class="section-label"><h2>Background and direction</h2>${portrait("home-portrait")}</div><div class="profile-copy">${body}</div></section>`;
   } else if (page.url === "/") {

@@ -4,7 +4,7 @@ This is the release procedure for Max Quattromani's personal site. The authorita
 
 ## Scope and ownership
 
-Max Quattromani owns the content, site, domain, and release decision. The current scope is a personal portfolio, résumé, articles, reference examples, reading list, and contact by email. Privacy and accessibility statements describe the delivered behavior; they do not certify legal compliance or WCAG conformance.
+Max Quattromani owns the content, site, domain, and release decision. The current scope is a personal portfolio, résumé, articles, reference examples, reading list, and a hosted contact form with email fallback. Privacy and accessibility statements describe the delivered behavior; they do not certify legal compliance or WCAG conformance.
 
 Review the whole launch before a major release. A smaller change still requires current evidence for affected areas. The initial browser matrix is current Chrome, Safari, Firefox, and a physical mobile device, with keyboard, enlarged text, and an appropriate screen reader. The accessibility engineering goal is WCAG 2.2 Level AA.
 
@@ -26,7 +26,7 @@ The checklist tracks content and rights; critical journeys; browser and device b
 
 ## Current open work
 
-The content pass is still due. HTTPS certificate issuance remains pending. Sensitive PDFs remain in the public repository and history even though the website excludes them. The full accessibility, document/media, browser, performance, rights, and recovery reviews are not complete. The new privacy page also requires checking email handling against the owner's actual practices. These items stay open until evidence supports closure.
+The editorial pass and HTTPS setup are complete. Current evidence and the precise remaining owner inputs are recorded in [the October 19 review](launch-review-2026-10-19.md). Rights, current facts, email receipt, and lab performance are now confirmed. Remaining checks concern GitHub Support purging old sensitive references, cross-browser/accessibility coverage, and print. Additional writing is deferred and does not block this release.
 
 ## Publishing and recovery
 

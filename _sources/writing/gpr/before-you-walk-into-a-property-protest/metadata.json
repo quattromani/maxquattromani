@@ -1,0 +1,101 @@
+{
+  "id": "protest-evidence-guide",
+  "title": "Before You Walk Into a Property Protest",
+  "subtitle": "A plain language, cup-of-coffee-length guide for turning a property valuation protest into a clear, evidence-based request.",
+  "slug": "before-you-walk-into-a-property-protest",
+  "legacySlug": "protest-evidence-guide",
+  "published": true,
+  "draft": false,
+  "featured": true,
+  "publishDate": "2026-06-25T17:33:00-05:00",
+  "modifiedDate": "2026-06-26T12:00:00-05:00",
+  "displayDate": "June 25, 2026",
+  "route": {
+    "canonicalPath": "articles/before-you-walk-into-a-property-protest/",
+    "legacyQueryValue": "protest-evidence-guide",
+    "currentRoutes": [
+      "articles/before-you-walk-into-a-property-protest/",
+      "index.html?article=protest-evidence-guide"
+    ]
+  },
+  "hero": {
+    "src": "assets/images/articles/before-you-walk-into-a-property-protest-hero-16x9.jpg",
+    "alt": "Homeowner reviewing a printed property record on a clipboard.",
+    "credit": "Photo by RDNE Stock project on Pexels.",
+    "source": "https://www.pexels.com/photo/8292825/"
+  },
+  "excerpt": "A plain language guide to preparing a property valuation protest with comparables, property record cards, evidence, and a specific correction request.",
+  "author": {
+    "name": "Max Quattromani",
+    "email": "max@maxquatrromani.com",
+    "title": "Certified in Nebraska Property Assessment",
+    "image": "assets/images/articles/max-quattromani-author.jpg"
+  },
+  "readingTime": {
+    "minutes": 10,
+    "wordCount": 2070,
+    "lengthLabel": "cup-of-coffee"
+  },
+  "categories": [
+    "Assessment",
+    "Protests",
+    "Legal"
+  ],
+  "tags": [
+    "Gage County",
+    "Property Assessment",
+    "Property Protest",
+    "Board of Equalization",
+    "Property Record Card"
+  ],
+  "keywords": [
+    "property valuation protest",
+    "property record card",
+    "Gage County property protest",
+    "Nebraska Form 422",
+    "comparable properties",
+    "Board of Equalization",
+    "property assessment evidence"
+  ],
+  "compatibility": {
+    "readingProgress": true,
+    "qr": true
+  },
+  "resources": {
+    "hasResources": true,
+    "count": 8,
+    "types": [
+      "Legal authority",
+      "Assessment guidance",
+      "County record lookup",
+      "Official form"
+    ],
+    "printableGuide": "assets/guides/before-you-walk-into-a-property-protest.pdf",
+    "audio": "assets/audio/articles/before-you-walk-into-a-property-protest-audio.mp3",
+    "video": "assets/videos/articles/before-you-walk-into-a-property-protest-summary.mp4"
+  },
+  "references": {
+    "glossaryReferences": [
+      "assessed value",
+      "property record card",
+      "comparable property",
+      "condition rating",
+      "quality rating",
+      "Board of Equalization"
+    ],
+    "statuteReferences": [
+      "Neb. Rev. Stat. 77-112",
+      "Neb. Rev. Stat. 77-1301",
+      "Neb. Rev. Stat. 77-1502",
+      "Neb. Rev. Stat. 77-1504"
+    ],
+    "legalReferences": [
+      "Nebraska Constitution Article VIII, Section 1",
+      "Title 350, Chapter 10"
+    ]
+  },
+  "social": {
+    "image": "assets/images/articles/before-you-walk-into-a-property-protest-hero-16x9.jpg",
+    "metadataReady": true
+  }
+}

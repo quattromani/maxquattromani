@@ -1,0 +1,89 @@
+{
+  "id": "protest-paradox",
+  "title": "Assessment Up. Protest Denied. Taxes?",
+  "subtitle": "A case study showing why property taxes can fall after an assessment increase, and how levy compression changes the tax impact of a valuation notice.",
+  "slug": "assessment-up-protest-denied-taxes",
+  "legacySlug": "protest-paradox",
+  "published": true,
+  "draft": false,
+  "featured": true,
+  "publishDate": "2026-06-23",
+  "modifiedDate": "2026-06-26",
+  "displayDate": "June 23, 2026",
+  "route": {
+    "canonicalPath": "articles/assessment-up-protest-denied-taxes/",
+    "legacyQueryValue": "protest-paradox",
+    "currentRoutes": [
+      "articles/assessment-up-protest-denied-taxes/",
+      "index.html?article=protest-paradox"
+    ]
+  },
+  "hero": {
+    "src": "assets/images/protest-paradox-share.jpg",
+    "alt": "Aerial view of rural agricultural land and homes."
+  },
+  "excerpt": "A Gage County case study showing why property taxes can fall after an assessment increase, and how levy compression changes the tax impact of a valuation notice.",
+  "author": {
+    "name": "Max Quattromani",
+    "email": "max@maxquatrromani.com",
+    "title": "Certified in Nebraska Property Assessment",
+    "image": "assets/images/articles/max-quattromani-author.jpg"
+  },
+  "readingTime": {
+    "minutes": 8,
+    "wordCount": 1850,
+    "lengthLabel": "field-note"
+  },
+  "categories": [
+    "Property Tax",
+    "Assessment",
+    "Research"
+  ],
+  "tags": [
+    "Gage County",
+    "Levy Compression",
+    "Property Tax",
+    "Effective Tax Rate",
+    "Board of Equalization"
+  ],
+  "keywords": [
+    "property tax levy compression",
+    "assessment increase taxes down",
+    "Gage County property assessment",
+    "property valuation protest",
+    "effective tax rate",
+    "property tax estimate"
+  ],
+  "compatibility": {
+    "readingProgress": true,
+    "qr": true
+  },
+  "resources": {
+    "hasResources": true,
+    "count": 4,
+    "types": [
+      "Case record",
+      "Tax record",
+      "PAD report",
+      "Official index"
+    ],
+    "printableGuide": "assets/guides/assessment-up-protest-denied-taxes.pdf"
+  },
+  "references": {
+    "glossaryReferences": [
+      "assessed value",
+      "tax base",
+      "levy compression",
+      "effective tax rate",
+      "relative movement"
+    ],
+    "statuteReferences": [],
+    "legalReferences": [
+      "2026 Reports and Opinions of the Property Tax Administrator - Gage County"
+    ]
+  },
+  "social": {
+    "image": "assets/images/protest-paradox-share.jpg",
+    "metadataReady": true
+  }
+}
