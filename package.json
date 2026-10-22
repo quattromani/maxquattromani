@@ -21,7 +21,7 @@
     "cheerio": "1.1.2",
     "js-yaml": "^4.3.2",
     "liquidjs": "^10.30.0",
-    "markdown-it": "^14.3.2",
+    "markdown-it": "^14.3.3",
     "prettier": "3.9.10"
   }
 }

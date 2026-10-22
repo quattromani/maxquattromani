@@ -59,9 +59,9 @@ checks:
     group: build
     title: Review dependency findings and preserve licenses
     status: pass
-    evidence: 'October 19: npm audit reports zero advisories across 33 dependencies. Existing MIT LICENSE retained; node_modules is not included in dist. Build and 21 tests pass.'
-    reviewed_at: '2026-10-19'
-    source_fingerprint: aab918ad96382d3422026cf6977ddce72c235ed2c475ac59bfd37dd34671de86
+    evidence: 'October 22: patched markdown-it 14.3.2 to 14.3.3 for GHSA-gfr2-rv44-r23c / CVE-2026-111758. npm audit reports zero vulnerabilities. All 22 tests and 70-page artifact checks pass. Rendered files are byte-identical to the pre-patch artifact (release fingerprint metadata excluded). Malformed 200 KB reference smoke test completed in 154 ms. License retained; dependencies remain build-only.'
+    reviewed_at: '2026-10-22'
+    source_fingerprint: 4978d2c544f032d8a3d98ac96bf526ef9f1f6aecf6351a576dd39cde065cef68
   - id: sensitive_repository_files
     group: security
     title: Resolve the sensitive PDFs still in the public repository and its history

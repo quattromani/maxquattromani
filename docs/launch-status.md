@@ -2,9 +2,9 @@
 
 Generated from [the canonical checklist](../ops/launch.yml). Run `npm run launch:status` to refresh this view. This snapshot describes the candidate, not the live site's complete readiness.
 
-Source fingerprint: `788476d12e168c5f237dc4f73eb0535bf46bc4abab06171a2535bba02722f959`
+Source fingerprint: `4978d2c544f032d8a3d98ac96bf526ef9f1f6aecf6351a576dd39cde065cef68`
 
-20 pre-release checks remain unresolved. Production verification follows deployment.
+19 pre-release checks remain unresolved. Production verification follows deployment.
 
 | Check | Status | Owner | Evidence or next step |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ Source fingerprint: `788476d12e168c5f237dc4f73eb0535bf46bc4abab06171a2535bba0272
 | Review current Chrome, Safari, Firefox, a physical mobile device, and enlarged text | Not checked | Max Quattromani | Chrome and in-app browser primary routes reviewed. Safari, Firefox, physical mobile, orientation, and enlarged-text coverage remain unverified. |
 | Review keyboard, screen reader, headings, labels, contrast, reflow, and reduced motion | Not checked | Max Quattromani | 64-page static scan has one main H1 per page, alt attributes, and no heading skips after archive markup repairs. Chrome skip-link focus observed; native contact labels and error behavior tested. Screen-reader, contrast across states, mobile reflow, text spacing, and full keyboard flows remain unverified. No WCAG conformance claim. |
 | Build integrity, local links, required pages, policy links, and private-file exclusion | Pass | Max Quattromani | Automated artifact verification ran for this source fingerprint; see scripts/release.mjs. |
-| Review dependency findings and preserve licenses | Stale | Max Quattromani | October 19: npm audit reports zero advisories across 33 dependencies. Existing MIT LICENSE retained; node_modules is not included in dist. Build and 21 tests pass. |
+| Review dependency findings and preserve licenses | Pass | Max Quattromani | October 22: patched markdown-it 14.3.2 to 14.3.3 for GHSA-gfr2-rv44-r23c / CVE-2026-111758. npm audit reports zero vulnerabilities. All 22 tests and 70-page artifact checks pass. Rendered files are byte-identical to the pre-patch artifact (release fingerprint metadata excluded). Malformed 200 KB reference smoke test completed in 154 ms. License retained; dependencies remain build-only. |
 | Resolve the sensitive PDFs still in the public repository and its history | Blocked | Max Quattromani | All three branch histories sanitized; owner-only backup verified. GitHub Support ticket #4877351 submitted October 19, 2026 and confirmed Open; old PR refs/cache purge awaits Support confirmation. See docs/repository-cleanup.md. |
 | Review mixed content, external resources, headers, and trust boundaries | Stale | Max Quattromani | October 19: static artifact and first-party JavaScript reviewed. No mixed-content resources, third-party scripts, browser storage, authentication, payments, uploads, or private PDFs in dist. External image requests disclosed. GitHub Pages lacks configurable response headers; no claim of comprehensive backend certification. Sensitive history tracked separately. |
 | Verify privacy disclosures against actual requests, storage, hosting, and email handling | Stale | Max Quattromani | October 19: disclosure matches hosted Formspree, archive and email notifications, reCAPTCHA, clipboard write-only behavior, no browser draft storage or analytics, GitHub hosting, and two historical external images. No attachment support. Retention depends on providers; no unsupported retention period promised. |
